@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Crusader</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="crusader.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-crusader/class-crusader.xml" />
 		</update>
 	</info>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Gunslinger Class</name>
+		<description>The Gunslinger Class adds a new take on the popular archetype to DnD 5e.</description>
+		<author url="https://www.reddit.com/user/JollyRogerGay/">JollyRogerGay</author>
+		<update version="0.0.1">
+			<file name="class-gunslinger.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-gunslinger.index" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-gunslinger/source.xml" />
+		<file name="class-gunslinger.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-gunslinger/class-gunslinger.xml" />
+		<file name="adrenaline-surges.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-gunslinger/adrenaline-surges.xml" />
+		<file name="gunslinger-deadeye.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-gunslinger/gunslinger-deadeye.xml" />
+		<file name="gunslinger-desperado.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-gunslinger/gunslinger-desperado.xml" />
+		<file name="gunslinger-gunsmith.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-gunslinger/gunslinger-gunsmith.xml" />
+		<file name="gunslinger-phantom-shot.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-gunslinger/gunslinger-phantom-shot.xml" />
+		<file name="gunslinger-redeemer.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-gunslinger/gunslinger-redeemer.xml" />
+		<file name="gunslinger-voyager.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-gunslinger/gunslinger-voyager.xml" />
+		<file name="phantomshot-patrons.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-gunslinger/phantomshot-patrons.xml" />
+	</files>
+</index>

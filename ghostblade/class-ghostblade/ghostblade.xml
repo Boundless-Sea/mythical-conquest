@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Ghostblade</name>
+		<author url="https://www.reddit.com/user/kodabeeer"></author>
+		<update version="0.0.1">
+			<file name="ghostblade.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-ghostblade/ghostblade.xml" />
+		</update>
+	</info>
+
+	<!-- ghostblade -->
+	<element name="Ghostblade" type="Class" source="Mythical Conquest" id="ID_MYTHIC_CLASS_GHOSTBLADE">
+		<description>
+			<h3>CLASS FEATURES</h3>
+			<p>As a Ghostblade, you get the following class features.</p>
+			<h5>HIT POINTS</h5>
+			<p>
+				<span class="emphasis">Hit Dice:</span> 1d8 per ghostblade level<br />
+				<span class="emphasis">Hit Points at 1st Level:</span> 8 + your Constitution modifier<br />
+				<span class="emphasis">Hit Points at Higher Levels:</span> 1d8 (or 5) + your Constitution modifier per ghostblade level after 1st
+			<br />
+			</p>
+			<h5>PROFICIENCIES</h5>
+			<p>
+				<span class="emphasis">Armor:</span> Light armor, medium armor<br />
+				<span class="emphasis">Weapons:</span> Simple weapons, martial weapons<br />
+				<span class="emphasis">Tools:</span> None<br />
+			</p>
+			<p>
+				<span class="emphasis">Saving Throws:</span>Charisma, Dexterity<br />
+				<span class="emphasis">Skills:</span> Choose two from  Arcana, Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and Survival
+			</p>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li> <i>(a)</i> chainmail armor, or <i>(b)</i> leather armor and a hand crossbow with 20 bolts</li>
+				<li> <i>(a)</i> two simple weapons, or <i>(b)</i> any martial weapon</li>
+				<li> <i>(a)</i> an explorer's pack, or <i>(b)</i> a scholar's pack</li>
+			</ul>
+			<h5 class="caption">THE Ghostblade</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-5">Ghosts Prepared</td><td class="col-5">Haunt Radius</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="left">Old Haunts, Ghost Slash</td><td>1</td><td>5ft</td></tr>
+				<tr><td> 2nd</td><td class="left">Ghost Step, Ghost Commander</td><td>2</td><td>5ft</td></tr>
+				<tr><td> 3rd</td><td class="left">Ghostblade Archetype</td><td>2</td><td>5ft</td></tr>
+				<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>3</td><td>5ft</td></tr>
+				<tr><td> 5th</td><td class="left">Fighting Style, Haunt Improvements, Extra Attack</td><td>3</td><td>10ft</td></tr>
+				<tr><td> 6th</td><td class="left">Archetype Feature</td><td>3</td><td>10ft</td></tr>
+				<tr><td> 7th</td><td class="left">Warnings of the Dead</td><td>3</td><td>10ft</td></tr>
+				<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>3</td><td>10ft</td></tr>
+				<tr><td> 9th</td><td class="left">Haunt Improvements</td><td>3</td><td>15ft</td></tr>
+				<tr><td>10th</td><td class="left">Undead Aid, Ghost Manipulation</td><td>3</td><td>15ft</td></tr>
+				<tr><td>11th</td><td class="left">Sword Boundary</td><td>4</td><td>15ft</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>4</td><td>15ft</td></tr>
+				<tr><td>13th</td><td class="left">Archetype Feature, Haunt Improvements</td><td>4</td><td>20ft</td></tr>
+				<tr><td>14th</td><td class="left">Shadow Image</td><td>4</td><td>20ft</td></tr>
+				<tr><td>15th</td><td class="left">Ghost Step Improvements</td><td>4</td><td>20ft</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>5</td><td>20ft</td></tr>
+				<tr><td>17th</td><td class="left">Extra Attack, Haunt Improvements</td><td>5</td><td>25ft</td></tr>
+				<tr><td>18th</td><td class="left">Archetype Feature</td><td>5</td><td>25ft</td></tr>
+				<tr><td>19th</td><td class="left">Ability Score Improvement</td><td>5</td><td>25ft</td></tr>
+				<tr><td>20th</td><td class="left">Ghost Feast</td><td>6</td><td>25ft</td></tr>
+			</table>
+			
+			<div element="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_OLD_HAUNTS" /> 
+			<div element="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_GHOST_SLASH" />
+			<div element="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_GHOST_STEP" />
+			<div element="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_GHOST_COMMANDER" />
+			<div element="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_GHOST_ARCHETYPE" />
+			<div element="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_ABILITY_SCORE_INCREASE" />
+			<div element="ID_MYTHIC_CLASS_FEATURE_FIGHTINGSTYLE" />
+			<div element="ID_MYTHIC_CLASS_FEATURE_EXTRAATTACK" />
+			<div element="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_WARNINGS_OF_THE_DEAD" />
+			<div element="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_UNDEAD_AID" />
+			<div element="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_GHOST_MANIPULATION" /> 
+			<div element="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_SWORD_BOUNDARY" /> 
+			<div element="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_SHADOW_IMAGE" />
+			<div element="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_GHOST_FEAST" />
+			
+		</description>
+		<sheet display="false">
+			<description>A master of ghosts, showing their power with skill and terror.</description>
+		</sheet>
+		<setters>
+			<set name="short">A master of ghosts, showing their power with skill and terror.</set>
+			<set name="hd">d8</set>
+		</setters>
+		<rules>
+
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MYTHIC_MULTICLASS_GHOSTBLADE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_MYTHIC_MULTICLASS_GHOSTBLADE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MYTHIC_MULTICLASS_GHOSTBLADE"  />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_MYTHIC_MULTICLASS_GHOSTBLADE"  />
+			
+			
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_MYTHIC_MULTICLASS_GHOSTBLADE"  />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA"  requirements="!ID_MYTHIC_MULTICLASS_GHOSTBLADE" />
+			
+			<select type="Proficiency" name="Skill Proficiency (Ghostblade)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL" number="2"  requirements="!ID_MYTHIC_MULTICLASS_GHOSTBLADE" />
+			
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_OLD_HAUNTS" level="1"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_GHOST_SLASH" level="1"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_GHOST_STEP" level="2"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_GHOST_COMMANDER" level="2"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_GHOST_ARCHETYPE" level="3"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_ABILITY_SCORE_INCREASE" level="4"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_FEATURE_FIGHTINGSTYLE" level="5" />
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_FEATURE_EXTRAATTACK" level="5"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_WARNINGS_OF_THE_DEAD" level="7"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_UNDEAD_AID" level="10"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_GHOST_MANIPULATION" level="10"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_SWORD_BOUNDARY" level="11"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_SHADOW_IMAGE" level="14"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_GHOST_FEAST" level="20"/>	
+		</rules>
+		<multiclass id="ID_MYTHIC_MULTICLASS_GHOSTBLADE">
+			<prerequisite>Charisma 13</prerequisite>
+			<requirements>[cha:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, martial weapons, simple weapons, and one skill from the Ghostblade Skill List</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+				<select type="Proficiency" name="Ghostblade Multiclass" supports="(Animal Handling, Arcana, Insight, Intimidation, Athletics, Perception, History, Survival)" number="1" />
+			</rules>
+		</multiclass>
+	</element>
+	
+	<element name="Old Haunts" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_OLD_HAUNTS">
+		<description>
+		<p>There is nowhere that the souls of the deceased do not drift. When you choose this class at 1st level, you learn how to call upon souls that you are familiar with to haunt an area.</p>
+		<h5>Deploying Ghosts</h5>
+		<p>Haunting Grounds. You can send a ghost to haunt an area with a radius, at a point you choose within 30ft. A creature that enters the haunts area for the 1st time on a turn or starts its turn there must make a saving throw. On failed save, a creature is under the effects of the ghost while in the radius. A ghost returns when you are more than 60ft away. You regain all expended ghosts after completing a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="You have {{ghost:points}} Ghosts/Long Rest">
+			<p>You can send a ghost to haunt an area with a radius, at a point you choose within 30ft. A creature that enters the haunts area for the 1st time on a turn or starts its turn there must make a saving throw. On failed save, a creature is under the effects of the ghost while in the radius. A ghost returns when you are more than 60ft away. You regain 2 Ghosts per Short Rest.</p>
+		</sheet>
+		<rules>
+			<stat name="ghost:points" value="proficiency:half" />
+			<stat name="ghost:points" value="charisma:modifier" />
+			<stat name="haunt:dc" value="8" />
+			<stat name="haunt:dc" value="proficiency" />
+			<stat name="haunt:dc" value="charisma:modifier" />
+			<stat name="haunt:range" value="5" />
+			<stat name="haunt:range" value="5" level="5" />
+			<stat name="haunt:range" value="5" level="9"/>
+			<stat name="haunt:range" value="5" level="13"/>
+			<stat name="haunt:range" value="5" level="17"/>
+			<select type="Class Feature" name="Ghost Haunt" supports="Ghost Haunt" number="2"/>
+			<select type="Class Feature" name="Ghost Haunt" supports="Ghost Haunt" level="3" number="1"/>
+			<select type="Class Feature" name="Ghost Haunt" supports="Ghost Haunt" level="6" number="2"/>
+			<select type="Class Feature" name="Ghost Haunt" supports="Ghost Haunt" level="12" number="1"/>
+			<select type="Class Feature" name="Ghost Haunt" supports="Ghost Haunt" level="15" number="2"/>
+		</rules>
+	</element>
+	
+	<element name="Ghost Slash" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_GHOST_SLASH">
+		<description>
+			<p>You imbue your weapon of choice with the power of a ghost as a bonus action, enhancing its capabilities. Your next attack with the weapon will deal an additional d4 necrotic damage when successfully landing a strike.</p>
+			<p class="indent">This damage die increases to 1d8 at 5th level, and 1d12 at 9th level.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1 Ghost" level="1">
+			<description>Deal an additional 1d4 Necrotic Damage on your next hit with your empowered weapon.</description>
+		</sheet>
+		<sheet action="Bonus Action" usage="1 Ghost" level="7">
+			<description>Deal an additional 1d8 Necrotic Damage on your next hit with your empowered weapon.</description>
+		</sheet>
+		<sheet action="Bonus Action" usage="1 Ghost" level="11">
+			<description>Deal an additional 1d12 Necrotic Damage on your next hit with your empowered weapon.</description>
+		</sheet>
+	</element>
+	
+	<element name="Ghost Step" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_GHOST_STEP">
+		 <description>
+      <p>At 3rd level, you are familiar enough with the dead to entrust your body to them. If you are standing in a haunt, you can as a bonus action instantly travel through the Ethereal Plane to an unoccupied point within a haunt that you can see, consuming both haunts in the process.</p>
+      <p class="indent">Once you use this feature up to half your charisma modifier, you must finish a short or long rest to replenish uses. Starting at 15th level, the haunt you travelled from remains while the one you travel to vanishes.</p>
+    </description>
+    <sheet action="Bonus Action" usage="{{charisma:modifier:half}}/Short Rest" level="3">
+		<description level="3">
+			<p>If you are standing in a haunt, you can as a bonus action instantly travel through the Ethereal Plane to an unoccupied point within a haunt you can see, consuming both haunts.</p>
+		</description>
+		<description level="15">
+			<p>If you are standing in a haunt, you can as a bonus action instantly travel through the Ethereal Plane to an unoccupied point within a haunt you can see, consuming the haunt.</p>
+		</description>
+	</sheet>
+	</element>	
+	
+	<element name="Ghost Commander" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_GHOST_COMMANDER">
+		<description>
+			<p>At 2nd level, you can choose whether to be affected or not by your haunts.</p>
+		</description>
+		<sheet>
+			<description>
+				<p>You can choose whether to be affected or not by your haunts.</p>
+			</description>
+		</sheet>
+	</element>
+	
+	<element name="Ghost Archetype" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_GHOST_ARCHETYPE">
+		<description>
+			<p>At 3rd level, you choose an archetype to enhance your abilities. The archetype you choose grants you features at 3rd, 6th, 13th, and 18th level.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Ghost_Pact" supports="Ghost_Pact" />
+		</rules>
+	</element>	
+	
+	<element name="Ability Score Improvement" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_ABILITY_SCORE_INCREASE">
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Ghostblade 4)" supports="Improvement Option,Ghostblade,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Ghostblade 8)" supports="Improvement Option,Ghostblade,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Ghostblade 12)" supports="Improvement Option,Ghostblade,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Ghostblade 16)" supports="Improvement Option,Ghostblade,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Ghostblade 19)" supports="Improvement Option,Ghostblade,19" level="19" />
+		</rules>
+	</element>
+	
+	<element name="Fighting Style" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_FEATURE_FIGHTINGSTYLE">
+		<description>
+			<p>You adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.</p>
+			<h5 class="caption">LACERATE</h5>
+			<p>When you deal damage with a weapon that deals slashing damage you can select one die before you roll it and make it take half its maximum value (3 for a d6 etc).</p>
+			<h5 class="caption">WARDING</h5>
+			<p>Other creatures provoke an opportunity attack from you when they enter a space within 5 feet of you.</p>
+			<h5 class="caption">TUNNEL FIGHTER</h5>
+			<p>You excel at defending narrow passages, doorways, and other tight spaces. As a bonus action, you can enter a defensive stance that lasts until the start of your next turn. While in your defensive stance, you can make opportunity attacks without using your reaction, and you can use your reaction to make a melee attack against a creature that moves more than 5 feet while within your reach.</p>
+			<h5 class="caption">VERSATILE FIGHTING</h5>
+			<p>Any weapons that you have proficiency with deal damage of 1 dice size larger, (1d4 becomes 1d6, 1d6 becomes 1d8)</p>
+			<h5 class="caption">DEFENSE</h5>
+			<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
+			<h5 class="caption">DUELING</h5>
+			<p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+			<h5 class="caption">GREAT WEAPON FIGHTING</h5>
+			<p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
+			<h5 class="caption">PROTECTION</h5>
+			<p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</p>
+			<h5 class="caption">TWO-WEAPON FIGHTING</h5>
+			<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
+		</description>
+		<rules>
+			<select type="Class Feature" name="Fighting Style" supports="Fighting Style, Ghostblade" level="5"/>
+		</rules>
+	</element>
+	
+	<!---Fighting Styles -->
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DEFENSE">
+		<supports>Ghostblade</supports>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DUELING">
+		<supports>Ghostblade</supports>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING">
+		<supports>Ghostblade</supports>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_PROTECTION">
+		<supports>Ghostblade</supports>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING">
+		<supports>Ghostblade</supports>
+	</append>
+	<append id="ID_MYTHIC_CQ_CLASS_FEATURE_FIGHTINGSTYLE_DECEPTION">
+		<supports>Ghostblade</supports>
+	</append>
+	<append id="ID_RDDT_CLASS_FEATURE_FIGHTINGSTYLE_LACERATE">
+		<supports>Ghostblade</supports>
+	</append>
+	<append id="ID_RDDT_CLASS_FEATURE_FIGHTINGSTYLE_VERSATILE_FIGHTING">
+		<supports>Ghostblade</supports>
+	</append>
+	<append id="ID_WOTC_UA2015_CLASS_FEATURE_FIGHTINGSTYLE_TUNNEL_FIGHTER">
+		<supports>Ghostblade</supports>
+	</append>
+	<append id="ID_MYTHIC_CQ_CLASS_FEATURE_FIGHTINGSTYLE_WARDING">
+		<supports>Ghostblade</supports>
+	</append>
+	
+	<element name="Warnings of the Dead" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_WARNINGS_OF_THE_DEAD">
+		<description>
+			<p>At 7th level, the ghosts that constantly linger around you warn you of danger. While you are conscious, you can't be surprised. You also know the locations of any invisible creatures within 30 feet of you.</p>
+		</description>
+		<sheet>
+			<description>
+				<p>While you are conscious, you can't be surprised. You also know the locations of any invisible creatures within 30ft of you.</p>
+			</description>
+		</sheet>
+	</element>
+	
+	<element name="Undead Aid" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_UNDEAD_AID">
+		<description>
+			<p>At 10th level, you gain the ability to consult your ghosts of different professions. At the end of a short or long rest, choose a skill that you are not proficient in. When you make a check with that skill, you can add half your proficiency bonus (round up). When you are in a haunt, graveyard, or other locations where ghosts likely lurk, you gain proficiency in the skill instead.</p>
+			<p class="indent">Additionally, you can cast Speak with Dead by expending a ghost. Once you use this feature, you must finish a long rest before you can use it again.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>
+				<p>At the end of a short or long rest, choose a skill that you are not proficient in. When you make a check with that skill, you can add {{proficiency:half}}. When you are in a haunt, graveyard, or other locations where ghosts likely lurk, you gain proficiency in the skill instead.</p>
+				<p>Additionally, you can cast Speak with Dead by expending a ghost.</p>
+			</description>
+		</sheet>
+	</element>
+	
+	<element name="Ghost Manipulation" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_GHOST_MANIPULATION">
+		<description>
+			<p>At 10th level, you gain the ability to command your ghosts in imaginative manners. Using this feature you can use a ghost to take a physical but flimsy shape. Using concentration you can command them as if they were your own body for 1 hour. You can only use this feature once per long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest, 1 Ghost">
+			<p>You can manifest ghosts into a physical shape, and move them via concentration, applying all 5 senses to the object and sharing them for up to 1 hour. If the ghost takes any damage it vanishes.</p>
+		</sheet>
+	</element>
+
+	<element name="Sword Boundary" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_SWORD_BOUNDARY">
+		<description>
+			<p>Using your Action, you cast a boundary around you in a 30ft radius. You and all creatures within the boundary you consider allies gain a +1 to Attack and Damage rolls. The boundary lasts for 1 minute. After using this feature, you cannot use it again until you have completed a short rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>
+				<p>You cast a boundary around you in a 30ft radius. You and creatures of your choice gain a +{{charisma:modifier:half}} to Attack and Damage rolls. The boundary lasts for 1 minute.</p>
+			</description>
+		</sheet>
+	</element>
+	
+	<element name="Shadow Image" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_SHADOW_IMAGE">
+		<description>
+			<p>At 14th level, ghosts become willing to die for you. As a reaction, you manifest ghosts around you to block incoming damage. Doing so consumes a hit die, each hit die expended will consume a hit dies worth of damage. You can only use this feature once per long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="1/Long Rest">
+			<description>
+				<p>Use and roll as many hit die as you wish, reduce incoming damage by that amount. If the amount of damage you would take becomes negative, you heal the excess.</p>
+			</description>
+		</sheet>
+	</element>
+	
+	<element name="Extra Attack" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_FEATURE_EXTRAATTACK">
+		<description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+			<p class="indent">The number of attacks increases to three when you reach 17th level in this class.</p>
+		</description>
+		<sheet>
+			<description level="5">You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+			<description level="17">You can attack three times, instead of once, whenever you take the Attack action on your turn</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+			<stat name="extra attack:count" value="3" level="17" bonus="extra attack" />
+		</rules>
+	</element>
+	
+	<element name="Ghost Feast" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_GHOST_FEAST">
+		<description>
+			<p>At 20th level, you learn how to bring out the buried resentment of death in your ghosts before letting them pass on to the afterlife, free of regrets. As an action, you can unleash the rage of the ghosts that linger in your haunts on your enemies. Each creature of your choice in your haunts must make a Constitution saving throw. A target takes 5d10 necrotic damage on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>
+				<p>Each creature of your choice in a haunt must make a DC {{haunt:dc}} CON saving throw, taking 5d10 necrotic damage on a failed save, or half as much on a success.</p>
+			</description>
+		</sheet>
+	</element>
+</elements>

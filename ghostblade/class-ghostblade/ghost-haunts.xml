@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="ghost-haunts.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-ghostblade/ghost-haunts.xml" />
+		</update>
+	</info>
+	<element name="Flame Haunt" type="Class Feature" source="Homebrewery" id="ID_MYTHIC_CLASS_FEATURE_GHOST_HAUNTS_FLAME">
+		<supports>Ghost Haunt</supports>
+		<prerequisite>6th level</prerequisite>
+		<requirements>[level:6]</requirements>
+		<description>
+			<p>While in the haunt, creatures are harassed by flaming ghosts of those that died in fire. The creature must make a Dexterity saving throw or take 1d10 fire damage</p>
+			<p class="indent">As your affinity with ghosts grow (14th Level), this damage becomes more intense and deals 2d10 fire damage.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1 Ghost">
+			<description>While in the haunt range ({{haunt:range}}ft.), creatures must make a DC {{haunt:dc}} DEX Save or take 1d10 fire damage.</description>
+			<description level="14">While in the haunt, creatures must make a DC {{haunt:dc}} DEX Save or take 2d10 fire damage.</description> 
+		</sheet>
+	</element>
+	
+	<element name="Grasp Haunt" type="Class Feature" source="Homebrewery" id="ID_MYTHIC_CLASS_FEATURE_GHOST_HAUNTS_GRASP">
+		<supports>Ghost Haunt</supports>
+		<description>
+			<p>While in the haunt, creatures are pushed away from or pulled toward the center of the haunt by playful ghosts. On their turn, a creature must succeed on a Strength saving throw or be moved 15 feet in the direction of your choice.</p>	
+		</description>
+		<sheet action="Bonus Action" usage="1 Ghost">
+			<description>While in the haunt range ({{haunt:range}}ft.), creatures must make a DC {{haunt:dc}} STR Save or move 15ft in a direction of choice.</description>
+		</sheet>
+	</element>
+	
+	<element name="Frost Haunt" type="Class Feature" source="Homebrewery" id="ID_MYTHIC_CLASS_FEATURE_GHOST_HAUNTS_FROST">
+		<supports>Ghost Haunt</supports>
+		<description>
+			<p>While in the haunt, creatures are embraced by the freezing ghosts of those that died in ice. The area within your field is considered difficult terrain to creatures within your field. A creature immune to cold damage is not affected.</p>
+			<p class="indent">As your affinity with ghosts grow (12th level), you can convince your ghosts to put in more effort and freeze your enemies. As a bonus action, each creature must make a Constitution saving throw. On a failed save, its movement speed becomes zero until the start of your next turn. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the freezing effect for the next minute.</p>		
+		</description>
+		<sheet action="Bonus Action" usage="1 Ghost">
+			<description>The haunt range ({{haunt:range}}ft.) is considered difficult terrain for 18s, creatures immune to cold damage arent affected.</description>
+			<description level="12">The haunt range ({{haunt:range}}ft.) is considered difficult terrain for 18s, creatures immune to cold damage arent affected. While in the haunt, creatures must make a DC {{haunt:dc}} CON Save or have its movement speed become 0 until the start of your next turn.</description> 
+		</sheet>
+	</element>
+	
+	<element name="Mercy Haunt" type="Class Feature" source="Homebrewery" id="ID_MYTHIC_CLASS_FEATURE_GHOST_HAUNTS_MERCY">
+		<supports>Ghost Haunt</supports>
+		<prerequisite>6th level</prerequisite>
+		<requirements>[level:6]</requirements>
+		<description>
+			<p>The kind ghosts within the haunt do not wish to see another join their ranks. While in the haunt, creatures that are reduced to 0 hit points and don't die outright are stabilized. A creature can't benefit from this effect again until they have finished a short rest.</p>
+		<p class="indent">As your affinity with ghosts grow, the ghosts become willing to sacrifice a bit of their existence in your aid, and the creature is instead reduced to 1 hit point.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1 Ghost">
+			<description>Creatures within the haunt range ({{haunt:range}}ft.) dont outright die and are stabilized, a creature can only use this effect 1/Short Rest.</description>
+			<description level="12">Creatures within the haunt range ({{haunt:range}}ft.) dont outright die and are stabilized, a creature can only use this effect 1/Short Rest. The creatrue is redoced to 1 hitpoint instead of 0.</description> 
+		</sheet>
+	</element>
+	
+	<element name="Strength Haunt" type="Class Feature" source="Homebrewery" id="ID_MYTHIC_CLASS_FEATURE_GHOST_HAUNTS_STRENGTH">
+		<supports>Ghost Haunt</supports>
+		<description>
+			<p>While in the haunt, creatures are granted the power that the ghosts had in life. Once per turn, a creature can add your Charisma modifier to their damage roll for attacks and spells.</p>		
+			</description>
+		<sheet action="Bonus Action" usage="1 Ghost">
+			<description>While in the haunt range ({{haunt:range}}ft.), creatures can add {{charisma:modifier}} to their damage roll for attacks and spells once per turn</description>
+		</sheet>
+	</element>
+	
+	<element name="Shadow Haunt" type="Class Feature" source="Homebrewery" id="ID_MYTHIC_CLASS_FEATURE_GHOST_HAUNTS_SHADOW">
+		<supports>Ghost Haunt</supports>
+		<prerequisite>12th level</prerequisite>
+		<requirements>[level:12]</requirements>
+		<description>
+			<p>The ghosts of shadowfell consume the target in shadows, blocking them from all light sources and making their appearance seem like that of a shadow. Creatures hit by Ghost of Shadow must pass a Wisdom Saving Throw or be consumed in darkness. They can repeat this saving throw at the start of each of their turns, for up to 3 turns when the haunt expires.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1 Ghost">
+			<description>Creatures within the haunt range ({{haunt:range}}ft.) must make a DC {{haunt:dc}} WIS Save, being blinded and restrained on a failed save. The creatures caught within the haunt can repeat the save at the start of their turns for up to 3 turns, when the haunt expires.</description>
+		</sheet>
+	</element>
+	
+	<element name="Silence Haunt" type="Class Feature" source="Homebrewery" id="ID_MYTHIC_CLASS_FEATURE_GHOST_HAUNTS_SILENCE">
+		<supports>Ghost Haunt</supports>
+		<prerequisite>15th level</prerequisite>
+		<requirements>[level:15]</requirements>
+		<description>
+			<p>The ghosts within the haunt muffle out the screams of those within. While in the haunt, creatures must pass a Charisma Saving Throw or else they can not speak and are deafened within the haunt. Casting a spell that includes a verbal component is impossible within the haunt.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1 Ghost">
+			<description>Creatures within the haunt range ({{haunt:range}}ft.) must make a DC {{haunt:dc}} CHA Save, being muted and deafened on a failed save.</description>
+		</sheet>
+	</element>
+	
+	<element name="Surge Haunt" type="Class Feature" source="Homebrewery" id="ID_MYTHIC_CLASS_FEATURE_GHOST_HAUNTS_SURGE">
+		<supports>Ghost Haunt</supports>
+		<prerequisite>15th level</prerequisite>
+		<requirements>[level:15]</requirements>
+		<description>
+			<p>The relentless ghosts within the haunt have created so much tension between them that its begun electrifying. While in the haunt, creatures must pass a DC DEX Save, on a failed save taking 2d12 damage and being stunned until the end of their next turn, taking half as much and gaining the effects of Haste for 1 round on a successful save.</p> 
+		</description>
+		<sheet action="Bonus Action" usage="1 Ghost">
+			<description>Creatures within the haunt range ({{haunt:range}}ft.) must make a DC {{haunt:dc}} DEX Save, taking 2d12 Lightning damage and being stunned until the end of their next turn on a fail, or taking half as much and gaining the effects of Haste for 1 round on a success.</description>
+		</sheet>
+	</element>
+
+	<element name="Fear Haunt" type="Class Feature" source="Homebrewery" id="ID_MYTHIC_CLASS_FEATURE_GHOST_HAUNTS_FEAR">
+		<supports>Ghost Haunt</supports>
+		<prerequisite>Phantom Demon, Level 12</prerequisite>
+		<requirements>ID_MYTHIC_ARCHETYPE_PHANTOM_DEMON, [level:12]</requirements>
+		<description>
+			<p>The ghosts consume a target in fear, making them pass a Charisma Saving Throw, incapacitating them for 1 round on a failed save. If the creature succeeds the saving throw they're in fear of you for 1 round instead.</p>		
+		</description>
+		<sheet action="Bonus Action" usage="1 Ghost">
+			<description>Creatures within the haunt range ({{haunt:range}}ft.) must make a DC {{haunt:dc}} CHA Save, incapacitating them for 1 round on a fail, or feared of you for 1 round on a success.</description>
+		</sheet>
+	</element>
+	
+	<element name="Illusion Haunt" type="Class Feature" source="Homebrewery" id="ID_MYTHIC_CLASS_FEATURE_GHOST_HAUNTS_ILLUSION">
+		<supports>Ghost Haunt</supports>
+		<prerequisite>Phantom Demon, Level 12</prerequisite>
+		<requirements>ID_MYTHIC_ARCHETYPE_PHANTOM_DEMON, [level:12]</requirements>
+		<description>
+			<p>The ghosts consume a targets senses, making them pass a Wisdom Saving Throw, forcing them to see those who they love in place of their targets, and their enemies in place of their allies for 1 round on a failed save. On a succeeded save the illusion fails and the creature has advantage on future illusion haunts.</p>	
+		</description>
+		<sheet action="Bonus Action" usage="1 Ghost">
+			<description>Creatures within the haunt range ({{haunt:range}}ft.) must make a DC {{haunt:dc}} WIS Save, distorting their perception of allies and enemies for 1 round on a fail. On a successful save the creature(s) have advantage on future Illusion Haunts.</description>
+		</sheet>
+	</element>
+	
+	<element name="Plague Haunt" type="Class Feature" source="Homebrewery" id="ID_MYTHIC_CLASS_FEATURE_GHOST_HAUNTS_PLAGUE">
+		<supports>Ghost Haunt</supports>
+		<prerequisite>Phantom Demon, Level 15</prerequisite>
+		<requirements>ID_MYTHIC_ARCHETYPE_PHANTOM_DEMON, [level:15]</requirements>
+		<description>
+			<p>The ghosts consume a target in a ghastly plague, making them pass a Constitution Saving Throw, reducing their armor by half your Charisma modifier on a failed save, and half as much on a succeeded save.</p>		
+		</description>
+		<sheet action="Bonus Action" usage="1 Ghost">
+			<description>Creatures within the haunt range ({{haunt:range}}ft.) must make a DC {{haunt:dc}} CON Save, reducing their AC by {{charisma:modifier:half}} on a failed save, and half as much on a successful save.</description>
+		</sheet>
+	</element>
+	
+	<element name="Death Haunt" type="Class Feature" source="Homebrewery" id="ID_MYTHIC_CLASS_FEATURE_GHOST_HAUNTS_DEATH">
+		<supports>Ghost Haunt</supports>
+		<prerequisite>Phantom Demon, Level 15</prerequisite>
+		<requirements>ID_MYTHIC_ARCHETYPE_PHANTOM_DEMON, [level:15]</requirements>
+		<description>
+			<p>The ghosts consume a target entirely, making them pass a Constitution Saving Throw, on a failed save the creature will die instantly if its health is lower than 3d20. On a succeeded save the creature takes 2d10 necrotic damage.</p>	
+		</description>
+		<sheet action="Bonus Action" usage="1 Ghost">
+			<description>Creatures within the haunt range ({{haunt:range}}ft.) must make a DC {{haunt:dc}} CON Save, dealing 1d20 Necrotic damage, on a failed save the creature(s) die instantly if their health is lower than 3d20. On a success the creature takes 1d10 Necrotic Damage.</description>
+		</sheet>
+	</element>
+	
+	<element name="Glory Haunt" type="Class Feature" source="Homebrewery" id="ID_MYTHIC_CLASS_FEATURE_GHOST_HAUNTS_GLORY">
+		<supports>Ghost Haunt</supports>
+		<prerequisite>Sword Demon, Level 15</prerequisite>
+		<requirements>ID_MYTHIC_ARCHETYPE_SWORD_DEMON, [level:15]</requirements>
+		<description>
+			<p>The ghosts rage as their hunger leads them to try and consume the strength of their target to replenish their lost lives, making them pass a Strength Saving Throw, on a failed save the target has their Strength reduced by half of your Charisma Modifier, and you gain half of what they lost for 18s. On a successful save the target gains advantage on Strength Saving Throws for 36s.</p>	
+		</description>
+		<sheet action="Bonus Action" usage="1 Ghost">
+			<description>Creatures within the haunt range ({{haunt:range}}ft.) must make a DC {{haunt:dc}} STR Save, losing {{charisma:modifier:half}} Strength, giving you half of what was taken for 18s. On a successful save, they gain advantage on STR Saves for 36s.</description>
+		</sheet>
+	</element>
+	
+	<element name="Hex Haunt" type="Class Feature" source="Homebrewery" id="ID_MYTHIC_CLASS_FEATURE_GHOST_HAUNTS_HEX">
+		<supports>Ghost Haunt</supports>
+		<prerequisite>Eldritch Demon</prerequisite>
+		<requirements>ID_MYTHIC_ARCHETYPE_ELDRITCH_DEMON</requirements>
+		<description>
+			<p>The ghosts have learned with you the powers from beyond, and are keen to utilizie it, making enemies pass a WIS Save, on a fail they have disadvantage on saving throws against 1 ability of your choice and take an additional 1d4 necrotic damage from all sources for 3 rounds.</p>	
+		</description>
+		<sheet action="Bonus Action" usage="1 Ghost">
+			<description>Creatures within the haunt range ({{haunt:range}}ft.) must pass a DC ((haunt:dc)) WIS Save, on a fail they have disadvantage on saving throws against 1 ability of your choice and take an additional 1d4 necrotic damage from all sources for 3 rounds.</description>
+		</sheet>
+	</element>
+	
+	<element name="Faerie Haunt" type="Class Feature" source="Homebrewery" id="ID_MYTHIC_CLASS_FEATURE_GHOST_HAUNTS_FAERIE">
+		<supports>Ghost Haunt</supports>
+		<prerequisite>Eldritch Demon, Level 6</prerequisite>
+		<requirements>ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY, [level:6]</requirements>
+		<description>
+			<p>The ghosts have been imbued with the essence of your patrons power, any who find themselves caught within your haunt must make a INT Save, on a fail they take 2d6 psychic damage and are charmed until the end of their next turn, on a successful save they take half as much damage and are not charmed.</p>	
+		</description>
+		<sheet action="Bonus Action" usage="1 Ghost">
+			<description>Creatures within the haunt range ({{haunt:range}}ft.) must pass a DC ((haunt:dc)) INT Save, on a fail they take 1d6 psychic damage and are charmed until the end of their next turn, on a success they take 1/2 damage.</description>
+		</sheet>
+	</element>
+	
+	<element name="Caustic Haunt" type="Class Feature" source="Homebrewery" id="ID_MYTHIC_CLASS_FEATURE_GHOST_HAUNTS_FAERIE">
+		<supports>Ghost Haunt</supports>
+		<prerequisite>Eldritch Demon, Level 6</prerequisite>
+		<requirements>ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_FIEND, [level:6]</requirements>
+		<description>
+			<p>The ghosts have been imbued with the essence of your patrons power, any who find themselves caught within your haunt must make a CON Save, on a fail they take 1d8 acid damage and are poisoned for 3 turns.</p>	
+		</description>
+		<sheet action="Bonus Action" usage="1 Ghost">
+			<description>Creatures within the haunt range ({{haunt:range}}ft.) must pass a DC ((haunt:dc)) CON Save, on a fail they take 1d8 acid damage and are poisoned for 3 turns.</description>
+		</sheet>
+	</element>
+	
+	<element name="Eldritch Haunt" type="Class Feature" source="Homebrewery" id="ID_MYTHIC_CLASS_FEATURE_GHOST_HAUNTS_FAERIE">
+		<supports>Ghost Haunt</supports>
+		<prerequisite>Eldritch Demon, Level 6</prerequisite>
+		<requirements>ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_GREAT_OLD_ONE, [level:6]</requirements>
+		<description>
+			<p>The ghosts have been imbued with the essence of your patrons power, any who find themselves caught within your haunt must make a CHA save, on a fail they are ensnared and can repeat the save at the start of each of their turns, on a successful save they are knocked prone.</p>	
+		</description>
+		<sheet action="Bonus Action" usage="1 Ghost">
+			<description>Creatures within the haunt range ({{haunt:range}}ft.) must pass a DC ((haunt:dc)) CHA Save, on a fail they are ensnared and can repeat the save at the start of each of their turns, on a successful save they are knocked prone.</description>
+		</sheet>
+	</element>
+	
+	<element name="Ashen Haunt" type="Class Feature" source="Homebrewery" id="ID_MYTHIC_CLASS_FEATURE_GHOST_HAUNTS_ASHEN">
+		<supports>Ghost Haunt</supports>
+		<prerequisite>Eldritch Demon, Level 6</prerequisite>
+		<requirements>ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_ASHEN_WOLF, [level:6]</requirements>
+		<description>
+			<p>The ghosts have been imbued with the essence of your patrons power, any who find themselves caught within your haunt must make a DEX save, on a fail they take 1d12 fire damage and reduces their movement speed by 15ft while within the haunt, on a success they take half as much damage.</p>	
+			<p class="indent">As your affinity with ghosts grow (14th Level), the flames sear their armor, reducing enemies AC by 1 for 1 hour.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1 Ghost">
+			<description>Creatures within the haunt range ({{haunt:range}}ft.) must pass a DC ((haunt:dc)) DEX Save, on a fail they take 1d12 fire damage and reduces their movement speed by 15ft 1 hour, on a success they take half as much damage.</description>
+			<description level="14">Creatures within the haunt range ({{haunt:range}}ft.) must pass a DC ((haunt:dc)) DEX Save, on a fail they take 1d12 fire damage and reduces their movement speed by 15ft and AC reduced by 1 for 1 hour, on a success they take half as much damage.</description>
+		</sheet>
+	</element>
+	
+	<element name="Storm Haunt" type="Class Feature" source="Homebrewery" id="ID_MYTHIC_CLASS_FEATURE_GHOST_HAUNTS_STORM">
+		<supports>Ghost Haunt</supports>
+		<prerequisite>Eldritch Demon, Level 6</prerequisite>
+		<requirements>ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_STORM, [level:6]</requirements>
+		<description>
+			<p>The ghosts have been imbued with the essence of your patrons power, any who find themselves caught within your haunt must make a DEX save, on a fail they take 1d8 Lightning Damage and become chained together by lightning, when one of the chained enemies takes damage, all other connected enemies take 1d6 Lightning Damage, on a success they take half as much damage.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1 Ghost">
+			<description>Creatures within the haunt range ({{haunt:range}}ft.) must pass a DC ((haunt:dc)) DEX Save, on a fail they take 1d8 Lightning Damage and become connected by lightning, when one of the chained enemies takes damage, all other connected enemies take 1d6 Lightning Damage, on a success they take half as much damage.</description>
+		</sheet>
+	</element>
+</elements>

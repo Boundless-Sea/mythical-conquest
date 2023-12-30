@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Eldritch Demon</name>
+        <update version="0.0.1">
+            <file name="ghostblade-archetype-eldritch-demon.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-ghostblade/ghostblade-archetype-eldritch-demon.xml" />
+        </update>
+    </info>
+    
+    <element name="Eldritch Demon" type="Archetype" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_ELDRITCH_DEMON">
+		<supports>Ghost_Pact</supports>
+		<description>
+			<p>Eldritch Demons are those who weren't content with just their command over the dead, and rather than improving on that power themselves, used it to reach the attention of those beyond their realm to gain even greater power.</p>
+			<div element="ID_MYTHIC_ARCHETYPE_FEATURE_PACT_PATRON"/>
+			<div element="ID_MYTHIC_ARCHETYPE_FEATURE_GHOST_CASTING"/>
+			<div element="ID_MYTHIC_ARCHETYPE_FEATURE_HAUNTED_WEAVE"/>
+			<div element="ID_MYTHIC_ARCHETYPE_FEATURE_SOUL_SIPHON"/>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_FEATURE_PACT_PATRON" level="3"/>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_FEATURE_GHOST_CASTING" level="3"/>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_FEATURE_HAUNTED_WEAVE" level="6"/>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_FEATURE_SOUL_SIPHON" level="13"/>
+		</rules>
+	</element>	
+	<element name="Pact Patron" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_FEATURE_PACT_PATRON">
+		<description>
+			<p>At 3rd level, you have struck a bargain with an otherworldly being of your choice.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Archetype" name="Otherworldly Patron" supports="Ghostblade Patron" />
+		</rules>
+	</element>	
+	<element name="Ghost Casting" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_FEATURE_GHOST_CASTING">
+		<description>
+			<p>Your spectral research and the magic bestowed on you by your patron have given you facility with spells.</p>
+			<h5>CANTRIPS</h5>
+			<p>You know two cantrips of your choice from the warlock spell list. You learn another warlock cantrip at 10th level.</p>
+			<h5>SPELL SLOTS</h5>
+			<p>The Phantom Shot Pact Magic table shows how many spell slots you have to cast your warlock spells of 1st through 4th level. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest.</p>
+			<p class="indent">For example, when you are 7th level, you have two 2ndlevel spell slots. To cast the 1st-level spell witch bolt, you must spend one of these slots, and you cast it as a 2nd-level spell.</p>
+			<h5>SPELLS KNOWN OF 1ST LEVEL AND HIGHER</h5>
+			<p>You know two 1st-level warlock spells of your choice from the warlock spell list.</p>
+			<p class="indent">The Spells Known column of the Warlock table shows when you learn more warlock spells of your choice of 1st level and higher. A spell you choose must be of a level no higher than what’s shown in the table's Slot Level column for your level. When you reach 6th level, for example, you learn a new warlock spell, which can be 1st, 2nd, or 3rd level.</p>
+			<p class="indent">Additionally, when you gain a level in this class, you can choose one of the warlock spells you know and replace it with another spell from the warlock spell list, which also must be of a level for which you have spell slots.</p>
+			<h5>SPELLCASTING ABILITY</h5>
+			<p>Charisma is your spellcasting ability for your warlock spells, so you use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one.</p>
+			<p class="indent">
+				<b>Spell save DC</b> = 8 + your proficiency bonus + your Charisma modifier</p>
+			<p class="indent">
+				<b>Spell attack modifier</b> = your proficiency bonus + your Charisma modifier</p>
+			<h5>SPELLCASTING FOCUS</h5>
+			<p>You can use an arcane focus as a spellcasting focus for your warlock spells.</p>
+		</description>
+		<sheet display="false">
+			<description>Your arcane research and the magic bestowed on you by your patron have given you facility with spells. You have {{warlock:spellcasting:slots:count}} slots of level {{warlock:spellcasting:slot}}</description>
+		</sheet>
+		<spellcasting name="Ghostblade" ability="Charisma" allowReplace="true" prepare="false">
+			<list>Warlock</list>
+		</spellcasting>
+		<rules>
+			<!-- add not full but single _not counting as multiclass spellcaster due to pact magic -->
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+
+			<stat name="ghostblade:spellcasting:slots:count" value="2" level="3"/>
+			<stat name="ghostblade:spellcasting:slots:count" value="1" level="6"/>
+			<stat name="ghostblade:spellcasting:slots:count" value="1" level="10"/>
+
+			<stat name="ghostblade:spellcasting:slot" value="1" level="3" />
+			<stat name="ghostblade:spellcasting:slot" value="1" level="7" />
+			<stat name="ghostblade:spellcasting:slot" value="1" level="13" />
+			<stat name="ghostblade:spellcasting:slot" value="1" level="19" />
+
+			<!-- negative count to remove slots -->
+			<stat name="ghostblade:spellcasting:slots:1" value="ghostblade:spellcasting:slots:count" level="3" />
+			<stat name="ghostblade:spellcasting:slots:1" value="-ghostblade:spellcasting:slots:count" level="7" />
+			<stat name="ghostblade:spellcasting:slots:2" value="ghostblade:spellcasting:slots:count" level="7" />
+			<stat name="ghostblade:spellcasting:slots:2" value="-ghostblade:spellcasting:slots:count" level="13" />
+			<stat name="ghostblade:spellcasting:slots:3" value="ghostblade:spellcasting:slots:count" level="13" />
+			<stat name="ghostblade:spellcasting:slots:3" value="-ghostblade:spellcasting:slots:count" level="19" />
+			<stat name="ghostblade:spellcasting:slots:4" value="ghostblade:spellcasting:slots:count" level="19" />
+
+			<select type="Spell" name="Cantrip (Ghostblade)" supports="$(spellcasting:list),0" level="3" number="2" spellcasting="Ghostblade" />
+			<select type="Spell" name="Cantrip (Ghostblade)" supports="$(spellcasting:list),0" level="8" spellcasting="Ghostblade" />
+
+			<select type="Spell" name="Spellcasting (Ghostblade)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" number="2" spellcasting="Ghostblade"/>
+			<select type="Spell" name="Spellcasting (Ghostblade)" supports="$(spellcasting:list),$(spellcasting:slots)" level="5" spellcasting="Ghostblade"/>
+			<select type="Spell" name="Spellcasting (Ghostblade)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="Ghostblade"/>
+			<select type="Spell" name="Spellcasting (Ghostblade)" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" spellcasting="Ghostblade"/>
+			<select type="Spell" name="Spellcasting (Ghostblade)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="Ghostblade"/>
+			<select type="Spell" name="Spellcasting (Ghostblade)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="Ghostblade"/>
+			<select type="Spell" name="Spellcasting (Ghostblade)" supports="$(spellcasting:list),$(spellcasting:slots)" level="15" spellcasting="Ghostblade"/>
+			<select type="Spell" name="Spellcasting (Ghostblade)" supports="$(spellcasting:list),$(spellcasting:slots)" level="17" spellcasting="Ghostblade"/>
+			<select type="Spell" name="Spellcasting (Ghostblade)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="Ghostblade"/>
+			<select type="Spell" name="Spellcasting (Ghostblade)" supports="$(spellcasting:list),$(spellcasting:slots)" level="20" spellcasting="Ghostblade"/>
+		</rules>
+	</element>		
+	<element name="Haunted Weave" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_FEATURE_HAUNTED_WEAVE">
+		<description>
+			<p>Upon reaching 6th level, you've become accustomed to weaving together the powers of haunts and magic. When you cast a Cantrip as a Bonus Action, you can immediately place down a Haunt as a Free Action. You can only use this feature once per round.</p>
+		</description>
+		<sheet action="Free Action" usage="1/Round">
+			<description>
+				<p>When you cast a Cantrip as a Bonus Action, you can immediately place a Haunt.</p>
+			</description>
+		</sheet>
+	</element>
+	<element name="Soul Siphon" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_FEATURE_SOUL_SIPHON">
+		<description>
+			<p>Starting at 13th level, you can offer up your ghosts as tribute to your patron. As an action, you can restore one of your spell slots by sacrificing a number of ghosts equal to the slot's level. Once you use this feature, you cannot use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>
+				<p>You can restore one of your spell slots by sacrificing a number of ghosts equal to the slot's level</p>
+			</description>
+		</sheet>
+	</element>		
+</elements>

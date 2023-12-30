@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="ghostblade-patrons.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-ghostblade/ghostblade-patrons.xml" />
+		</update>
+	</info>
+<!-- Archfey-->
+	<element name="The Archfey" type="Archetype" source="Mythical Conquest" id="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY">
+		<supports>Ghostblade Patron</supports>
+		<description>
+			<p>Your patron is a lord or lady of the fey, a creature of legend who holds secrets that were forgotten before the mortal races were born. This being’s motivations are often inscrutable, and sometimes whimsical, and might involve a striving for greater magical power or the settling of age-old grudges. Beings of this sort include the Prince of Frost; the Queen of Air and Darkness, ruler of the Gloaming Court; Titania of the Summer Court; her consort Oberon, the Green Lord; Hyrsam, the Prince of Fools; and ancient hags.</p>
+			<div element="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY_EXPANDED_SPELL_LIST"/>
+			<div element="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY_DEATHS_TOMBSTONE"/>
+		</description>
+		<sheet display="false">
+			<description>Your patron is a lord or lady of the fey, a creature of legend who holds secrets that were forgotten before the mortal races were born.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY_EXPANDED_SPELL_LIST" level="3" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY_DEATHS_TOMBSTONE" level="18" />
+		</rules>
+	</element>
+	
+	<element name="Expanded Spell List" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY_EXPANDED_SPELL_LIST">
+		<description>
+			<p>The Archfey lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5 class="caption">ARCHFEY EXPANDED SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>faerie fire, sleep</em></td></tr>
+				<tr><td>2nd</td><td><em>calm emotions, phantasmal force</em></td></tr>
+				<tr><td>3rd</td><td><em>blink, plant growth</em></td></tr>
+				<tr><td>4th</td><td><em>dominate beast, greater invisibility</em></td></tr>
+				<tr><td>5th</td><td><em>dominate person, seeming</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The Archfey lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+		</sheet>
+		<spellcasting name="Ghostblade" extend="true">
+			<extend>ID_PHB_SPELL_FAERIE_FIRE</extend>
+			<extend>ID_PHB_SPELL_SLEEP</extend>
+			<extend>ID_PHB_SPELL_CALM_EMOTIONS</extend>
+			<extend>ID_PHB_SPELL_PHANTASMAL_FORCE</extend>
+			<extend>ID_PHB_SPELL_BLINK</extend>
+			<extend>ID_PHB_SPELL_PLANT_GROWTH</extend>
+			<extend>ID_PHB_SPELL_DOMINATE_BEAST</extend>
+			<extend>ID_PHB_SPELL_GREATER_INVISIBILITY</extend>
+			<extend>ID_PHB_SPELL_DOMINATE_PERSON</extend>
+			<extend>ID_PHB_SPELL_SEEMING</extend>
+		</spellcasting>
+	</element>
+	<element name="Death's Tombstone" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY_DEATHS_TOMBSTONE">
+		<description>
+			<p>At 18th level, your ghosts are capable of unleashing the power of your patron. By consuming 2 ghosts, you can cast a ball of curses with a range of 60ft and radius of 15ft, forcing enemies in range to make a DEX Saving Throw, on a fail they take 3d10 psychic damage per every 2 ghosts used, and are under the effect of one haunt of your choice, on a fail they take half damage. You can only use this feature once per long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>
+				<p>Consume 2 ghosts (up to 8) to cast a cursed fireball with a range of 60ft and radius of 15ft. Enemies in range must make a DC {{haunt:dc}} DEX Save. On fail they take 3d10 psychic damage per every 2 ghosts used, on success they talk half as much.</p>
+			</description>
+		</sheet>
+	</element>
+
+
+
+<!-- Fiend-->
+	<element name="Fiend" type="Archetype" source="Mythical Conquest" id="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_FIEND">
+		<supports>Ghostblade Patron</supports>
+		<description>
+			<p>You have made a pact with a fiend from the lower planes of existence, a being whose aims are evil, even if you strive against those aims. Such beings desire the corruption or destruction of all things, ultimately including you. Fiends powerful enough to forge a pact include demon lords such as Demogorgon, Orcus, Fraz’Urb-luu, and Baphomet; archdevils such as Asmodeus, Dispater, Mephistopheles, and Belial; pit fiends and balors that are especially mighty; and ultroloths and other lords of the yugoloths.</p>
+			<div element="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_FIEND_EXPANDED_SPELL_LIST"/>
+			<div element="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_FIEND_DEATHS_TOMBSTONE"/>
+		</description>
+		<sheet display="false">
+			<description>You have made a pact with a fiend from the lower planes of existence.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_FIEND_EXPANDED_SPELL_LIST" level="3" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_FIEND_DEATHS_TOMBSTONE" level="18" />
+		</rules>
+	</element>
+	
+	<element name="Expanded Spell List" type="Archetype Feature" source="Player’s Handbook" id="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_FIEND_EXPANDED_SPELL_LIST">
+		<description>
+			<p>The Fiend lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5 class="caption">FIEND EXPANDED SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>burning hands, command</em></td></tr>
+				<tr><td>2nd</td><td><em>blindness/deafness, scorching ray</em></td></tr>
+				<tr><td>3rd</td><td><em>fireball, stinking cloud</em></td></tr>
+				<tr><td>4th</td><td><em>fire shield, wall of fire</em></td></tr>
+				<tr><td>5th</td><td><em>flame strike, hallow</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The Fiend lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+		</sheet>
+		<spellcasting name="Ghostblade" extend="true">
+			<extend>ID_PHB_SPELL_BURNING_HANDS</extend>
+			<extend>ID_PHB_SPELL_COMMAND</extend>
+			<extend>ID_PHB_SPELL_BLINDNESS_DEAFNESS</extend>
+			<extend>ID_PHB_SPELL_SCORCHING_RAY</extend>
+			<extend>ID_PHB_SPELL_FIREBALL</extend>
+			<extend>ID_PHB_SPELL_STINKING_CLOUD</extend>
+			<extend>ID_PHB_SPELL_FIRE_SHIELD</extend>
+			<extend>ID_PHB_SPELL_WALL_OF_FIRE</extend>
+			<extend>ID_PHB_SPELL_FLAME_STRIKE</extend>
+			<extend>ID_PHB_SPELL_HALLOW</extend>
+		</spellcasting>
+	</element>
+	<element name="Death's Tombstone" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_FIEND_DEATHS_TOMBSTONE">
+		<description>
+			<p>At 18th level, your ghosts are capable of unleashing the power of your patron. By consuming 2 ghosts, you can cast a ball of curses with a range of 60ft and radius of 15ft, forcing enemies in range to make a DEX Saving Throw, on a fail they take 3d10 acid damage per every 2 ghosts used, and are under the effect of one haunt of your choice, on a fail they take half damage. You can only use this feature once per long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>
+				<p>Consume 2 ghosts (up to 8) to cast a cursed fireball with a range of 60ft and radius of 15ft. Enemies in range must make a DC {{haunt:dc}} DEX Save. On fail they take 3d10 acid damage per every 2 ghosts used, on success they talk half as much.</p>
+			</description>
+		</sheet>
+	</element>
+	
+	
+	
+	<!-- Great Old One-->
+	<element name="The Great Old One" type="Archetype" source="Homebrewery" id="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_GREAT_OLD_ONE">
+		<supports>Ghostblade Patron</supports>
+		<description>
+			<p>Your patron is a mysterious entity whose nature is utterly foreign to the fabric of reality. It might come from the Far Realm, the space beyond reality, or it could be one of the elder gods known only in legends. Its motives are incomprehensible to mortals, and its knowledge so immense and ancient that even the greatest libraries pale in comparison to the vast secrets it holds. The Great Old One might be unaware of your existence or entirely indifferent to you, but the secrets you have learned allow you to draw your magic from it.</p>
+			<p class="indent">Entities of this type include Ghaunadar, called That Which Lurks; Tharizdun, the Chained God; Dendar, the Night Serpent; Zargon, the Returner; Great Cthulhu; and other unfathomable beings.</p>
+			<div element="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_GREAT_OLD_ONE_EXPANDED_SPELL_LIST"/>
+			<div element="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_GREAT_OLD_ONE_DEATHS_TOMBSTONE"/>
+		</description>
+		<sheet display="false">
+			<description>Your patron is a mysterious entity whose nature is utterly foreign to the fabric of reality.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_GREAT_OLD_ONE_EXPANDED_SPELL_LIST" level="3" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_GREAT_OLD_ONE_DEATHS_TOMBSTONE" level="18" />
+		</rules>
+	</element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_GREAT_OLD_ONE_EXPANDED_SPELL_LIST">
+		<description>
+			<p>The Great Old One lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5 class="caption">GREAT OLD ONE EXPANDED SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>dissonant whispers, Tasha's hideous laughter</em></td></tr>
+				<tr><td>2nd</td><td><em>detect thoughts, phantasmal force</em></td></tr>
+				<tr><td>3rd</td><td><em>clairvoyance, sending</em></td></tr>
+				<tr><td>4th</td><td><em>dominate beast, Evard’s black tentacles</em></td></tr>
+				<tr><td>5th</td><td><em>dominate person, telekinesis</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The Great Old One lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+		</sheet>
+		<spellcasting name="Ghostblade" extend="true">
+			<extend>ID_PHB_SPELL_DISSONANT_WHISPERS</extend>
+			<extend>ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER</extend>
+			<extend>ID_PHB_SPELL_DETECT_THOUGHTS</extend>
+			<extend>ID_PHB_SPELL_PHANTASMAL_FORCE</extend>
+			<extend>ID_PHB_SPELL_CLAIRVOYANCE</extend>
+			<extend>ID_PHB_SPELL_SENDING</extend>
+			<extend>ID_PHB_SPELL_DOMINATE_BEAST</extend>
+			<extend>ID_PHB_SPELL_EVARDS_BLACK_TENTACLES</extend>
+			<extend>ID_PHB_SPELL_DOMINATE_PERSON</extend>
+			<extend>ID_PHB_SPELL_TELEKINESIS</extend>
+		</spellcasting>
+	</element>
+	<element name="Death's Tombstone" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_GREAT_OLD_ONE_DEATHS_TOMBSTONE">
+		<description>
+			<p>At 18th level, your ghosts are capable of unleashing the power of your patron. By consuming 2 ghosts, you can cast a ball of curses with a range of 60ft and radius of 15ft, forcing enemies in range to make a DEX Saving Throw, on a fail they take 3d10 force damage per every 2 ghosts used, and are under the effect of one haunt of your choice, on a fail they take half damage. You can only use this feature once per long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>
+				<p>Consume 2 ghosts (up to 8) to cast a cursed fireball with a range of 60ft and radius of 15ft. Enemies in range must make a DC {{haunt:dc}} DEX Save. On fail they take 3d10 force damage per every 2 ghosts used, on success they talk half as much.</p>
+			</description>
+		</sheet>
+	</element>
+	
+	
+	<!-- Ashen Wolf-->
+	<element name="The Ashen Wolf" type="Archetype" source="Homebrewery" id="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_ASHEN_WOLF">
+		<supports>Ghostblade Patron</supports>
+		<description>
+			<p>Your patron is a mysterious entity whose nature is utterly foreign to the fabric of reality. It might come from the Far Realm, the space beyond reality, or it could be one of the elder gods known only in legends. Its motives are incomprehensible to mortals, and its knowledge so immense and ancient that even the greatest libraries pale in comparison to the vast secrets it holds. The Great Old One might be unaware of your existence or entirely indifferent to you, but the secrets you have learned allow you to draw your magic from it.</p>
+			<p class="indent">Entities of this type include Ghaunadar, called That Which Lurks; Tharizdun, the Chained God; Dendar, the Night Serpent; Zargon, the Returner; Great Cthulhu; and other unfathomable beings.</p>
+			<div element="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_ASHEN_WOLF_EXPANDED_SPELL_LIST"/>
+			<div element="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_ASHEN_WOLF_DEATHS_TOMBSTONE"/>
+		</description>
+		<sheet display="false">
+			<description>Your patron is a mysterious entity whose nature is utterly foreign to the fabric of reality.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_ASHEN_WOLF_EXPANDED_SPELL_LIST" level="3" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_ASHEN_WOLF_DEATHS_TOMBSTONE" level="18" />
+		</rules>
+	</element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_ASHEN_WOLF_EXPANDED_SPELL_LIST">
+		<description>
+			<p>The Ashen Wolf lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5>ASHEN WOLF EXPANDED SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>hunter's pace, inflict wounds</em></td></tr>
+				<tr><td>2nd</td><td><em>flame blade, pass without trace</em></td></tr>
+				<tr><td>3rd</td><td><em>funeral pyre, haste</em></td></tr>
+				<tr><td>4th</td><td><em>ashen pack, wall of fire</em></td></tr>
+				<tr><td>5th</td><td><em>cloudkill, hungering hate</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The Ashen Wolf lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+		</sheet>
+		<spellcasting name="Ghostblade" extend="true">
+			<extend>ID_GFP_COFSA_SPELL_HUNTERS_PACE</extend>
+			<extend>ID_PHB_SPELL_INFLICT_WOUNDS</extend>
+			<extend>ID_PHB_SPELL_FLAME_BLADE</extend>
+			<extend>ID_PHB_SPELL_PASS_WITHOUT_TRACE</extend>
+			<extend>ID_GFP_COFSA_SPELL_FUNERAL_PYRE</extend>
+			<extend>ID_PHB_SPELL_HASTE</extend>
+			<extend>ID_GFP_COFSA_SPELL_ASHEN_PACK</extend>
+			<extend>ID_PHB_SPELL_WALL_OF_FIRE</extend>
+			<extend>ID_PHB_SPELL_CLOUDKILL</extend>
+			<extend>ID_GFP_COFSA_SPELL_HUNGERING_HATE</extend>
+		</spellcasting>
+	</element>
+	<element name="Death's Tombstone" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_ASHEN_WOLF_DEATHS_TOMBSTONE">
+		<description>
+			<p>At 18th level, your ghosts are capable of unleashing the power of your patron. By consuming 2 ghosts, you can cast a ball of curses with a range of 60ft and radius of 15ft, forcing enemies in range to make a DEX Saving Throw, on a fail they take 3d10 fire damage per every 2 ghosts used, and are under the effect of one haunt of your choice, on a fail they take half damage. You can only use this feature once per long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>
+				<p>Consume 2 ghosts (up to 8) to cast a cursed fireball with a range of 60ft and radius of 15ft. Enemies in range must make a DC {{haunt:dc}} DEX Save. On fail they take 3d10 fire damage per every 2 ghosts used, on success they talk half as much.</p>
+			</description>
+		</sheet>
+	</element>
+	
+	
+	
+	<!-- Storm Lord-->
+	<element name="The Storm Lord" type="Archetype" source="Mythical Conquest" id="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_STORM_LORD">
+		<supports>Ghostblade Patron</supports>
+		<description>
+			<p>You’ve made a pact with an ancient power known as the Storm Lord. Massive and timeless, this godlike entity sails the winds of the void through the darkest places between the skies of countless worlds. It is the spirit that consumes the purified souls of heroes as it welcomes them into its kingdom. Its long tendrils of lightning cover the sky, heralding the violent tempest that follows. This entity finds silent amusement at seeing mortals in peril, and it tends to draw cults of shadowy beings to worship at its altars, performing dark rituals in the name of the Lord of Winds. You have stood before the Storm Lord, unbowed and unbroken, to make a pact that will shake the very fabric of reality. Sparks will leap from your fingertips and fog will rise from your breath as you strike down your enemies with the devastating and majestic power of the Master of the Unfallen Kingdom.</p>
+			<div element="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_STORM_LORD_EXPANDED_SPELL_LIST"/>
+			<div element="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_STORM_LORD_DEATHS_TOMBSTONE"/>
+		</description>
+		<sheet display="false">
+			<description>You’ve made a pact with an ancient power known as the Storm Lord.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_STORM_LORD_EXPANDED_SPELL_LIST" level="3" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_STORM_LORD_DEATHS_TOMBSTONE" level="18" />
+		</rules>
+	</element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_STORM_LORD_EXPANDED_SPELL_LIST">
+		<description>
+			<p>The Storm Lord lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5>STORM LORD EXPANDED SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>fog cloud, thunderwave</em></td></tr>
+				<tr><td>2nd</td><td><em>gust of wind, skystrike</em></td></tr>
+				<tr><td>3rd</td><td><em>call lightning, wind wall</em></td></tr>
+				<tr><td>4th</td><td><em>ice storm, windblade</em></td></tr>
+				<tr><td>5th</td><td><em>storm's eye, unstoppable ascent</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The Storm Lord lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+		</sheet>
+		<spellcasting name="Warlock" extend="true">
+			<extend>ID_PHB_SPELL_FOG_CLOUD</extend>
+			<extend>ID_PHB_SPELL_THUNDERWAVE</extend>
+			<extend>ID_PHB_SPELL_GUST_OF_WIND</extend>
+			<extend>ID_GFP_COFSA_SPELL_SKYSTRIKE</extend>
+			<extend>ID_PHB_SPELL_CALL_LIGHTNING</extend>
+			<extend>ID_PHB_SPELL_WIND_WALL</extend>
+			<extend>ID_PHB_SPELL_ICE_STORM</extend>
+			<extend>ID_GFP_COFSA_SPELL_WINDBLADE</extend>
+			<extend>ID_GFP_COFSA_SPELL_STORMS_EYE</extend>
+			<extend>ID_GFP_COFSA_SPELL_UNSTROPPABLE_ASCENT</extend>
+		</spellcasting>
+	</element>
+	<element name="Death's Tombstone" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_GHOSTBLADE_ARCHETYPE_OTHERWORLDLY_PATRON_STORM_LORD_DEATHS_TOMBSTONE">
+		<description>
+			<p>At 18th level, your ghosts are capable of unleashing the power of your patron. By consuming 2 ghosts, you can cast a ball of curses with a range of 60ft and radius of 15ft, forcing enemies in range to make a DEX Saving Throw, on a fail they take 3d10 lightning damage per every 2 ghosts used, and are under the effect of one haunt of your choice, on a fail they take half damage. You can only use this feature once per long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>
+				<p>Consume 2 ghosts (up to 8) to cast a cursed fireball with a range of 60ft and radius of 15ft. Enemies in range must make a DC {{haunt:dc}} DEX Save. On fail they take 3d10 lightning damage per every 2 ghosts used, on success they talk half as much.</p>
+			</description>
+		</sheet>
+	</element>
+	
+</elements>

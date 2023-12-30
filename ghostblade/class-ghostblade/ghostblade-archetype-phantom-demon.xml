@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Phantom Demon</name>
+        <update version="0.0.1">
+            <file name="ghostblade-archetype-phantom-demon.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-ghostblade/ghostblade-archetype-phantom-demon.xml" />
+        </update>
+    </info>
+    
+    <element name="Phantom Demon" type="Archetype" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_PHANTOM_DEMON">
+		<supports>Ghost_Pact</supports>
+		<description>
+			<p>Phantom Demons are those who have devoted their time to conversing with the ghosts, in order to better understand them and that which keeps them from vanishing.</p>
+			<div element="ID_MYTHIC_ARCHETYPE_FEATURE_DEATHS_HASTE"/>
+			<div element="ID_MYTHIC_ARCHETYPE_FEATURE_PHANTOM_FORM"/>
+			<div element="ID_MYTHIC_ARCHETYPE_FEATURE_HAUNTED_DOMAIN"/>
+			<div element="ID_MYTHIC_ARCHETYPE_FEATURE_SPECTRAL_BOUNDARY"/>
+		</description>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_FEATURE_DEATHS_HASTE" level="3"/>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_FEATURE_PHANTOM_FORM" level="6"/>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_FEATURE_HAUNTED_DOMAIN" level="14"/>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_FEATURE_SPECTRAL_BOUNDARY" level="18"/>
+		</rules>
+	</element>	
+	<element name="Deaths Haste" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_FEATURE_DEATHS_HASTE">
+		<description>
+			<p>At 3rd level, you've been influenced by the fear and acceptance of death, having escaped your fate of joining the ghosts of the afterlife. You gain 10 movement speed.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="phantom:death_haste" value="10" bonus="death_haste" level="3" />
+			
+			<stat name="innate speed:misc" value="phantom:death_haste" bonus="death_haste" requirements="[innate speed:1]" />
+			<stat name="innate speed:climb:misc" value="phantom:death_haste" bonus="death_haste" requirements="[innate speed:climb:1]" />
+			<stat name="innate speed:fly:misc" value="phantom:death_haste" bonus="death_haste" requirements="[innate speed:fly:1]" />
+			<stat name="innate speed:swim:misc" value="phantom:death_haste" bonus="death_haste" requirements="[innate speed:swim:1]" />
+			<stat name="innate speed:burrow:misc" value="phantom:death_haste" bonus="death_haste" requirements="[innate speed:burrow:1]" />
+		</rules>
+	</element>
+	<element name="Phantom Form" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_FEATURE_PHANTOM_FORM">
+		<description>
+			<p>At 6th level, you've learned how to hide yourself among the dead. While within a haunt, all attacks against you suffer a 1d4 reduction to their attack roll.</p>
+		</description>
+		<sheet>
+			<p>While within a haunt, all ranged attacks made against you suffer a 1d4 reduction to their attack roll.</p>	
+		</sheet>
+	</element>	
+	<element name="Haunted Domain" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_FEATURE_HAUNTED_DOMAIN">
+		<description>
+			<p>At 14th level, you have learned how to maintain and the integrity of a ghosts soul. Every haunt you place down can be used twice, creatures who succeed the save the first time have advantage when caught in the same haunt a second time.</p>
+		</description>
+		<sheet>
+			<p>Every haunt you place down can be used twice, creatures who succeed the first save have advantage on the second.</p>	
+		</sheet>
+	</element>		
+	<element name="Spectral Boundary" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_FEATURE_SPECTRAL_BOUNDARY">
+		<description>
+			<p>At 18th level, you've become so close to death that your depiction of the living and dead has faded. Using this feature you create an 80ft boundary around you in which all creatures have disadvantage on haunt saving throws. Any creature that dies within this boundary can be absorbed within 5ft of you to replenish a ghost. This boundary lasts for 3 minutes and does not require concentration.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>
+				<p>You create an 80ft boundary around you in which all creatures have disadvantage on haunt saving throws. Any creature that dies within this boundary can be absorbed within 5ft of you to replenish a ghost. This boundary lasts for 3 minutes and does not require concentration.</p>
+			</description>
+		</sheet>
+	</element>
+</elements>

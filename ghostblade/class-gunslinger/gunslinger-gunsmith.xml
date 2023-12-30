@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Gunslinger Gunsmith</name>
+        <update version="0.0.1">
+            <file name="gunslinger-gunsmith.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-gunslinger/gunslinger-gunsmith.xml" />
+        </update>
+    </info>
+    
+    <element name="Gunsmith" type="Archetype" source="Mythical Conquest" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_GUNSMITH">
+        <supports>Gunslinger Mythical Conquest Archetype</supports>
+        <description>
+            <p>Gunsmiths are prolific inventors, often burning the midnight oil in their workshops to put the finishing touches on their latest project. Although their main passion is firearms, they dabble in many things, and may be collectors of obscure knowledge in all manner of fields. Crafting guns is more than a hobby for them; they put much of their blood, sweat, and soul into the making of their firearms, and come to see their projects as extensions of themselves.</p>
+            <div element="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_GUNSMITH_FEATURE_INVENTIVE_SPIRIT" />
+            <div element="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_GUNSMITH_FEATURE_DILETTANTE" />
+            <div element="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_GUNSMITH_FEATURE_PENNY_PINCHER" />
+			<div element="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_GUNSMITH_FEATURE_ADDITIONAL_EXPERTISE" />
+			<div element="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_GUNSMITH_FEATURE_RELIABLE_TALENT" />
+			<div element="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_GUNSMITH_FEATURE_IRON_WILL" />
+			<div element="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_GUNSMITH_FEATURE_VICIOUS_MUNITIONS" />
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Archetype Feature" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_GUNSMITH_FEATURE_INVENTIVE_SPIRIT" level="3" />
+			<grant type="Archetype Feature" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_GUNSMITH_FEATURE_DILETTANTE" level="3" />
+            <grant type="Archetype Feature" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_GUNSMITH_FEATURE_PENNY_PINCHER" level="3" />
+            <grant type="Archetype Feature" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_GUNSMITH_FEATURE_ADDITIONAL_EXPERTISE" level="6" />
+			<grant type="Archetype Feature" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_GUNSMITH_FEATURE_RELIABLE_TALENT" level="11"/>
+			<grant type="Archetype Feature" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_GUNSMITH_FEATURE_IRON_WILL" level="14"/>
+			<grant type="Archetype Feature" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_GUNSMITH_FEATURE_VICIOUS_MUNITIONS" level="18"/>
+        </rules>
+    </element>
+	
+	<element name="Inventive Spirit" type="Archetype Feature" source="Mythical Conquest" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_GUNSMITH_FEATURE_INVENTIVE_SPIRIT">
+		<description>
+			<p>When you choose this archetype at 3rd level, a substantial portion of your time has been dedicated to crafting firearms. You gain the following benefits:</p>
+			<p class="indent">The number of successful checks you need to craft items is reduced by half (to a minimum of 1).</p>
+			<p class="indent">The DC for the construction of items is reduced by one.</p>
+			<p class="indent">Spending your time crafting items is considered light activity for you.</p>
+			<p class="indent">You gain 1 adrenaline point when you succeed on a Dexterity or Intelligence ability check by 5 or more.</p>
+			<p class="indent">Whenever you make an ability check involving tools, you can spend 1 adrenaline point, giving yourself a flash of inspiration. When you do so, roll an adrenaline die and add the result to the total.</p>
+		</description>
+		<sheet>
+			<description>The number of checks you need to craft items is reduced by 1/2 to a minimum of 1. The DC for item construction is reduced by one. Spending your time crafting items is a light activity. When you pass a DEX or INT save by 5 or more, gain an adrenaline point. Whenever you make an ability check involving tools, you can spend 1 adrenaline point to roll an adrenaline die and add the result to the total.</description>
+		</sheet>
+	</element>
+
+	<element name="Dilettante" type="Archetype Feature" source="Mythical Conquest" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_GUNSMITH_FEATURE_DILETTANTE">
+		<description>
+			<p>At 3rd level, choose three skill proficiencies from the following list: Animal Handling, Arcana, History, Insight, Investigation, Medicine, Nature, Religion, or Survival. You become proficient in the chosen skills.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Gunslinger)" supports="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_RELIGION" number="3" />
+		</rules>
+	</element>
+	
+	<element name="Penny Pincher" type="Archetype Feature" source="Mythical Conquest" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_GUNSMITH_FEATURE_PENNY_PINCHER">
+		<description>
+			<p>Also at 3rd level, you've traveled a fair amount in search of materials. You have advantage on Intelligence checks made to determine the fair market value of an item.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Intelligence checks made to determine the fair market value of an item.</description>
+		</sheet>
+	</element>
+	
+	<element name="Additional Expertise" type="Archetype Feature" source="Mythical Conquest" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_GUNSMITH_FEATURE_ADDITIONAL_EXPERTISE">
+		<description>
+			<p>At 6th level, choose two more of your skill or tool proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+		<select type="Class Feature" name="Expertise (Gunsmith Archetype)" level="1" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
+		</rules>
+	</element>
+	
+	<element name="Reliable Talent" type="Archetype Feature" source="Mythical Conquest" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_GUNSMITH_FEATURE_RELIABLE_TALENT">
+		<description>
+			<p>By 11th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.</p>
+		</description>
+		<sheet>
+			<description>Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or less as a 10.</description>
+		</sheet>
+	</element>
+	
+	<element name="Iron Will" type="Archetype Feature" source="Mythical Conquest" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_GUNSMITH_FEATURE_IRON_WILL">
+		<description>
+			<p>At 14th level, your mind has been sharpened by a life of continuous invention. You become proficient in Intelligence and Wisdom saving throws.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />	
+		</rules>
+	</element>
+	
+	<element name="Vicious Munitions" type="Archetype Feature" source="Mythical Conquest" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_GUNSMITH_FEATURE_VICIOUS_MUNITIONS">
+		<description>
+			<p>At 18th level, the firearms you craft and care for are particularly brutal in their construction. You can add your proficiency bonus to your damage rolls with firearms.</p>
+		</description>
+		<sheet>
+			<description>You can add {{proficiency}} to your damage rolls with firearms.</description>
+		</sheet>
+	</element>
+</elements>

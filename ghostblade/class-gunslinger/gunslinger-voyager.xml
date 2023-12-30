@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Gunslinger Voyager</name>
+        <update version="0.0.1">
+            <file name="gunslinger-voyager.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-gunslinger/gunslinger-voyager.xml" />
+        </update>
+    </info>
+    
+    <element name="Voyager" type="Archetype" source="Mythical Conquest" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_VOYAGER">
+        <supports>Gunslinger Mythical Conquest Archetype</supports>
+        <description>
+            <p>The scourge of the high seas, Voyagers are familiar with both firearm and blade. They use each weapon type as half of the same whole, allowing them to switch up their attack patterns and throw their opponents off their guard. Owing to their nautical background, voyagers tend to be highly dexterous and fleet of foot, which only serves to aid them during battle.</p>
+            <div element="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_VOYAGER_FEATURE_EN_GARDE" />
+            <div element="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_VOYAGER_FEATURE_TOOL_PROFICIENCY" />
+            <div element="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_VOYAGER_FEATURE_FOOTLOOSE" />
+			<div element="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_VOYAGER_FEATURE_TIGHT_SHIP" />
+			<div element="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_VOYAGER_FEATURE_FULL_SAIL" />
+        </description>
+        <sheet display="false"/>
+        <rules>
+			<grant type="Archetype Feature" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_VOYAGER_FEATURE_EN_GARDE" level="3" />
+            <grant type="Archetype Feature" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_VOYAGER_FEATURE_TOOL_PROFICIENCY" level="3" />
+            <grant type="Archetype Feature" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_VOYAGER_FEATURE_FOOTLOOSE" level="6" />
+			<grant type="Archetype Feature" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_VOYAGER_FEATURE_TIGHT_SHIP" level="11"/>
+			<grant type="Archetype Feature" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_VOYAGER_FEATURE_FULL_SAIL" level="18"/>
+        </rules>
+    </element>
+	
+	<element name="En Garde" type="Archetype Feature" source="Mythical Conquest" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_VOYAGER_FEATURE_EN_GARDE">
+		<description>
+			<p>When you choose this archetype at 3rd level, you've grown used to melee weapons. You gain the following benefits:</p>
+			<p class="indent">You become proficient with martial weapons.</p>
+			<p class="indent">You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one.</p>
+			<p class="indent">You do not need a free hand to reload a firearm.</p>
+			<p class="indent">You gain 1 adrenaline point when you hit a hostile creature with a melee weapon attack. You can gain adrenaline points in this way only once per turn.</p>
+			<p class="indent">Finally, when you are targeted with an attack and you are wielding a melee weapon, you can use your reaction to spend 1 adrenaline point. When you do so, roll an adrenaline die and add the result to your AC until the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description>You can draw/stow 2 one-handed weapons instead of 1. You can reload a firearm with 1 hand. You gain 1 adrenaline point/turn when you hit a hostile creature with a melee weapon attack. When youre targeted with an attack and are wielding a melee weapon, you can use your reaction to spend 1 adrenaline point to roll an adrenaline die and add the result to your AC until the start of your next turn.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS"/>
+		</rules>
+	</element>
+
+	<element name="Tool Proficiency" type="Archetype Feature" source="Mythical Conquest" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_VOYAGER_FEATURE_TOOL_PROFICIENCY">
+		<description>
+			<p>Also at 3rd level, you gain proficiency with navigator's tools.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS"/>
+		</rules>
+	</element>
+	
+	<element name="Footloose" type="Archetype Feature" source="Mythical Conquest" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_VOYAGER_FEATURE_FOOTLOOSE">
+		<description>
+			<p>At 6th level, you’ve become especially swift in your movements. Your base movement speed increases by 10 feet.</p>
+			<p>At 14th level, your base movement speed increases by another 10 feet.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="voyager:footloose" value="10" bonus="footloose" level="6" />
+			<stat name="voyager:footloose" value="20" bonus="footloose" level="14" />
+			
+			<stat name="innate speed:misc" value="voyager:footloose" bonus="footloose" requirements="[innate speed:1]" />
+			<stat name="innate speed:climb:misc" value="voyager:footloose" bonus="footloose" requirements="[innate speed:climb:1]" />
+			<stat name="innate speed:fly:misc" value="voyager:footloose" bonus="footloose" requirements="[innate speed:fly:1]" />
+			<stat name="innate speed:swim:misc" value="voyager:footloose" bonus="footloose" requirements="[innate speed:swim:1]" />
+			<stat name="innate speed:burrow:misc" value="voyager:footloose" bonus="footloose" requirements="[innate speed:burrow:1]" />
+
+		</rules>
+	</element>
+	
+	<element name="Tight Ship" type="Archetype Feature" source="Mythical Conquest" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_VOYAGER_FEATURE_TIGHT_SHIP">
+		<description>
+			<p>Starting at 11th level, you have the physical strength and coordination necessary to handle the recoil of larger firearms while dual wielding. The firearm you wield alongside your melee weapon does not need to be light in order to make a bonus action attack with it.</p>
+		</description>
+		<sheet>
+			<description>The firearm you wield alongside your melee weapon does not need to be light in order to make a bonus action attack with it.</description>
+		</sheet>
+	</element>
+	
+	<element name="Full Sail" type="Archetype Feature" source="Mythical Conquest" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_VOYAGER_FEATURE_FULL_SAIL">
+		<description>
+			<p>Starting at 18th level, your swiftness allows you to strike ferocious blows against less responsive opponents. You have advantage on attack rolls against creatures that are after you in the initiative order.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on attack rolls against creatures that are after you in the initiative order.</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Gunslinger Desperado</name>
+        <update version="0.0.1">
+            <file name="gunslinger-desperado.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-gunslinger/gunslinger-desperado.xml" />
+        </update>
+    </info>
+    
+    <element name="Desperado" type="Archetype" source="Mythical Conquest" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_DESPERADO">
+        <supports>Gunslinger Mythical Conquest Archetype</supports>
+        <description>
+            <p>Often a fugitive from the law, the Desperado turns to uncouth measures to eke out a living. The favored archetype of highwaymen and bandits everywhere, the Desperado is particularly adept at close-quarters combat, and is more than willing to get their hands dirty to solve problems. Their unpredictable nature makes them daunting foes, as you never know what risky maneuver they'll put to work next.</p>
+            <div element="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_DESPERADO_FEATURE_STAND_AND_DELIVER" />
+            <div element="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_DESPERADO_FEATURE_THIEVES_CANT" />
+            <div element="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_DESPERADO_FEATURE_ITCHY_TRIGGER_FINGER" />
+			<div element="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_DESPERADO_FEATURE_LIGHTNING_RELOAD" />
+			<div element="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_DESPERADO_FEATURE_LOOSE_CANNON" />
+			<div element="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_DESPERADO_FEATURE_POCKET_ADVANTAGE" />
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Archetype Feature" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_DESPERADO_FEATURE_STAND_AND_DELIVER" level="3" />
+			<grant type="Archetype Feature" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_DESPERADO_FEATURE_THIEVES_CANT" level="3" />
+            <grant type="Archetype Feature" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_DESPERADO_FEATURE_ITCHY_TRIGGER_FINGER" level="6" />
+            <grant type="Archetype Feature" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_DEADEYE_FEATURE_HEADSHOT" level="11" />
+			<grant type="Archetype Feature" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_DESPERADO_FEATURE_LIGHTNING_RELOAD" level="14"/>
+			<grant type="Archetype Feature" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_DESPERADO_FEATURE_POCKET_ADVANTAGE" level="18"/>
+        </rules>
+    </element>
+	
+	<element name="Stand and Deliver" type="Archetype Feature" source="Mythical Conquest" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_DESPERADO_FEATURE_STAND_AND_DELIVER">
+		<description>
+			<p>When you choose this archetype at 3rd level, you begin to specialize in close-quarters combat. You gain the following benefits:</p>
+			<p class="indent">Being within 5 feet of a hostile creature doesn’t impose disadvantage on your firearm attack rolls.</p>
+			<p class="indent">When a creature within 5 feet of you makes an attack against a target other than you, you can use your reaction to attempt to grapple the attacking creature.</p>
+			<p class="indent">You gain 1 adrenaline point when a creature hits you with a melee weapon attack. You can gain adrenaline points in this way only once per turn.</p>
+			<p class="indent">When a creature within 5 feet of you is forced to make a Strength or Dexterity saving throw, you can spend 1 adrenaline point to throw them off their game. When you do so, roll an adrenaline die and subtract the result from the creature’s total.</p>
+		</description>
+		<sheet>
+			<description>Being within 5ft of a hostile doesnt impose disadvantage on firearm attack rolls, when a creature within 5ft makes an attack against a target other than you, you can use your reaction to attempt to grapple the attacking creature, you can gain up to 1 adrenaline point a turn when a creature hits you with a melee attack, when a creature within 5ft of you is forced to make a STR or DEX saving throw, you can roll an adrenaline die and subtract it from their total.</description>
+		</sheet>
+	</element>
+
+	<element name="Thieve's Cant" type="Archetype Feature" source="Mythical Conquest" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_DESPERADO_FEATURE_THIEVES_CANT">
+		<description>
+			<p>Also at 3rd level, you've immersed yourself in the culture of criminals. You understand and can communicate using thieves' cant.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Language" id="ID_WOTC_PHB_LANGUAGE_THIEVES_CANT" />
+		</rules>
+	</element>
+	
+	<element name="Itchy Trigger Finger" type="Archetype Feature" source="Mythical Conquest" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_DESPERADO_FEATURE_ITCHY_TRIGGER_FINGER">
+		<description>
+			<p>Starting at 6th level, you're able to make carefully aimed shots at close range at a moment's notice. You can make opportunity attacks with a firearm.</p>
+		</description>
+		<sheet>
+			<description>You can make opportunity attacks with a firearm.</description>
+		</sheet>
+	</element>
+	
+	<element name="Lightning Reload" type="Archetype Feature" source="Mythical Conquest" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_DESPERADO_FEATURE_LIGHTNING_RELOAD">
+		<description>
+			<p>At 11th level, your experience in close-quarters combat has acclimated you to the process of reloading a gun under extreme pressure. You can reload firearms using a bonus action, rather than an attack.</p>
+		</description>
+		<sheet>
+			<description>You can reload firearms using a bonus action instead of a full action.</description>
+		</sheet>
+	</element>
+	
+	<element name="Loose Cannon" type="Archetype Feature" source="Mythical Conquest" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_DESPERADO_FEATURE_LOOSE_CANNON">
+		<description>
+			<p>Beginning at 14th level, your wild demeanor and egregious violence puts your foes on edge.</p>
+			<p class="indent">When you hit a creature within 5 feet of you with an attack, you can spend 1 adrenaline point. The creature must make a Charisma saving throw. The DC of this saving throw is 10 or half the damage the creature took, whichever is higher. On a failure, the creature is frightened of you for 1 minute.</p>
+			<p class="indent">The creature repeats the saving throw whenever you miss with an attack during this time. On a successful save, the creature is no longer frightened of you.</p>
+		</description>
+		<sheet>
+			<description>When you hit a creature within 5ft. of you with an attack, you can spend 1 adrenaline point. The creature must make a CHA saving throw. The DC of this saving throw is 10 or 1/2 the damage the creature took, whichevers higher. On a fail, the creature is frightened of you for 1 minute. The creature repeats the save whenever you miss with an attack during this time. On a successful save, the creature is no longer frightened of you.</description>
+		</sheet>
+	</element>
+	
+	<element name="Pocket Advantage" type="Archetype Feature" source="Mythical Conquest" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_DESPERADO_FEATURE_POCKET_ADVANTAGE">
+		<description>
+			<p>At 18th level, you always have a trick up your sleeve in closequarters combat. Attack rolls against creatures within 5 feet of you have advantage.</p>
+		</description>
+		<sheet>
+			<description>Attack rolls against creatures within 5ft of you have advantage.</description>
+		</sheet>
+	</element>
+</elements>

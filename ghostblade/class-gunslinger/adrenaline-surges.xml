@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Adrenaline Surges</name>
+		<description>Adrenaline Surges for the Gunslinger Class.</description>
+		<update version="0.0.1">
+			<file name="adrenaline-surges.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-gunslinger/adrenaline-surges.xml" />
+		</update>
+	</info>
+	<element name="Bleed Out" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_ADRENALINE_SURGES_BLEED_OUT">
+		<supports>Adrenaline Surges</supports>
+		<prerequisite>5th level</prerequisite>
+		<requirements>[level:5]</requirements>
+		<description>
+			<p>When you target a creature with a firearm attack, you can spend 3 adrenaline points to attempt to strike a major artery. Roll an adrenaline die, adding the result to the attack's damage if you hit.</p>
+			<p class="indent">At the start of its next turn, the target must make a Constitution saving throw. The target takes necrotic damage equal to the damage it took from the triggering attack on a failed save, or half as much damage on a successful one. Once you use this adrenaline surge, you cannot use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>When you target a creature with a firearm attack, you can spend 3 adrenaline points to roll an adrenaline die, adding the result to the attack's damage on a hit. At the start of its next turn, the target must make a CON saving throw. The target takes necrotic damage equal to the damage it took from the triggering attack on a failed save, or half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+
+	<element name="Brace Yourself" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_ADRENALINE_SURGES_BRACE_YOURSELF">
+		<supports>Adrenaline Surges</supports>
+		<prerequisite>5th level</prerequisite>
+		<requirements>[level:5]</requirements>
+		<description>
+			<p>As a bonus action, you can spend 3 adrenaline points to gain resistance to a damage type of your choice until the start of your next turn.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can spend 3 adrenaline points to gain resistance to a damage type of your choice until the start of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Call of Duty" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_ADRENALINE_SURGES_CALL_OF_DUTY">
+		<supports>Adrenaline Surges</supports>
+		<prerequisite>9th level</prerequisite>
+		<requirements>[level:9]</requirements>
+		<description>
+			<p>As an action, you can spend 4 adrenaline points to flood your allies with pride and confidence. When you do so, choose a number of friendly creatures who can see or hear you, up to an amount equal to your proficiency bonus.</p>
+			<p class="indent">Until the start of your next turn, an affected creature can roll an adrenaline die and add the number rolled to any saving throw it makes. Once you use this adrenaline surge, you cannot use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>As an action, you can spend 4 adrenaline points to flood your allies with pride and confidence. When you do so, choose a number of friendly creatures who can see or hear you, up to {{proficiency}}. Until the start of your next turn, an affected creature can roll an adrenaline die and add the number rolled to any saving throw it makes.</description>
+		</sheet>
+	</element>
+	
+	<element name="Collapsing Shot" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_ADRENALINE_SURGES_COLLAPSING_SHOT">
+		<supports>Adrenaline Surges</supports>
+		<description>
+			<p>When you hit a creature with a firearm attack, you can spend 2 adrenaline points to attempt to make the target collapse.</p>
+			<p class="indent">Roll an adrenaline die and add the result to the attack's damage. The target must make a Strength saving throw. On a failed save, the target drops prone</p>
+			<p class="indent">If the target attempts to get up from this prone state, it must make a Constitution saving throw. On a failed save, the target remains prone, its speed is reduced to 0 for the rest of the turn, and it can't attempt to get up again until the start of its next turn.</p>
+		</description>
+		<sheet>
+			<description>When you hit a creature with a firearm attack, you can spend 2 adrenaline points to roll an adrenaline die and add the result to the attack's damage. The target must make a STR saving throw. On a failed save, the target drops prone. If the target attempts to get up from this prone state, it must make a CON saving throw. On a failed save, the target remains prone, its speed is reduced to 0 for the rest of the turn, and it can't attempt to get up again until the start of its next turn.</description> 
+		</sheet>
+	</element>
+	
+	<element name="Cut and Run" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_ADRENALINE_SURGES_CUT_AND_RUN">
+		<supports>Adrenaline Surges</supports>
+		<description>
+			<p>You can spend 1 adrenaline point to take the Dash or Disengage action as a bonus action.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can spend 1 adrenaline point to take the Dash or Disengage action.</description>
+		</sheet>
+	</element>
+	
+	<element name="Disarming Shot" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_ADRENALINE_SURGES_DISARMING_SHOT">
+		<supports>Adrenaline Surges</supports>
+		<description>
+			<p>When you hit a creature with a firearm attack, you can spend 1 adrenaline point to attempt to make the target drop an item that it is carrying.</p>
+			<p class="indent">Roll an adrenaline die and add the result to the attack's damage. The target must make a Strength saving throw. On a failed save, it drops one object of your choice. The object lands at its feet.</p>
+		</description>
+		<sheet>
+			<description>When you hit a creature with a firearm attack, you can spend 1 adrenaline point to roll an adrenaline die and add the result to the attack's damage. The target must make a STR saving throw. On a failed save, it drops one object of your choice. The object lands at its feet.</description> 
+		</sheet>
+	</element>
+	
+	<element name="Fast and Loose" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_ADRENALINE_SURGES_FAST_AND_LOOSE">
+		<supports>Adrenaline Surges</supports>
+		<prerequisite>9th level</prerequisite>
+		<requirements>[level:9]</requirements>
+		<description>
+			<p>Once per turn, if you've already taken a reaction, you can spend 4 adrenaline points to take an additional reaction. You can use only one reaction per triggering effect.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>If you've already taken a reaction, you can spend 4 adrenaline points to take an additional reaction. You can use only one reaction per triggering effect.</description>
+		</sheet>
+	</element>
+	
+	<element name="Fired Up" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_ADRENALINE_SURGES_FIRED_UP">
+		<supports>Adrenaline Surges</supports>
+		<description>
+			<p>When you make a Strength or Constitution ability check, you can spend 1 adrenaline point to roll an adrenaline die and add the result to the total. You do this after you see the roll, but before the DM says whether the check succeeds or fails.</p>
+		</description>
+		<sheet>
+			<description>When you make a Strength or Constitution ability check, you can spend 1 adrenaline point to roll an adrenaline die and add the result to the total. You do this after you see the roll, but before the DM says whether the check succeeds or fails.</description>
+		</sheet>
+	</element>
+	
+	<element name="First Blood" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_ADRENALINE_SURGES_FIRST_BLOOD">
+		<supports>Adrenaline Surges</supports>
+		<description>
+			<p>Immediately after you roll initiative, you can spend 1 adrenaline point to make a single firearm attack against a creature you can see within range.</p>
+		</description>
+		<sheet>
+			<description>Immediately after you roll initiative, you can spend 1 adrenaline point to make a single firearm attack against a creature you can see within range.</description>
+		</sheet>
+	</element>
+	
+	<element name="Hotfoot It" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_ADRENALINE_SURGES_HOTFOOT_IT">
+		<supports>Adrenaline Surges</supports>
+		<description>
+			<p>As an action, you can spend any amount of adrenaline points. For each adrenaline point you spend, your walking speed is increased by 5 feet for 1 minute. Once you use this adrenaline surge, you cannot use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>You can spend any amount of adrenaline points. For each adrenaline point you spend, your walking speed is increased by 5 feet for 1 minute. Once you use this adrenaline surge, you cannot use it again until you finish a short or long rest.</description>
+		</sheet>
+	</element>
+	
+	<element name="Hunting Grounds" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_ADRENALINE_SURGES_HUNTING_GROUNDS">
+		<supports>Adrenaline Surges</supports>
+		<description>
+			<p>You can spend 1 minute and 2 adrenaline points to achieve a state of deep focus regarding your surroundings. For one hour, you have a bonus to Intelligence (Investigation), Wisdom (Perception), Dexterity (Stealth), and Wisdom (Survival) checks equal to your Charisma modifier (minimum of 1).</p>
+		</description>
+		<sheet usage="1 Minute and 2 Adrenaline Points">
+			<description>For 1 hour, you have a +{{charisma:modifier}} bonus to Intelligence (Investigation), Wisdom (Perception), Dexterity (Stealth), and Wisdom (Survival) checks.</description>
+		</sheet>
+	</element>
+	
+	<element name="Kick it up a Notch" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_ADRENALINE_SURGES_FKICK_IT_UP_A_NOTCH">
+		<supports>Adrenaline Surges</supports>
+		<prerequisite>9th level</prerequisite>
+		<requirements>[level:9]</requirements>
+		<description>
+			<p>When you force a creature to make a saving throw against an effect, you can spend 4 adrenaline points to give the creature disadvantage on its first saving throw made against the effect.</p>
+		</description>
+		<sheet>
+			<description>When you force a creature to make a saving throw against an effect, you can spend 4 adrenaline points to give the creature disadvantage on its first saving throw made against the effect.</description>
+		</sheet>
+	</element>
+	
+	<element name="Pep Talk" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_ADRENALINE_SURGES_PEP_TALK">
+		<supports>Adrenaline Surges</supports>
+		<description>
+			<p>You can spend 1 minute and 2 adrenaline points to give a friendly creature a bonus to its damage rolls with weapons for the next 10 minutes. This bonus is equal to your Charisma modifier (minimum of 1). In addition, the creature cannot be frightened, and it makes Charisma saving throws with advantage.</p>
+			<p class="indent">Once you use this adrenaline surge, you cannot use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="1 Minute and 2 Adrenaline Points" usage="1/Short Rest">
+			<description>You can spend 1 minute and 2 adrenaline points to give a friendly creature a +{{charisma:modifier}} bonus to its damage rolls with weapons for the next 10 minutes. In addition, the creature cannot be frightened, and it makes Charisma saving throws with advantage.</description>
+		</sheet>
+	</element>
+	
+	<element name="Pistol Whip" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_ADRENALINE_SURGES_PISTOL_WHIP">
+		<supports>Adrenaline Surges</supports>
+		<description>
+			<p>When you are wielding a firearm in one hand and a creature provokes an opportunity attack from you, you can spend 1 adrenaline point to use the firearm as an improvised club.</p>
+			<p class="indent">For the purposes of this adrenaline surge, the firearm is considered a simple melee weapon with the finesse property, and it uses your adrenaline die as the damage die for the attack. In addition, on a hit, the target is incapacitated until the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>When you are wielding a firearm in one hand and a creature provokes an opportunity attack from you, you can spend 1 adrenaline point to use the firearm as an improvised club. For the purposes of this adrenaline surge, the firearm is considered a simple melee weapon with the finesse property, and it uses your adrenaline die as the damage die for the attack. In addition, on a hit, the target is incapacitated until the end of your next turn.</description>
+		</sheet>
+	</element>
+	
+	<element name="Play it Safe" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_ADRENALINE_SURGES_PLAY_IT_SAFE">
+		<supports>Adrenaline Surges</supports>
+		<description>
+			<p>You can spend 2 adrenaline points to take the Dodge action as a bonus action.</p>
+		</description>
+		<sheet>
+			<description>You can spend 2 adrenaline points to take the Dodge action as a bonus action.</description>
+		</sheet>
+	</element>
+	
+	<element name="Quick Draw" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_ADRENALINE_SURGES_QUICK_DRAW">
+		<supports>Adrenaline Surges</supports>
+		<description>
+			<p>When you roll initiative, you can spend 1 adrenaline point to roll an adrenaline die and add the result to your initiative check total.</p>
+		</description>
+		<sheet>
+			<description>When you roll initiative, you can spend 1 adrenaline point to roll an adrenaline die and add the result to your initiative check total.</description>
+		</sheet>
+	</element>
+	
+	<element name="Rein it in" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_ADRENALINE_SURGES_REIN_IT_IN">
+		<supports>Adrenaline Surges</supports>
+		<description>
+			<p>As a bonus action, you can spend 1 adrenaline point to end one of the following conditions on yourself: blinded, charmed, deafened, frightened, poisoned.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1 Adrenaline Point">
+			<description>End one of the following conditions on yourself: blinded, charmed, deafened, frightened, poisoned.</description>
+		</sheet>
+	</element>
+	
+	<element name="Send it out Yonder" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_ADRENALINE_SURGES_SEND_IT_OUT_YONDER">
+		<supports>Adrenaline Surges, Phantom Shot</supports>
+		<prerequisite>Phantom Shot archetype</prerequisite>
+		<requirements>ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_PHANTOM_SHOT</requirements>
+		<description>
+			<p>When you cast a spell that has a range of 5 feet or greater, you can spend 2 adrenaline points to double the range of the spell. Alternatively, when you cast a spell that has a range of touch, you can spend 2 adrenaline points to make the range of the spell 30 feet.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1 Adrenaline Point">
+			<description>When you cast a spell that has a range of 5 feet or greater, you can spend 2 adrenaline points to double the range of the spell. Alternatively, when you cast a spell that has a range of touch, you can spend 2 adrenaline points to make the range of the spell 30 feet.</description>
+		</sheet>
+	</element>
+	
+	<element name="Silver Bullet" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_ADRENALINE_SURGES_SILVER_BULLET">
+		<supports>Adrenaline Surges</supports>
+		<prerequisite>17th level</prerequisite>
+		<requirements>[level:17]</requirements>
+		<description>
+			<p>When a hostile creature within 30 feet of you uses a legendary resistance to succeed on its saving throw against an effect originating from you, you can use your reaction to spend 6 adrenaline points. When you do so, the creature suffers the full effect from failing its save and its legendary resistance is wasted</p>
+		</description>
+		<sheet action="Reaction" usage="1/Week">
+			<description>When a hostile creature within 30 feet of you uses a legendary resistance to succeed on its saving throw against an effect originating from you, you can use your reaction to spend 6 adrenaline points. When you do so, the creature suffers the full effect from failing its save and its legendary resistance is wasted</description>
+		</sheet>
+	</element>
+	
+	<element name="Skeet Shoot" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_ADRENALINE_SURGES_SKEET_SHOOT">
+		<supports>Adrenaline Surges</supports>
+		<description>
+			<p>When you are hit by a ranged weapon attack and are wielding a firearm, you can use your reaction to spend 1 adrenaline point.</p>
+			<p class="indent">When you do so, make an attack roll with your firearm. The AC of the incoming projectile is equal to 10 or half the damage you would take, whichever number is higher. If you land a hit on the projectile, you take no damage, and the projectile is destroyed.</p>
+		</description>
+		<sheet action="Reaction" usage="1 Adrenaline Point">
+			<description>When you are hit by a ranged weapon attack and are wielding a firearm, you can use your reaction to spend 1 adrenaline point. When you do so, make an attack roll with your firearm. The AC of the incoming projectile is equal to 10 or half the damage you would take, whichever number is higher. If you land a hit on the projectile, you take no damage, and the projectile is destroyed.</description>
+		</sheet>
+	</element>
+	
+	<element name="Smooth Talker" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_ADRENALINE_SURGES_SMOOTH_TALKER">
+		<supports>Adrenaline Surges</supports>
+		<description>
+			<p>When you make a Charisma ability check, you can spend 2 adrenaline points to roll an adrenaline die and add the result to the total. You do this after you see the roll, but before the DM says whether the check succeeds or fails.</p>
+		</description>
+		<sheet usage="2 Adrenaline Points">
+			<description>When you make a Charisma ability check, roll an adrenaline die and add the result to the total. You do this after you see the roll, but before the DM says whether the check succeeds or fails.</description>
+		</sheet>
+	</element>
+	
+	<element name="Spur On" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_ADRENALINE_SURGES_SPUR_ON">
+		<supports>Adrenaline Surges</supports>
+		<description>
+			<p>As a bonus action, you can spend 1 adrenaline point to encourage your allies to keep fighting. When you do so, choose a number of friendly creatures who can see or hear you, up to an amount equal to your proficiency bonus</p>
+			<p class="indent">Each targeted creature gains temporary hit points equal to one roll of your adrenaline die + your gunslinger level. Once you use this adrenaline surge, you cannot use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1 Adrenaline Point, 1/Short Rest">
+			<description>Choose a number of friendly creatures who can see or hear you, up to {{proficiency}}. Each targeted creature gains temporary hit points equal to one roll of your adrenaline die + {{level:gunslinger}}.</description>
+		</sheet>
+	</element>
+	
+	<element name="Tough it Out" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_ADRENALINE_SURGES_TOUGH_IT_OUT">
+		<supports>Adrenaline Surges</supports>
+		<description>
+			<p>When you take damage, you can spend any number of adrenaline points. For each adrenaline point you spend, you reduce the damage you take by an amount equal to one roll of your adrenaline die.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Short Rest">
+			<description>When you take damage, you can spend any number of adrenaline points. For each adrenaline point you spend, you reduce the damage you take by an amount equal to one roll of your adrenaline die.</description>
+		</sheet>
+	</element>
+	
+	<element name="Tough Talk" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_ADRENALINE_SURGES_TOUGH_TALK">
+		<supports>Adrenaline Surges</supports>
+		<description>
+			<p>As a bonus action, you can spend 2 adrenaline points to goad an enemy into turning its attention to you. Choose a hostile creature that can see or hear you. The targeted creature must make a Charisma saving throw.</p>
+			<p class="indent">On a failure, the creature must immediately use its reaction, if available, to move as far as its speed allows towards you. The creature doesn’t move into obviously dangerous ground, such as a fire or a pit. In addition, the creature has disadvantage on attack rolls against creatures other than you until the start of your next turn.</p>
+			<p class="indent">You can use this adrenaline surge a number of times equal to your Charisma modifier (minimum of once), regaining expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{charisma:modifier}}/Short Rest">
+			<description>Choose a hostile creature that can see or hear you. The targeted creature must make a CHA saving throw. On a failure, the creature must immediately use its reaction, if available, to move as far as its speed allows towards you. The creature doesn’t move into obviously dangerous ground, such as a fire or a pit. In addition, the creature has disadvantage on attack rolls against creatures other than you until the start of your next turn.</description>
+		</sheet>
+	</element>
+	
+	<element name="Trail Blazer" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_ADRENALINE_SURGES_TRAIL_BLAZER">
+		<supports>Adrenaline Surges</supports>
+		<description>
+			<p>You can spend 10 minutes and 1 adrenaline point to steel yourself for a period of heavy outdoors activity. For the next 8 hours, you gain the following benefits:</p>
+			<ul>
+				<li>You have a climbing speed and a swimming speed that are equal to your walking speed.</li>
+				<li>You can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check. </li>
+				<li>You have a bonus to Strength (Athletics) and Dexterity (Acrobatics) checks equal to your Charisma modifier (minimum of 1).</li>
+				<li>You ignore nonmagical difficult terrain</li>
+				<li>The distance of your long jump is tripled.</li>
+				<li>The duration that you can hold your breath is doubled.</li>
+			</ul>
+		</description>
+		<sheet usage="10 Minutes and 1 Adrenaline Point">
+			<description>For the next 8 hours, you have a climbing speed equal to your walking speed, can climb difficult surfaces including upside down on ceilings without needing to make an ability check, a+{{charisma:modifier}} bonus to Athletics and Acrobatics checks, can ignore nonmagical difficult terrain, have tripled jump distance, and can hold your breath twice as long.</description>
+		</sheet>
+	</element>
+</elements>

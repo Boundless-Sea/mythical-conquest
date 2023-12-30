@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="phantomshot-patrons.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-gunslinger/phantomshot-patrons.xml" />
+		</update>
+	</info>
+
+	<element name="The Archfey" type="Archetype" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY">
+		<supports>Phantom Shot Patron</supports>
+		<description>
+			<p>Your patron is a lord or lady of the fey, a creature of legend who holds secrets that were forgotten before the mortal races were born. This being’s motivations are often inscrutable, and sometimes whimsical, and might involve a striving for greater magical power or the settling of age-old grudges. Beings of this sort include the Prince of Frost; the Queen of Air and Darkness, ruler of the Gloaming Court; Titania of the Summer Court; her consort Oberon, the Green Lord; Hyrsam, the Prince of Fools; and ancient hags.</p>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY_EXPANDED_SPELL_LIST"/>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY_PHANTOM_FIREARM"/>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY_FAVOR"/>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY_REWARD"/>
+		</description>
+		<sheet display="false">
+			<description>Your patron is a lord or lady of the fey, a creature of legend who holds secrets that were forgotten before the mortal races were born.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY_EXPANDED_SPELL_LIST" level="3" />
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY_PHANTOM_FIREARM" level="3" />
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY_FAVOR" level="11" />
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY_REWARD" level="18" />
+		</rules>
+	</element>
+	
+	<element name="Expanded Spell List" type="Archetype Feature" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY_EXPANDED_SPELL_LIST">
+		<description>
+			<p>The Archfey lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5 class="caption">ARCHFEY EXPANDED SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>faerie fire, sleep</em></td></tr>
+				<tr><td>2nd</td><td><em>calm emotions, phantasmal force</em></td></tr>
+				<tr><td>3rd</td><td><em>blink, plant growth</em></td></tr>
+				<tr><td>4th</td><td><em>dominate beast, greater invisibility</em></td></tr>
+				<tr><td>5th</td><td><em>dominate person, seeming</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The Archfey lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+		</sheet>
+		<spellcasting name="PhantomShot" extend="true">
+			<extend>ID_PHB_SPELL_FAERIE_FIRE</extend>
+			<extend>ID_PHB_SPELL_SLEEP</extend>
+			<extend>ID_PHB_SPELL_CALM_EMOTIONS</extend>
+			<extend>ID_PHB_SPELL_PHANTASMAL_FORCE</extend>
+			<extend>ID_PHB_SPELL_BLINK</extend>
+			<extend>ID_PHB_SPELL_PLANT_GROWTH</extend>
+			<extend>ID_PHB_SPELL_DOMINATE_BEAST</extend>
+			<extend>ID_PHB_SPELL_GREATER_INVISIBILITY</extend>
+			<extend>ID_PHB_SPELL_DOMINATE_PERSON</extend>
+			<extend>ID_PHB_SPELL_SEEMING</extend>
+		</spellcasting>
+	</element>
+	
+	<element name="Phantom Firearm" type="Archetype Feature" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY_PHANTOM_FIREARM">
+		<description>
+			<p>At 3rd level, the influence of your patron allows you to mystically channel your will through a particular firearm. Whenever you finish a short or long rest, you can touch one firearm that you are proficient with and designate it as your phantom firearm. Your phantom firearm has the following benefits:</p>
+			<p class="indent">You can use that firearm as a spellcasting focus for your warlock spells.</p>
+			<p class="indent">Attacks with your phantom firearm are considered magical for the purposes of overcoming resistances and immunities to non-magical attacks and damage.</p>
+			<p class="indent">Whenever you cast an evocation spell that requires an attack roll, the spell originates from your phantom firearm. The range is still determined by the spell, and you use your spell attack modifier for the attack rolls as normal. Doing this does not expend a bullet.</p>
+			<p class="indent">You can dismiss your phantom firearm (no action required), shunting it into an extradimensional space, and you can use an action to summon your phantom firearm thereafter. The phantom firearm appears at your feet if it is in the extradimensional space when you die.</p>
+			<p class="indent">Finally, when you hit with a bullet from your phantom firearm, you can spend 1 adrenaline point. When you do so, roll an adrenaline die and add the result to the attack’s damage. The damage type of this extra damage is determined by your Otherworldly Patron, as shown in the Phantom Firearm table. If your patron is the Genie, you choose the damage type when you take this subclass at 3rd level.</p>
+		</description>
+		<sheet>
+			<description>You can use your firearm as a spellcasting focus. Attacks wiht your firearm are magical. You can dismiss your firearm, shunting it into an extradimensional space, and you can use an action to summon your firearm after. The firearm appears at your feet if its in the extradimensional space at death. When you hit with a bullet from your firearm, you can spend 1 adrenaline point to roll an adrenaline die and add the result to the attacks damage as psychic damage.</description>
+		</sheet>
+	</element>
+	<element name="Patron Favor" type="Archetype Feature" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY_FAVOR">
+		<description>
+			<p>At 11th level, your patron has taken a shine to you, and bestows upon you a great gift. What gift they bless you with depends on the patron.</p>
+			<p class="indent">When you make a Charisma ability check, you can treat a roll of 7 or lower on the d20 as an 8.</p>
+		</description>
+		<sheet>
+			<description>When you make a CHA ability check, you can treat a roll of 7 or less on the d20 as an 8.</description>
+		</sheet>
+	</element>
+	<element name="Patron Reward" type="Archetype Feature" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY_REWARD">
+		<description>
+			<p>At 18th level, you have proven yourself as one of your patron's most worthy vessels, and they bestow upon you a glorious boon. What boon they bless you with depends on the patron.</p>
+			<p class="indent">Creatures have disadvantage on saving throws against enchantment spells you cast.</p>
+		</description>
+		<sheet>
+			<description>Creatures have disadvantage on saving throws against enchantment spells you cast.</description>
+		</sheet>
+	</element>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<element name="Fiend" type="Archetype" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_FIEND">
+		<supports>Phantom Shot Patron</supports>
+		<description>
+			<p>You have made a pact with a fiend from the lower planes of existence, a being whose aims are evil, even if you strive against those aims. Such beings desire the corruption or destruction of all things, ultimately including you. Fiends powerful enough to forge a pact include demon lords such as Demogorgon, Orcus, Fraz’Urb-luu, and Baphomet; archdevils such as Asmodeus, Dispater, Mephistopheles, and Belial; pit fiends and balors that are especially mighty; and ultroloths and other lords of the yugoloths.</p>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_FIEND_EXPANDED_SPELL_LIST"/>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_FIEND_PHANTOM_FIREARM"/>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_FIEND_FAVOR"/>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_FIEND_REWARD"/>
+		</description>
+		<sheet display="false">
+			<description>You have made a pact with a fiend from the lower planes of existence.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_FIEND_EXPANDED_SPELL_LIST" level="3" />
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_FIEND_PHANTOM_FIREARM" level="3" />
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_FIEND_FAVOR" level="11" />
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_FIEND_REWARD" level="18" />
+		</rules>
+	</element>
+	
+	<element name="Expanded Spell List" type="Archetype Feature" source="Player’s Handbook" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_FIEND_EXPANDED_SPELL_LIST">
+		<description>
+			<p>The Fiend lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5 class="caption">FIEND EXPANDED SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>burning hands, command</em></td></tr>
+				<tr><td>2nd</td><td><em>blindness/deafness, scorching ray</em></td></tr>
+				<tr><td>3rd</td><td><em>fireball, stinking cloud</em></td></tr>
+				<tr><td>4th</td><td><em>fire shield, wall of fire</em></td></tr>
+				<tr><td>5th</td><td><em>flame strike, hallow</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The Fiend lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+		</sheet>
+		<spellcasting name="PhantomShot" extend="true">
+			<extend>ID_PHB_SPELL_BURNING_HANDS</extend>
+			<extend>ID_PHB_SPELL_COMMAND</extend>
+			<extend>ID_PHB_SPELL_BLINDNESS_DEAFNESS</extend>
+			<extend>ID_PHB_SPELL_SCORCHING_RAY</extend>
+			<extend>ID_PHB_SPELL_FIREBALL</extend>
+			<extend>ID_PHB_SPELL_STINKING_CLOUD</extend>
+			<extend>ID_PHB_SPELL_FIRE_SHIELD</extend>
+			<extend>ID_PHB_SPELL_WALL_OF_FIRE</extend>
+			<extend>ID_PHB_SPELL_FLAME_STRIKE</extend>
+			<extend>ID_PHB_SPELL_HALLOW</extend>
+		</spellcasting>
+	</element>
+	
+	<element name="Phantom Firearm" type="Archetype Feature" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_FIEND_PHANTOM_FIREARM">
+		<description>
+			<p>At 3rd level, the influence of your patron allows you to mystically channel your will through a particular firearm. Whenever you finish a short or long rest, you can touch one firearm that you are proficient with and designate it as your phantom firearm. Your phantom firearm has the following benefits:</p>
+			<p class="indent">You can use that firearm as a spellcasting focus for your warlock spells.</p>
+			<p class="indent">Attacks with your phantom firearm are considered magical for the purposes of overcoming resistances and immunities to non-magical attacks and damage.</p>
+			<p class="indent">Whenever you cast an evocation spell that requires an attack roll, the spell originates from your phantom firearm. The range is still determined by the spell, and you use your spell attack modifier for the attack rolls as normal. Doing this does not expend a bullet.</p>
+			<p class="indent">You can dismiss your phantom firearm (no action required), shunting it into an extradimensional space, and you can use an action to summon your phantom firearm thereafter. The phantom firearm appears at your feet if it is in the extradimensional space when you die.</p>
+			<p class="indent">Finally, when you hit with a bullet from your phantom firearm, you can spend 1 adrenaline point. When you do so, roll an adrenaline die and add the result to the attack’s damage. The damage type of this extra damage is determined by your Otherworldly Patron, as shown in the Phantom Firearm table. If your patron is the Genie, you choose the damage type when you take this subclass at 3rd level.</p>
+		</description>
+		<sheet>
+			<description>You can use your firearm as a spellcasting focus. Attacks wiht your firearm are magical. You can dismiss your firearm, shunting it into an extradimensional space, and you can use an action to summon your firearm after. The firearm appears at your feet if its in the extradimensional space at death. When you hit with a bullet from your firearm, you can spend 1 adrenaline point to roll an adrenaline die and add the result to the attacks damage as fire damage.</description>
+		</sheet>
+	</element>
+	<element name="Patron Favor" type="Archetype Feature" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_FIEND_FAVOR">
+		<description>
+			<p>At 11th level, your patron has taken a shine to you, and bestows upon you a great gift. What gift they bless you with depends on the patron.</p>
+			<p class="indent">When you deal damage to a creature, you ignore any resistances it may have.</p>
+		</description>
+		<sheet>
+			<description>When you deal damage to a creature, you ignore any resistances it may have.</description>
+		</sheet>
+	</element>
+	<element name="Patron Reward" type="Archetype Feature" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_FIEND_REWARD">
+		<description>
+			<p>At 18th level, you have proven yourself as one of your patron's most worthy vessels, and they bestow upon you a glorious boon. What boon they bless you with depends on the patron.</p>
+			<p class="indent">When a hostile creature enters a space within 5 feet of you for the first time on a turn or starts its turn there, it takes 1d10 fire damage.</p>
+		</description>
+		<sheet>
+			<description>When an enemy enters a space within 5ft of you for the first time on a turn or starts its turn there, it takes 1d10 fire damage.</description>
+		</sheet>
+	</element>
+	
+	
+	
+	
+	
+	
+	
+	
+	<element name="The Great Old One" type="Archetype" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_GREAT_OLD_ONE">
+		<supports>Phantom Shot Patron</supports>
+		<description>
+			<p>Your patron is a mysterious entity whose nature is utterly foreign to the fabric of reality. It might come from the Far Realm, the space beyond reality, or it could be one of the elder gods known only in legends. Its motives are incomprehensible to mortals, and its knowledge so immense and ancient that even the greatest libraries pale in comparison to the vast secrets it holds. The Great Old One might be unaware of your existence or entirely indifferent to you, but the secrets you have learned allow you to draw your magic from it.</p>
+			<p class="indent">Entities of this type include Ghaunadar, called That Which Lurks; Tharizdun, the Chained God; Dendar, the Night Serpent; Zargon, the Returner; Great Cthulhu; and other unfathomable beings.</p>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_GREAT_OLD_ONE_EXPANDED_SPELL_LIST"/>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_GREAT_OLD_ONE_PHANTOM_FIREARM"/>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_GREAT_OLD_ONE_FAVOR"/>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_GREAT_OLD_ONE_REWARD"/>
+		</description>
+		<sheet display="false">
+			<description>Your patron is a mysterious entity whose nature is utterly foreign to the fabric of reality.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_GREAT_OLD_ONE_EXPANDED_SPELL_LIST" level="3" />
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_GREAT_OLD_ONE_PHANTOM_FIREARM" level="3" />
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_GREAT_OLD_ONE_FAVOR" level="11" />
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_GREAT_OLD_ONE_REWARD" level="18" />
+		</rules>
+	</element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Player’s Handbook" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_GREAT_OLD_ONE_EXPANDED_SPELL_LIST">
+		<description>
+			<p>The Great Old One lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5 class="caption">GREAT OLD ONE EXPANDED SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>dissonant whispers, Tasha's hideous laughter</em></td></tr>
+				<tr><td>2nd</td><td><em>detect thoughts, phantasmal force</em></td></tr>
+				<tr><td>3rd</td><td><em>clairvoyance, sending</em></td></tr>
+				<tr><td>4th</td><td><em>dominate beast, Evard’s black tentacles</em></td></tr>
+				<tr><td>5th</td><td><em>dominate person, telekinesis</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The Great Old One lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+		</sheet>
+		<spellcasting name="PhantomShot" extend="true">
+			<extend>ID_PHB_SPELL_DISSONANT_WHISPERS</extend>
+			<extend>ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER</extend>
+			<extend>ID_PHB_SPELL_DETECT_THOUGHTS</extend>
+			<extend>ID_PHB_SPELL_PHANTASMAL_FORCE</extend>
+			<extend>ID_PHB_SPELL_CLAIRVOYANCE</extend>
+			<extend>ID_PHB_SPELL_SENDING</extend>
+			<extend>ID_PHB_SPELL_DOMINATE_BEAST</extend>
+			<extend>ID_PHB_SPELL_EVARDS_BLACK_TENTACLES</extend>
+			<extend>ID_PHB_SPELL_DOMINATE_PERSON</extend>
+			<extend>ID_PHB_SPELL_TELEKINESIS</extend>
+		</spellcasting>
+	</element>
+	<element name="Phantom Firearm" type="Archetype Feature" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_GREAT_OLD_ONE_PHANTOM_FIREARM">
+		<description>
+			<p>At 3rd level, the influence of your patron allows you to mystically channel your will through a particular firearm. Whenever you finish a short or long rest, you can touch one firearm that you are proficient with and designate it as your phantom firearm. Your phantom firearm has the following benefits:</p>
+			<p class="indent">You can use that firearm as a spellcasting focus for your warlock spells.</p>
+			<p class="indent">Attacks with your phantom firearm are considered magical for the purposes of overcoming resistances and immunities to non-magical attacks and damage.</p>
+			<p class="indent">Whenever you cast an evocation spell that requires an attack roll, the spell originates from your phantom firearm. The range is still determined by the spell, and you use your spell attack modifier for the attack rolls as normal. Doing this does not expend a bullet.</p>
+			<p class="indent">You can dismiss your phantom firearm (no action required), shunting it into an extradimensional space, and you can use an action to summon your phantom firearm thereafter. The phantom firearm appears at your feet if it is in the extradimensional space when you die.</p>
+			<p class="indent">Finally, when you hit with a bullet from your phantom firearm, you can spend 1 adrenaline point. When you do so, roll an adrenaline die and add the result to the attack’s damage. The damage type of this extra damage is determined by your Otherworldly Patron, as shown in the Phantom Firearm table. If your patron is the Genie, you choose the damage type when you take this subclass at 3rd level.</p>
+		</description>
+		<sheet>
+			<description>You can use your firearm as a spellcasting focus. Attacks wiht your firearm are magical. You can dismiss your firearm, shunting it into an extradimensional space, and you can use an action to summon your firearm after. The firearm appears at your feet if its in the extradimensional space at death. When you hit with a bullet from your firearm, you can spend 1 adrenaline point to roll an adrenaline die and add the result to the attacks damage as psychic damage.</description>
+		</sheet>
+	</element>
+	<element name="Patron Favor" type="Archetype Feature" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_GREAT_OLD_ONE_FAVOR">
+		<description>
+			<p>At 11th level, your patron has taken a shine to you, and bestows upon you a great gift. What gift they bless you with depends on the patron.</p>
+			<p class="indent">. You can cast the detect thoughts spell once, without expending a spell slot, regaining the ability to do so when you finish a short or long rest. When you cast the spell in this way, creatures with a Wisdom score of 13 or lower remain unaware if you try to probe deeper into their minds than their surface thoughts.</p>
+		</description>
+		<sheet>
+			<description>You can cast the detect thoughts spell once, without expending a spell slot, regaining the ability to do so when you finish a short or long rest. When you cast the spell in this way, creatures with a Wisdom score of 13 or lower remain unaware if you try to probe deeper into their minds than their surface thoughts.</description>
+		</sheet>
+	</element>
+	<element name="Patron Reward" type="Archetype Feature" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_GREAT_OLD_ONE_REWARD">
+		<description>
+			<p>At 18th level, you have proven yourself as one of your patron's most worthy vessels, and they bestow upon you a glorious boon. What boon they bless you with depends on the patron.</p>
+			<p class="indent">You have truesight out to a range of 30 feet.</p>
+		</description>
+		<sheet>
+			<description>You have truesight out to a range of 30 feet.</description>
+		</sheet>
+	</element>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<element name="The Undying" type="Archetype" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_UNDYING">
+		<supports>Phantom Shot Patron</supports>
+		<description>
+			<p>Your patron is a mysterious entity whose nature is utterly foreign to the fabric of reality. It might come from the Far Realm, the space beyond reality, or it could be one of the elder gods known only in legends. Its motives are incomprehensible to mortals, and its knowledge so immense and ancient that even the greatest libraries pale in comparison to the vast secrets it holds. The Great Old One might be unaware of your existence or entirely indifferent to you, but the secrets you have learned allow you to draw your magic from it.</p>
+			<p class="indent">Entities of this type include Ghaunadar, called That Which Lurks; Tharizdun, the Chained God; Dendar, the Night Serpent; Zargon, the Returner; Great Cthulhu; and other unfathomable beings.</p>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_UNDYING_EXPANDED_SPELL_LIST"/>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_UNDYING_PHANTOM_FIREARM"/>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_UNDYING_FAVOR"/>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_UNDYING_REWARD"/>
+		</description>
+		<sheet display="false">
+			<description>Your patron is a mysterious entity whose nature is utterly foreign to the fabric of reality.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_UNDYING_EXPANDED_SPELL_LIST" level="3" />
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_UNDYING_PHANTOM_FIREARM" level="3" />
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_UNDYING_FAVOR" level="11" />
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_UNDYING_REWARD" level="18" />
+		</rules>
+	</element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Sword Coast Adventurer’s Guide" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_UNDYING_EXPANDED_SPELL_LIST">
+		<description>
+			<p>The Undying lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5>Undying Expanded Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>false life, ray of sickness</em></td></tr>
+				<tr><td>2nd</td><td><em>blindness/deafness, silence</em></td></tr>
+				<tr><td>3rd</td><td><em>feign death, speak with dead</em></td></tr>
+				<tr><td>4th</td><td><em>aura of life, death ward</em></td></tr>
+				<tr><td>5th</td><td><em>contagion, legend lore</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The Undying lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+		</sheet>
+		<spellcasting name="PhantomShot" extend="true">
+			<extend>ID_PHB_SPELL_FALSE_LIFE</extend>
+			<extend>ID_PHB_SPELL_RAY_OF_SICKNESS</extend>
+			<extend>ID_PHB_SPELL_BLINDNESS_DEAFNESS</extend>
+			<extend>ID_PHB_SPELL_SILENCE</extend>
+			<extend>ID_PHB_SPELL_FEIGN_DEATH</extend>
+			<extend>ID_PHB_SPELL_SPEAK_WITH_DEAD</extend>
+			<extend>ID_PHB_SPELL_AURA_OF_LIFE</extend>
+			<extend>ID_PHB_SPELL_DEATH_WARD</extend>
+			<extend>ID_PHB_SPELL_CONTAGION</extend>
+			<extend>ID_PHB_SPELL_LEGEND_LORE</extend>
+		</spellcasting>
+	</element>
+	<element name="Phantom Firearm" type="Archetype Feature" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_UNDYING_PHANTOM_FIREARM">
+		<description>
+			<p>At 3rd level, the influence of your patron allows you to mystically channel your will through a particular firearm. Whenever you finish a short or long rest, you can touch one firearm that you are proficient with and designate it as your phantom firearm. Your phantom firearm has the following benefits:</p>
+			<p class="indent">You can use that firearm as a spellcasting focus for your warlock spells.</p>
+			<p class="indent">Attacks with your phantom firearm are considered magical for the purposes of overcoming resistances and immunities to non-magical attacks and damage.</p>
+			<p class="indent">Whenever you cast an evocation spell that requires an attack roll, the spell originates from your phantom firearm. The range is still determined by the spell, and you use your spell attack modifier for the attack rolls as normal. Doing this does not expend a bullet.</p>
+			<p class="indent">You can dismiss your phantom firearm (no action required), shunting it into an extradimensional space, and you can use an action to summon your phantom firearm thereafter. The phantom firearm appears at your feet if it is in the extradimensional space when you die.</p>
+			<p class="indent">Finally, when you hit with a bullet from your phantom firearm, you can spend 1 adrenaline point. When you do so, roll an adrenaline die and add the result to the attack’s damage. The damage type of this extra damage is determined by your Otherworldly Patron, as shown in the Phantom Firearm table. If your patron is the Genie, you choose the damage type when you take this subclass at 3rd level.</p>
+		</description>
+		<sheet>
+			<description>You can use your firearm as a spellcasting focus. Attacks wiht your firearm are magical. You can dismiss your firearm, shunting it into an extradimensional space, and you can use an action to summon your firearm after. The firearm appears at your feet if its in the extradimensional space at death. When you hit with a bullet from your firearm, you can spend 1 adrenaline point to roll an adrenaline die and add the result to the attacks damage as necrotic damage.</description>
+		</sheet>
+	</element>
+	<element name="Patron Favor" type="Archetype Feature" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_UNDYING_FAVOR">
+		<description>
+			<p>At 11th level, your patron has taken a shine to you, and bestows upon you a great gift. What gift they bless you with depends on the patron.</p>
+			<p class="indent">When you start your turn with half your hit points remaining or fewer (to a minimum of 1), you regain a number of hit points equal to half your gunslinger level. If you take radiant damage, you don't regain hit points in this way at the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description>When you start your turn with half your hit points remaining or fewer (to a minimum of 1), regain {{level:gunslinger}/2}. If you take radiant damage, you don't regain hit points in this way at the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Patron Reward" type="Archetype Feature" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_UNDYING_REWARD">
+		<description>
+			<p>At 18th level, you have proven yourself as one of your patron's most worthy vessels, and they bestow upon you a glorious boon. What boon they bless you with depends on the patron.</p>
+			<p class="indent">When you hit a creature with a bullet from your phantom firearm, you can force it to make a Constitution saving throw against your spell save DC. On a failure, the creature is paralyzed until the end of your next turn. Once you use this feature, you cannot use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>When you hit a creature with a bullet from your phantom firearm, you can force it to make a CON saving throw against your spell save DC. On a failure, the creature is paralyzed until the end of your next turn.</description>
+		</sheet>
+	</element>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<element name="The Celestial" type="Archetype" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_CELESTIAL">
+		<supports>Phantom Shot Patron</supports>
+		<description>
+			<p>Your patron is a powerful being of the Upper Planes. You have bound yourself to an ancient empyrean, solar, ki-rin, or unicorn or to another entity that resides in the planes of everlasting bliss. Your pact with that being allows you to experience the barest touch of the holy light that illuminates the multiverse.</p>
+			<p class="indent">Being connected to such power can cause changes in your behavior and beliefs. You might find yourself driven to annihilate the undead, to defeat fiends, and to protect the innocent. At times, your heart might also be filled with a longing for the celestial realm of your patron, a desire to wander that paradise for the rest of your days. But you know that your mission is among mortals for now and that your pact binds you to bring light to the dark places of the world.</p>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_CELESTIAL_EXPANDED_SPELL_LIST"/>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_CELESTIAL_PHANTOM_FIREARM"/>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_CELESTIAL_FAVOR"/>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_CELESTIAL_REWARD"/>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_CELESTIAL_EXPANDED_SPELL_LIST" level="3" />
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_CELESTIAL_PHANTOM_FIREARM" level="3" />
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_CELESTIAL_FAVOR" level="11" />
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_CELESTIAL_REWARD" level="18" />
+		</rules>
+	</element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Xanathar’s Guide to Everything" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_CELESTIAL_EXPANDED_SPELL_LIST">
+		<description>
+			<p>The Celestial lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5>CELESTIAL EXPANDED SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>guiding bolt, cure wounds</em></td></tr>
+				<tr><td>2nd</td><td><em>flaming sphere, lesser restoration</em></td></tr>
+				<tr><td>3rd</td><td><em>daylight, revivify</em></td></tr>
+				<tr><td>4th</td><td><em>guardian of faith, wall of fire</em></td></tr>
+				<tr><td>5th</td><td><em>flame strike, greater restoration</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The Celestial lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+		</sheet>
+		<spellcasting name="PhantomShot" extend="true">
+			<extend>ID_PHB_SPELL_GUIDING_BOLT</extend>
+			<extend>ID_PHB_SPELL_CURE_WOUNDS</extend>
+			<extend>ID_PHB_SPELL_FLAMING_SPHERE</extend>
+			<extend>ID_PHB_SPELL_LESSER_RESTORATION</extend>
+			<extend>ID_PHB_SPELL_DAYLIGHT</extend>
+			<extend>ID_PHB_SPELL_REVIVIFY</extend>
+			<extend>ID_PHB_SPELL_GUARDIAN_OF_FAITH</extend>
+			<extend>ID_PHB_SPELL_WALL_OF_FIRE</extend>
+			<extend>ID_PHB_SPELL_FLAME_STRIKE</extend>
+			<extend>ID_PHB_SPELL_GREATER_RESTORATION</extend>
+		</spellcasting>
+	</element>
+	<element name="Phantom Firearm" type="Archetype Feature" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_CELESTIAL_PHANTOM_FIREARM">
+		<description>
+			<p>At 3rd level, the influence of your patron allows you to mystically channel your will through a particular firearm. Whenever you finish a short or long rest, you can touch one firearm that you are proficient with and designate it as your phantom firearm. Your phantom firearm has the following benefits:</p>
+			<p class="indent">You can use that firearm as a spellcasting focus for your warlock spells.</p>
+			<p class="indent">Attacks with your phantom firearm are considered magical for the purposes of overcoming resistances and immunities to non-magical attacks and damage.</p>
+			<p class="indent">Whenever you cast an evocation spell that requires an attack roll, the spell originates from your phantom firearm. The range is still determined by the spell, and you use your spell attack modifier for the attack rolls as normal. Doing this does not expend a bullet.</p>
+			<p class="indent">You can dismiss your phantom firearm (no action required), shunting it into an extradimensional space, and you can use an action to summon your phantom firearm thereafter. The phantom firearm appears at your feet if it is in the extradimensional space when you die.</p>
+			<p class="indent">Finally, when you hit with a bullet from your phantom firearm, you can spend 1 adrenaline point. When you do so, roll an adrenaline die and add the result to the attack’s damage. The damage type of this extra damage is determined by your Otherworldly Patron, as shown in the Phantom Firearm table. If your patron is the Genie, you choose the damage type when you take this subclass at 3rd level.</p>
+		</description>
+		<sheet>
+			<description>You can use your firearm as a spellcasting focus. Attacks wiht your firearm are magical. You can dismiss your firearm, shunting it into an extradimensional space, and you can use an action to summon your firearm after. The firearm appears at your feet if its in the extradimensional space at death. When you hit with a bullet from your firearm, you can spend 1 adrenaline point to roll an adrenaline die and add the result to the attacks damage as radiant damage.</description>
+		</sheet>
+	</element>
+	<element name="Patron Favor" type="Archetype Feature" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_CELESTIAL_FAVOR">
+		<description>
+			<p>At 11th level, your patron has taken a shine to you, and bestows upon you a great gift. What gift they bless you with depends on the patron.</p>
+			<p class="indent">As a bonus action, you can shift into a form of radiant light. Until the end of your next turn, you shed bright light in a 30-foot radius sphere, and creatures you choose within this radius regain the maximum number of hit points possible from any healing or temporary hit points they receive. You can use this bonus action once, regaining the ability to do so when you finish a short or long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>Until the end of your next turn, you shed bright light in a 30-foot radius sphere, and creatures you choose within this radius regain the maximum number of hit points possible from any healing or temporary hit points they receive.</description>
+		</sheet>
+	</element>
+	<element name="Patron Reward" type="Archetype Feature" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_CELESTIAL_REWARD">
+		<description>
+			<p>At 18th level, you have proven yourself as one of your patron's most worthy vessels, and they bestow upon you a glorious boon. What boon they bless you with depends on the patron.</p>
+			<p class="indent">You become immune to necrotic and radiant damage.</p>
+		</description>
+		<sheet dieplsy="false"/>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_NECROTIC" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_RADIANT" />
+		</rules>
+	</element>
+	
+	
+	
+	
+	
+	
+	
+	
+	<element name="The Hexblade" type="Archetype" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_HEXBLADE">
+		<supports>Phantom Shot Patron</supports>
+		<description>
+			<p>You have made your pact with a mysterious entity from the Shadowfell—a force that manifests in sentient magic weapons carved from the stuff of shadow. The mighty sword Blackrazor is the most notable of these weapons, which have been spread across the multiverse over the ages. The shadowy force behind these weapons can offer power to warlocks who form pacts with it. Many hexblade warlocks create weapons that emulate those formed in the Shadowfell. Others forgo such arms, content to weave the dark magic of that plane into their spellcasting.</p>
+			<p class="indent">Because the Raven Queen is known to have forged the first of these weapons, many sages speculate that she and the force are one and that the weapons, along with hexblade warlocks, are tools she uses to manipulate events on the Material Plane to her inscrutable ends. </p>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_HEXBLADE_EXPANDED_SPELL_LIST"/>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_HEXBLADE_PHANTOM_FIREARM"/>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_HEXBLADE_FAVOR"/>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_HEXBLADE_REWARD"/>
+		</description>
+		<sheet display="false">
+			<description>Your patron is a mysterious entity whose nature is utterly foreign to the fabric of reality.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_HEXBLADE_EXPANDED_SPELL_LIST" level="3" />
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_HEXBLADE_PHANTOM_FIREARM" level="3" />
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_HEXBLADE_FAVOR" level="11" />
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_HEXBLADE_REWARD" level="18" />
+		</rules>
+	</element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Xanathar’s Guide to Everything" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_HEXBLADE_EXPANDED_SPELL_LIST">
+		<description>
+			<p>The Hexblade lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5>HEXBLADE EXPANDED SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead> 
+				<tr><td>1st</td><td><em>shield, wrathful smite</em></td></tr>
+				<tr><td>2nd</td><td><em>blur, branding smite</em></td></tr>
+				<tr><td>3rd</td><td><em>blink, elemental weapon</em></td></tr>
+				<tr><td>4th</td><td><em>phantasmal killer, staggering smite</em></td></tr>
+				<tr><td>5th</td><td><em>banishing smite, cone of cold</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The Hexblade lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+		</sheet>
+		<spellcasting name="PhantomShot" extend="true">
+			<extend>ID_PHB_SPELL_SHIELD</extend>
+			<extend>ID_PHB_SPELL_WRATHFUL_SMITE</extend>
+			<extend>ID_PHB_SPELL_BLUR</extend>
+			<extend>ID_PHB_SPELL_BRANDING_SMITE</extend>
+			<extend>ID_PHB_SPELL_BLINK</extend>
+			<extend>ID_PHB_SPELL_ELEMENTAL_WEAPON</extend>
+			<extend>ID_PHB_SPELL_PHANTASMAL_KILLER</extend>
+			<extend>ID_PHB_SPELL_STAGGERING_SMITE</extend>
+			<extend>ID_PHB_SPELL_BANISHING_SMITE</extend>
+			<extend>ID_PHB_SPELL_CONE_OF_COLD</extend>
+		</spellcasting>
+	</element>
+	<element name="Phantom Firearm" type="Archetype Feature" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_HEXBLADE_PHANTOM_FIREARM">
+		<description>
+			<p>At 3rd level, the influence of your patron allows you to mystically channel your will through a particular firearm. Whenever you finish a short or long rest, you can touch one firearm that you are proficient with and designate it as your phantom firearm. Your phantom firearm has the following benefits:</p>
+			<p class="indent">You can use that firearm as a spellcasting focus for your warlock spells.</p>
+			<p class="indent">Attacks with your phantom firearm are considered magical for the purposes of overcoming resistances and immunities to non-magical attacks and damage.</p>
+			<p class="indent">Whenever you cast an evocation spell that requires an attack roll, the spell originates from your phantom firearm. The range is still determined by the spell, and you use your spell attack modifier for the attack rolls as normal. Doing this does not expend a bullet.</p>
+			<p class="indent">You can dismiss your phantom firearm (no action required), shunting it into an extradimensional space, and you can use an action to summon your phantom firearm thereafter. The phantom firearm appears at your feet if it is in the extradimensional space when you die.</p>
+			<p class="indent">Finally, when you hit with a bullet from your phantom firearm, you can spend 1 adrenaline point. When you do so, roll an adrenaline die and add the result to the attack’s damage. The damage type of this extra damage is determined by your Otherworldly Patron, as shown in the Phantom Firearm table. If your patron is the Genie, you choose the damage type when you take this subclass at 3rd level.</p>
+		</description>
+		<sheet>
+			<description>You can use your firearm as a spellcasting focus. Attacks wiht your firearm are magical. You can dismiss your firearm, shunting it into an extradimensional space, and you can use an action to summon your firearm after. The firearm appears at your feet if its in the extradimensional space at death. When you hit with a bullet from your firearm, you can spend 1 adrenaline point to roll an adrenaline die and add the result to the attacks damage as force damage.</description>
+		</sheet>
+	</element>
+	<element name="Patron Favor" type="Archetype Feature" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_HEXBLADE_FAVOR">
+		<description>
+			<p>At 11th level, your patron has taken a shine to you, and bestows upon you a great gift. What gift they bless you with depends on the patron.</p>
+			<p class="indent">When you reduce a creature to 0 hit points using your phantom firearm, you gain temporary hit points equal to half your gunslinger level + your Charisma modifier, unless the slain creature was an undead or construct.</p>
+		</description>
+		<sheet>
+			<description>When you reduce a creature to 0 hit points using your phantom firearm, you gain temporary {{level:gunslinger:half}}+{{charisma:modifier}} hit points, unless the slain creature was an undead or construct.</description>
+		</sheet>
+	</element>
+	<element name="Patron Reward" type="Archetype Feature" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_HEXBLADE_REWARD">
+		<description>
+			<p>At 18th level, you have proven yourself as one of your patron's most worthy vessels, and they bestow upon you a glorious boon. What boon they bless you with depends on the patron.</p>
+			<p class="indent">As a bonus action, you can supercharge your phantom firearm with eldritch energy. For 1 minute, you have advantage on all attack rolls made with your phantom firearm. The effect ends early if you die or are incapacitated. Once you use this bonus action, you cannot use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>For 1 minute, you have advantage on all attack rolls made with your phantom firearm. The effect ends early if you die or are incapacitated.</description>
+		</sheet>
+	</element>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<element name="The Undead" type="Archetype" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_UNDEAD">
+		<supports>Phantom Shot Patron</supports>
+		<description>
+			<p>You’ve made a pact with a deathless being, a creature that defies the cycle and life and death, forsaking its mortal shell so it might eternally pursue its unfathomable ambitions. For such beings, time and morality are fleeting things, the concerns of those for whom grains of sand still rush through life’s hourglass. Having once been mortal themselves, these ancient undead know firsthand the paths of ambition and the routes past the doors of death. They eagerly share this profane knowledge, along with other secrets, with those who work their will among the living.</p>
+			<p class="indent">Beings of this type include the demilich Acererak, the vampire tyrant Kas the Bloody-Handed, the githyanki lich-queen Vlaakith, the dracolich Dragotha, the undead pharaoh Ankhtepot, and the elusive Darklord, Azalin Rex.</p>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_UNDEAD_EXPANDED_SPELL_LIST"/>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_UNDEAD_PHANTOM_FIREARM"/>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_UNDEAD_FAVOR"/>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_UNDEAD_REWARD"/>
+		</description>
+		<sheet display="false">
+			<description>Your patron is a mysterious entity whose nature is utterly foreign to the fabric of reality.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_UNDEAD_EXPANDED_SPELL_LIST" level="3" />
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_UNDEAD_PHANTOM_FIREARM" level="3" />
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_UNDEAD_FAVOR" level="11" />
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_UNDEAD_REWARD" level="18" />
+		</rules>
+	</element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Van Richten's Guide To Ravenloft" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_UNDEAD_EXPANDED_SPELL_LIST">
+		<description>
+			<p><em>1st-level Undead feature</em></p>
+			<p>The Undead lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5>UNDEAD EXPANDED SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead> 
+				<tr><td>1st</td><td><em>bane, false life</em></td></tr>
+				<tr><td>2nd</td><td><em>blindness/deafness, phantasmal force</em></td></tr>
+				<tr><td>3rd</td><td><em>phantom steed, speak with dead</em></td></tr>
+				<tr><td>4th</td><td><em>death ward, greater invisibility</em></td></tr>
+				<tr><td>5th</td><td><em>antilife shell, cloudkill</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<spellcasting name="PhantomShot" extend="true">
+			<extend>ID_PHB_SPELL_BANE</extend>
+			<extend>ID_PHB_SPELL_FALSE_LIFE</extend>
+			<extend>ID_PHB_SPELL_BLINDNESS_DEAFNESS</extend>
+			<extend>ID_PHB_SPELL_PHANTASMAL_FORCE</extend>
+			<extend>ID_PHB_SPELL_PHANTOM_STEED</extend>
+			<extend>ID_PHB_SPELL_SPEAK_WITH_DEAD</extend>
+			<extend>ID_PHB_SPELL_DEATH_WARD</extend>
+			<extend>ID_PHB_SPELL_GREATER_INVISIBILITY</extend>
+			<extend>ID_PHB_SPELL_ANTILIFE_SHELL</extend>
+			<extend>ID_PHB_SPELL_CLOUDKILL</extend>
+		</spellcasting>
+	</element>
+	<element name="Phantom Firearm" type="Archetype Feature" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_UNDEAD_PHANTOM_FIREARM">
+		<description>
+			<p>At 3rd level, the influence of your patron allows you to mystically channel your will through a particular firearm. Whenever you finish a short or long rest, you can touch one firearm that you are proficient with and designate it as your phantom firearm. Your phantom firearm has the following benefits:</p>
+			<p class="indent">You can use that firearm as a spellcasting focus for your warlock spells.</p>
+			<p class="indent">Attacks with your phantom firearm are considered magical for the purposes of overcoming resistances and immunities to non-magical attacks and damage.</p>
+			<p class="indent">Whenever you cast an evocation spell that requires an attack roll, the spell originates from your phantom firearm. The range is still determined by the spell, and you use your spell attack modifier for the attack rolls as normal. Doing this does not expend a bullet.</p>
+			<p class="indent">You can dismiss your phantom firearm (no action required), shunting it into an extradimensional space, and you can use an action to summon your phantom firearm thereafter. The phantom firearm appears at your feet if it is in the extradimensional space when you die.</p>
+			<p class="indent">Finally, when you hit with a bullet from your phantom firearm, you can spend 1 adrenaline point. When you do so, roll an adrenaline die and add the result to the attack’s damage. The damage type of this extra damage is determined by your Otherworldly Patron, as shown in the Phantom Firearm table. If your patron is the Genie, you choose the damage type when you take this subclass at 3rd level.</p>
+		</description>
+		<sheet>
+			<description>You can use your firearm as a spellcasting focus. Attacks wiht your firearm are magical. You can dismiss your firearm, shunting it into an extradimensional space, and you can use an action to summon your firearm after. The firearm appears at your feet if its in the extradimensional space at death. When you hit with a bullet from your firearm, you can spend 1 adrenaline point to roll an adrenaline die and add the result to the attacks damage as necrotic damage.</description>
+		</sheet>
+	</element>
+	<element name="Patron Favor" type="Archetype Feature" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_UNDEAD_FAVOR">
+		<description>
+			<p>At 11th level, your patron has taken a shine to you, and bestows upon you a great gift. What gift they bless you with depends on the patron.</p>
+			<p class="indent">You can move through creatures and objects as if they were difficult terrain, but you take 1d10 force damage if you end your turn inside a creature or object.</p>
+		</description>
+		<sheet>
+			<description>You can move through creatures and objects as if they were difficult terrain, but you take 1d10 force damage if you end your turn inside a creature or object.</description>
+		</sheet>
+	</element>
+	<element name="Patron Reward" type="Archetype Feature" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_UNDEAD_REWARD">
+		<description>
+			<p>At 18th level, you have proven yourself as one of your patron's most worthy vessels, and they bestow upon you a glorious boon. What boon they bless you with depends on the patron.</p>
+			<p class="indent">When you reduce a creature to 0 hit points using your phantom firearm, a burst of black energy erupts from the body (unless the slain creature was an undead or construct). Creatures you choose within a 30-foot radius of the slain creature must make a Constitution saving throw against your spell save DC, taking 8d6 necrotic damage on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<sheet>
+			<description>When you reduce a creature to 0 hit points using your phantom firearm, unless the slain creature was undead or a construct, creatures you choose within a 30ft radius of the slain creature must make a CON saving throw against your spell save DC, taking 8d6 necrotic damage on a failed save, or half as much damage on a successful one. </description>
+		</sheet>
+	</element>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<element name="The Fathomless" type="Archetype" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_FATHOMLESS">
+		<supports>Phantom Shot Patron</supports>
+		<description>
+			<p>You have plunged into a pact with the deeps. An entity of the ocean, the Elemental Plane of Water, or another otherworldly sea now allows you to draw on its thalassic power. Is it merely using you to learn about terrestrial realms, or does it want you to open cosmic floodgates and drown the world?</p>
+			<p class="indent">Perhaps you were born into a generational cult that venerates the Fathomless and its spawn. Or you might have been shipwrecked and on the brink of drowning when your patron’s grasp offered you a chance at life. Whatever the reason for your pact, the sea and its unknown depths call to you.</p>
+			<p class="indent">Entities of the deep that might empower a warlock include krakens, ancient water elementals, godlike hallucinations dreamed into being by kuo-toa, merfolk demigods, and sea hag covens.</p>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_FATHOMLESS_EXPANDED_SPELL_LIST"/>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_FATHOMLESS_PHANTOM_FIREARM"/>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_FATHOMLESS_FAVOR"/>
+			<div element="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_FATHOMLESS_REWARD"/>
+		</description>
+		<sheet display="false">
+			<description>Your patron is a mysterious entity whose nature is utterly foreign to the fabric of reality.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_FATHOMLESS_EXPANDED_SPELL_LIST" level="3" />
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_FATHOMLESS_PHANTOM_FIREARM" level="3" />
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_FATHOMLESS_FAVOR" level="11" />
+			<grant type="Archetype Feature" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_FATHOMLESS_REWARD" level="18" />
+		</rules>
+	</element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_FATHOMLESS_EXPANDED_SPELL_LIST">
+		<description>
+			<p><em>1st-level Fathomless feature</em></p>
+			<p>The Fathomless lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5 class="caption">Fathomless Expanded Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>create or destroy water, thunderwave</em></td></tr>
+				<tr><td>2nd</td><td><em>gust of wind, silence</em></td></tr>
+				<tr><td>3rd</td><td><em>lightning bolt, sleet storm</em></td></tr>
+				<tr><td>4th</td><td><em>control water, summon elemental (water only)</em></td></tr>
+				<tr><td>5th</td><td><em>Bigby’s hand (appears as a tentacle), cone of cold</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The Fathomless lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+		</sheet>
+		<spellcasting name="PhantomShot" extend="true">
+			<extend>ID_PHB_SPELL_CREATE_OR_DESTROY_WATER</extend>
+			<extend>ID_PHB_SPELL_THUNDERWAVE</extend>
+			<extend>ID_PHB_SPELL_GUST_OF_WIND</extend>
+			<extend>ID_PHB_SPELL_SILENCE</extend>
+			<extend>ID_PHB_SPELL_LIGHTNING_BOLT</extend>
+			<extend>ID_PHB_SPELL_SLEET_STORM</extend>
+			<extend>ID_PHB_SPELL_CONTROL_WATER</extend>
+			<extend>ID_WOTC_TCOE_SPELL_SUMMON_ELEMENTAL</extend>
+			<extend>ID_PHB_SPELL_BIGBYS_HAND</extend>
+			<extend>ID_PHB_SPELL_CONE_OF_COLD</extend>
+		</spellcasting>
+	</element>
+	<element name="Phantom Firearm" type="Archetype Feature" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_FATHOMLESS_PHANTOM_FIREARM">
+		<description>
+			<p>At 3rd level, the influence of your patron allows you to mystically channel your will through a particular firearm. Whenever you finish a short or long rest, you can touch one firearm that you are proficient with and designate it as your phantom firearm. Your phantom firearm has the following benefits:</p>
+			<p class="indent">You can use that firearm as a spellcasting focus for your warlock spells.</p>
+			<p class="indent">Attacks with your phantom firearm are considered magical for the purposes of overcoming resistances and immunities to non-magical attacks and damage.</p>
+			<p class="indent">Whenever you cast an evocation spell that requires an attack roll, the spell originates from your phantom firearm. The range is still determined by the spell, and you use your spell attack modifier for the attack rolls as normal. Doing this does not expend a bullet.</p>
+			<p class="indent">You can dismiss your phantom firearm (no action required), shunting it into an extradimensional space, and you can use an action to summon your phantom firearm thereafter. The phantom firearm appears at your feet if it is in the extradimensional space when you die.</p>
+			<p class="indent">Finally, when you hit with a bullet from your phantom firearm, you can spend 1 adrenaline point. When you do so, roll an adrenaline die and add the result to the attack’s damage. The damage type of this extra damage is determined by your Otherworldly Patron, as shown in the Phantom Firearm table. If your patron is the Genie, you choose the damage type when you take this subclass at 3rd level.</p>
+		</description>
+		<sheet>
+			<description>You can use your firearm as a spellcasting focus. Attacks wiht your firearm are magical. You can dismiss your firearm, shunting it into an extradimensional space, and you can use an action to summon your firearm after. The firearm appears at your feet if its in the extradimensional space at death. When you hit with a bullet from your firearm, you can spend 1 adrenaline point to roll an adrenaline die and add the result to the attacks damage as acid damage.</description>
+		</sheet>
+	</element>
+	<element name="Patron Favor" type="Archetype Feature" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_FATHOMLESS_FAVOR">
+		<description>
+			<p>At 11th level, your patron has taken a shine to you, and bestows upon you a great gift. What gift they bless you with depends on the patron.</p>
+			<p class="indent">As a bonus action, you can shift into an aqueous form. In this form, you can breathe both air and water, you resist acid and cold damage, and you can move through a space as narrow as 1 inch wide without squeezing. You can dismiss this form at any time (no action required).</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can shift into an aqueous form. In this form, you can breathe both air and water, you resist acid and cold damage, and you can move through a space as narrow as 1 inch wide without squeezing. You can freely dismiss this form at any time.</description>
+		</sheet>
+	</element>
+	<element name="Patron Reward" type="Archetype Feature" source="Mythical Conquest" id="ID_HMRW_PHANTOM_SHOT_ARCHETYPE_OTHERWORLDLY_PATRON_FATHOMLESS_REWARD">
+		<description>
+			<p>At 18th level, you have proven yourself as one of your patron's most worthy vessels, and they bestow upon you a glorious boon. What boon they bless you with depends on the patron.</p>
+			<p class="indent">You become immune to cold and acid damage.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_ACID" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_COLD" />
+		</rules>
+	</element>
+</elements>

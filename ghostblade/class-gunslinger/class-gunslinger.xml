@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Gunslinger</name>
+		<description>The Gunslinger class from Mythical Conquest.</description>
+		<update version="0.0.1">
+			<file name="class-gunslinger.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-gunslinger/class-gunslinger.xml" />
+		</update>
+	</info>
+
+	<element name="Gunslinger" type="Class" source="Mythical Conquest" id="ID_HBRW_CLASS_GUNSLINGER">
+		<description>
+			<p>The sun hangs low in a hazy sky. Somewhere in a steadily darkening alley, a human lifts a tiefling up by the collar and slams him against the dry oak wall. A cold steel blade pressed to his throat, the tiefling prepares for the end... Then, a shot rings out, and the knife flies spinning out of the human's hand. Cursing, the would-be killer whips around and spots a yuan-ti figure standing in the street, blowing smoke off the barrel of her gun. The bandit flees into the wilderness, and the gunslinger starts patching up the victim's injuries.</p>
+			<p class="indent">Deep in a mountain ravine, a cult leader steps up to a raised dais, ready to address her followers. Just as she opens her mouth for her harangue, she crumples to the ground, silent as a stone. Chaos ensues. The cultists panic. High on a cliff, away from the action, a goliath congratulations his elven companion on another successful mark.</p>
+			<p class="indent">In a heavily fortified castle, a half-orc slams the ramrod down the barrel of his flintlock. All the guards fled with their tails between their legs when the hobgoblins took the castle, and after taking down mook after mook, the half-orc prepares himself for the final assault. A room full of hostages depends on him to get this exactly right. He sighs, cocks the hammer, and stands up.</p>
+			<p class="indent">Gunslingers make use of firearms, a relatively recent invention in many settings. As masters of a new technology, they have an upper hand on many opponents who have not before encountered gunpowder-based weapons. However, the hand holding the trigger is just as important as the gun itself in determining who comes out on top in battle. Strong as an ox and twice as stubborn, gunslingers pull ahead by taking heavy risks—and reaping heavy rewards.</p>      
+			<h4>TRUE GRIT</h4>
+			<p>Gunslingers may have powerful weapons, but that's not all they have going for them. Rather than relying on magic tricks or fancy footwork, gunslingers tend to overcome obstacles through sheer force of will, as they simply won't allow themselves to fail. They draw every last drop of vitality from their bodies, using their physical condition as a resource with which to perform daring stunts</p>
+			<p class="indent">Brash as they may be, most gunslingers are truly skilled at wielding their firearms. Marksmanship is a talent they don't even seem to need to hone, making the most impeccable shots on pure instinct. Different gunslingers specialize in different styles of shooting, leaning towards whatever feels most right to them on first crack. This seems to work out pretty well for them and anyone they work with—with a gunslinger watching your six, if you hear a shot, you won't even have to turn around to know the threat is neutralized.</p>
+			<h4>BRAVEHEARTS AND BRIGANDS</h4>
+			<p>Not everyone who wields a gun is a gunslinger. Some use guns recreationally; others craft them for sale; and still others carry firearms for personal protection, but are not particularly adept at using them. That said, any true gunslingers in a settlement are quite easy to spot. Often they have throngs of admirers, or their deep personal convictions compel them to do great deeds for the public. Some other gunslingers, however, use their talent for far less scrupulous work. Some highwaymen and robbers are indeed very adept at the use of firearms, and the most skilled of these lowlifes can garner a reputation that borders on legend.</p>
+			<h4>CREATING A GUNSLINGER</h4>
+			<p>When creating a gunslinger character, think about where your character comes from and their place in the world. Talk with your DM about an appropriate origin for your gunslinger. Were you an outlaw forced to run from authority, making you uncomfortably alert in city streets? Or were you a hired gun, taking odd jobs where you could get them, making your own way in an unforgiving world?</p>
+			<p class="indent">Why would you take up adventuring? Were you accused of a crime you didn't commit, and now you're searching for answers to clear your name? Are you a bounty hunter, on the trail of a mysterious target? Maybe you just enjoy the fresh air and a night under the stars on a wide open prairie. Any number of things could put your gunslinger character on the road, and any number of them could be true—true enough for an enthralled tavern crowd, anyway.</p>
+			<h5 class="caption">QUICK BUILD</h5>
+			<p>Put your highest ability score in Dexterity, then Charisma. You might reverse the two if you intend to take the Phantom Shot archetype. Next, pick the folk hero or criminal backgrounds.</p>
+			<h3>CLASS FEATURES</h3>
+			<p>As a gunslinger, you gain the following class features.</p>
+            <h5 class="caption">HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d8 per gunslinger level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per monk level after 1st</li>
+            </ul>
+            <h5 class="caption">PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> None</li>
+                <li><strong>Weapons:</strong> Simple weapons, firearms, hand crossbows, heavy crossbows</li>
+                <li><strong>Tools:</strong> Choose one type of artisan’s tools or one musical instrument</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Dexterity, Charisma </li>
+                <li><strong>Skills:</strong> : Choose three from Animal Handling, Athletics, Deception, Insight, Intimidation, Medicine, Perception, Persuasion, Stealth, Survival</li>
+            </ul>
+			<h5 class="caption">EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>one firearm of your choice from the Firearms table</li>
+				<li>(a) any simple weapon, (b) a longsword, or (c) a rapier</li>
+				<li>(a) thieves’ tools, or (b) tinker’s tools</li>
+				<li>(a) a burglar’s pack, or (b) an explorer’s pack</li>
+				<li>20 bullets</li>
+			</ul>
+			<h5 class="caption">THE GUNSLINGER</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Level</td><td class="col-10">Adrenaline Die</td><td class="col-10">Surges Known</td><td class="col-10">Features</td></tr>
+				</thead>
+				<tr><td>1st</td> <td>1d4</td> <td>—</td> <td>2</td> <td class="left">Unarmored Defense, Adrenaline Surges</td></tr>
+				<tr><td>2nd</td> <td>1d4</td> <td>2</td> <td>2</td> <td class="left">Expertise, Take a Breather</td></tr>
+				<tr><td>3rd</td> <td>1d4</td> <td>3</td> <td>3</td> <td class="left">Gunslinger Archetype</td></tr>
+				<tr><td>4th</td> <td>1d4</td> <td>4</td> <td>3</td> <td class="left">Ability Score Improvement, Trudge On</td></tr>
+				<tr><td>5th</td> <td>1d6</td> <td>5</td> <td>3</td> <td class="left">Extra Attack</td></tr>
+				<tr><td>6th</td> <td>1d6</td> <td>6</td> <td>4</td> <td class="left">Gunslinger Archetype feature</td></tr>
+				<tr><td>7th</td> <td>1d6</td> <td>7</td> <td>4</td> <td class="left">Stick To Your Guns</td></tr>
+				<tr><td>8th</td> <td>1d6</td> <td>8</td> <td>4</td> <td class="left">Ability Score Improvement</td></tr>
+				<tr><td>9th</td> <td>1d6</td> <td>9</td> <td>5</td> <td class="left">Cover Fire</td></tr>
+				<tr><td>10th</td> <td>1d6</td> <td>10</td> <td>5</td> <td class="left">Maverick</td></tr>
+				<tr><td>11th</td> <td>1d8</td> <td>11</td> <td>5</td> <td class="left">Gunslinger Archetype feature</td></tr>
+				<tr><td>12th</td> <td>1d8</td> <td>12</td> <td>6</td> <td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td> <td>1d8</td> <td>13</td> <td>6</td> <td class="left">Burning Blood</td></tr>
+				<tr><td>14th</td> <td>1d8</td> <td>14</td> <td>6</td> <td class="left">Gunslinger Archetype feature</td></tr>
+				<tr><td>15th</td> <td>1d8</td> <td>15</td> <td>7</td> <td class="left">Honorable Discharge</td></tr>
+				<tr><td>16th</td> <td>1d8</td> <td>16</td> <td>7</td> <td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td> <td>1d10</td> <td>17</td> <td>7</td> <td class="left">Extra Attack</td></tr>
+				<tr><td>18th</td> <td>1d10</td> <td>18</td> <td>8</td> <td class="left">Gunslinger Archetype feature</td></tr>
+				<tr><td>19th</td> <td>1d10</td> <td>19</td> <td>8</td> <td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td> <td>1d10</td> <td>20</td> <td>8</td> <td class="left">Soul of the Vigilante</td></tr>
+			</table>				
+			<div element="ID_HBRW_CLASS_FEATURE_GUNSLINGER_UNARMORED_DEFENSE" />
+			<div element="ID_HBRW_CLASS_FEATURE_GUNSLINGER_ADRENALINE_SURGES" />
+			<div element="ID_HBRW_CLASS_FEATURE_GUNSLINGER_EXPERTISE" />
+			<div element="ID_HBRW_CLASS_FEATURE_GUNSLINGER_TAKE_A_BREATHER" />
+			<div element="ID_HBRW_CLASS_FEATURE_GUNSLINGER_GUNSLINGER_ARCHETYPE" />
+			<div element="ID_HBRW_CLASS_FEATURE_GUNSLINGER_ABILITYSCOREIMPROVEMENT_GUNSLINGER" />
+			<div element="ID_HBRW_CLASS_FEATURE_GUNSLINGER_TRUDGE_ON" />
+			<div element="ID_HBRW_CLASS_FEATURE_GUNSLINGER_EXTRA_ATTACK_GUNSLINGER" />
+			<div element="ID_HBRW_CLASS_FEATURE_GUNSLINGER_STICK_TO_YOUR_GUN" />
+			<div element="ID_HBRW_CLASS_FEATURE_GUNSLINGER_COVER_FIRE" />
+			<div element="ID_HBRW_CLASS_FEATURE_GUNSLINGER_MAVERICK" />
+			<div element="ID_HBRW_CLASS_FEATURE_GUNSLINGER_BURNING_BLOOD" />
+			<div element="ID_HBRW_CLASS_FEATURE_GUNSLINGER_HONORABLE_DISCHARGE" />
+			<div element="ID_HBRW_CLASS_FEATURE_GUNSLINGER_SOUL_OF_THE_VIGILANTE" />
+		</description>
+		<sheet display="false">
+			<description>A master of fire arms, harnessing the power of the powder in pursuit of perfection in marksmanship.</description>
+		</sheet>
+		<setters>
+			<set name="short">A master of fire arms, harnessing the power of the powder in pursuit of perfection in marksmanship.</set>
+			<set name="hd">d8</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_HBRW_MULTICLASS_GUNSLINGER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" requirements="!ID_HBRW_MULTICLASS_GUNSLINGER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY" requirements="!ID_HBRW_MULTICLASS_GUNSLINGER" />
+			<grant type="Proficiency" id="ID_CRIT_PROFICIENCY_WEAPON_FIREARMS" requirements="!ID_HBRW_MULTICLASS_GUNSLINGER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" requirements="!ID_HBRW_MULTICLASS_GUNSLINGER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" requirements="!ID_HBRW_MULTICLASS_GUNSLINGER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_HBRW_MULTICLASS_GUNSLINGER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_HBRW_MULTICLASS_GUNSLINGER" />			
+			<select type="Proficiency" name="Skill Proficiency (Gunslinger)" supports="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_PERSUASION" number="2"  requirements="!ID_HBRW_MULTICLASS_GUNSLINGER" />
+			
+			<grant type="Class Feature" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_UNARMORED_DEFENSE" level="1" />
+			<grant type="Class Feature" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_ADRENALINE_SURGES" level="1" />
+			<grant type="Class Feature" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_EXPERTISE" level="2" />
+			<grant type="Class Feature" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_TAKE_A_BREATHER" level="2" />
+			<grant type="Class Feature" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_GUNSLINGER_ARCHETYPE" level="3" />
+			<grant type="Class Feature" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_ABILITYSCOREIMPROVEMENT_GUNSLINGER" level="4" />
+			<grant type="Class Feature" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_TRUDGE_ON" level="4" />
+			<grant type="Class Feature" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_EXTRA_ATTACK_GUNSLINGER" level="5" />
+			<grant type="Class Feature" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_STICK_TO_YOUR_GUN" level="7" />
+			<grant type="Class Feature" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_COVER_FIRE" level="9" />
+			<grant type="Class Feature" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_MAVERICK" level="10" />
+			<grant type="Class Feature" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_BURNING_BLOOD" level="13" />
+			<grant type="Class Feature" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_HONORABLE_DISCHARGE" level="15" />
+			<grant type="Class Feature" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_SOUL_OF_THE_VIGILANTE" level="20" />
+		</rules>
+		
+		<multiclass id="ID_HBRW_MULTICLASS_GUNSLINGER">
+			<prerequisite>Dexterity 13 and Charisma 13</prerequisite>
+			<requirements>([dex:13],[cha:13])</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Simple weapons, firearms</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+				<grant type="Proficiency" id="ID_CRIT_PROFICIENCY_WEAPON_FIREARMS" />
+			</rules>
+		</multiclass>
+	</element>
+	
+	<element name="Unarmored Defense" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_UNARMORED_DEFENSE">
+		<description>
+			<p>Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Charisma modifier.</p>
+		</description>
+		<sheet>
+			<description>While you are wearing no armor and not wielding a shield, your AC equals {{ac:unarmored defense gunslinger}}.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:unarmored defense gunslinger:base" value="10" />
+			<stat name="ac:unarmored defense gunslinger:dexterity" value="dexterity:modifier" />
+			<stat name="ac:unarmored defense gunslinger:charisma" value="charisma:modifier" />
+			<stat name="ac:unarmored defense gunslinger" value="ac:unarmored defense gunslinger:base" />
+			<stat name="ac:unarmored defense gunslinger" value="ac:unarmored defense gunslinger:dexterity" />
+			<stat name="ac:unarmored defense gunslinger" value="ac:unarmored defense gunslinger:charisma" />
+			<stat name="ac:calculation" value="ac:unarmored defense gunslinger" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Defense (Gunslinger)" />
+		</rules>
+	</element>
+	
+	<element name="Adrenaline Surges" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_ADRENALINE_SURGES">
+		<description>
+			<p>You have access to adrenaline points, which are a pool of energy that you draw from in times of danger. You gain adrenaline points by taking risks and triumphing over your foes. You can then spend adrenaline points to perform ever greater feats of skill, called adrenaline surges.</p>
+			<p class="indent">You can have a maximum number of adrenaline points at a time equal to your proficiency bonus. Your pool of adrenaline points resets to zero when you finish a long rest.</p>
+			<ul>
+				<li>You gain one adrenaline point when you:</li>
+				<li>End your turn within 5 feet of a hostile creature</li>
+				<li>Reduce a creature to 0 hit points.</li>
+				
+				<li>You gain two adrenaline points when you:</li>
+				<li>Land a critical hit</li>
+				<li>Choose to fail a saving throw against an effect originating from a hostile creature</li>
+			</ul>
+			<p>At 1st level, you gain two adrenaline surges of your choice. Your surge options are detailed at the end of the class description. When you gain certain gunslinger levels, you gain additional surges of your choice, as shown in the Surges Known column of the Gunslinger table</p>
+			<p class="indent">Additionally, when you gain a level in this class, you can choose one of the surges you know and replace it with another surge that you could learn at that level.</p>
+			<p class="indent">Some adrenaline surges require your target to make a saving throw to resist the feature's effects. The saving throw DC is calculated as follows:</p>
+			<p class="bold">Adrenaline save DC=</p><p> 8 + your proficiency bonus + your Charisma modifier</p>
+			<p>Some adrenaline surges require you to roll a special die, called an adrenaline die. At 1st level, this die is a d4. Your adrenaline die changes when you reach certain levels in this class, as shown in the Adrenaline Die column of the Gunslinger table.</p>
+		</description>
+		<sheet>
+			<description>
+				<p>You can have a maximum of {{proficiency}} adrenaline points at a time. Your pool of adrenaline points resets to zero after a long rest.</p>
+				<p>Gain 1 Adrenaline Point when you end your turn within 5ft of a hostile creature or reduce a creature to 0 hp.</p>
+				<p>Gain 2 Adrenaline Points when you land a critical hit or choose to fail a saving throw against an effect originating from a hostile creature.</p>
+				<p>Your Adrenaline Die is 1d{{adrenaline:dice}}, and your Adrenaline Save DC={{adrenaline:dc}}</p>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="adrenaline:dc" value="8" />
+			<stat name="adrenaline:dc" value="proficiency" />
+			<stat name="adrenaline:dc" value="charisma:modifier" />
+			<stat name="adrenaline:dice" value="4" />
+			<stat name="adrenaline:dice" value="6" level="5" />
+			<stat name="adrenaline:dice" value="8" level="11" />
+			<stat name="adrenaline:dice" value="10" level="17" />
+			<select type="Class Feature" name="Adrenaline Surge" supports="Adrenaline Surges" number="2"/>
+			<select type="Class Feature" name="Adrenaline Surge" supports="Adrenaline Surges" level="3" number="1"/>
+			<select type="Class Feature" name="Adrenaline Surge" supports="Adrenaline Surges" level="6" number="1"/>
+			<select type="Class Feature" name="Adrenaline Surge" supports="Adrenaline Surges" level="9" number="1"/>
+			<select type="Class Feature" name="Adrenaline Surge" supports="Adrenaline Surges" level="12" number="1"/>
+			<select type="Class Feature" name="Adrenaline Surge" supports="Adrenaline Surges" level="15" number="1"/>
+			<select type="Class Feature" name="Adrenaline Surge" supports="Adrenaline Surges" level="18" number="1"/>
+		</rules>
+	</element>
+	
+	<element name="Expertise" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_EXPERTISE">
+		<description>
+			<p> At 1st level, choose two of your skill or tool proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
+		</description>
+		<sheet display="false">
+			<description>Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Expertise (Gunslinger)" level="1" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
+		</rules>
+	</element>
+	
+	<element name="Take a Breather" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_TAKE_A_BREATHER">
+		<description>
+			<p>Also at 2nd level, when you spend hit dice to heal on a short rest, you can use your Charisma modifier, rather than your Constitution modifier, when determining the amount of hit points you regain.</p>
+		</description>
+		<sheet>
+			<description>When you spend hit die to heal on a short rest, you can use your CHA mod, rather than your CON mod, when determining the amount of hp you regain.</description>
+		</sheet>
+	</element>
+	
+	<element name="Gunslinger Archetype" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_GUNSLINGER_ARCHETYPE">
+		<description>
+			<p>At 3rd level, you choose an archetype that you emulate in the exercise of your gunslinger abilities. Your choices are detailed at the end of this class description. Your archetype choice grants you features at 3rd level and again at 6th, 11th, 14th, and 18th level.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Gunslinger Archetype" supports="Gunslinger Mythical Conquest Archetype" />
+		</rules>
+	</element>
+	
+	<element name="Ability Score Improvement" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_ABILITYSCOREIMPROVEMENT_GUNSLINGER">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Gunslinger 4)" supports="Improvement Option,Gunslinger,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Gunslinger 8)" supports="Improvement Option,Gunslinger,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Gunslinger 12)" supports="Improvement Option,Gunslinger,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Gunslinger 16)" supports="Improvement Option,Gunslinger,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Gunslinger 19)" supports="Improvement Option,Gunslinger,19" level="19" />
+		</rules>
+	</element>
+	
+	<element name="Trudge On" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_TRUDGE_ON">
+		<description>
+			<p>Also at 4th level, you’ve spent much of your life traveling and have grown hardy. You have advantage on Constitution saving throws made to stave off exhaustion.</p>
+		</description>
+		<sheet>
+			<description>y. You have advantage on Constitution saving throws made to stave off exhaustion.</description>
+		</sheet>
+	</element>
+	
+	<element name="Extra Attack" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_EXTRA_ATTACK_GUNSLINGER">
+		<description>
+			<p>Beginning at 5th level you can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks increases to three when you reach 17th level in this class</p>
+		</description>
+		<sheet level="5">
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<sheet level="17">
+			<description>You can attack three times, instead of once, whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+			<stat name="extra attack:count" value="3" level="17" bonus="extra attack" />
+		</rules>
+	</element>
+	
+	<element name="Stick to Your Guns" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_STICK_TO_YOUR_GUN">
+		<description>
+			<p>At 7th level, you can pull from the well of adrenaline coursing through your body to endure the most intense conditions.</p>
+			<p class="indent">When you make a saving throw with at least 1 hit point remaining, you can spend 3 adrenaline points. When you do so, roll an adrenaline die and add the result to the total. You do this after you see the total, but before the DM says whether the roll succeeds or fails.</p>
+		</description>
+		<sheet usage="3 Adrenaline Points">
+			<description>When you make a saving throw with at least 1 hit point remaining, you can roll an adrenaline die and add the result to the total.</description>
+		</sheet>
+	</element>
+	
+	<element name="Cover Fire" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_COVER_FIRE">
+		<description>
+			<p>At 9th level, you’ve become more adept at using cover to your advantage. When you have half cover, you’re considered to be under the effects of three-quarters cover instead. When you have three-quarters cover, you’re considered to be under the effects of full cover instead.</p>
+		</description>
+		<sheet>
+			<description>When you have half cover, you’re considered to be under the effects of three-quarters cover instead. When you have three-quarters cover, you’re considered to be under the effects of full cover instead.</description>
+		</sheet>
+	</element>
+	
+	<element name="Maverick" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_MAVERICK">
+		<description>
+			<p>Beginning at 10th level, you have an unshakeable inner spirit. You are immune to being charmed or frightened.</p>
+		</description>
+		<sheet>
+			<description>You are immune to being charmed or frightened.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FRIGHTENED" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_CHARMED" />
+		</rules>
+	</element>
+	
+	<element name="Burning Blood" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_BURNING_BLOOD">
+		<description>
+			<p>At 13th level, your strong will invigorates you even when you are at death’s door</p>
+			<p class="indent">While you have adrenaline points available, having 0 hit points doesn’t knock you unconscious. However, at the end of each of your turns, you lose 1 adrenaline point.</p>
+			<p class="indent">You still make death saving throws, and you suffer the normal effects of taking damage while at 0 hit points. However, if you would die due to failing death saving throws, you don’t die until you run out of adrenaline points, and you die then only if you still have 0 hit points.</p>
+		</description>
+		<sheet>
+			<description>While you have adrenaline points available, having 0 hp doesn’t knock you out. However, at the end of each of your turns, you lose 1 adrenaline point. You still make death saving throws, and you suffer the normal effects of taking damage while at 0 hp. However, if you would die due to failing death saving throws, you don’t die until you run out of adrenaline points, and you die then only if you still have 0 hp.</description>
+		</sheet>
+	</element>
+	
+	<element name="Honorable Discharge" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_HONORABLE_DISCHARGE">
+		<description>
+			<p>Starting at 15th level, your firearm attacks score a critical hit on a roll of 19 or 20.</p>
+		</description>
+		<sheet>
+			<description>Your firearm attacks score a critical hit on a roll of 19 or 20.</description>
+		</sheet>
+	</element>
+	
+	<element name="Soul of the Vigilante" type="Class Feature" source="Mythical Conquest" id="ID_HBRW_CLASS_FEATURE_GUNSLINGER_SOUL_OF_THE_VIGILANTE">
+		<description>
+			<p>At 20th level, you are unflinching in your dedication to your cause. Whenever you roll an adrenaline die, roll the die twice and take the higher of the two rolls.</p>
+		</description>
+		<sheet>
+			<description>Whenever you roll an adrenaline die, roll the die twice and take the higher of the two rolls.</description>
+		</sheet>
+	</element>
+</elements>

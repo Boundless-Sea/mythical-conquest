@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Gunslinger Phantom Shot</name>
+        <update version="0.0.1">
+            <file name="gunslinger-phantom-shot.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-gunslinger/gunslinger-phantom-shot.xml" />
+        </update>
+    </info>
+    
+    <element name="Phantom Shot" type="Archetype" source="Mythical Conquest" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_PHANTOM_SHOT">
+        <supports>Gunslinger Mythical Conquest Archetype</supports>
+        <description>
+            <p>You and your gun are marked by a supernatural entity. This entity bestowed upon you the gift of its magic, in return for an unspecified service of its bidding. The Phantom Shot often has a darker aspect to them than most gunslingers. They may be the cloaked stranger in a shadowy corner of the saloon, or a masked vigilante, riding into the fray on their dark horse at the last minute to save the day</p>
+            <p class="indent">Whatever form they take, the Phantom Shot never rides alone. After all, their patron could always call in a favor…</p>
+            <div element="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_PHANTOM_SHOT_FEATURE_OTHERWORLDLY_PATRON" />
+            <div element="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_PHANTOM_SHOT_FEATURE_PACT_MAGIC" />
+            <div element="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_PHANTOM_SHOT_FEATURE_BLOOD_OATH" />
+			<div element="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_PHANTOM_SHOT_FEATURE_SUPERNATURAL_SERVO" />
+			<div element="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_PHANTOM_SHOT_FEATURE_PHANTOM_RESTORATION" />
+        </description>
+        <sheet display="false">
+            <description>Whatever form they take, the Phantom Shot never rides alone. After all, their patron could always call in a favor…</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_PHANTOM_SHOT_FEATURE_OTHERWORLDLY_PATRON" level="3" />
+			<grant type="Archetype Feature" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_PHANTOM_SHOT_FEATURE_PACT_MAGIC" level="3" />
+            <grant type="Archetype Feature" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_PHANTOM_SHOT_FEATURE_BLOOD_OATH" level="3" />
+            <grant type="Archetype Feature" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_PHANTOM_SHOT_FEATURE_SUPERNATURAL_SERVO" level="6" />
+			<grant type="Archetype Feature" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_PHANTOM_SHOT_FEATURE_PHANTOM_RESTORATION" level="14"/>
+        </rules>
+    </element>
+	
+	<element name="Otherworldly Patron" type="Archetype Feature" source="Mythical Conquest" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_PHANTOM_SHOT_FEATURE_OTHERWORLDLY_PATRON">
+		<supports>Phantom Shot Patron</supports>
+		<description>
+			<p>At 3rd level, you have struck a bargain with an otherworldly being of your choice.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Archetype" name="Otherworldly Patron" supports="Phantom Shot Patron" />
+		</rules>
+	</element>
+
+	<element name="Pact Magic" type="Archetype Feature" source="Mythical Conquest" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_PHANTOM_SHOT_FEATURE_PACT_MAGIC">
+		<description>
+			<p>Your arcane research and the magic bestowed on you by your patron have given you facility with spells.</p>
+			<h5>CANTRIPS</h5>
+			<p>You know two cantrips of your choice from the warlock spell list. You learn another warlock cantrip at 10th level.</p>
+			<h5>SPELL SLOTS</h5>
+			<p>The Phantom Shot Pact Magic table shows how many spell slots you have to cast your warlock spells of 1st through 4th level. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest.</p>
+			<p class="indent">For example, when you are 7th level, you have two 2ndlevel spell slots. To cast the 1st-level spell witch bolt, you must spend one of these slots, and you cast it as a 2nd-level spell.</p>
+			<h5>SPELLS KNOWN OF 1ST LEVEL AND HIGHER</h5>
+			<p>You know two 1st-level warlock spells of your choice from the warlock spell list.</p>
+			<p class="indent">The Spells Known column of the Warlock table shows when you learn more warlock spells of your choice of 1st level and higher. A spell you choose must be of a level no higher than what’s shown in the table's Slot Level column for your level. When you reach 6th level, for example, you learn a new warlock spell, which can be 1st, 2nd, or 3rd level.</p>
+			<p class="indent">Additionally, when you gain a level in this class, you can choose one of the warlock spells you know and replace it with another spell from the warlock spell list, which also must be of a level for which you have spell slots.</p>
+			<h5>SPELLCASTING ABILITY</h5>
+			<p>Charisma is your spellcasting ability for your warlock spells, so you use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one.</p>
+			<p class="indent">
+				<b>Spell save DC</b> = 8 + your proficiency bonus + your Charisma modifier</p>
+			<p class="indent">
+				<b>Spell attack modifier</b> = your proficiency bonus + your Charisma modifier</p>
+			<h5>SPELLCASTING FOCUS</h5>
+			<p>You can use an arcane focus as a spellcasting focus for your warlock spells.</p>
+		</description>
+		<sheet display="false">
+			<description>Your arcane research and the magic bestowed on you by your patron have given you facility with spells. You have {{warlock:spellcasting:slots:count}} slots of level {{warlock:spellcasting:slot}}</description>
+		</sheet>
+		<spellcasting name="PhantomShot" ability="Charisma" allowReplace="true">
+			<list>Warlock</list>
+		</spellcasting>
+		<rules>
+			<!-- add not full but single _not counting as multiclass spellcaster due to pact magic -->
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+
+			<stat name="phantomshot:spellcasting:slots:count" value="1" level="3"/>
+			<stat name="phantomshot:spellcasting:slots:count" value="1" level="6"/>
+
+			<stat name="phantomshot:spellcasting:slot" value="1" level="3" />
+			<stat name="phantomshot:spellcasting:slot" value="1" level="7" />
+			<stat name="phantomshot:spellcasting:slot" value="1" level="13" />
+			<stat name="phantomshot:spellcasting:slot" value="1" level="19" />
+
+			<!-- negative count to remove slots -->
+			<stat name="phantomshot:spellcasting:slots:1" value="phantomshot:spellcasting:slots:count" level="3" />
+			<stat name="phantomshot:spellcasting:slots:1" value="-phantomshot:spellcasting:slots:count" level="7" />
+			<stat name="phantomshot:spellcasting:slots:2" value="phantomshot:spellcasting:slots:count" level="7" />
+			<stat name="phantomshot:spellcasting:slots:2" value="-phantomshot:spellcasting:slots:count" level="13" />
+			<stat name="phantomshot:spellcasting:slots:3" value="phantomshot:spellcasting:slots:count" level="13" />
+			<stat name="phantomshot:spellcasting:slots:3" value="-phantomshot:spellcasting:slots:count" level="19" />
+			<stat name="phantomshot:spellcasting:slots:4" value="phantomshot:spellcasting:slots:count" level="19" />
+
+			<select type="Spell" name="Cantrip (Phantom Shot)" supports="$(spellcasting:list),0" level="3" number="2" spellcasting="PhantomShot" />
+			<select type="Spell" name="Cantrip (Phantom Shot)" supports="$(spellcasting:list),0" level="10" spellcasting="PhantomShot" />
+
+			<select type="Spell" name="Spellcasting (Phantom Shot)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" number="2" spellcasting="PhantomShot"/>
+			<select type="Spell" name="Spellcasting (Phantom Shot)" supports="$(spellcasting:list),$(spellcasting:slots)" level="5" spellcasting="PhantomShot"/>
+			<select type="Spell" name="Spellcasting (Phantom Shot)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="PhantomShot"/>
+			<select type="Spell" name="Spellcasting (Phantom Shot)" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" spellcasting="PhantomShot"/>
+			<select type="Spell" name="Spellcasting (Phantom Shot)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="PhantomShot"/>
+			<select type="Spell" name="Spellcasting (Phantom Shot)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="PhantomShot"/>
+			<select type="Spell" name="Spellcasting (Phantom Shot)" supports="$(spellcasting:list),$(spellcasting:slots)" level="15" spellcasting="PhantomShot"/>
+			<select type="Spell" name="Spellcasting (Phantom Shot)" supports="$(spellcasting:list),$(spellcasting:slots)" level="17" spellcasting="PhantomShot"/>
+			<select type="Spell" name="Spellcasting (Phantom Shot)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="PhantomShot"/>
+			<select type="Spell" name="Spellcasting (Phantom Shot)" supports="$(spellcasting:list),$(spellcasting:slots)" level="20" spellcasting="PhantomShot"/>
+		</rules>
+	</element>
+	
+	<element name="Blood Oath" type="Archetype Feature" source="Mythical Conquest" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_PHANTOM_SHOT_FEATURE_BLOOD_OATH">
+		<description>
+			<p>At 3rd level, channeling the power of your patron causes a rush of adrenaline to pulse through your veins. When you cast a spell of 1st level or higher, you gain adrenaline points equal to the spell’s level.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell of 1st level or higher, gain adrenaline points equal to the spells level.</description>
+		</sheet>
+	</element>
+	
+	<element name="Supernatural Servo" type="Archetype Feature" source="Mythical Conquest" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_PHANTOM_SHOT_FEATURE_SUPERNATURAL_SERVO">
+		<description>
+			<p>Starting at 6th level, when you use your action to cast a cantrip, you can make one firearm attack as a bonus action.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When you use your action to cast a cantrip, you can make one firearm attack.</description>
+		</sheet>
+	</element>
+	
+	<element name="Phantom Restoration" type="Archetype Feature" source="Mythical Conquest" id="ID_HBRW_ARCHETYPE_GUNSLINGER_ARCHETYPE_PHANTOM_SHOT_FEATURE_PHANTOM_RESTORATION">
+		<description>
+			<p>Starting at 14th level, you can exchange some of your vitality for power. As an action, you can restore one of your spell slots by sacrificing a number of gunslinger hit dice equal to the slot's level. Once you use this feature, you cannot use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can restore one of your spell slots by sacrificing a number of gunslinger hit dice equal to the slots level.</description>
+		</sheet>
+	</element>
+</elements>

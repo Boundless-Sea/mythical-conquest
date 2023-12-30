@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Samurai Class</name>
+		<description>The Samurai Class adds a new take on the popular archetype to DnD 5e.</description>
+		<author url="https://www.dandwiki.com/wiki/Crusader,_Variant_(5e_Class)">DnD Wiki</author>
+		<update version="0.0.1">
+			<file name="class-crusader.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-crusader.index" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-crusader/source.xml" />
+		<file name="class-crusader.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-crusader/class-crusader.xml" />
+		<file name="crusader-graceful-savior.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-crusader/crusader-graceful-savior.xml" />
+	</files>
+</index>

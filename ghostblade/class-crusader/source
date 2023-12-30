@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.2">
-			<file name="sources.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-crusader/source.xml" />
+			<file name="source.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-crusader/source.xml" />
 		</update>
 	</info>
 	<element name="Mythical Conquest" type="Source" source="Ghostblade" id="ID_MYTHIC_SOURCE_CRUSADER">

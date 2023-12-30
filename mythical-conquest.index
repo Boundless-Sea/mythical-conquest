@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="mythical-conquest.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/mythical-conquest.index" />
 		</update>
 	</info>
 	<files>
 		<file name="class-ghostblade.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-ghostblade.index" />	
+		<file name="class-gunslinger.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/gunslinger/class-gunslinger.index" />
 	</files>
 </index>

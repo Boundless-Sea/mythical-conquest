@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Phantom Demon</name>
+        <update version="0.0.1">
+            <file name="crusader-graceful-savior.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-crusader/crusader-graceful-savior.xml" />
+        </update>
+    </info>
+    
+   <element name="Graceful Savior" type="Archetype" source="Mythical Conquest" id="ID_MYTHIC_CLASS_CRUSADER_ARCHETYPE_GRACEFUL_SAVIOR">
+		<supports>Crusade Call</supports>
+		<description>
+			<p>The forces above this world granted you a duty to heal and protect. You are incredibly able to get to those who need your help.</p>
+			<div element="ID_MYTHIC_CLASS_CRUSADER_ARCHETYPE_GRACEFUL_SAVIOR_HARM_NOT"/>
+			<div element="ID_MYTHIC_CLASS_CRUSADER_ARCHETYPE_GRACEFUL_SAVIOR_IMBUED_HEALING"/>
+			<div element="ID_MYTHIC_CLASS_CRUSADER_ARCHETYPE_GRACEFUL_SAVIOR_DIVINE_REFLEX"/>
+			<div element="ID_MYTHIC_CLASS_CRUSADER_ARCHETYPE_GRACEFUL_SAVIOR_PROTECTORS_FAVOR"/>
+			
+		</description>
+		<sheet display="false">
+			<description>The forces above this world granted you a duty to heal and protect. You are incredibly able to get to those who need your help.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MYTHIC_CLASS_CRUSADER_ARCHETYPE_GRACEFUL_SAVIOR_HARM_NOT" level="1" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_CLASS_CRUSADER_ARCHETYPE_GRACEFUL_SAVIOR_IMBUED_HEALING" level="6" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_CLASS_CRUSADER_ARCHETYPE_GRACEFUL_SAVIOR_DIVINE_REFLEX" level="11" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_CLASS_CRUSADER_ARCHETYPE_GRACEFUL_SAVIOR_PROTECTORS_FAVOR" level="18" />
+		</rules>
+	</element>
+	<element name="Harm not" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_CRUSADER_ARCHETYPE_GRACEFUL_SAVIOR_HARM_NOT">
+		<description>
+			<p>Starting at 1st level, you grant others an aura of protection to ward of ill powers. You can cast the sanctuary spell without material components. You can cast this spell a number of times equal to your proficiency bonus. You regain uses of this spell after you finish a long rest. Charisma is your spellcasting modifier for this spell.</p>
+		</description>
+		<sheet action="Action" usage="{{proficiency}}/Long Rest">
+			<description>You can cast the sanctuary spell without material components. Charisma is your spellcasting modifier for this spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SANCTUARY" />
+		</rules>
+	</element>
+	<element name="Imbued Healing" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_CRUSADER_ARCHETYPE_GRACEFUL_SAVIOR_IMBUED_HEALING">
+		<description>
+			<p>Starting at 6th Level, your blessings are great gifts. When you use your Legionnaire's Blessing, you may add one of the following effects:</p>
+			<p>Healing: The targeted creature gains an additional temporary hit point for each of your hit dice. These temporary hit points last for an hour.</p>
+			<p>Luck: When the targeted creature takes any damage, they may treat any damage as 1 until the end of their next turn.</p>
+			<p>Protection: The targeted creature gains a bonus to their AC equal to your Charisma modifier until the end of their next turn.</p>
+		</description>
+		<sheet>
+			<description>
+			<p>When you use your Legionnaire's Blessing, you may add one of the following effects:</p><br />
+			<p>Healing: The targeted creature gains an additional temporary hit point for each of your hit dice. These temporary hit points last for an hour.</p><br />
+			<p>Luck: When the targeted creature takes any damage, they may treat any damage as 1 until the end of their next turn.</p><br />
+			<p>Protection: The targeted creature gains a bonus to their AC equal to {{charisma:modifier}} until the end of their next turn.</p>
+			</description>
+		</sheet>
+	</element>
+	<element name="Divine Reflex" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_CRUSADER_ARCHETYPE_GRACEFUL_SAVIOR_DIVINE_REFLEX">
+		<description>
+			<p>Starting at 11th level, your powers are needed in many places, meaning the gods watching over you wish for you to be protected from ill. You have advantage in all Dexterity saving throws.</p>
+		</description>
+		<sheet>
+			<description>You have advantage in all Dexterity saving throws.</description>
+		</sheet>
+	</element>
+	<element name="Protectors Favor" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_CRUSADER_ARCHETYPE_GRACEFUL_SAVIOR_PROTECTORS_FAVOR">
+		<description>
+			<p>Starting at 18th level, you are rewarded for your selflessness. When you use your Taunting Shout to divert an attack onto yourself, you can reduce the damage to 1.</p>
+		</description>
+		<sheet>
+			<description>When you use your Taunting Shout to divert an attack onto yourself, you can reduce the damage to 1.</description>
+		</sheet>
+	</element>
+</elements>

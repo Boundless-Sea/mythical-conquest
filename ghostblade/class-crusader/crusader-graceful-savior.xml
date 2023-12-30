@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Phantom Demon</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="crusader-graceful-savior.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-crusader/crusader-graceful-savior.xml" />
         </update>
     </info>

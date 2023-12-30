@@ -6,6 +6,6 @@
 		</update>
 	</info>
 	<files>
-		<file name="ghostblade.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/mythical-conquest/ghostblade.index" />	
+		<file name="class-ghostblade.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/mythical-conquest/class-ghostblade.index" />	
 	</files>
 </index>

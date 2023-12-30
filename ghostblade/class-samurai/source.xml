@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="sources.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-samurai/source.xml" />
 		</update>
 	</info>
@@ -16,7 +16,7 @@
 			<set name="abbreviation">Mythic</set>
             		<set name="url"></set>
            		 <set name="image">https://mir-s3-cdn-cf.behance.net/project_modules/hd/6b089a55244639.597c5eaf338c8.jpg</set>
-           		 <set name="author" abbreviation="BC" url="https://www.dandwiki.com/w/index.php?title=Samurai_(5e_Class)&action=edit">BreadCrumb</set>
+           		 <set name="author" abbreviation="BC" url="https://www.dandwiki.com/w/index.php?title=Samurai_(5e_Class)">BreadCrumb</set>
            		 <set name="official">false</set>
             		<set name="supplement">false</set>
            		 <set name="playtest">false</set>

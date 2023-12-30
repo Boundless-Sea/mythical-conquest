@@ -4,7 +4,7 @@
 		<name>Ghostblade Class</name>
 		<description>The Ghostblade Class adds a new class inspired by The King's Avatar and Dungeon Fighter Online's Soul Bender Class.</description>
 		<author url="https://www.reddit.com/user/kodabeeer">Kodabeer</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="class-ghostblade.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-ghostblade.index" />
 		</update>
 	</info>
@@ -15,5 +15,6 @@
 		<file name="ghostblade-archetype-phantom-demon.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-ghostblade/ghostblade-archetype-phantom-demon.xml" />
     		<file name="ghostblade-patrons.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-ghostblade/ghostblade-patrons.xml" />	
 		<file name="ghost-haunts.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-ghostblade/ghost-haunts.xml" />
- </files>
+		<file name="ghostblade-archetype-sword-demon.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-ghostblade/ghostblade-archetype-sword-demon.xml" />
+	</files>
 </index>

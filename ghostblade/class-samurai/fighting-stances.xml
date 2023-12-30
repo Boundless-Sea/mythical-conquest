@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Fighting Stances</name>
+		<description>Fighting Stances for the Samurai Class.</description>
+		<update version="0.0.1">
+			<file name="fighting-stances.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-samurai/fighting-stances.xml" />
+		</update>
+	</info>
+	
+	<element name="Stone Stance" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_FEATURE_FIGHTINGSTANCE_STONE_STANCE">
+		<supports>Fighting Stance, Samurai</supports>
+		<description>
+			<p>When you enter this stance and at the start of each of your turns while you have at least 1 hit point or more remaining, you gain a number of temporary hit points equal to {{constitution:modifier}} (minimum of one) + {{proficiency}}. These temporary hit points last until you are no longer in this stance. Once per turn, when you hit a creature with a weapon attack, you deal an additional 2 weapon damage die to the creature. Opportunity attacks made against you are rolled with advantage and if you use more than half of your movement speed in a turn, this stance immediately ends.</p>
+		</description>
+		<sheet>
+			<description>When you enter this stance and at the start of each of your turns while you have at least 1 hit point or more remaining, you gain {{stance_stone:heal}} temporary hitpoints. These temporary hit points last until you are no longer in this stance. Once per turn, when you hit a creature with a weapon attack, you deal an additional 2 weapon damage die to the creature. Opportunity attacks made against you are rolled with advantage, if you use more than 1/2 your movement speed in a turn, this stance immediately ends.</description>
+		</sheet>
+		<rules>
+			<stat name="stance_stone:heal" value="proficiency" />
+			<stat name="stance_stone:heal" value="constitution:modifier" />
+		</rules>
+	</element>
+	
+	<element name="Wind Stance" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_FEATURE_FIGHTINGSTANCE_WIND_STANCE">
+		<supports>Fighting Stance, Samurai</supports>
+		<description>
+			<p>While in this stance, you become both quick and maneuverable. You may take the Dash or Disengage action as a bonus action, and you ignore difficult terrain when you Dash. Melee attack rolls made against you are at disadvantage and upon an attack missing you are able to make an attack of opportunity against them if they are within weapon range. If you have access to Strike from the Void, you can use one of the charges to make this attack regardless of range.</p>
+		</description>
+		<sheet>
+			<description>You may take the Dash or Disengage action as a bonus action, and you ignore difficult terrain when you Dash. Melee attack rolls made against you are at disadvantage and upon an attack missing you are able to make an attack of opportunity against them if they are within weapon range. If you have access to Strike from the Void, you can use 1 of the charges to make this attack regardless of range.</description>
+		</sheet>
+	</element>
+	
+	<element name="Water Stance" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_FEATURE_FIGHTINGSTANCE_WATER_STANCE">
+		<supports>Fighting Stance, Samurai</supports>
+		<description>
+			<p>When you successfully hit a creature with a melee weapon attack while in this stance, you may immediately spend your bonus action to attempt to knock the creature prone. If you do this, you force them to make a Dexterity saving throw equal to 8 + your {{strength:modifier}} + your {{proficiency}}. On a success the creature gains advantage on their next attack roll made against you. Additionally, while in this stance, landing an attack of opportunity on an enemy reduces that creatures movement to 0ft until the beginning of its next turn.</p>
+		</description>
+		<sheet>
+			<description>When you successfully hit a creature with a melee weapon attack while in this stance, you may immediately spend your bonus action to attempt to knock the creature prone. If you do this, you force them to make a Dexterity saving throw equal to 8 + your {{strength:modifier}} + your {{proficiency}}. On a success the creature gains advantage on their next attack roll made against you. Additionally, while in this stance, landing an attack of opportunity on an enemy reduces that creatures movement to 0ft until the beginning of its next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="water_stone:dc" value="proficiency" />
+			<stat name="water_stone:dc" value="strength:modifier" />
+		</rules>
+	</element>
+	
+	<element name="Earth Stance" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_FEATURE_FIGHTINGSTANCE_EARTH_STANCE">
+		<supports>Fighting Stance, Samurai</supports>
+		<description>
+			<p>While you are in this stance, you have advantage on Strength checks made to grapple and can hold a two-handed weapon in one hand whilst grappling a creature. Additionally, on one attack per turn, you may use your bonus action to gain a bonus to your AC equal to your Proficiency Bonus if the attack hit. This bonus AC lasts until the start of your next turn. Also while in this stance your feet are planted firmly on the ground, doing this grants advantage on Strength saving throws and disadvantage on Dexterity saving throws.</p>
+		</description>
+		<sheet>
+			<description>While in this stance, you have advantage on Strength checks made to grapple and can hold a two-handed weapon in one hand whilst grappling a creature. Additionally, on one attack per turn, you may use your bonus action to gain a bonus to your AC equal to {{proficiency}} if the attack hit. This bonus AC lasts until the start of your next turn. Also while in this stance your feet are planted firmly on the ground, doing this grants advantage on Strength saving throws and disadvantage on Dexterity saving throws.</description>
+		</sheet>
+	</element>
+	
+	<element name="Fire Stance" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_FEATURE_FIGHTINGSTANCE_FIRE_STANCE">
+		<supports>Fighting Stance, Samurai</supports>
+		<description>
+			<p>While in this stance, you focus all you have on offence by sacrificing your defences. The first attack you make each turn is made with advantage. Additionally, you suffer a -4 to AC as long as you are in this stance. When you hit a creature with an attack, you may add your Proficiency Modifier to the damage roll as fire damage, which also doubles on a critical hit.</p>
+		</description>
+		<sheet>
+			<description>While in this stance, you focus all you have on offence by sacrificing your defences. The first attack you make each turn is made with advantage. Additionally, you suffer a -4 to AC as long as you are in this stance. When you hit a creature with an attack, add {{proficiency}} fire damage, which doubles on a critical hit.</description>
+		</sheet>
+	</element>
+	
+	<element name="Lightning Stance" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_FEATURE_FIGHTINGSTANCE_LIGHTNING_STANCE">
+		<supports>Fighting Stance, Samurai</supports>
+		<description>
+			<p>As long as you are in this stance; if you use the Dash action, you can attack up to 3 enemies (5 at 10th lvl) that you come within weapon range of. These attacks require your bonus action. Treat them as critical if they hit enemies who are unaware of you and are unprepared for the attack. Also, you can use your action to attack a single target furiously 3 times. These attacks are incredibly fast but difficult to land accurately, and as such attack rolls are made without proficiency or ability score bonuses (damage is dealt normally with each hit). At the 10th level, you can use this stance to attack a single target 5 additional times without proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>If you use the Dash action, you can attack up to 3 enemies that you come within range of. These use your bonus action. Treat them as critical if they hit enemies who are unaware of you and are unprepared for the attack. You can use your action to attack 1 target 3 times. These attacks are made without proficiency or ability score bonuses (damage is dealt normally with each hit). At the 10th level, you can use this stance to attack a single target 5 additional times without proficiency bonus.</description>
+			<description level="10">If you use the Dash action, you can attack up to 5 enemies that you come within range of. These use your bonus action. Treat them as critical if they hit enemies who are unaware of you and are unprepared for the attack. You can use your action to attack 1 target 5 times. These attacks are made without proficiency or ability score bonuses (damage is dealt normally with each hit).</description>
+			
+		</sheet>
+	</element>
+	
+	<element name="Void Stance" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_FEATURE_FIGHTINGSTANCE_VOID_STANCE">
+		<supports>Fighting Stance, Samurai</supports>
+		<prerequisite>11th level</prerequisite>
+		<requirements>[level:11]</requirements>
+		<description>
+			<p>While in this stance, your mind is at its calmest and your senses are heightened to their maximum. All Perception checks are made with advantage. You are immune to the Blinded condition and gain 50ft of Blindsight. The first creature you hit with a weapon attack in this stance takes an additional 2d6 Necrotic or Cold damage (your choice before rolling) to the damage roll. Additionally you can use a full round to extend your Blindsight out to 100ft for the duration of the stance. This stance can not be used with other stances. Switching out of this stance leaves you unable to use any stance for 2 turns.</p>
+		</description>
+		<sheet>
+			<description>While in this stance, all Perception checks are made with advantage. You are immune to the Blinded condition and gain 50ft of Blindsight. The first creature you hit with a weapon attack in this stance takes an additional 2d6 Necrotic or Cold damage (choose before rolling). Additionally you can use a full round to extend your Blindsight out to 100ft for the duration of the stance. This stance can not be used with other stances. Switching out of this stance leaves you unable to use any stance for 2 turns.</description>
+		</sheet>
+	</element>
+	
+	<element name="Kami's Stance" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_FEATURE_FIGHTINGSTANCE_KAMIS_STANCE">
+		<supports>Fighting Stance, Samurai</supports>
+		<prerequisite>20th level</prerequisite>
+		<requirements>[level:20]</requirements>
+		<description>
+			<p>Once per turn, when you take the Attack Action, you may turn one of your attacks into a special attack. This attack requires a single attack roll and targets every enemy within 20ft of you. Using Parry while in this stance does not consume one of its uses. Additionally, when you make a ranged weapon attack, you add an extra weapon die to damage rolls. This stance can not be used with other stances.</p>
+		</description>
+		<sheet>
+			<description>Once per turn, when you take the Attack Action, you may turn one of your attacks into a special attack. This attack requires a single attack roll and targets every enemy within 20ft of you. Using Parry while in this stance does not consume one of its uses. Additionally, when you make a ranged weapon attack, you add an extra weapon die to damage rolls. This stance can not be used with other stances.</description>
+		</sheet>
+	</element>
+</elements>

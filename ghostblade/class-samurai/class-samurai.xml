@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Samurai</name>
+		<update version="0.0.1">
+			<file name="class-samurai.xml" url="https://www.dandwiki.com/wiki/Samurai_(5e_Class)#Daisho" />
+		</update>
+	</info>
+
+	<element name="Samurai" type="Class" source="Mythical Conquest" id="ID_MYTHIC_CLASS_SAMURAI">
+		<description>
+			<p>Warriors of old and soldiers of war, wielding techniques perfected and passed down through countless generations strike fear into those that witness them on the battlefield. While not in combat, they prefer to keep to themselves. There is very little, if anything, they hold more value in than their honor.</p>
+			<p>A human in oddly dressed attire spots a foot soldier up ahead surrounded by goblins. He rushes over with extraordinary speed and charges in between the barrage of incoming blades, shielding every last one with his scabbard. The goblins step back, however it was too late. The crackle of lightning fills the air as each goblin falls simultaneously. He flicked his blade, sheathed his sword, and kept on his way.</p>
+			<p>As an Eladrin silently drinks his ale two men interrupt him, threatening him to give over all his money. The Eladrin snickers, then continues drinking his ale. The two men attack. With unnatural speed the Eladrin throws his ale up in the air and lazily dodges the first jab. He tosses his chair toward the second man before he could react and in a single blink of an eye, his curved blade presses at the others neck. The Eladrin instinctively catches his ale and takes a sip.</p>
+			<p>An Orc charges toward an Elf, who stands calm and composed. As the Orc closes in, the Elf focuses until her mind is completely blank. She opens her eyes and notices an opening in the Orc's defense. The Orc lifts his greatclub and gets ready to strike. As they meet halfway, the Elf ever so slightly dodges his attack then gracefully cleaves through from the left waist past its right shoulder. The beast lets out an ugly scream, then falls at her feet.</p>
+			<p>Regardless of the origin or path of these swordsmen, one thing is certain, they are all known as Samurai.</p>
+			<h4>CREATING A SAMURAI</h4>
+			<p>Were you born into your characters allegiance, or were you training for the day you could call yourself a Samurai even though you were not born into the middle or upper crust of society (yet you seem to know matters of etiquette that could not be matched by your current social position)? Did you have your Daisho (nodachi or naginata) passed down to you by your parents, or did you acquire your weapons known as the soul of a Samurai from the local lord of your residence or your master? Did you always have a soul that was meant for honorable deeds in word, action and thought? If this is so, what drove you to such selfless service?</p>
+			<h5>QUICK BUILD</h5>
+			<p>You can make a Samurai quickly by following these suggestions. First, Strength or Dexterity should be your highest ability score, followed by Constitution. Second, choose the Soldier background. Third, if you are focusing on Strength choose the greatsword, chain mail, glaive and a explorer's pack. If instead you are using Dexterity choose the longbow with 20 arrows and a dagger, leather armor, shortsword and a explorer's pack. And for both this also include a set of calligrapher's supplies and a dagger.</p>
+			<h3>CLASS FEATURES</h3>
+			<p>As a samurai, you gain the following class features.</p>
+            <h5>HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d10 per Samurai level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 10 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + your Constitution modifier per Samurai level after 1st</li>
+            </ul>
+            <h5>PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> All armor</li>
+                <li><strong>Weapons:</strong> Simple weapons, martial weapons</li>
+                <li><strong>Tools:</strong> Gaming Set, Calligrapher's Tools</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Strength, Constitution</li>
+                <li><strong>Skills:</strong> Choose two skills from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, Persuasion, Survival, and Stealth</li>
+            </ul>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li><i>(a)</i> Samurai Kimono or <i>(b)</i> Samurai Armor</li>
+				<li><i>(a)</i> a katana or <i>(b)</i> a nodachi or <i>(c)</i> a longbow and 20 arrows and a simple weapon</li>
+				<li><i>(a)</i> a wakizashi or <i>(b)</i> a naginata</li>
+				<li><i>(a)</i> a scholar’s pack or <i>(b)</i> an explorer’s pack</li>
+				<li>Caligrapher's Supplies and a Tanto</li>
+			</ul>
+			<h5 class="caption">THE SAMURAI</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="left">Features</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="left">Daisho, Parry</td></tr>
+				<tr><td> 2nd</td><td class="left">Bushido, Fighting Stance</td></tr>
+				<tr><td> 3rd</td><td class="left">Honor Archetype</td></tr>
+				<tr><td> 4th</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 5th</td><td class="left">Extra Attack</td></tr>
+				<tr><td> 6th</td><td class="left">Fighting Stance (2), Daisho Improvement</td></tr>
+				<tr><td> 7th</td><td class="left">Honor Archetype feature</td></tr>
+				<tr><td> 8th</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 9th</td><td class="left">Crucial Seppuku</td></tr>
+				<tr><td>10th</td><td class="left">Honor Archetype feature</td></tr>
+				<tr><td>11th</td><td class="left">Possessed Blade, Fighting Stance (3)</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td class="left">Precise Strike</td></tr>
+				<tr><td>14th</td><td class="left">Honor Archetype Feature</td></tr>
+				<tr><td>15th</td><td class="left">Fighting Stance (4)</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td class="left">Bushido (x2), Supreme Meditation</td></tr>
+				<tr><td>18th</td><td class="left">Martial Archetype feature</td></tr>
+				<tr><td>19th</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td class="left">Ronin, Fighting Stance (5), Multi-Focus</td></tr>
+			</table>
+			<div element="ID_MYTHIC_CLASS_SAMURAI_FEATURE_FIGHTINGSTANCE" />
+			<div element="ID_MYTHIC_CLASS_SAMURAI_FEATURE_DAISHO" />
+			<div element="ID_MYTHIC_CLASS_SAMURAI_FEATURE_PARRY" />
+			<div element="ID_MYTHIC_CLASS_SAMURAI_FEATURE_HONOR_ARCHETYPE" />
+			<div element="ID_MYTHIC_CLASS_SAMURAI_FEATURE_ABILITYSCOREIMPROVEMENT" />
+			<div element="ID_MYTHIC_CLASS_SAMURAI_FEATURE_EXTRAATTACK" />
+			<div element="ID_MYTHIC_CLASS_SAMURAI_FEATURE_BUSHIDO" />
+			<div element="ID_MYTHIC_CLASS_SAMURAI_FEATURE_CRUCIAL_SEPPUKU" />
+			<div element="ID_MYTHIC_CLASS_SAMURAI_FEATURE_POSSESSED_BLADE" />
+			<div element="ID_MYTHIC_CLASS_SAMURAI_FEATURE_PRECISE_STRIKE" />
+			<div element="ID_MYTHIC_CLASS_SAMURAI_FEATURE_SUPREME_MEDITATION" />
+			<div element="ID_MYTHIC_CLASS_SAMURAI_FEATURE_RONIN" />
+			<div element="ID_MYTHIC_CLASS_SAMURAI_FEATURE_MULTI_FOCUS" />
+		</description>
+		<sheet display="false">
+			<description>A master of martial combat, skilled with a variety of weapons and armor.</description>
+		</sheet>
+		<setters>
+			<set name="short">A master of martial combat, skilled with a variety of weapons and armor.</set>
+			<set name="hd">d10</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MYTHIC_MULTICLASS_SAMURAI"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_MYTHIC_MULTICLASS_SAMURAI"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" requirements="!ID_MYTHIC_MULTICLASS_SAMURAI"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_MYTHIC_MULTICLASS_SAMURAI"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MYTHIC_MULTICLASS_SAMURAI"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_MYTHIC_MULTICLASS_SAMURAI"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_MYTHIC_MULTICLASS_SAMURAI"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_MYTHIC_MULTICLASS_SAMURAI"/>
+			<grant type="Proficiency" id="ID_WOTC_PHB_ITEM_TOOL_CALLIGRAPHERS_SUPPLIES" requirements="!ID_MYTHIC_MULTICLASS_SAMURAI"/>
+			<select type="Proficiency" name="Game Kit Proficiency (Samurai)" supports="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_DICE_SET|ID_PROFICIENCY_GAMING_SET_PROFICIENCY_DRAGONCHESS_SET|ID_PROFICIENCY_GAMING_SET_PROFICIENCY_PLAYING_CARD_SET|ID_PROFICIENCY_GAMING_SET_PROFICIENCY_THREE_DRAGON_ANTE_SET" number="1" requirements="!ID_MYTHIC_MULTICLASS_SAMURAI"/>
+			<select type="Proficiency" name="Skill Proficiency (Samurai)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_STEALTH" number="2" requirements="!ID_DND_WIKI_MULTICLASS_SAMURAI"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_SAMURAI_FEATURE_DAISHO" level="1"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_SAMURAI_FEATURE_PARRY" level="1"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_SAMURAI_FEATURE_BUSHIDO" level="2"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_SAMURAI_FEATURE_FIGHTINGSTANCE" level="2"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_SAMURAI_FEATURE_HONOR_ARCHETYPE" level="3"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_SAMURAI_FEATURE_ABILITYSCOREIMPROVEMENT" level="4"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_SAMURAI_FEATURE_EXTRAATTACK" level="5"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_SAMURAI_FEATURE_CRUCIAL_SEPPUKU" level="9"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_SAMURAI_FEATURE_POSSESSED_BLADE" level="11"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_SAMURAI_FEATURE_PRECISE_STRIKE" level="13"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_SAMURAI_FEATURE_SUPREME_MEDITATION" level="17"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_SAMURAI_FEATURE_RONIN" level="20"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_SAMURAI_FEATURE_MULTI_FOCUS" level="20"/>
+		</rules>
+		<multiclass id="ID_MYTHIC_MULTICLASS_SAMURAI">
+			<prerequisite>Strength 13 or Dexterity 13</prerequisite>
+			<requirements>([str:13]||[dex:13])</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, medium armor, simple weapons, martial weapons</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Fighting Stance" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_SAMURAI_FEATURE_FIGHTINGSTANCE">
+		<description>
+			<p>From 2nd level, time in brutal training has allowed you to perfect your ability to adapt your stance to your opponents in combat.</p>
+			<p>You learn two stances at 2nd level, and learn two additional stances at the 6th and 15th level.</p>
+			<p>A Stance is activated and changed as a Bonus action, and lasts for 1 minute, or until you activate a different Stance, if you are knocked prone, become grappled or restrained. You can activate a Stance a number of times equal to half your total Samurai Level (rounded down) +1; however, changing stances does not count as activating a stance and does not reset the time. A long rest restores all expended uses. Upon reaching 15th level you gain the ability to activate and maintain two Stances at once. Upon Reaching 20th level you can activate all stances simultaneously (except Kami's and Void Stance) and retain them until the end of your 2nd turn after using this ability. After the 2 turns you are unable to enter stances for 2 turns and are only able to move 5ft per turn). All activate can only be used once every 24 hours, in addition, you also lose access to Kami's Stance for the duration.</p>
+			<h5 class="caption">STONE STANCE</h5>
+			<p>When you enter this stance and at the start of each of your turns while you have at least 1 hit point or more remaining, you gain a number of temporary hit points equal to {{constitution:modifier}} (minimum of one) + {{proficiency}}. These temporary hit points last until you are no longer in this stance. Once per turn, when you hit a creature with a weapon attack, you deal an additional 2 weapon damage die to the creature. Opportunity attacks made against you are rolled with advantage and if you use more than half of your movement speed in a turn, this stance immediately ends.</p>
+			<h5 class="caption">WIND STANCE</h5>
+			<p>While in this stance, you become both quick and maneuverable. You may take the Dash or Disengage action as a bonus action, and you ignore difficult terrain when you Dash. Melee attack rolls made against you are at disadvantage and upon an attack missing you are able to make an attack of opportunity against them if they are within weapon range. If you have access to Strike from the Void, you can use one of the charges to make this attack regardless of range.</p>
+			<h5 class="caption">WATER STANCE</h5>
+			<p>When you successfully hit a creature with a melee weapon attack while in this stance, you may immediately spend your bonus action to attempt to knock the creature prone. If you do this, you force them to make a Dexterity saving throw equal to 8 + your {{strength:modifier}} + your {{proficiency}}. On a success the creature gains advantage on their next attack roll made against you. Additionally, while in this stance, landing an attack of opportunity on an enemy reduces that creatures movement to 0ft until the beginning of its next turn.</p>
+			<h5 class="caption">EARTH STANCE</h5>
+			<p>While you are in this stance, you have advantage on Strength checks made to grapple and can hold a two-handed weapon in one hand whilst grappling a creature. Additionally, on one attack per turn, you may use your bonus action to gain a bonus to your AC equal to {{proficiency}} if the attack hit. This bonus AC lasts until the start of your next turn. Also while in this stance your feet are planted firmly on the ground, doing this grants advantage on Strength saving throws and disadvantage on Dexterity saving throws.</p>
+			<h5 class="caption">FIRE STANCE</h5>
+			<p>While in this stance, you focus all you have on offence by sacrificing your defences. The first attack you make each turn is made with advantage. Additionally, you suffer a -4 to AC as long as you are in this stance. When you hit a creature with an attack, you may add {{proficiency}} to the damage roll as fire damage, which also doubles on a critical hit.</p>
+			<h5 class="caption">LIGHTNING STANCE</h5>
+			<p>As long as you are in this stance; if you use the Dash action, you can attack up to 3 enemies (5 at 10th lvl) that you come within weapon range of. These attacks require your bonus action. Treat them as critical if they hit enemies who are unaware of you and are unprepared for the attack. Also, you can use your action to attack a single target furiously 3 times. These attacks are incredibly fast but difficult to land accurately, and as such attack rolls are made without proficiency or ability score bonuses (damage is dealt normally with each hit). At the 10th level, you can use this stance to attack a single target 5 additional times without proficiency bonus.</p>
+			<h5 class="caption">Void Stance</h5>
+			<p>While in this stance, your mind is at its calmest and your senses are heightened to their maximum. All Perception checks are made with advantage. You are immune to the Blinded condition and gain 50ft of Blindsight. The first creature you hit with a weapon attack in this stance takes an additional 2d6 Necrotic or Cold damage (your choice before rolling) to the damage roll. Additionally you can use a full round to extend your Blindsight out to 100ft for the duration of the stance. This stance can not be used with other stances. Switching out of this stance leaves you unable to use any stance for 2 turns.</p>
+			<h5 class="caption">Kami's Stance</h5>
+			<p>Once per turn, when you take the Attack Action, you may turn one of your attacks into a special attack. This attack requires a single attack roll and targets every enemy within 20ft of you. Using Parry while in this stance does not consume one of its uses. Additionally, when you make a ranged weapon attack, you add an extra weapon die to damage rolls. This stance can not be used with other stances.</p>
+		</description>
+		<rules>
+			<select type="Class Feature" name="Fighting Stance" supports="Fighting Stance, Samurai" level="2"/>
+			<select type="Class Feature" name="Fighting Stance" supports="Fighting Stance, Samurai" level="2"/>
+			<select type="Class Feature" name="Fighting Stance" supports="Fighting Stance, Samurai" level="6"/>
+			<select type="Class Feature" name="Fighting Stance" supports="Fighting Stance, Samurai" level="11"/>
+			<select type="Class Feature" name="Fighting Stance" supports="Fighting Stance, Samurai" level="15"/>
+			<select type="Class Feature" name="Fighting Stance" supports="Fighting Stance, Samurai" level="20"/>			
+		</rules>
+	</element>
+	<element name="Daisho" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_SAMURAI_FEATURE_DAISHO">
+		<description>
+			<p>You start out with your chosen Samurai weapons: the Katana/Nodachi/Naginata/Longbow and a Wakizashi. They represent your honor and the souls of your ancestors. You may carve a symbol of your choice into the weapon. If your weapon is lost or destroyed, you can summon it back to you by drawing the symbol (in blood) you carved, onto a solid surface that is larger than your weapon. This requires meditating over a long rest to complete. You must be on the same plane of existence that you lost the weapon to succeed in this. Additionally at the 6th level your Daisho weapon becomes magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+		</description>
+		<sheet>
+			<description level="1">You may carve a symbol of your choice into the weapon. If your weapon is lost or destroyed, you can summon it back to you by drawing the symbol (in blood) you carved, onto a solid surface that is larger than your weapon. This requires meditating over a long rest to complete. You must be on the same plane of existence that you lost the weapon to succeed in this.</description>
+			<description level="6">You may carve a symbol of your choice into the weapon. If your weapon is lost or destroyed, you can summon it back to you by drawing the symbol (in blood) you carved, onto a solid surface that is larger than your weapon. This requires meditating over a long rest to complete. You must be on the same plane of existence that you lost the weapon to succeed in this. The weapon is also considered magical.</description>
+		</sheet>
+	</element>
+	<element name="Parry" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_SAMURAI_FEATURE_PARRY">
+		<description>
+			<p>Beginning at the 1st level, when another creature hits you or another creature within 5ft of you with a melee attack, you can use your Reaction to reduce the damage dealt by the attack by 1d6 + your Dexterity level + your samurai level.</p>
+		</description>
+		<sheet action="Reaction" usage="3/Short Rest">
+			<description>When another creature hits you or another creature within 5ft of you with a melee attack, you can use your Reaction to reduce the damage dealt by the attack by 1d6 + {{dexterity:modifier}} + {{level:samurai}}.</description>
+		</sheet>
+	</element>
+	
+	<element name="Bushido" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_SAMURAI_FEATURE_BUSHIDO">
+		<description>
+			<p>Upon reaching 2nd level, you have settled into the way of the warrior. When you take the Attack action while in a stance, if you hit all the attacks made as part of that action, you can make an additional attack, without using an action. On a hit, this attack causes additional damage equal to your Samurai level.
+
+You must finish a long rest to regain use of this feature. Starting at 17th level, you can use this feature two times, but only once per turn, between long rests.</p>
+		</description>
+		<sheet level="2" usage="1/Long Rest">
+			<p>When you take the Attack action while in a stance, if you hit all the attacks made as part of that action, you can make an additional attack, without using an action. On a hit, this attack causes additional damage equal to {{level:samurai}}.</p>
+		</sheet>
+		<sheet level="17" usage="2/Long Rest">
+			<p>When you take the Attack action while in a stance, if you hit all the attacks made as part of that action, you can make an additional attack, without using an action. On a hit, this attack causes additional damage equal to {{level:samurai}}.</p>
+		</sheet>
+	</element>
+	
+	
+	
+	<element name="Honor Archetype" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_SAMURAI_FEATURE_HONOR_ARCHETYPE">
+		<description>
+			<p>Upon reaching 3rd level, choose an archetype that you want to be emulating in combat techniques. Choose either Shogun, Iaijutsu Master or Kyūdō. The archetype you pick grants you features at 3rd level, and again at 7th, 10th, 14th, and 18th level.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Honor Archetype" supports="Honor Archetype" level="3" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_SAMURAI_FEATURE_ABILITYSCOREIMPROVEMENT">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Samurai 4)" supports="Improvement Option,Fighter,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Samurai 8)" supports="Improvement Option,Fighter,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Samurai 12)" supports="Improvement Option,Fighter,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Samurai 16)" supports="Improvement Option,Fighter,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Samurai 19)" supports="Improvement Option,Fighter,19" level="19" />
+		</rules>
+	</element>
+	<element name="Extra Attack" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_SAMURAI_FEATURE_EXTRAATTACK">
+		<description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description level="5">You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Crucial Seppuku" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_SAMURAI_FEATURE_CRUCIAL_SEPPUKU">
+		<description>
+			<p>Beginning at 9th level, you must succeed even if it costs your life. Before rolling any d20, you may choose to roll with advantage. After the outcome of the roll is determined, you take 3d6 Necrotic Damage, that can't be reduced. You may use this ability once per turn and twice between a long rest.</p>
+		</description>
+		<sheet usage="2/Long Rest">
+			<description> Before rolling any d20, you may choose to roll with advantage. After the outcome of the roll is determined, you take 3d6 Necrotic Damage, that can't be reduced. </description>
+		</sheet>
+	</element>
+	<element name="Possessed Blade" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_SAMURAI_FEATURE_POSSESSED_BLADE">
+		<description>
+			<p>At the 11th level, your ancestors take notice of your Samurai prowess and offer what they can to aid you. As an action, you can turn one sword you are carrying into a Flying Sword (Monster Manual P.20) for 1 Hour. It takes on all properties of the Flying Sword except Actions; it has the same to hit and damage (not granted by Stances) as if you were using it and requires your bonus action to move and attack. If you don't use your bonus action to control the sword, it remains motionless in its position. The sword remains this way for the duration or until it drops to zero hit points, where it returns to a normal weapon. You can use this once per long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can turn one sword you are carrying into a Flying Sword (Monster Manual P.20) for 1 Hour. It takes on all properties of the Flying Sword except Actions; it has the same to hit and damage (not granted by Stances) as if you were using it and requires your bonus action to move and attack. If you don't use your bonus action to control the sword, it remains motionless in its position. The sword remains this way for the duration or until it drops to zero hit points, where it returns to a normal weapon.</description>
+		</sheet>
+	</element>
+	<element name="Precise Strike" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_SAMURAI_FEATURE_PRECISE_STRIKE">
+		<description>
+			<p>Beginning at the 13th level, your weapon attacks score a critical hit on a roll of 19 or 20.</p>
+		</description>
+		<sheet>
+			<description>Your weapon attacks score a critical hit on a roll of 19 or 20.</description>
+		</sheet>
+	</element>
+	<element name="Supreme Meditation" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_SAMURAI_FEATURE_SUPREME_MEDITATION">
+		<description>
+			<p>At the 17th level, while your Daisho Weapon is on your person, you can use an action to use up to half your total Hit Dice(rounded down). If you do so you cannot regain any spent hit dice for 24 hours. You also gain proficiency in Wisdom saving throws.</p>
+		</description>
+		<sheet>
+			<description>while your Daisho Weapon is on your person, you can use an action to use up to half your total Hit Dice(rounded down). If you do so you cannot regain any spent hit dice for 24 hours.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM"/>
+		</rules>
+	</element>
+	<element name="Multi-Focus" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_SAMURAI_FEATURE_MULTI_FOCUS">
+		<description>
+			<p>Upon Reaching 20th level you can activate all stances simultaneously (except Kami's and Void Stance) and retain them until the end of your 2nd turn after using this ability.</p>
+		</description>
+		<sheet>
+			<description>You can activate all stances simultaneously (except Kami's and Void Stance) and retain them until the end of your 2nd turn after using this ability.</description>
+		</sheet>
+	</element>
+	<element name="Ronin" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_SAMURAI_FEATURE_RONIN">
+		<description>
+			<p>Upon reaching the 20th level, you call no one master. When rolling initiative you may reroll if you rolled below a 10 on the d20 but you must take the second roll. You gain abilities according to your archetype.</p>
+		</description>
+		<sheet>
+			<description>Your weapon attacks score a critical hit on a roll of 19 or 20.</description>
+		</sheet>
+	</element>
+</elements>

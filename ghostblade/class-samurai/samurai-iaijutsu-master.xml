@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Samurai Iaijutsu Master</name>
+        <update version="0.0.1">
+            <file name="samurai-iaijutsu-master.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-samurai/samurai-iaijutsu-master.xml" />
+        </update>
+    </info>
+    
+    <element name="Iaijutsu Master" type="Archetype" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER">
+		<supports>Honor Archetype</supports>
+		<description>
+			<p>Samurai who take up the Shogun archetype are masters at commanding others and are able to raise their allies’ morale.</p>
+			<div element="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_RITUAL_DUELING"/>
+			<div element="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_LIGHTNING_BLADE"/>
+			<div element="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_STRIKE_FROM_THE_VOID"/>
+			<div element="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_ONE_STRIKE_TWO_CUTS"/>
+			<div element="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_HEIGHTENED_AWARENESS"/>
+			<div element="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_MASTER_OF_THE_BLADE"/>
+			<div element="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_BLADE_WITH_NO_EQUAL"/>
+			<div element="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_FIVE_RINGS_OF_THE_DRAGON_DEITY"/>
+		</description>
+		<sheet display="false">
+			<description>Samurai who take up the Shogun archetype are masters at commanding others and are able to raise their allies’ morale.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_RITUAL_DUELING" level="3" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_LIGHTNING_BLADE" level="7" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_STRIKE_FROM_THE_VOID" level="10" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_ONE_STRIKE_TWO_CUTS" level="14" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_HEIGHTENED_AWARENESS" level="18" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_MASTER_OF_THE_BLADE" level="20" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_BLADE_WITH_NO_EQUAL" level="20" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_FIVE_RINGS_OF_THE_DRAGON_DEITY" level="20" />
+			<stat name="iaijutsu_lighting_stance:buff" value=", you gain 15ft to your base speed" inline="true" level="7"/>
+			<stat name="iaijutsu_stone_stance:buff" value=", you can use your action to gain +{{proficiency}} AC until the start of your next turn." inline="true" level="13"/>
+		</rules>
+	</element>
+	<element name="Ritual Dueling" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_RITUAL_DUELING">
+		<description>
+			<p>Starting when you gain this archetype at 3rd level, you may spend a bonus action to concentrate on an individual enemy and attain plus 5 to the first attack roll per turn made against that target while you maintain concentration. At the 13th level you also attain a plus 2 to damage rolls against the enemy you are focusing on. You are able to perform this ritual a number of times equal to your Proficiency modifier, regaining all uses after a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>Concentrate on a single enemy and gain +5 to the first attack roll per turn against that target while maintaining concentration.</description>
+			<description level="13">Concentrate on a single enemy and gain +5 to the first attack roll per turn and +2 to damage rolls against that target while maintaining concentration.</description>
+		</sheet>
+	</element>
+	<element name="Lightning Blade" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_LIGHTNING_BLADE">
+		<description>
+			<p>Starting at 7th level once per encounter you can use both your action and bonus action to attack all enemies within a 20 foot radius around you. This happens instantly and lightning crackles around and pops around every enemy that was just attacked. Enemies that took a hit must make a DC 18 constitution saving throw or take 5d6 lightning damage and be at disadvantage on attack rolls done to them for 2 turns. You take one level of exhaustion after completing this ability. At level 14 you no longer take a level of exhaustion.</p>
+		</description>
+		<sheet action="Action, Bonus Action" usage="1/Encounter">
+			<description>Attack all enemies within a 20ft. radius around you. Enemies hit must make a DC 18 CON saving throw or take 5d6 lightning damage and be at disadvantage on attack rolls done to them for 2 turns. You take one level of exhaustion after completing this ability.</description>
+			<description level="14">Attack all enemies within a 20ft. radius around you. Enemies hit must make a DC 18 CON saving throw or take 5d6 lightning damage and be at disadvantage on attack rolls done to them for 2 turns.</description>
+		</sheet>
+	</element>
+	<element name="Strike From The Void" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_STRIKE_FROM_THE_VOID">
+		<description>
+			<p>Starting at 10th level you now add your Proficiency modifier to the first damage roll made per turn when attacking with your Daisho weapon. Also on one attack per turn you may extend the physical force of your weapon attacks. You may do this a number of times equal to one-half of your Samurai level (rounded down). By doing this you add an extra 5 ft to your melee reach. A sword attack that would usually require 5 ft reach becomes 10, a pole-arm attack could be made at 15 ft instead of 10. Additionally you can use two of these charges to travel in the void, using your action to teleport up to 25 feet (you must be able to see where you end up). After a long rest regain all uses.</p>
+		</description>
+		<sheet action="Action" usage="{{level:samurai:half}}/Long Rest">
+			<description>Your first attack deals an additional {{proficiency}} per turn. On 1 attack per turn, your attack gains an additional 5ft. reach. You can use 2 charges to teleport up to 25ft.</description>
+		</sheet>
+	</element>
+	<element name="One Strike Two Cuts" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_ONE_STRIKE_TWO_CUTS">
+		<description>
+			<p>Beginning at 14th level when you land a hit on a creature you may use your reaction to make an additional attack roll on that enemy, dealing 6d8 Lightning damage on a hit (this attack does not gain bonus damage from other abilities/stances). You may do this a number of times equal to your Constitution Modifier, regain expended uses after a long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="{{constitution:modifier}}/Long Rest">
+			<description>When you land a hit on a creature you may make an additional attack on that enemy, dealing 6d8 Lightning damage on a hit (this attack does not gain bonus damage from other abilities/stances).</description>
+		</sheet>
+	</element>
+	<element name="Heightened Awareness" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_HEIGHTENED_AWARENESS">
+		<description>
+			<p>Starting at the 18th level, whenever you begin combat, attack rolls made against you have disadvantage until the end of your first turn.</p>
+		</description>
+		<sheet>
+			<description>Until the end of your first turn, attacks against you have disadvantage.</description>
+		</sheet>
+	</element>
+	<element name="Master of the Blade" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_MASTER_OF_THE_BLADE">
+		<description>
+			<p>At 20th level, your attacks involving your Daisho weapon gain +3 to damage rolls.</p>
+		</description>
+		<sheet action="Action">
+			<description>Your attacks involving your Daisho weapon gain +3 to damage rolls.</description>
+		</sheet>
+	</element>
+	<element name="Blade with no Equal" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_BLADE_WITH_NO_EQUAL">
+		<description>
+			<p>Your attacks are able to cut through any material, immunities (if a creature is immune to your blade's damage, treat it as resistant) and barriers created from magical or divine means. Upon rolling a 1 on the attack roll, you may choose to revoke your attack and sheath your blade in preparation for a guaranteed hit next turn (treat it as a normal successful attack and part of Extra Attack) on any enemy of your choice within range of your Strike From The Void (this uses one of its charges). You may do this a number of times equal to your Constitution Modifier. Regain all uses after a Long Rest.</p>
+		</description>
+		<sheet usage="{{constitution:modifier}}/Long Rest">
+			<description>If a target is immune to your blades damage, treat it as resistant. Upon rolling a 1 on an attack roll, you may revoke your attack for a guaranteed hit next turn on any enemy of choice in range of Strike From the Void, using one of its charges.</description>
+		</sheet>
+	</element>
+	<element name="Five Rings of the Dragon Deity" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_FIVE_RINGS_OF_THE_DRAGON_DEITY">
+		<description>
+			<p>Your movement is now 60. If you make an Acrobatics check and roll under 10 on the d20, you can reroll the dice but must take the second roll. Falling from great heights does not injure you. You gain resistance towards Bludgeoning, Piercing and Slashing damage. As an action, you are able to make a Flying Strike against a single target, adding 1d6 weapon damage for every 5ft you move towards it, up to 120ft. The Flying Strike can only be used twice per long rest.</p>
+		</description>
+		<sheet  action="Action" usage="2/Long Rest">
+			<description>If you roll under 10 (on d20) on an Acrobatics Check, you can reroll the dice but must take the second roll. Falling from great heights does not injure you. You are able to make a Flying Strike against a single target, adding 1d6 weapon damage for every 5ft you move towards it, up to 120ft.</description>
+		</sheet>
+		<rules>
+			<stat name="samurai:iaijutsu movement" value="60"/>
+			<stat name="innate speed:misc" value="samurai:iaijutsu movement" requirements="[innate speed:1]" />
+			<stat name="innate speed:climb:misc" value="samurai:iaijutsu movement" requirements="[innate speed:climb:1]" />
+			<stat name="innate speed:fly:misc" value="samurai:iaijutsu movement" requirements="[innate speed:fly:1]" />
+			<stat name="innate speed:swim:misc" value="samurai:iaijutsu movement" requirements="[innate speed:swim:1]" />
+			<stat name="innate speed:burrow:misc" value="samurai:iaijutsu movement" requirements="[innate speed:burrow:1]" />
+		</rules>
+	</element>
+</elements>

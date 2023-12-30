@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Samurai Shogun</name>
+        <update version="0.0.1">
+            <file name="samurai-shogun.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-samurai/samurai-shogun.xml" />
+        </update>
+    </info>
+    
+    <element name="Shogun" type="Archetype" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_SAMURAI_SHOGUN">
+		<supports>Honor Archetype</supports>
+		<description>
+			<p>Samurai who take up the Shogun archetype are masters at commanding others and are able to raise their allies’ morale.</p>
+			<div element="ID_MYTHIC_ARCHETYPE_SAMURAI_SHOGUN_FEATURE_KIAI_SHOUT"/>
+			<div element="ID_MYTHIC_ARCHETYPE_SAMURAI_SHOGUN_FEATURE_COMMANDING_BOOST"/>
+			<div element="ID_MYTHIC_ARCHETYPE_SAMURAI_SHOGUN_FEATURE_CALM_UNDER_PRESSURE"/>
+			<div element="ID_MYTHIC_ARCHETYPE_SAMURAI_SHOGUN_FEATURE_KIAI_COMMAND"/>
+			<div element="ID_MYTHIC_ARCHETYPE_SAMURAI_SHOGUN_FEATURE_WAR_CRY"/>
+			<div element="ID_MYTHIC_ARCHETYPE_SAMURAI_SHOGUN_FEATURE_CONQUERORS_RIGHTS"/>
+			<div element="ID_MYTHIC_ARCHETYPE_SAMURAI_SHOGUN_FEATURE_WARLORDS_MENACE"/>
+			<div element="ID_MYTHIC_ARCHETYPE_SAMURAI_SHOGUN_FEATURE_SHOGUNS_BENEVOLENCE"/>
+		</description>
+		<sheet display="false">
+			<description>Samurai who take up the Shogun archetype are masters at commanding others and are able to raise their allies’ morale.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_SAMURAI_SHOGUN_FEATURE_KIAI_SHOUT" level="3" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_SAMURAI_SHOGUN_FEATURE_COMMANDING_BOOST" level="7" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_SAMURAI_SHOGUN_FEATURE_CALM_UNDER_PRESSURE" level="10" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_SAMURAI_SHOGUN_FEATURE_KIAI_COMMAND" level="14" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_SAMURAI_SHOGUN_FEATURE_WAR_CRY" level="18" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_SAMURAI_SHOGUN_FEATURE_SHOGUNS_BENEVOLENCE" level="20" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_SAMURAI_SHOGUN_FEATURE_WARLORDS_MENACE" level="20" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_SAMURAI_SHOGUN_FEATURE_CONQUERORS_RIGHTS" level="20" />
+			<stat name="kiai:dc" value="8" />
+			<stat name="kiai:dc" value="proficiency" />
+			<stat name="kiai:dc" value="strength:modifier" />
+			<stat name="shogun_boost:count" value="2" />
+			<stat name="shogun_boost:count" value="strength:modifier" />
+			<stat name="shogun_heal" value="wisdom:modifier" />
+			<stat name="shogun_heal" value="level:samurai" />
+			<stat name="shogun_command:count" value="1" />
+			<stat name="shogun_warlord_menace:dc" value="10" />
+			<stat name="shogun_warlord_menace:dc" value="strength:modifier" />
+			<stat name="shogun_warlord_menace:dc" value="charisma:modifier" />
+		</rules>
+	</element>
+	<element name="Kiai Shout" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_SAMURAI_SHOGUN_FEATURE_KIAI_SHOUT">
+		<description>
+			<p>At 3rd level, you learn the power to intimidate your enemies with a powerful war cry. As a bonus action, choose an enemy that can hear you: the target must succeed on a Wisdom saving throw or be frightened of you for 1 minute. The enemy may repeat the saving throw at the end of each of their turns. The save DC equals 8 + your Strength modifier + your Proficiency Bonus. You then have to finish a short or long rest in order to use this again.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{shogun_command:count}}/Short Rest">
+			<description>Choose an enemy that can hear you: the target must succeed on a DC {{kiai:dc}} WIS saving throw or be frightened of you for 1m. The enemy may repeat the saving throw at the end of each of their turns.</description>
+		</sheet>
+	</element>
+	<element name="Commanding Boost" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_SAMURAI_SHOGUN_FEATURE_COMMANDING_BOOST">
+		<description>
+			<p>When you reach 7th level you gain the ability to inspire confidence in your allies by shouting and directing them. As a bonus action, choose a number of allies equal to your Strength modifier + 2. Your allies gain advantage and +2 on attack rolls until the end of your next turn. You regain the use of this ability after a short or long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{shogun_command:count}}/Short Rest">
+			<description>Choose up to {{shogun_boost:count}} allies. They gain advantage and +2 on attack rolls until the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Calm Under Pressure" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_SAMURAI_SHOGUN_FEATURE_CALM_UNDER_PRESSURE">
+		<description>
+			<p>At 10th level, you have become attuned to the environment of battle and are able to reassure your allies. As a bonus action, choose a number of allies equal to your Strength modifier + 2. You and them regain hit points equal to your Wisdom modifier + Samurai level. You regain the use of this ability after a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>Choose a number of allies up to {{shogun_boost:count}}. You and them regain hit points equal to {{shogun_heal}}.</description>
+		</sheet>
+	</element>
+	<element name="Kiai Command" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_SAMURAI_SHOGUN_FEATURE_KIAI_COMMAND">
+		<description>
+			<p>At 14th level, you can use a bonus action to combine the Kiai Shout with your Commanding Boost. You regain the use of this ability after a long rest. Using this feature doesn't consume your normal use of each individual feature.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{shogun_command:count}}/Long Rest">
+			<description>You can combine the Kiai Shout with your Commanding Boost. Doing this doesnt consume your normal use of each individual feature.</description>
+		</sheet>
+	</element>
+	<element name="War Cry" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_SAMURAI_SHOGUN_FEATURE_WAR_CRY">
+		<description>
+			<p>At level 18 you are a very experienced commander, becoming mentally and vocally stronger. You can now use every other command and shout twice between their respective rests.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="shogun_command:count" value="1" />
+		</rules>
+	</element>
+	<element name="Conqueror's Rights" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_SAMURAI_SHOGUN_FEATURE_CONQUERORS_RIGHTS">
+		<description>
+			<p>As an action you are able to invoke one of your stances in your allies once per turn, except Kami's or Void stance. They gain the abilities of the stance until the start of your next turn. You also no longer suffer from drawbacks upon leaving stances or All Activate and are now able to Multi stance Void Stance with other stances but no more than 1 other stance.</p>
+		</description>
+		<sheet action="Action">
+			<description>You invoke one of your stances in your allies once per turn, except Kami's or Void stance. They gain the abilities of the stance until the start of your next turn. You also no longer suffer from drawbacks upon leaving stances or All Activate and are now able to Multi stance Void Stance with no more than 1 other stance.</description>
+		</sheet>
+	</element>
+	<element name="Warlord's Menace" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_SAMURAI_SHOGUN_FEATURE_WARLORDS_MENACE">
+		<description>
+			<p>The first time a creature is hit by one your attacks, they must make a Constitution saving throw DC= 10+STR+CHA or become frightened of you for 1 minute. Any creature that fails can make the saving throw again at the end of each of its turns.</p>
+		</description>
+		<sheet>
+			<description>The first time a creature is hit by one your attacks, they must make a DC {{shogun_warlord_menace:dc}} CON saving throw or become frightened of you for 1m. Any creature that fails can make the saving throw again at the end of each of its turns.</description>
+		</sheet>
+	</element>
+	<element name="Shogun's Benevolence" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_SAMURAI_SHOGUN_FEATURE_SHOGUNS_BENEVOLENCE">
+		<description>
+			<p>As an action, you may grant up to 2 allies of your choice, within line of sight, the effect of your Supreme Meditation as temporary hit points. Roll your Hit Dice and split up the total if you chose more than one ally. You can use this ability once per long rest.</p>
+		</description>
+		<sheet  action="Action" usage="1/Long Rest">
+			<description>You may grant up to 2 allies of choice in line of sight the effect of your Supreme Meditation as temp hp. Roll your Hit Dice and split up the total if you chose more than 1 ally.</description>
+		</sheet>
+	</element>
+</elements>

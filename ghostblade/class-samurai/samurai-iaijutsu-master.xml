@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Samurai Iaijutsu Master</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="samurai-iaijutsu-master.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-samurai/samurai-iaijutsu-master.xml" />
         </update>
     </info>
@@ -32,8 +32,6 @@
 			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_MASTER_OF_THE_BLADE" level="20" />
 			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_BLADE_WITH_NO_EQUAL" level="20" />
 			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_FIVE_RINGS_OF_THE_DRAGON_DEITY" level="20" />
-			<stat name="iaijutsu_lighting_stance:buff" value=", you gain 15ft to your base speed" inline="true" level="7"/>
-			<stat name="iaijutsu_stone_stance:buff" value=", you can use your action to gain +{{proficiency}} AC until the start of your next turn." inline="true" level="13"/>
 		</rules>
 	</element>
 	<element name="Ritual Dueling" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_SAMURAI_IAIJUTSU_MASTER_FEATURE_RITUAL_DUELING">

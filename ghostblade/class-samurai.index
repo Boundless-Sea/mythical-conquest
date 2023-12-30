@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Samurai Class</name>
+		<description>The Samurai Class adds a new take on the popular archetype to DnD 5e.</description>
+		<author url="https://www.dandwiki.com/wiki/Samurai_(5e_Class)">DnD Wiki</author>
+		<update version="0.0.1">
+			<file name="class-samurai.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-samurai.index" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-samurai/source.xml" />
+		<file name="class-samurai.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-samurai/class-samurai.xml" />
+		<file name="fighting-stances.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-samurai/fighting-stances.xml" />
+		<file name="samurai-shogun.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-samurai/samurai-shogun.xml" />
+		<file name="samurai-iaijutsu-master.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-samurai/samurai-iaijutsu-master.xml" />
+	</files>
+</index>

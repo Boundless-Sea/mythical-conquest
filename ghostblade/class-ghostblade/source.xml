@@ -12,5 +12,18 @@
 			<p>Dungeons &amp; Dragons immerses you in a world of adventure. Explore ancient ruins and deadly dungeons. Battle monsters while searching for legendary treasures. Gain experience and power as you trek across uncharted lands with your companions.</p>
 			<p>The world needs heroes. Will you answer the call?</p>
 		</description>
+		<setters>
+			<set name="abbreviation">Mythic</set>
+            		<set name="url"></set>
+           		 <set name="image">https://mir-s3-cdn-cf.behance.net/project_modules/hd/6b089a55244639.597c5eaf338c8.jpg</set>
+           		 <set name="author" abbreviation="KDA" url="https://www.reddit.com/user/kodabeeer">Kodabeer</set>
+           		 <set name="official">false</set>
+            		<set name="supplement">false</set>
+           		 <set name="playtest">false</set>
+            		<set name="third-party">true</set>
+            		<set name="homebrew">true</set>
+           		 <set name="league">false</set>
+            		<set name="release">20240101</set>
+		</setters>
 	</element>
 </elements>

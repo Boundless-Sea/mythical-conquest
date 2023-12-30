@@ -13,7 +13,7 @@
 		<file name="ghostblade.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-ghostblade/ghostblade.xml" />
 		<file name="ghostblade-archetype-eldritch-demon.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-ghostblade/ghostblade-archetype-eldritch-demon.xml" />
 		<file name="ghostblade-archetype-phantom-demon.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-ghostblade/ghostblade-archetype-phantom-demon.xml" />
-    <file name="ghostblade-patrons.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-ghostblade/ghostblade-patrons.xml" />	
-    <file name="ghost-haunts.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-ghostblade/ghost-haunts.xml" />
+    		<file name="ghostblade-patrons.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-ghostblade/ghostblade-patrons.xml" />	
+		<file name="ghost-haunts.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-ghostblade/ghost-haunts.xml" />
  </files>
 </index>

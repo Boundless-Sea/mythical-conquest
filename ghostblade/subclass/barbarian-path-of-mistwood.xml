@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Path of Miswood</name>
+		<author url="https://koboldpress.com/kpstore/product/tome-of-heroes-for-5th-edition/">Celeste Conowitch, Jeff Lee, Sarah Madsen, Ben McFarland, Kelly Pawlik, Brian Suskind</author>
+		<update version="0.0.1">
+			<file name="barbarian-path-of-mistwood.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/subclass/barbarian-path-of-mistwood.xml" />
+		</update>
+	</info>
+
+
+
+
+<!-- Path of the Mistwood -->
+	<element name="Path of the Mistwood" type="Archetype" source="Tome of Heroes" id="ID_TOH_ARCHETYPE_PATH_OF_THE_BERSERKER">
+		<supports>Primal Path</supports>
+		<description>
+			<p>The first barbarians that traveled the path of mistwood were elves who expanded upon their natural gifts to become masters of the forests. Over time, members of other races who saw the need to protect and cherish the green places of the world joined and learned from them.</p>
+			<div element="ID_HB_ARCHETYPE_FEATURE_PATH_OF_THE_MISTWOOD_BONUS_PROFICIENCY" />
+			<div element="ID_TOH_ARCHETYPE_FEATURE_PATH_OF_THE_MISTWOOD_DEFENDER" />
+			<div element="ID_TOH_ARCHETYPE_FEATURE_PATH_OF_THE_MISTWOOD_FROM_THE_MIST" />
+			<div element="ID_TOH_ARCHETYPE_FEATURE_PATH_OF_THE_MISTWOOD_MIST_DANCE" />
+			<div element="ID_TOH_ARCHETYPE_FEATURE_PATH_OF_THE_MISTWOOD_WAR_BANDS_PASSAGE" />
+		</description>
+		<sheet display="false">
+			<description>Often these warriors haunt the woods alone, only seen when called to action by something that would despoil their home.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Bonus Proficiency" supports="Skill,Barbarian" default="ID_PROFICIENCY_SKILL_PROFICIENCY_STEALTH" />
+			<grant type="Archetype Feature" id="ID_TOH_ARCHETYPE_FEATURE_PATH_OF_THE_MISTWOOD_DEFENDER" level="3" />
+			<grant type="Archetype Feature" id="ID_TOH_ARCHETYPE_FEATURE_PATH_OF_THE_MISTWOOD_FROM_THE_MIST" level="6" />
+			<grant type="Archetype Feature" id="ID_TOH_ARCHETYPE_FEATURE_PATH_OF_THE_MISTWOOD_MIST_DANCE" level="10" />
+			<grant type="Archetype Feature" id="ID_TOH_ARCHETYPE_FEATURE_PATH_OF_THE_MISTWOOD_WAR_BANDS_PASSAGE" level="14" />
+		</rules>
+	</element>
+	
+	<element name="Bonus Proficiency" type="Archetype Feature" source="Tome of Heroes" id="ID_HB_ARCHETYPE_FEATURE_PATH_OF_THE_MISTWOOD_BONUS_PROFICIENCY">
+		<description>
+			<p>At 3rd level, you gain proficiency in the Stealth skill.</p>
+		</description>
+		<sheet display="false"/>
+	</element>
+	
+	<element name="Mistwood Defender" type="Archetype Feature" source="Tome of Heroes" id="ID_TOH_ARCHETYPE_FEATURE_PATH_OF_THE_MISTWOOD_DEFENDER">
+		<description>
+			<p>Starting at 3rd level, you can use the Reckless Attack feature on ranged weapon attacks with thrown weapons, and, while you aren’t within melee range of a hostile creature that isn’t incapacitated, you can draw and throw a thrown weapon as a bonus action. In addition, when you make a ranged weapon attack with a thrown weapon using Strength while raging, you can add your Rage Damage bonus to the damage you deal with the thrown weapon.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can use the Reckless Attack feature on ranged weapon attacks with thrown weapons, and, while you aren’t within melee range of a hostile creature that isn’t incapacitated, you can draw and throw a thrown weapon as a bonus action. In addition, when you make a ranged weapon attack with a thrown weapon using Strength while raging, you can add your Rage Damage bonus to the damage you deal with the thrown weapon.</description>
+		</sheet>
+	</element>
+	<element name="From the mist" type="Archetype Feature" source="Tome of Heroes" id="ID_TOH_ARCHETYPE_FEATURE_PATH_OF_THE_MISTWOOD_FROM_THE_MIST">
+		<description>
+			<p>Beginning at 6th level, mist and fog don’t hinder your vision. In addition, you can cast the misty step spell, and you can make one attack with a thrown weapon as part of the same bonus action immediately before or immediately after you cast the spell. You can cast this spell while raging. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Action">
+			<description>Mist and fog don’t hinder your vision. In addition, you can cast the misty step spell, and you can make one attack with a thrown weapon as part of the same bonus action immediately before or immediately after you cast the spell. You can cast this spell while raging. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</description>
+		</sheet>
+		<rules>
+		    <grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" level="6"/>
+		</rules>
+	</element>
+	<element name="Mist Dance" type="Archetype Feature" source="Tome of Heroes" id="ID_TOH_ARCHETYPE_FEATURE_PATH_OF_THE_MISTWOOD_MIST_DANCE">
+		<description>
+			<p>Starting at 10th level, when you use the Attack action while raging, you can make one attack against each creature within 5 feet of you in place of one of your attacks. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Action">
+			<description>When you use the Attack action while raging, you can make one attack against each creature within 5 feet of you in place of one of your attacks. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. </description>
+		</sheet>
+	</element>
+	<element name="War Bands Passage" type="Archetype Feature" source="Tome of Heroes" id="ID_TOH_ARCHETYPE_FEATURE_PATH_OF_THE_MISTWOOD_WAR_BANDS_PASSAGE">
+		<description>
+			<p>Starting at 14th level, when you use your From the Mist feature to cast misty step, you can bring up to two willing creatures within 5 feet of you along with you. Attacks against you and any creatures you bring with you have disadvantage until the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description>Starting at 14th level, when you use your From the Mist feature to cast misty step, you can bring up to two willing creatures within 5 feet of you along with you. Attacks against you and any creatures you bring with you have disadvantage until the start of your next turn.</description>
+		</sheet>
+	</element>
+</elements>

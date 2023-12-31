@@ -3,7 +3,7 @@
 	<info>
 		<name>Tiefling-ELf</name>
 		<update version="0.0.1">
-			<file name="race-tiefling-elf.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/race-human-gnome-dragonborn.xml" />
+			<file name="race-tiefling-elf.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/race-tiefling-elf.xml" />
 		</update>
 	</info>
 

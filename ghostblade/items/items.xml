@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Items</name>
+		<update version="0.0.1">
+			<file name="items.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/items.xml" />
+		</update>
+	</info>
+	<element name="Runic Handaxe" type="Weapon" source="Mythical Conquest" id="ID_MYTHIC_WEAPON_RUNIC_HANDAXE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">?</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">20/60</set>
+			<set name="damage">1d8 slashing +2 radiant</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE</set>
+		</setters>
+	</element>
+	
+	<element name="The Corrupted Axe of Nephel" type="Weapon" source="Mythical Conquest" id="ID_MYTHIC_WEAPON_NEPHEL_AXE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
+		<description>
+			<p>The axe of a legendary barbarian native to the Mystlands. In their final moments cursing the axe with the power of their feller, before an unknown tragedy.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">?</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" >2d10+1 Slashing, +3 Necrotic</set>
+			<set name="enhancement">5</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE</set>
+		</setters>
+	</element>
+	
+	<element name="Triple Barrel Shotgun" type="Weapon" source="Mythical Conquest" id="ID_MYTHIC_WEAPON_TRIPLE_SHOTGUN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_BLUDGEONING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_RDDT_AA_WEAPON_PROPERTY_SCATTER, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		</supports>
+		<description>
+			<p>Ammunition (range 5/25), Two-Handed, Reload 9</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">75</set>
+			<set name="weight" lb="7">7 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">5/25</set>
+			<set name="damage">3d12 bludgeoning</set>
+			<set name="reload">9</set>
+			<set name="misfire">1</set>
+			<set name="proficiency">ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_SHOTGUNS</set>
+		</setters>
+	</element>
+
+	<element name="Obsidian Piercer" type="Weapon" source="Mythical Conquest" id="ID_MYTHIC_WEAPON_OBSIDIAN_PIERCER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		</supports>
+		<description>
+			<p>Ammunition (range 200/1000), Two-Handed, Loading, Heavy</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="weight" lb="18">25 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">100/1000</set>
+			<set name="damage" type="piercing">5d12+10</set>
+			<set name="proficiency">ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_HEAVY_RIFLE</set>
+		</setters>
+	</element>
+	
+	<element name="Runic Staff" type="Weapon" source="Mythical Conquest" id="ID_MYTHIC_WEAPON_RUNIC_STAFF">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+		<description>
+			<p>This runic staff powers itself off the worlds natural mana, allowing one to focus their powers through it. Usually used for helping those with weak magic unleash their expected potential.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">20/60</set>
+		</setters>
+	</element>
+	
+	<element name="Runic Shield" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_GEAR_RUNIC_SHIELD">
+		<supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
+		<description>
+			<p>A shield is made from rune carved metal, with runes carved in and is carried in one hand. Wielding a shield increases your Armor Class by 1. You can benefit from only one shield at a time.</p>
+		</description>
+		<setters>
+			<set name="keywords">shield</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">75</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">onehand,secondary</set>
+			<set name="type">Shield</set>
+			<set name="armor">Shield</set>
+			<set name="armorClass">+1</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD</set>
+		</setters>
+		<rules>
+			<stat name="ac:shield" value="1" bonus="shield" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+		    <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
+	</element>
+	
+	<element name="Mithril Bullet" type="Item" source="Mythical Conquest" id="ID_MYTHIC_MINICANNONBALL">
+		<description>
+			<p>Mithril Bullets, usable only by the finest of weapons an artificer can concoct. Strong enough to pierce a dragons scales. Can only be used with rifles of Very Rare and Legendary quality, adding an additional 2d8 magical piercing damage to damage rolls.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">800</set>
+			<set name="weight" lb="2">20 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+		<element name="Incendiary Shells" type="Item" source="Mythical Conquest" id="ID_MYTHIC_INCENDIARY_SHELLS">
+		<description>
+			<p>Shells that light their targets on fire.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="2">3 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	<element name="The Godsbane" type="Magic Item" source="Homebrewery" id="ID_WOTC_PHB_WEAPON_GODSBANE_AXE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
+		<description>
+			<p>This weapons attacks are considered magical for the purpose of overcoming resistances.</p>
+			<p>When dealing damage to an enemy, add an extra 1d4 Fire Damage and 1d4 Cold Damage to the damage roll.</p>
+			<p>When felling a foe with this weapon, the wielder rekindles a brief amount of life force, regaining 1d4 health and removing a level of exhaustion.</p>
+			<p>Enemies felled by this blade cannot be resurrected without the use of divine intervention.</p>
+		</description>
+		<setters>
+			<set name="keywords">Greataxe</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="type" addition="Greataxe">Weapon</set>
+			<set name="rarity">Soulforged</set>
+			<set name="weight" lb="4">195 lb.</set>
+			<set name="slot">two-handed</set>
+			<set name="weapon">Greataxe</set>
+			<set name="damage" type="slashing">1d12+4 Slashing</set>
+			<set name="enhancement">4</set>
+			<set name="name-format">Godsbane</set>
+		</setters>
+	</element>
+	
+	<element name="Mithril" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_SHIELD_MITHRIL">
+		<description>
+			<p>While equipped, you have a +2 Bonus to AC. While equipped with this sheild or armor, reduce incoming spell damage by 2.</p>
+		</description>
+		<setters>
+			<set name="keywords">shield</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">1200</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD|ID_INTERNAL_ARMOR_GROUP_MEDIUM</set>
+			<set name="name-format">{{parent}} +{{enhancement}}</set>
+		</setters>
+		<rules>
+			<stat name="ac:shield" value="2" bonus="enhancement" />
+		</rules>
+	</element>
+	
+	<element name="Orichalcum" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_SHIELD_ORICHALCUM">
+		<description>
+			<p>While equipped, you have a +2 Bonus to AC. While equipped with this sheild or armor, when you are forced to make a Saving Throw regarding the effects of a spell, roll 1d6 and add it to your Saving Throw.</p>
+		</description>
+		<setters>
+			<set name="keywords">shield</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">2000</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">1</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD|ID_INTERNAL_ARMOR_GROUP_MEDIUM</set>
+			<set name="name-format">{{parent}} +{{enhancement}}</set>
+		</setters>
+		<rules>
+			<stat name="ac:shield" value="2" bonus="enhancement" />
+		</rules>
+	</element>
+	
+	<element name="Buckler" type="Armor" source="Mythical Conquest" id="ID_MYTHIC_GEAR_BUCKLER">
+		<supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
+		<description>
+			<p>A buckler is made from wood or metal and is carried in one hand. Wielding a buckler increases your Armor Class by 1. You can benefit from only one buckler at a time.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">onehand,secondary</set>
+			<set name="type">Buckler</set>
+			<set name="armor">Buckler</set>
+			<set name="armorClass">+1</set>
+		</setters>
+		<rules>
+			<stat name="ac:shield" value="1" bonus="shield" />
+		</rules>
+	</element>
+	
+	<!--Weapons -->
+	<element name="Mithril" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_WEAPON_MYTHRIL">
+		<description>
+			<p>You have a +2 bonus to attack and damage rolls made with this magic weapon that utilize spells.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">4500</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</set>
+			<set name="name-format">{{parent}} +{{enhancement}}</set>
+		</setters>
+	</element>
+	
+	<element name="Orichalcum" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_WEAPON_ORICHALCUM">
+		<description>
+			<p>You have a +3 bonus to attack and damage rolls made with this magic weapon that utilize spells.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">6000</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</set>
+			<set name="name-format">{{parent}} +{{enhancement}}</set>
+		</setters>
+	</element>
+</elements>

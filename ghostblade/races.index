@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Samurai Class</name>
+		<description>The Samurai Class adds a new take on the popular archetype to DnD 5e.</description>
+		<author url="https://www.dandwiki.com/wiki/Samurai_(5e_Class)">DnD Wiki</author>
+		<update version="0.0.1">
+			<file name="races.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races.index" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-samurai/source.xml" />
+		<file name="race-human-gnome-dragonborn.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/race-human-gnome-dragonborn.xml" />
+		<file name="race-human-gnome-dragonborn.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/race-human-gnome-dragonborn.xml" />
+	</files>
+</index>

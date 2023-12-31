@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Crusader</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="class-crusader.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-crusader/class-crusader.xml" />
 		</update>
 	</info>
@@ -237,7 +237,8 @@
 			<description level="15">
 				<p>When youre successfully attacked by a melee weapon attack, you may retaliate and make an opportunity attack against the attacker with your equipped weapon.</p>
 				<p>When you successfully attack a creature with your reaction, you may additionally deal your Smite damage to the target.</p>
-			</description level="17">
+			</description>
+			<description level="17">
 				<p>When you successfully attack a creature with your reaction and deal Smite damage, your Smite lashes out in a straight line for an additional {{smite:range}} ft from the direction you attack. Any creatures in the line must take a DC {{smite:dc}} Dexterity saving throw. On a failed save, the creature takes damage equal to your Smite.</p>
 			</description>
 		</sheet>

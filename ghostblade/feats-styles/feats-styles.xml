@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+		<update version="0.0.1">
+			<file name="feats-styles.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/feat-styles/feats-styles.xml" />
+		</update>
+	</info>
+	
+	<element name="Draconic Frenzy" type="Feat" source="Mythical Conquest" id="ID_BOUNDLESS_HB_FEAT_DRACONIC_FRENZY" >
+		<requirements />
+		<description>
+			<p>Through some inexplicable method, you have contained the rage of a dragon within you. You gain the following benefits:</p>
+			<ul>
+				<li>When making an attack action, you can spend 1 hit die to add it to your damage roll.</li>
+				<li>Critical Hits will infuse your weapon with the power of your own soul, allowing it to bypass resistances and deal an additional 1d4 damage.</li>
+				<li>You have advantage on resisting intimidation checks.</li>
+			</ul>
+		</description>
+		<sheet>
+		<description>
+			<p>Through some inexplicable method, you have contained the rage of a dragon within you. You gain the following benefits:</p>
+			<ul>
+				<li>When making an attack action, you can spend 1 hit die to add it to your damage roll.</li>
+				<li>Critical Hits will infuse your weapon with the power of your own soul, allowing it to bypass resistances and deal an additional 1d4 damage.</li>
+				<li>You have advantage on resisting intimidation checks.</li>
+			</ul>
+		</description>
+		</sheet>
+	</element>		
+	
+	<element name="Agitator" type="Feat" source="Mythical Conquest" id="ID_RDDT_UA_FEAT_AGITATOR">
+		<description>
+			<p>You've learned the art of using insults to your tactical advantage, granting you the following benefits:</p>
+			<ul>
+				<li>Increase your Charisma score by 1, to a maximum of 20.</li>
+				<li>You gain proficiency in the Intimidation skill if you don't already have it</li>
+				<li>You can use the Guardian's Daring Taunt feature as if you were a 1st level Guardian. The save DC for your Daring Taunt is equal to 8 + your proficiency bonus + your Charisma modifier. If you’re able to make multiple attacks with the Attack action, using the Daring Taunt feature via this feat replaces one of them.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can use the Guardian's Daring Taunt feature as if you were a 1st level Guardian. The save DC for your Daring Taunt is equal to 8 + your proficiency bonus + your Charisma modifier. If you’re able to make multiple attacks with the Attack action, using the Daring Taunt feature via this feat replaces one of them.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+		</rules>
+	</element>
+	
+	<element name="Blacksmith" type="Feat" source="Mythical Conquest" id="ID_RDDT_UA_FEAT_BLACKSMITH">
+		<description>
+			<p>You've learned the art of using insults to your tactical advantage, granting you the following benefits:</p>
+			<ul>
+				<li>Increase your Charisma score by 1, to a maximum of 20.</li>
+				<li>You gain proficiency in the Intimidation skill if you don't already have it</li>
+				<li>During each long rest, you can choose to fortify or sharpen a number of items equal to half of your proficiency bonus. Each item must be a set of medium armor or heavy armor, a shield, or a metal weapon. You must have these items in reach for at least 1 collective hour throughout your rest. If you choose a shield or set of armor, it grants an additional +1 bonus to Armor Class that lasts until the end of your next long rest. If you choose a weapon, it grants an additional +1 bonus to attack and damage rolls that lasts until the end of your next long rest.</li>
+				<li>The the total gold cost you must pay to craft medium armors, heavy armors, shields, and metal weapons is halved.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>During each long rest, you can choose to fortify or sharpen a number of items equal to half of your proficiency bonus. Each item must be a set of medium armor or heavy armor, a shield, or a metal weapon. You must have these items in reach for at least 1 collective hour throughout your rest. If you choose a shield or set of armor, it grants an additional +1 bonus to Armor Class that lasts until the end of your next long rest. If you choose a weapon, it grants an additional +1 bonus to attack and damage rolls that lasts until the end of your next long rest.</description>
+			<p>The the total gold cost you must pay to craft medium armors, heavy armors, shields, and metal weapons is halved.</p>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+		</rules>
+	</element>
+	
+	<element name="Deception" type="Class Feature" source="Unearthed Arcana" id="ID_MYTHIC_CQ_CLASS_FEATURE_FIGHTINGSTYLE_DECEPTION">
+		<supports>Fighting Style, Guardian</supports>
+		<description>
+			<p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to give the attacker advantage on the attack roll. You must be wielding a weapon to use this reaction.</p>
+		</description>
+		<sheet>
+			<description>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to give the attacker advantage on the attack roll. You must be wielding a weapon to use this reaction.</description>
+		</sheet>
+	</element>
+	
+	<element name="Reactive Fighting" type="Class Feature" source="Player’s Handbook" id="ID_MYTHIC_CQ_CLASS_FEATURE_FIGHTINGSTYLE_REACTIVE_FIGHTING">
+		<supports>Fighting Style, Guardian</supports>
+		<description>
+			<p>Your opportunity attacks gain a +1 to attack and damage rolls.</p>
+		</description>
+		<sheet>
+			<description>Your opportunity attacks gain a +1 to attack and damage rolls.</description>
+		</sheet>
+	</element>
+	
+	<element name="Shielding" type="Class Feature" source="Player’s Handbook" id="ID_MYTHIC_CQ_CLASS_FEATURE_FIGHTINGSTYLE_SHIELDING">
+		<supports>Fighting Style, Guardian</supports>
+		<description>
+			<p>When a creature within 5 feet of you, other than you, makes a Dexterity saving throw against an effect that you can see, such as a trap or spell, you can use your reaction to give them advantage on the roll. You must be wielding a shield to use this reaction.</p>
+		</description>
+		<sheet>
+			<description>When a creature within 5 feet of you, other than you, makes a Dexterity saving throw against an effect that you can see, such as a trap or spell, you can use your reaction to give them advantage on the roll. You must be wielding a shield to use this reaction.</description>
+		</sheet>
+	</element>
+	
+	<element name="Standard Bearer" type="Class Feature" source="Player’s Handbook" id="ID_MYTHIC_CQ_CLASS_FEATURE_FIGHTINGSTYLE_STANDARD_BEARER">
+		<supports>Fighting Style, Guardian</supports>
+		<description>
+			<p>When a creature within 5 feet of you, other than you, makes an attack against a creature you can see, you can use your reaction to grant it advantage on its attack roll. You must be carrying a banner, flag, or battle standard in your hand to use this reaction.</p>
+		</description>
+		<sheet>
+			<description>When a creature within 5 feet of you, other than you, makes an attack against a creature you can see, you can use your reaction to grant it advantage on its attack roll. You must be carrying a banner, flag, or battle standard in your hand to use this reaction.</description>
+		</sheet>
+	</element>	
+	
+	<element name="Warding" type="Class Feature" source="Player’s Handbook" id="ID_MYTHIC_CQ_CLASS_FEATURE_FIGHTINGSTYLE_WARDING">
+		<supports>Fighting Style, Guardian, Diabolist</supports>
+		<description>
+			<p>Other creatures provoke an opportunity attack from you when they enter a space within 5 feet of you.</p>
+		</description>
+		<sheet>
+			<description>Other creatures provoke an opportunity attack from you when they enter a space within 5 feet of you.</description>
+		</sheet>
+	</element>
+	
+	<element name="Blind Fighting" type="Class Feature" source="Unearthed Arcana" id="ID_MYTHIC_CQ_CLASS_FEATURE_FIGHTINGSTYLE_BLIND_FIGHTING">
+		<supports>Fighting Style, Diabolist</supports>
+		<description>
+			<p>You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.</p>
+		</description>
+		<sheet>
+			<description>You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+		</rules>
+	</element>
+	
+	<element name="Eldritch Warrior" type="Class Feature" source="Unearthed Arcana" id="ID_MYTHIC_CQ_CLASS_FEATURE_FIGHTINGSTYLE_ELDRITCH_WARRIOR">
+		<supports>Fighting Style, Diabolist</supports>
+		<description>
+			<p>You learn two cantrips of your choice from the warlock spell list. They count as diabolist spells for you, and Constitution is your spellcasting ability for them.</p>
+			<p class="indent">Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the warlock spell list.</p>
+		</description>
+		<sheet/>
+		<rules>
+			<select type="Spell" name="Cantrip (Eldritch Warrior)" supports="Warlock, 0" level="2" number="2" spellcasting="Diabolist" />
+		</rules>
+	</element>
+</elements>

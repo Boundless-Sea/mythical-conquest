@@ -11,5 +11,7 @@
 	<files>
 		<file name="source.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/subclass/source.xml" />
 		<file name="barbarian-path-of-mistwood.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/subclass/barbarian-path-of-mistwood.xml" />
+		<file name="monk-way-of-the-dreadful-fist.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/subclass/monk-way-of-the-dreadful-fist.xml" />
+		<file name="paladin-holy.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/subclass/paladin-holy.xml" />
 	</files>
 </index>

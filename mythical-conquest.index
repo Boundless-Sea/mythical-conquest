@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="mythical-conquest.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/mythical-conquest.index" />
 		</update>
 	</info>
@@ -14,5 +14,6 @@
 		<file name="subclass.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/subclass.index" />
 		<file name="items.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/items.index" />
 		<file name="feats-styles.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/feats-styles.index" />
+		<file name="misc.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/misc.index" />
 	</files>
 </index>

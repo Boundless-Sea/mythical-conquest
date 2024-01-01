@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Way of the Dreadful Fist Monastic Tradition</name>
+        <update version="0.0.1">
+            <file name="monk-way-of-the-dreadful-fist.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/subclass/monk-way-of-the-dreadful-fist.xml" />
+        </update>
+    </info>
+    
+    <element name="Way of the Dreadful Fist" type="Archetype" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_MONASTIC_TRADITION_WAY_OF_THE_DREADFUL_FIST">
+        <supports>Monastic Tradition</supports>
+        <description>
+            <p>Monks who follow the tradition of the dreadful fist, also known as Masters of Fear, use dread and terror as weapons to break their enemies will and win a battle before it even starts. They are specialized in using mundane intimidation tactics, but they also can awaken a sense of dread in their foes by tainting the ki of their opponents with fear.</p>
+            <p class="indent">These monks are infamous for being able to awaken the worst nightmares of their opponents trough a single touch.</p>
+            <div element="ID_MYTHIC_ARCHETYPE_FEATURE_MONK_WOTDF_MASTER_OF_FEAR" />
+            <div element="ID_MYTHIC_ARCHETYPE_FEATURE_MONK_WOTDF_STRIKE_OF_FEAR" />
+			<div element="ID_MYTHIC_ARCHETYPE_FEATURE_MONK_WOTDF_FRIGHTENING_PRESENCE" />
+            <div element="ID_MYTHIC_ARCHETYPE_FEATURE_MONK_WOTDF_GAZE_OF_TERROR" />
+            <div element="ID_MYTHIC_ARCHETYPE_FEATURE_MONK_WOTDF_PSYCHIC_TOUCH" />
+			<div element="ID_MYTHIC_ARCHETYPE_FEATURE_MONK_WOTDF_PARALYZING_FEAR" />
+        </description>
+        <sheet display="false">
+            <description>Monks who follow the tradition of The Dreadful Fist use dread and terror as weapons to break their enemies will and win a battle before it even starts.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_FEATURE_MONK_WOTDF_MASTER_OF_FEAR" level="3" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_FEATURE_MONK_WOTDF_STRIKE_OF_FEAR" level="3" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_FEATURE_MONK_WOTDF_FRIGHTENING_PRESENCE" level="3" />
+            <grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_FEATURE_MONK_WOTDF_GAZE_OF_TERROR" level="6" />
+            <grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_FEATURE_MONK_WOTDF_PSYCHIC_TOUCH" level="11" />
+            <grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_FEATURE_MONK_WOTDF_PARALYZING_FEAR" level="17" />
+        </rules>
+    </element>
+
+    <element name="Master of Fear" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_FEATURE_MONK_WOTDF_MASTER_OF_FEAR">
+        <description>
+            <p>At 3rd, you gain proficiency in the Intimidation skill, and can add twice your proficiency bonus to your Intimidation checks. You can also use your Wisdom modifier, instead of Charisma, whenever you make an Intimidation check. In addition, you can replicate the effects of certain spells. The spell doesn't require any components. You can use this feature to cast spells a number of times equal to your proficiency bonus, being unable to do so again until you finish a long rest. You can spend a number of ki points equal to the level of the spell to cast the following spells at the levels shown below: <i>cause fear</i>, <i>phantasmal force</i>, <i>fear</i>, <i>phantasmal killer</i> without providing material components.</p>
+        </description>
+        <sheet action="Action">
+            <description>You can spend a number of ki points equal to the level of the spell to cast the following spells at the levels shown bellow:</description>
+        </sheet>
+        <rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+            <grant type="Spell" id="ID_XGTE_SPELL_CAUSE_FEAR" level="3"/>
+            <grant type="Spell" id="ID_PHB_SPELL_PHANTASMAL_FORCE" level="6"/>
+            <grant type="Spell" id="ID_PHB_SPELL_FEAR" level="11"/>
+            <grant type="Spell" id="ID_PHB_SPELL_PHANTASMAL_KILLER" level="17"/>
+        </rules>
+    </element>
+	
+	<element name="Strike of Fear" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_FEATURE_MONK_WOTDF_STRIKE_OF_FEAR">
+		<description>
+			<p>At 3rd level, you can use your ki to awaken fear in the hearts of your opponents. You learn the following techniques:</p>
+		</description>
+		<sheet>
+			<description>
+			When you hit a creature with one of your attacks from flurry of blows, that creature is frightened of you until the end of your next turn.
+			</description>
+		</sheet>
+	</element>
+	
+	<element name="Frightening Presence" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_FEATURE_MONK_WOTDF_FRIGHTENING_PRESENCE">
+		<description>
+			<p>At 3rd level, you can use your ki to awaken fear in the hearts of your opponents. Your presence exude an aura of fear. When you take the Patient Defense, you can use an Action to force each creature of your choice in a 30ft. radius to make a Wisdom saving throw. On a failed save, a creature becomes frightened of you until the end of your next turn.</p>
+		</description>
+		<sheet action="Action">
+			<description>
+			When you take the Patient Defense, you can force each creature of your choice in a 30ft. radius to make a Wisdom saving throw. On a failed save, a creature becomes frightened of you until the end of your next turn.
+			</description>
+		</sheet>
+	</element>
+	
+    <element name="Gaze of Terror" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_FEATURE_MONK_WOTDF_GAZE_OF_TERROR">
+        <description>
+            <p>At 6th level, whenever a creature you can see within 120 feet succeeds on a saving throw against the frightened condition imposed by you, you can use your reaction to force a different creature you can see within 120 feet to make a Wisdom saving throw against your Ki save DC. If the target fails, it is frightened by you for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a successful save. In addition, you become immune to the frightened condition.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>
+				Whenever a creature you can see within 120ft. succeeds a saving throw against the frightened condition imposed by you, you can force a different creature you can see within 120ft. to make a DC {{ki:dc}} WIS saving throw. On a fail, its frightened by you for 1m. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a successful save.
+			</description>
+        </sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FRIGHTENED" />
+		</rules>
+    </element>
+
+    <element name="Psychic Touch" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_FEATURE_MONK_WOTDF_PSYCHIC_TOUCH">
+        <description>
+            <p>At 11th level, a sense of self doubt and pure dread invade the hearts of creatures attacked by you. Whenever you hit a creature with an unarmed strike, you cause additional psychic damage equal to your Wisdom modifier (minimum of 1).</p>
+        </description>
+        <sheet>
+            <description>When you hit a creature with an unarmed strike, you deal additional {{wisdom:modifier}} psychic damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Paralyzing Fear" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_FEATURE_MONK_WOTDF_PARALYZING_FEAR">
+        <description>
+            <p>At 17th level, whenever you hit a creature frightened by you with an unarmed strike, you cause additional psychic damage equal to half your monk level, and that creature's movement speed is reduced to 0.</p>
+        </description>
+        <sheet>
+            <description>When you hit a creature frightened by you with an unarmed strike, you deal additional {{level:monk:half}} psychic damage, and that creatures movement speed is reduced to 0.</description>
+        </sheet>
+    </element>
+
+</elements>

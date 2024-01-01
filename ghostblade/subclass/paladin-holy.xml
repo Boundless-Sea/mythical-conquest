@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Oath of Holy</name>
+		<update version="0.0.1">
+			<file name="paladin-holy.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/subclass/paladin-holy.xml" />
+		</update>
+	</info>
+	<element name="Oath of Holy" type="Archetype" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_PALADIN_OATH_OF_HOLY">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>Holy Knights are strong-willed, and incredibly loyal people, and often devoted towards serving a particular lord or regent that their patron deity has evoked his support for. They wield wondrous powers, granted by their God, and use them to smite their enemies, as well as inspire their allies. While a Knight may be skilled in any weaponry, they can only use their deity's favored weapon to call down their powers.</p>
+			<div element="ID_MYTHIC_ARCHETYPE_FEATURE_HOLY_OATH_SPELLS" />
+			<div element="ID_MYTHIC_ARCHETYPE_FEATURE_HOLY_JUDGEMENT_BLADE" />
+			<div element="ID_MYTHIC_ARCHETYPE_FEATURE_HOLY_GREATER_GOOD" />
+			<div element="ID_MYTHIC_ARCHETYPE_FEATURE_HOLY_CLEANSING_STRIKE" />
+			<div element="ID_MYTHIC_ARCHETYPE_FEATURE_HOLY_NORTHSWAINS" />
+			<div element="ID_MYTHIC_ARCHETYPE_FEATURE_HOLY_DIVINE_RETRIBUTION"/>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_FEATURE_HOLY_OATH_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_FEATURE_HOLY_JUDGEMENT_BLADE" level="3" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_FEATURE_HOLY_HALLOWED_BOLT" level="5" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_FEATURE_HOLY_GREATER_GOOD" level="7" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_FEATURE_HOLY_CLEANSING_STRIKE" level="11" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_FEATURE_HOLY_NORTHSWAINS" level="18" />
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_FEATURE_HOLY_DIVINE_RETRIBUTION" level="20"/>
+		</rules>
+	</element>
+	<element name="Oath Spells" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_FEATURE_HOLY_OATH_SPELLS">
+		<description>
+			<p><em>3rd-level Oath of Holy feature</em></p>
+			<p>You gain oath spells at the paladin levels listed in the Oath of Holy Spells table. See the Sacred Oath class feature for how oath spells work.</p>
+			<h5 class="caption">Oath of Holy Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>guiding bolt, heroism, commune</em></td></tr>
+				<tr><td>5th</td><td><em>enhance ability, magic weapon</em></td></tr>
+				<tr><td>9th</td><td><em>haste, protection from energy</em></td></tr>
+				<tr><td>13th</td><td><em>compulsion, freedom of movement</em></td></tr>
+				<tr><td>17th</td><td><em>flame strike</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_GUIDING_BOLT" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HEROISM" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ENHANCE_ABILITY" spellcasting="Paladin" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAGIC_WEAPON" spellcasting="Paladin" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" spellcasting="Paladin" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" spellcasting="Paladin" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_COMPULSION" spellcasting="Paladin" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" spellcasting="Paladin" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_COMMUNE" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLAME_STRIKE" spellcasting="Paladin" level="17" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_RAISE_DEAD" spellcasting="Paladin" level="18" prepared="true"/>
+		</rules>
+	</element>
+	<element name="Judgement Blade" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_FEATURE_HOLY_JUDGEMENT_BLADE">
+		<description>
+			<p><em>3rd-level Oath of Holy feature</em></p>
+			<p>By swinging your weapon, and shouting "Life is short... Bury! Judgement Blade!", you summon divine shards of ice to fall onto your opponent. The attack does 2d8 sacred damage, and an additional amount of damage equal to your Holy Knight level. This damage applies to your opponent, and all targets adjacent to him/her, friend or foe. It also has a 20% chance of causing those struck to become stunned. This attack can only be used on targets at 10 feet of range.</p>
+		</description>
+		<sheet action="Action" usage="3/Short Rest">
+			<description>
+				<p>The attack does {{paladin:level}} + 2d8 sacred damage. This damage applies to your opponent, and all targets within 5ft. This attacks stuns the target on a critical hit. This attack can only be used on targets within 10ft.</p>
+			</description>
+		</sheet>
+	</element>
+	<element name="Hallowed Bolt" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_FEATURE_HOLY_HALLOWED_BOLT">
+		<description>
+			<p><em>5th-level Oath of Holy feature</em></p>
+			<p>By swinging your weapon, and shouting "Absorb Power from the Sky... And Strike! Hallowed Bolt!", you can call divine bolts of lightning down upon your target, dealing 3d8 damage, and an additional amount of damage equal to your Holy Knight level; half Sacred damage, and half Electric damage. This attack applies to your target, and all targets adjacent to him/her, friend or foe. It also functions as the Dispel Magic spell, with your Holy Knight level as the caster level. This attack can only be used on targets at 20 feet of range, or shorter.</p>
+			</description>
+		<sheet action="Action" usage="5/Short Rest">
+			<description>
+				Deal an additional {{paladin:level:half}} 2d8 radiant damage + {{paladin:level:half}} + 1d8 lightning damage. This attack applies to your target, and all creatures within 5ft. It also functions as the Dispel Magic spell, with a Caster Level of {{paladin:level}}. This attack can only be used on targets within 20ft.
+			</description>
+		</sheet>
+	</element>
+	<element name="Greater Good" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_FEATURE_HOLY_GREATER_GOOD">
+		<description>
+			<p><em>7th-level Oath of Holy feature</em></p>
+			<p>Holy Knights are recognized by their deity as one of the greatest and most devoted followers they have, as well as a very powerful force of their will. All holy sword techniques become more powerful, symbolizing the approval of the god. All damage die for Holy Sword Techniques are increased by one. (2d8 -> 2d10, 1d4 -> 1d6)</p>
+		</description>
+		<sheet>
+			<description>
+				All damage die for Holy Sword Techniques are increased by one.
+			</description>
+		</sheet>
+	</element>
+	<element name="Cleansing Strike" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_FEATURE_HOLY_CLEANSING_STRIKE">
+		<description>
+			<p><em>11th-level Oath of Holy feature</em></p>
+			<p>By swinging your weapon, and shouting "I sense the devil's spirit of recklessness... Cleansing Strike!", you can cause a deep, unseen wound to appear in your opponent, dealing 2d4 sacred damage, and an additional amount of damage equal to your Holy Knight level. This damage applies to your target, only. The target also takes 1d10 sacred damage each rounds, for three rounds thereafter, as well. This attack can only be used on targets at 20 feet of range, or shorter.</p>
+		</description>
+		<sheet action="Action">
+			<description>
+				Deal an additional {{level:paladin}} + 2d4 radiant damage. The target also takes 1d10 radiant damage each round for 3 rounds. This attack can only be used on targets within 20ft.
+			</description>
+		</sheet>
+	</element>	
+	<element name="Northswain's Strike" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_FEATURE_HOLY_NORTHSWAINS">
+		<description>
+			<p><em>18th-level Oath of Holy feature</em></p>
+			<p>By swinging your weapon, and shouting "The doom of a planet.. No! Northswain's Strike!", you can cause a shock to the target so powerful, they might instantly incapacitate themselves. This attack deals 2d6 sacred damage, and an additional amount of damage equal to half your Holy Knight level. This attack applies to your target, only. When damage applies, the target must make a Wisdom Save (DC equal to 10 + Proficiency Bonus + CHA modifier) or be incapacitated for 3 turns. Creatures immune to critical hits are also immune to this effect. This attack can only be used against targets at 10 feet of range, or shorter.</p>
+			<p>Once you use this feature three times, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="3/Short Rest">
+			<description>
+				This attack deals {{level:paladin:half}} + 3d6 radiant damage. When damage applies, the target must make a DC {{northswain:dc}} WIS Save or be incapacitated for 3 turns. Any creature that passes the Save is immune to the effect but loses 5 AC permanently. Creatures immune to critical hits are also immune to this effect. This attack can only be used against targets within 10ft.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="northswain:dc" value="10" />
+			<stat name="northswain:dc" value="proficiency" />
+			<stat name="northswain:dc" value="charisma:modifier" />
+		</rules>
+	</element>
+	<element name="Divine Retribution" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_FEATURE_HOLY_DIVINE_RETRIBUTION">
+		<description>
+			<p><em>20th-level Oath of Holy feature</em></p>
+			<p>This attack is effectively a Breath Weapon in the form of a 60ft. line, doing Paladin Level + 4d10 Radiant damage to any living creature, friend or foe, caught in the line. You do not need to target any particular opponent to use this ability, but the line is always 60ft. in 1 direction. Anyone taking damage may do a DC 14 DEX Save to take 1/2 damage.</p>
+			<p>Once you use this feature, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>
+				This attack is effectively a Breath Weapon in the form of a 60ft. line, doing {{level:paladin}} + 4d10 Radiant damage to any living creature, friend or foe, caught in the line. Anyone taking damage may do a DC 14 DEX Save to take 1/2 damage.
+			</description>
+		</sheet>
+	</element>
+</elements>

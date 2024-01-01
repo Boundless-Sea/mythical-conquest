@@ -2,7 +2,7 @@
 <elements>
 	<info>
         <name>Internal-Extended</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="internal-extended.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/misc/internal-extended.xml" />
         </update>
     </info>

@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+        <name>Internal-Extended</name>
+        <update version="0.0.1">
+            <file name="internal-extended.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/misc/internal-extended.xml" />
+        </update>
+    </info>
+    
+    
+    <!-- Health Increases-->
+
+	<element name="Increased Hit Points (+1)" type="Item" source="Internal" id="ID_INTERNAL_ITEM_HPUP_1">
+		<description>
+			<p>You can "equip" this to grant the associated benefits.</p>
+			</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="hp" value="1" />
+		</rules>
+    </element>
+
+    <element name="Increased Hit Points (+2)" type="Item" source="Internal" id="ID_INTERNAL_ITEM_HPUP_2">
+		<description>
+			<p>You can "equip" this to grant the associated benefits.</p>
+			</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="hp" value="2" />
+		</rules>
+    </element>
+
+    <element name="Increased Hit Points (+5)" type="Item" source="Internal" id="ID_INTERNAL_ITEM_HPUP_5">
+		<description>
+			<p>You can "equip" this to grant the associated benefits.</p>
+			</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="hp" value="5" />
+		</rules>
+    </element>
+
+	<element name="Increased Hit Points (+10)" type="Item" source="Internal" id="ID_WIKI_ITEM_HPUP_10">
+		<description>
+			<p>You can "equip" this to grant the associated benefits.</p>
+			</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="hp" value="10" />
+		</rules>
+    </element> 
+
+    <!-- Saving Throw Expertise -->
+
+    <element name="Saving Throw Proficiency or Double (Strength)" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PROFICIENCY_OR_DOUBLE_STRENGTH_SAVING_THROW">
+        <rules>
+            <grant type="Grants" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+            <grant type="Grants" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH_DOUBLE" requirements="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+        </rules>
+    </element>
+    <element name="Saving Throw Proficiency or Double (Dexterity)" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PROFICIENCY_OR_DOUBLE_DEXTERITY_SAVING_THROW">
+        <rules>
+            <grant type="Grants" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+            <grant type="Grants" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY_DOUBLE" requirements="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+        </rules>
+    </element>
+    <element name="Saving Throw Proficiency or Double (Constitution)" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PROFICIENCY_OR_DOUBLE_CONSTITUTION_SAVING_THROW">
+        <rules>
+            <grant type="Grants" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+            <grant type="Grants" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION_DOUBLE" requirements="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+        </rules>
+    </element>
+    <element name="Saving Throw Proficiency or Double (Intelligence)" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PROFICIENCY_OR_DOUBLE_INTELLIGENCE_SAVING_THROW">
+        <rules>
+            <grant type="Grants" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+            <grant type="Grants" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE_DOUBLE" requirements="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+        </rules>
+    </element>
+    <element name="Saving Throw Proficiency or Double (Wisdom)" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PROFICIENCY_OR_DOUBLE_WISDOM_SAVING_THROW">
+        <rules>
+            <grant type="Grants" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+            <grant type="Grants" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM_DOUBLE" requirements="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+        </rules>
+    </element>
+    <element name="Saving Throw Proficiency or Double (Charisma)" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PROFICIENCY_OR_DOUBLE_CHARISMA_SAVING_THROW">
+        <rules>
+            <grant type="Grants" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+            <grant type="Grants" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA_DOUBLE" requirements="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+        </rules>
+    </element>
+
+    <element name="Saving Throw Double Proficiency (Strength)" type="Proficiency" source="Player’s Handbook" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH_DOUBLE">
+		<supports>Saving Throw</supports>
+		<rules>
+			<stat name="strength:save:proficiency" value="proficiency" bonus="double" alt="Double Proficiency" />
+		</rules>
+	</element>
+
+	<element name="Saving Throw Double Proficiency (Dexterity)" type="Proficiency" source="Player’s Handbook" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY_DOUBLE">
+		<supports>Saving Throw</supports>
+		<rules>
+			<stat name="dexterity:save:proficiency" value="proficiency" bonus="double" alt="Double Proficiency" />
+		</rules>
+	</element>
+
+	<element name="Saving Throw Double Proficiency (Constitution)" type="Proficiency" source="Player’s Handbook" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION_DOUBLE">
+		<supports>Saving Throw</supports>
+		<rules>
+			<stat name="constitution:save:proficiency" value="proficiency" bonus="double" alt="Double Proficiency" />
+		</rules>
+	</element>
+
+	<element name="Saving Throw Double Proficiency (Intelligence)" type="Proficiency" source="Player’s Handbook" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE_DOUBLE">
+		<supports>Saving Throw</supports>
+		<rules>
+			<stat name="intelligence:save:proficiency" value="proficiency" bonus="double" alt="Double Proficiency" />
+		</rules>
+	</element>
+
+	<element name="Saving Throw Double Proficiency (Wisdom)" type="Proficiency" source="Player’s Handbook" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM_DOUBLE">
+		<supports>Saving Throw</supports>
+		<rules>
+			<stat name="wisdom:save:proficiency" value="proficiency" bonus="double" alt="Double Proficiency" />
+
+		</rules>
+	</element>
+
+	<element name="Saving Throw Double Proficiency (Charisma)" type="Proficiency" source="Player’s Handbook" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA_DOUBLE">
+		<supports>Saving Throw</supports>
+		<rules>
+            <stat name="charisma:save:proficiency" value="proficiency" bonus="double" alt="Double Proficiency"/>
+		</rules>
+	</element>
+
+    <!-- Condition Definitions -->
+
+    <element name="Blinded" type="Damage Type" source="Internal" id="ID_INTERNAL_DAMAGE_TYPE_BLINDED">
+        <description></description>
+    </element>
+
+    <element name="Charmed" type="Damage Type" source="Internal" id="ID_INTERNAL_DAMAGE_TYPE_CHARMED">
+        <description></description>
+    </element>
+
+    <element name="Deafened" type="Damage Type" source="Internal" id="ID_INTERNAL_DAMAGE_TYPE_DEAFENED">
+        <description></description>
+    </element>
+
+    <element name="Frightened" type="Damage Type" source="Internal" id="ID_INTERNAL_DAMAGE_TYPE_FRIGHTENED">
+        <description></description>
+    </element>
+
+    <element name="Grappled" type="Damage Type" source="Internal" id="ID_INTERNAL_DAMAGE_TYPE_GRAPPLED">
+        <description></description>
+    </element>
+
+    <element name="Incapacitated" type="Damage Type" source="Internal" id="ID_INTERNAL_DAMAGE_TYPE_INCAPACITATED">
+        <description></description>
+    </element>
+
+    <element name="Paralyzed" type="Damage Type" source="Internal" id="ID_INTERNAL_DAMAGE_TYPE_PARALYZED">
+        <description></description>
+    </element>
+
+    <element name="Petrified" type="Damage Type" source="Internal" id="ID_INTERNAL_DAMAGE_TYPE_PETRIFIED">
+        <description></description>
+    </element>
+
+    <element name="Poisoned" type="Damage Type" source="Internal" id="ID_INTERNAL_DAMAGE_TYPE_POISONED">
+        <description></description>
+    </element>
+
+    <element name="Prone" type="Damage Type" source="Internal" id="ID_INTERNAL_DAMAGE_TYPE_PRONE">
+        <description></description>
+    </element>
+
+    <element name="Restrained" type="Damage Type" source="Internal" id="ID_INTERNAL_DAMAGE_TYPE_RESTRAINED">
+        <description></description>
+    </element>
+
+    <element name="Stunned" type="Damage Type" source="Internal" id="ID_INTERNAL_DAMAGE_TYPE_STUNNED">
+        <description></description>
+    </element>
+
+    <element name="Unconscious" type="Damage Type" source="Internal" id="ID_INTERNAL_DAMAGE_TYPE_UNCONSCIOUS">
+        <description></description>
+    </element>
+
+    <element name="Exhaustion" type="Damage Type" source="Internal" id="ID_INTERNAL_DAMAGE_TYPE_EXHAUSTION">
+        <description></description>
+    </element>
+
+    <!-- Condition Immunities -->
+
+    <element name="Immunity (Blinded)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_BLINDED">
+        <supports>Immunity</supports>
+    </element>
+
+    <element name="Immunity (Charmed)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_CHARMED">
+        <supports>Immunity</supports>
+    </element>
+
+    <element name="Immunity (Deafened)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_DEAFENED">
+        <supports>Immunity</supports>
+    </element>
+
+    <element name="Immunity (Frightened)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FRIGHTENED">
+        <supports>Immunity</supports>
+    </element>
+
+    <element name="Immunity (Grappled)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_GRAPPLED">
+        <supports>Immunity</supports>
+    </element>
+
+    <element name="Immunity (Incapacitated)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_INCAPACITATED">
+        <supports>Immunity</supports>
+    </element>
+
+    <element name="Immunity (Paralyzed)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PARALYZED">
+        <supports>Immunity</supports>
+    </element>
+
+    <element name="Immunity (Petrified)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PETRIFIED">
+        <supports>Immunity</supports>
+    </element>
+
+    <element name="Immunity (Poisoned)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISONED">
+        <supports>Immunity</supports>
+    </element>
+
+    <element name="Immunity (Prone)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PRONE">
+        <supports>Immunity</supports>
+    </element>
+
+    <element name="Immunity (Restrained)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_RESTRAINED">
+        <supports>Immunity</supports>
+    </element>
+
+    <element name="Immunity (Stunned)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_STUNNED">
+        <supports>Immunity</supports>
+    </element>
+
+    <element name="Immunity (Unconscious)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_UNCONSCIOUS">
+        <supports>Immunity</supports>
+    </element>
+
+    <element name="Immunity (Exhaustion)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_EXHAUSTION">
+        <supports>Immunity</supports>
+    </element>
+
+    <element name="Condition Immunity (Blinded)" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_IMMUNITY_BLINDED">
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_BLINDED" />
+        </rules>
+	</element>
+
+    <element name="Condition Immunity (Charmed)" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_IMMUNITY_CHARMED">
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_CHARMED" />
+        </rules>
+	</element>
+
+    <element name="Condition Immunity (Deafened)" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_IMMUNITY_DEAFENED">
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_DEAFENED" />
+        </rules>
+	</element>
+
+    <element name="Condition Immunity (Frightened)" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_IMMUNITY_FRIGHTENED">
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FRIGHTENED" />
+        </rules>
+	</element>
+
+    <element name="Condition Immunity (Grappled)" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_IMMUNITY_GRAPPLED">
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_GRAPPLED" />
+        </rules>
+	</element>
+
+    <element name="Condition Immunity (Incapacitated)" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_IMMUNITY_INCAPACITATED">
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_INCAPACITATED" />
+        </rules>
+	</element>
+
+    <element name="Condition Immunity (Paralyzed)" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_IMMUNITY_PARALYZED">
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PARALYZED" />
+        </rules>
+	</element>
+
+    <element name="Condition Immunity (Petrified)" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_IMMUNITY_PETRIFIED">
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PETRIFIED" />
+        </rules>
+	</element>
+
+    <element name="Condition Immunity (Poisoned)" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_IMMUNITY_POISONED">
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISONED" />
+        </rules>
+	</element>
+
+    <element name="Condition Immunity (Prone)" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_IMMUNITY_PRONE">
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PRONE" />
+        </rules>
+	</element>
+
+    <element name="Condition Immunity (Restrained)" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_IMMUNITY_RESTRAINED">
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_RESTRAINED" />
+        </rules>
+	</element>
+
+    <element name="Condition Immunity (Stunned)" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_IMMUNITY_STUNNED">
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_STUNNED" />
+        </rules>
+	</element>
+
+    <element name="Condition Immunity (Unconscious)" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_IMMUNITY_UNCONSCIOUS">
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_UNCONSCIOUS" />
+        </rules>
+	</element>
+
+    <element name="Condition Immunity (Exhaustion)" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_IMMUNITY_EXHAUSTION">
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_EXHAUSTION" />
+        </rules>
+	</element>
+
+    
+</elements>

@@ -4,7 +4,7 @@
 		<name>Races</name>
 		<description>The Samurai Class adds a new take on the popular archetype to DnD 5e.</description>
 		<author url="https://www.dandwiki.com/wiki/Samurai_(5e_Class)">DnD Wiki</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="races.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races.index" />
 		</update>
 	</info>
@@ -12,5 +12,13 @@
 		<file name="source.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/source.xml" />
 		<file name="race-human-gnome-dragonborn.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/race-human-gnome-dragonborn.xml" />
 		<file name="race-tiefling-elf.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/race-tiefling-elf.xml" />
+		<file name="race-apeling.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/race-apeling.xml" />
+		<file name="race-cheox.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/race-cheox.xml" />
+		<file name="race-crocodilian.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/race-crocodilian.xml" />
+		<file name="race-inkbond.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/race-inkbond.xml" />
+		<file name="race-nocturne.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/race-nocturne.xml" />
+		<file name="race-oni.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/race-oni.xml" />
+		<file name="race-scorpikis.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/race-scorpikis.xml" />
+		<file name="race-skaven.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/race-skaven.xml" />
 	</files>
 </index>

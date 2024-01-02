@@ -11,6 +11,6 @@
 	<files>
 		<file name="source.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/source.xml" />
 		<file name="race-human-gnome-dragonborn.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/race-human-gnome-dragonborn.xml" />
-		<file name="race-human-gnome-dragonborn.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/race-human-gnome-dragonborn.xml" />
+		<file name="race-tiefling-elf.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/race-tiefling-elf.xml" />
 	</files>
 </index>

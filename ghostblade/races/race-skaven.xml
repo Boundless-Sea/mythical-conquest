@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Skaven</name>
+		<description></description>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
+		<update version="0.0.1">
+			<file name="race-skaven.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/race-skaven.xml" />
+		</update>
+	</info>
+	<element name="Skaven" type="Race" source="Mythical Conquest" id="ID_MYTHIC_RACE_SKAVEN">
+		<description>
+			<p class="flavor">These devious and opportunistic humanoids scurry within the shadowy recesses of other civilizations, where they scheme ways to advance themselves and bring ruin upon their hated enemies. And the enemies of a Skaven are many, for most other humanoids view them with fear and disdain. Thus, Skaven live hidden within swamps, caves, sewers, or the ruins of other humanoids. From here, there can launch raids into the territory of other races to take whatever they need to survive.
+Some Skaven find it in their best interest to bargain with and even form alliances with other races. These alliances are almost always created out of a sense of survivalist pragmatism, and most Skaven won't hesitate to cast them aside once they are no longer of use. But some exceptional or desperate Skaven will find themselves tangled in long-term partnerships with members of other races to achieve common goals. These Skaven are almost always adventurers of some sort and can make for useful and dangerous allies.</p>
+			<h4>NIMBLE AND DEVIOUS</h4>
+			<p>Though Skaven possess natural agility and a vicious bite, they don't typically confront their foes head-on. Their smaller frames and lack of resources have made Skaven accustomed to fighting at a disadvantage. As such, Skaven rarely believe in fighting fair. They are twitchy and quick to scurry away if they perceive themselves in a losing fight.</p>
+			<p class="indent">Skilled Skaven can use this natural tendency to their advantage as they whittle enemies down with hit and run tactics. Skaven also become more confident when attacking in numbers and quickly become more vicious when they are part of a swarm overwhelming their foes.
+
+If worst comes to worst and they are forced to flee, Skaven can quickly squeeze their way into tight crevices to escape attackers. This ability also gives them a substantial combat advantage when fighting in their claustrophobic underground homes, where they can pop from hidden alcoves to attack unsuspecting intruders.</p>
+			<h4>BRINGERS OF PLAGUE AND RUIN</h4>
+			<p>Most Skaven live brutal lives in which pure survival is prioritized above all else. The idea of shunning a source of power out of fear of corruption or avoiding tactics because they are dishonorable is absurd to them. As such, Skaven are known to be masters of many powers and abilities other races consider sinister. Many Skaven become deadly assassins, some possessing a supernatural mastery of their wicked craft. Others tap into the notoriety of rats for swarming through civilization and spreading plagues. These Skaven may become carriers for terrible diseases which they can inflict upon their victims, or they may learn to command swarms of other vermin to overwhelm their foes. Even Skaven who pursue power through more conventional martial means utilize fear and underhanded tactics to obtain that power.</p>
+            <h4>CRAFTY INNOVATORS</h4>
+			<p>In their scramble to find new ways to survive, many Skaven find innovative ways to use the limited resources at their disposal. These Skaven make for natural tinkerers, artificers, and engineers, and their creations are built to deliver powerful results at any cost. This mindset results in many brilliant but perilous designs. The weapons created by Skaven are often as dangerous to the wielder as the weapon's target. Successful engineers have others test their devices for them, only using the most tried and true designs themselves.</p>
+			<h4>Skaven NAMES</h4>
+			<p>In some settings, Skaven take names similar to those of nearby humanoids. Other times, Skaven develop naming conventions of their own. First names are usually short, squeaky, and chittering. Surnames emphasize imposing traits or deeds, and Skaven often take on new surnames they find useful for maintaining their status. Some Skaven will even discard their first name altogether and only be referred to by an imposing title. Skaven names generally don't distinguish between the genders.</p>
+			<ul class="unstyled">
+				<li><strong>Names:</strong> Skeetch Plaguebreath, Threk Bonechewer, Rikket Demoneyes, Gutterking, Kreet Craventail, Rotfang </li>
+			</ul>
+			<h4>Skaven TRAITS</h4>
+			<p>Your Skaven has the following racial traits.</p>			
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2, and one other ability score of your choice increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Skaven live mature quickly and usually live brutally short lives. They reach adulthood at 8 and have a natural lifespan of 40 years, though most don't even live half that long.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> The cutthroat nature of Skaven society results in them leaning heavily towards chaos over order. Their emphasis on survival at all costs pulls Skaven towards neutrality, if not outright evil, though exceptional individuals may push back against this.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Skaven are usually shorter and scrawnier than the average human. Adult Skaven usually reach 4 to 5 feet in height and weigh 70 to 110 pounds, with exceptionally well-fed individuals reaching 6 feet and weighing as much as 160 pounds. Most Skaven walk with a hunch, making them appear shorter. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Crevice Crawler.</em></strong> You can move through and stop in a space large enough to fit a creature one size smaller than you without squeezing.</p>
+			<p class="indent"><strong><em>Bite.</em></strong> Your razor-sharp jaws are a natural weapon you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d4 + your Strength or Dexterity modifier (your choice) instead of the bludgeoning damage normal for an unarmed strike. You can also use Dexterity instead of Strength for the attack rolls you make with your bite.</p>
+			<p class="indent"><strong><em>Overwhelming Swarm.</em></strong> When you damage a target with an attack or a spell, you can cause the attack or spell to deal extra 1d4 damage for each of your allies within 5 feet of the target that isn't incapacitated. You can benefit from up to 3 allies this way. Once you use this trait, you can't use it again until you finish a short or long rest.
+
+At 5th level, the damage dice change to d6s. At 10th level, they become d8s. At 15th level, they become d10s. And at 20th level, they become d12s.</p>
+			<p class="indent"><strong><em>Scurry Away</em></strong> When a creature you can see ends its turn, you can move up to half your speed away from it as a reaction, and you are frightened of it until the end of your next turn. This movement doesn't provoke opportunity attacks. While frightened, you can only take the Dash, Disengage, Dodge, or Hide action. This trait ignores immunity to the frightened condition.</p>
+			<p class="indent"><strong><em>Verminous Instincts.</em></strong>You gain proficiency in Perception.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Undercommon.</p>
+			<p class="indent"><strong><em>Subrace.</em></strong> You can speak, read, and write Common and Undercommon.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Skeetch Plaguebreath, Threk Bonechewer, Rikket Demoneyes, Gutterking, Kreet Craventail, Rotfang</set>
+		</setters>
+		<rules>
+			<stat name="dexterity" value="2" />
+			<stat name="Perception" value="1" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_UNDERCOMMON" />
+			<grant type="Racial Trait" id="ID_MYTHIC_RACIAL_TRAIT_CREVICE_CRAWLER" />
+			<grant type="Racial Trait" id="ID_MYTHIC_RACIAL_TRAIT_BITE" />
+			<grant type="Racial Trait" id="ID_MYTHIC_RACIAL_TRAIT_OVERWHELMING_SWARM" />
+            <grant type="Racial Trait" id="ID_MYTHIC_RACIAL_TRAIT_SCURRY_AWAY" />
+            <grant type="Racial Trait" id="ID_MYTHIC_RACIAL_TRAIT_VERMINOUS_INSTINCTS" />
+		</rules>
+	</element>
+	<element name="Crevice Crawler" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_CREVICE_CRAWLER">
+		<description>
+			<p>You can move through and stop in a space large enough to fit a creature one size smaller than you without squeezing.</p>
+		</description>
+		<sheet>
+			<description>You can move through and stop in a space large enough to fit a creature one size smaller than you without squeezing.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_BITE">
+		<description>
+			<p>Your razor-sharp jaws are a natural weapon you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d4 + your Strength or Dexterity modifier (your choice) instead of the bludgeoning damage normal for an unarmed strike. You can also use Dexterity instead of Strength for the attack rolls you make with your bite.</p>
+		</description>
+		<sheet display="false">
+			<description>Your razor-sharp jaws are a natural weapon you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d4 + your Strength or Dexterity modifier (your choice) instead of the bludgeoning damage normal for an unarmed strike. You can also use Dexterity instead of Strength for the attack rolls you make with your bite.</description>
+		</sheet>
+	</element>
+	<element name="Overwhelming Swarm" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_OVERWHELMING_SWARM">
+		<description>
+			<p>When you damage a target with an attack or a spell, you can cause the attack or spell to deal extra 1d4 damage for each of your allies within 5 feet of the target that isn't incapacitated. You can benefit from up to 3 allies this way. Once you use this trait, you can't use it again until you finish a short or long rest. At 5th level, the damage dice change to d6s. At 10th level, they become d8s. At 15th level, they become d10s. And at 20th level, they become d12s. </p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>
+				When you damage a target with an attack or a spell, you can cause the attack or spell to deal extra 1d4 damage for each of your allies within 5ft. of the target that isn't incapacitated. You can benefit from up to 3 allies this way.
+			</description>
+			<description level="5">
+				When you damage a target with an attack or a spell, you can cause the attack or spell to deal extra 1d6 damage for each of your allies within 5ft. of the target that isn't incapacitated. You can benefit from up to 3 allies this way.
+			</description>
+			<description level="10">
+				When you damage a target with an attack or a spell, you can cause the attack or spell to deal extra 1d8 damage for each of your allies within 5ft. of the target that isn't incapacitated. You can benefit from up to 3 allies this way.
+			</description>
+			<description level="15">
+				When you damage a target with an attack or a spell, you can cause the attack or spell to deal extra 1d10 damage for each of your allies within 5ft. of the target that isn't incapacitated. You can benefit from up to 3 allies this way.
+			</description>
+			<description level="20">
+				When you damage a target with an attack or a spell, you can cause the attack or spell to deal extra 1d12 damage for each of your allies within 5ft. of the target that isn't incapacitated. You can benefit from up to 3 allies this way.
+			</description>
+		</sheet>
+	</element>
+	<element name="Scurry Away" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_SCURRY_AWAY">
+		<description>
+			<p>When a creature you can see ends its turn, you can move up to half your speed away from it as a reaction, and you are frightened of it until the end of your next turn. This movement doesn't provoke opportunity attacks. While frightened, you can only take the Dash, Disengage, Dodge, or Hide action. This trait ignores immunity to the frightened condition.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature you can see ends its turn, you can move up to half your speed away from it, and you are frightened of it until the end of your next turn. This movement doesn't provoke opportunity attacks. While frightened, you can only take the Dash, Disengage, Dodge, or Hide action. This trait ignores immunity to the frightened condition.</description>
+		</sheet>
+	</element>
+	<element name="Verminous Instincts" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_VERMINOUS_INSTINCTS">
+		<description>
+			<p>You gain proficiency in Perception.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+		</rules>
+	</element>
+</elements>

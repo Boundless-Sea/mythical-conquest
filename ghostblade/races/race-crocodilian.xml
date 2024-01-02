@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Crocodilian</name>
+		<author url="https://www.dandwiki.com/wiki/Crocodilian_(5e_Race)">D&amp;D Wiki</author>
+		<update version="0.0.1">
+            <file name="race-crocodilian.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/race-crocodilian.xml" />
+        </update>
+	</info>
+	
+	<element name="Crocodilian" type="Race" source="Mythical Conquest" id="ID_MYTHIC_RACE_CROCODILIAN">
+		<description>
+			<h4>PHYSICAL DESCRIPTION</h4>
+			<p>The crocodilians are humanoid crocodiles that lurk in swamplands. Their tendency to fight can be reflected by their physical appearance. They have a reptilian layer of scales that cover their bodies and a large snout that conceals rows of dangerously sharp teeth. Their hands and feet are also outfitted with sharp claws. They are frequently mistaken as overly-muscular lizardfolk with their thick tails and reptilian appearance. They cite numerous obvious differences, namely their tough bodies, long snouts, and stronger tails.</p>
+			<h4>HISTORY</h4>
+			<p>Crocodilians are a rare species related to lizardfolk. They live in swamps that men have learned to avoid, usually for good reason. Little is known about their history because they don't care enough to pass it on. However, through an intensive study by scholars, it is now known that crocodilians used to be the rulers of the lizardfolk until their kingdom was overthrown. It seems as though a rebellion formed against them because of their ruthless nature.</p>
+			<h4>SOCIETY</h4>
+			<p>Crocodilians live in swampy villages and prefer to be left alone. While they may seem large and fierce, they have a soft side to them that takes years of trust to appear. When they're around those that they have known for a long time, they are rather gentle creatures and care dearly for their allies. Because of their physical appearance, they are oftentimes mistaken as overly-muscular lizardfolk. Crocodilians take pride in their race and will take great offense to those mistaking them as lizardfolk.</p>
+			<h4>Crocodilian Names</h4>
+			<p>
+				<span class="emphasis">Male names:</span> Tursir, Krishnak, Kurist, Hirkra and Zarick<br />
+				<span class="emphasis">Female names:</span> Ksar, Rishna, Kithis, Zatra and Sirt<br />
+			</p>
+			<h4>Crocodilian Traits</h4>
+			<p>Humanoid crocodiles that lurk in swamplands</p>
+			<p>
+				 <span class="feature">Ability Score Increase.</span> Your Constitution score increases by 2, and your Strength score increases by 1.<br />
+				 <span class="feature">Age.</span> Crocodilians age slowly, reaching maturity at about 50. They can live to be over 300 years old.<br />
+				 <span class="feature">Alignment.</span>When it comes to the morality of the crocodilians, they vary widely. In terms of law and chaos, crocodilians are often chaotic, but it is not unheard of for a crocodilian to be lawful.<br />
+				 <span class="feature">Size.</span> On average, crocodilians stand at 6-8 feet tall and weigh around 220-370 pounds. Your size is Medium.<br />
+				 <span class="feature">Speed.</span>Crocodilians are slow on land but much faster in the water. Your base walking speed is 25 feet and you have a swimming speed of 40 feet.<br />
+				 <span class="feature">Crushing Bite</span> You can use your sharp teeth and powerful jaws as a weapon. Your bite is a natural weapon, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.<br />
+				 <span class="feature">Tail Attack</span> ou can make an unarmed strike with your tail, your tail is a natural weapon. As a bonus action, you can make an attack with your tail against a Large or smaller creature. If the attack hits, it deals 1d6 + your Strength the creature must succeed on a Strength saving throw or be knocked prone. The DC for this saving throw is equal to 8 + your Strength modifier + your proficiency bonus. Once you use this trait, you can not use it again until you finish a short or long rest.<br />
+				 <span class="feature">Water Dweller</span> You are a water-born creature and can hold your breath for up to four hours at a time.<br />
+				 <span class="feature">Ambush Hunter</span> You are proficient in the Stealth skill. When you make a Dexterity (Stealth) check under water, you may add double your proficiency bonus instead of your normal proficiency bonus.<br />
+				 <span class="feature">Natural Armor</span> You have tough, scaly skin. When you aren't wearing armor, your AC is equal to 13 + your Constitution modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.<br />
+				 </p>
+				 <span class="feature">Languages.</span> You can speak, read, and write in Common and Draconic <br />
+		</description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <setters>
+			<set name="names" type="male">Tursir, Krishnak, Kurist, Hirkra and Zarick</set>
+			<set name="names" type="female"> Ksar, Rishna, Kithis, Zatra and Sirt</set>
+            <set name="names-format">{{name}}</set>
+            <set name="height" modifier="6d4">6'2"</set>
+            <set name="weight" modifier="1d6">220 lb.</set>
+        </setters>
+		<rules>
+            <stat name="constitution" value="2" />
+            <stat name="strength" value="1" />
+            <stat name="innate speed" value="25" bonus="base" />
+			<stat name="speed:swim" value="speed" bonus="30" /> 
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+
+            <grant type="Racial Trait" id="ID_DND_WIKI_RACIAL_TRAIT_CROCODILIAN_CRUSHING_BITE" />
+            <grant type="Racial Trait" id="ID_DND_WIKI_RACIAL_TRAIT_CROCODILIAN_TAIL_ATTACK" />
+            <grant type="Racial Trait" id="ID_DND_WIKI_RACIAL_TRAIT_CROCODILIAN_WATER_DWELLER" />
+            <grant type="Racial Trait" id="ID_DND_WIKI_RACIAL_TRAIT_CROCODILIAN_AMBUSH_HUNTER" />
+			<grant type="Racial Trait" id="ID_DND_WIKI_RACIAL_TRAIT_CROCODILIAN_NATURAL_ARMOR" />
+        </rules>
+	</element>
+	<element name="Crushing Bite" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_CROCODILIAN_CRUSHING_BITE">
+        <description>
+            <p>You can use your sharp teeth and powerful jaws as a weapon. Your bite is a natural weapon, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+        </description>
+        <sheet>
+            <description>Bite: +{{croc_bite_attack:bonus}} to hit, 1d6+{{strength:modifier}} piercing.</description>
+        </sheet>
+		<rules>
+			<stat name="croc_bite_attack:bonus" value="proficiency" />
+			<stat name="croc_bite_attack:bonus" value="strength:modifier" />
+		</rules>
+    </element>
+
+    <element name="Tail Attack" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_CROCODILIAN_TAIL_ATTACK">
+        <description>
+            <p>You can make an unarmed strike with your tail, your tail is a natural weapon. As a bonus action, you can make an attack with your tail against a Large or smaller creature. If the attack hits, it deals 1d6 + your Strength the creature must succeed on a Strength saving throw or be knocked prone. The DC for this saving throw is equal to 8 + your Strength modifier + your proficiency bonus. Once you use this trait, you can not use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="1/Short Rest">
+            <description>You can make an attack with your tail against a Large or smaller creature. Tail Attack: +{{croc_bite_attack:bonus}} to hit, 1d6 +{{strength:modifier}} bludgeoning damage. The target mus succeed a DC {{croc_tail_attack:dc}} Strength Save or be knocked prone.</description>
+        </sheet>
+		<rules>
+			<stat name="croc_tail_attack:dc" value="8" />
+			<stat name="croc_tail_attack:dc" value="proficiency" />
+			<stat name="croc_tail_attack:dc" value="strength:modifier" />
+		</rules>
+    </element>
+
+    <element name="Water Dweller" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_CROCODILIAN_WATER_DWELLER">
+        <description>
+            <p>You are a water-born creature and can hold your breath for up to four hours at a time.</p>
+        </description>
+	     <sheet>
+			<description>You can hold your breath for up to 4 hours at a time.</description>
+		 </sheet>
+    </element>
+
+    <element name="Ambush Hunter" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_CROCODILIAN_AMBUSH_HUNTER">
+        <description>
+            <p>You are proficient in the Stealth skill. When you make a Dexterity (Stealth) check under water, you may add double your proficiency bonus instead of your normal proficiency bonus.</p>
+        </description>
+        <sheet>
+            <description>When you make a Dexterity (Stealth) check under water, add an extra {{proficiency}}.</description>
+        </sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+		</rules>
+    </element>
+	
+	<element name="Natural Armor" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_CROCODILIAN_NATURAL_ARMOR">
+        <description>
+            <p>You have tough, scaly skin. When you aren't wearing armor, your AC is equal to 13 + your Constitution modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.</p>
+        </description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="ac:natural armor:crocodilian" value="13"/>
+			<stat name="ac:natural armor:crocodilian" value="constitution:modifier"/>
+			<stat name="ac:calculation" value="ac:natural armor:crocodilian" bonus="calculation" equipped="![armor:any]" alt="Natural Armor (Crocodilian)" />
+		</rules>
+    </element>
+</elements>

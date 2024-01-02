@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Inkbond</name>
+		<author url="https://www.dandwiki.com/wiki/Inkbond_(5e_Race)">D&amp;D Wiki</author>
+		<update version="0.0.1">
+            <file name="race-inkbond.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/race-inkbond.xml" />
+        </update>
+	</info>
+	
+	<element name="Inkbond" type="Race" source="Mythical Conquest" id="ID_MYTHIC_RACE_INKBOND">
+		<description>
+			<p>They squirm forth from the abandoned or desecrated texts and writs of old and forgotten times, perhaps in search of vengeance or to add to the grim records that are already held in their damned tomes.</p>
+			<h4>PHYSICAL DESCRIPTION</h4>
+			<p>Inkbonds are pure, jet-black creatures with a vaguely human shape. Their bodies look wispy with black matter, and they are always seen seemingly wrapped in heavy, obscuring dark capes. These capes are in fact a part of their body, which is very fluid and unstable in physical form. While they have the outline, they often feel or seem ethereal. They are graceful in stature, but actually quite dense in weight. On their face is usually some kind of white mask. Their actual face is contoured with human facial features, but lacks them visibly due to everything being black.</p>
+			<h4>HISTORY</h4>
+			<p>From when people first started using magic inks to write books, the inkbonds have existed. When their tomes were thrown aside as new editions came to be, they sat on shelves to gather dust. They festered, for they were magic as well. Why, then, were they thrown away? They accumulated many years, many of these ancient books, never read or caressed, sitting in musty libraries and attics where the light no longer reached. After centuries of neglect and worm eaten pages, the magic manifested. It was no longer just simple illusion or enchantment, but a corrupted thing able to take a physical shape now. They rose up in rivulets of black and took the forms of shades, trailing ebon cloaks, and wearing masks of theater. Together, they walked through the streets and out to the world. They would see what these people had forgotten them for, and they will show them how much they were wrong to have done so.</p>
+			<h4>SOCIETY</h4>
+			<p>Inkbonds are creatures with pack mentalities. They tend to move as units to accomplish goals, but do not establish things like hierarchy. As they are usually on the move, they are nomadic. Rarely to do they decide to settle down anywhere. People say they roam to observe and learn, as they are from books. What they learn, see, and do, are new chapters of the sagas whose ink created them. Newborn inkbonds can be a bit violent and there have been reports of librarians getting attacked. Books prone to spawning inbonds are locked away in tight vaults, though this hardly nips the bud. People are often scared or wary of inkbonds due to their appearance, like black ghosts or phantoms who pass silently through. Inkbonds do not mind this, but this usually pushes them into association with tieflings and drows, as well as other races in the underbelly of society. They also seem to get along with these races due to their innate affinity for magic. Inkbonds are particularly interested in that, and will observe races which are innately magical.</p>
+			<h4>PERSONALITY</h4>
+			<p>Inkbonds, coming from books, are wise and intelligent creatures. They hold a wealth of knowledge in their minds and are usually looking for more to add. However, spurn them not, for they rile at those who scoff at them. Scorning an inkbond is never a good idea, for it may go and fetch its friends to exact vengeance for the smallest perceived slight. They usually are quite complacent though, not caring too much about the stares they get on the street and such. Those who have spoken with them recall them to be inquisitive and interesting people. The old adage of not judging a book by its cover certainly holds true.</p>
+			<h4>Inkbond Names</h4>
+			<p>Inkbonds will name themselves after the title of their text, or will take short excerpts from it for a name. They do not have a concept of gender, but can oft swap voices and tones due to the androgenic nature of their text.</p>
+			<h4>Inkbond Traits</h4>
+			<p>Shadowy beings formed from the ink of long-forgotten, tarnished books and scrolls by neglect</p>
+			<p>
+				 <span class="feature">Ability Score Increase.</span> Your Wisdom increases by 2, and your Dexterity increases by 1.<br />
+				 <span class="feature">Age.</span> Inkbonds can live for about 150 years before the magic sustaining them starts to dry and they wither away into dried up ink chips.<br />
+				 <span class="feature">Alignment.</span> Inkbonds tend to be neutral, like observers.<br />
+				 <span class="feature">Size.</span> Inkbonds have variable height, usually around the range of humans. Your size is Medium.<br />
+				 <span class="feature">Speed.</span> Your base walking speed is 30 feet.<br />
+				 <span class="feature">Viscous Anatomy</span> You are made of ink. Your creature type is construct instead of humanoid. As such, spells like cure wounds don't affect you, and you are immune to spells like crown of madness or dominate person because they specifically target humanoids. You are immune to poison damage, being poisoned, and diseases. You do not need to eat or breathe, but you require drink. Rather than sleeping, you enter an inactive state for 6 hours each day. You do not dream in this state; you are fully aware of your surroundings and notice approaching enemies and other events as normal. Additionally, when the mending spell is cast on you, it has the following alterations: It has a casting time of 1 action. If you have 0 hit points you become stable. As part of the casting of mending the caster may expend any level of spell slot to cause you to regain a number of hit points equal to 1d8, plus their spellcasting ability modifier. For each level of the spell slot expended you regain an additional 1d8 hit points.<br />
+				 <span class="feature">Nourishing Writ</span> To restore yourself, you consume texts to absorb their scripted essence. As part of a short rest, you may absorb the essences of a book to regain hit points equal to 2d4 + your Intelligence modifier. The book then becomes empty of any text. You must finish a long rest to use this trait again.<br />
+				 <span class="feature">Antimagic Susceptibility</span> Your body is magic ink, making you vulnerable to anti-magic. You are incapacitated while in the area of an antimagic field, collapsing into a puddle of ink. If targeted by dispel magic, you must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.<br />
+				 <span class="feature">Vague Body</span> You are not as fluid as a slime, but you can still squeeze into places others probably could not reach. While unarmored, you take no penalties while squeezing. You can fit into spaces as tight as 1 foot.<br />
+				 <span class="feature">Darkvision</span> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br />
+				  <span class="feature">Languages.</span> You read, write, and speak Common and two other languages of your choice.<br />
+				 <span class="feature">Written Voice</span> Tomes can contain many voices within their sagas and epics. Your voice can change between masculine and feminine tones seamlessly.<br />
+			</p>
+		</description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <setters>
+            <set name="names-format">{{name}}</set>
+            <set name="height" modifier="2d4">5'10"</set>
+            <set name="weight" >90 lb.</set>
+        </setters>
+		<rules>
+            <stat name="wisdom" value="2" />
+			<stat name="dexterity" value="1" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <select type="Language" name="Language (Inkbond)" number="2" supports="Standard||Exotic" />
+
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+            <grant type="Racial Trait" id="ID_MYTHIC_RACIAL_TRAIT_INKBOND_VISCOUS_ANATOMY" />
+            <grant type="Racial Trait" id="ID_MYTHIC_RACIAL_TRAIT_INKBOND_NOURISHING_WRIT" />
+            <grant type="Racial Trait" id="ID_MYTHIC_RACIAL_TRAIT_INKBOND_ANTIMAGIC_SUSCEPTIBILITY" />
+            <grant type="Racial Trait" id="ID_MYTHIC_RACIAL_TRAIT_INKBOND_VAGUE_BODY" />
+			<grant type="Racial Trait" id="ID_MYTHIC_RACIAL_TRAIT_INKBOND_WRITTEN_VOICE"/>
+        </rules>
+	</element>
+	<element name="Viscous Anatomy" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_INKBOND_VISCOUS_ANATOMY">
+        <description>
+            <p>You are made of ink. Your creature type is construct instead of humanoid. As such, spells like cure wounds don't affect you, and you are immune to spells like crown of madness or dominate person because they specifically target humanoids. You are immune to poison damage, being poisoned, and diseases. You do not need to eat or breathe, but you require drink. Rather than sleeping, you enter an inactive state for 6 hours each day. You do not dream in this state; you are fully aware of your surroundings and notice approaching enemies and other events as normal. Additionally, when the mending spell is cast on you, it has the following alterations: It has a casting time of 1 action. If you have 0 hit points you become stable. As part of the casting of mending the caster may expend any level of spell slot to cause you to regain a number of hit points equal to 1d8, plus their spellcasting ability modifier. For each level of the spell slot expended you regain an additional 1d8 hit points.</p>
+        </description>
+        <sheet>
+            <description>You are made of ink. Your creature type is construct instead of humanoid. As such, spells like cure wounds don't affect you, and you are immune to spells like crown of madness or dominate person because they specifically target humanoids. You are immune to poison damage, being poisoned, and diseases. You do not need to eat or breathe, but you require drink. Rather than sleeping, you enter an inactive state for 6 hours each day. You do not dream in this state; you are fully aware of your surroundings and notice approaching enemies and other events as normal. Additionally, when the mending spell is cast on you, it has the following alterations: It has a casting time of 1 action. If you have 0 hit points you become stable. As part of the casting of mending the caster may expend any level of spell slot to cause you to regain a number of hit points equal to 1d8, plus their spellcasting ability modifier. For each level of the spell slot expended you regain an additional 1d8 hit points.</description>
+        </sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+		</rules>
+    </element>
+
+    <element name="Nourishing Writ" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_INKBOND_NOURISHING_WRIT">
+        <description>
+            <p>To restore yourself, you consume texts to absorb their scripted essence. As part of a short rest, you may absorb the essences of a book to regain hit points equal to 2d4 + your Intelligence modifier. The book then becomes empty of any text. You must finish a long rest to use this trait again.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>As part of a short rest, you may absorb the essences of a book to regain hit points equal to 2d4 + {{intelligence:modifier}}. The book then becomes empty of any text.</description>
+        </sheet>
+    </element>
+
+    <element name="Anti-Magic Susceptibility" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_INKBOND_ANTIMAGIC_SUSCEPTIBILITY">
+        <description>
+            <p>Your body is magic ink, making you vulnerable to anti-magic. You are incapacitated while in the area of an antimagic field, collapsing into a puddle of ink. If targeted by dispel magic, you must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.</p>
+        </description>
+        <sheet>
+            <description>You are incapacitated while in the area of an antimagic field, collapsing into a puddle of ink. If targeted by dispel magic, you must succeed on a CON saving throw against the caster's spell save DC or fall unconscious for 1 minute.</description>
+        </sheet>
+    </element>
+
+    <element name="Vague Body" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_INKBOND_VAGUE_BODY">
+        <description>
+            <p>You are not as fluid as a slime, but you can still squeeze into places others probably could not reach. While unarmored, you take no penalties while squeezing. You can fit into spaces as tight as 1 foot.</p>
+        </description>
+        <sheet>
+            <description>While unarmored, you take no penalties while squeezing. You can fit into spaces as tight as 1ft.</description>
+        </sheet>
+    </element>
+	
+	<element name="Written Voice" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_INKBOND_WRITTEN_VOICE">
+	      <description>
+            <p>Tomes can contain many voices within their sagas and epics. Your voice can change between masculine and feminine tones seamlessly.</p>
+        </description>
+        <sheet>
+            <description>Your voice can change between masculine and feminine tones seamlessly.</description>
+        </sheet>
+	</element>
+</elements>

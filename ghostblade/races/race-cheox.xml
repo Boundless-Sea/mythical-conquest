@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Cheox</name>
+		<author url="https://www.dandwiki.com/wiki/Cheox_(5e_Race)">D&amp;D Wiki</author>
+		<update version="0.0.1">
+            <file name="race-cheox.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/race-cheox.xml" />
+        </update>
+	</info>
+	
+	<element name="Cheox" type="Race" source="Mythical Conquest" id="ID_MYTHIC_RACE_CHEOX">
+		<description>
+			<p>I'm like a child, a lamb and a simpleton at once. All are born with me, yet few possess me at their moment of death. What am I?</p>
+			<h4>PHYSICAL DESCRIPTION</h4>
+			<p>The Cheox are a race of amalgamations that have been corrupted by necrotic or hemomanic means. The eyes of Cheox have been covered by their deformed skulls, but they are still able to "see" through echolocation. A male Cheox's horns have tripled and grown far longer than their original form, and their lips have fallen off due to their skin no longer fitting them well. Females still do not have horns, yet their hair has grown thicker and longer than their original form as well. The skin of the Cheox is also covered in spines, though they do not form in any meaningful or practical formation. Cheox do not die of old age, this is so long as they continue to eat the flesh of those that they kill themselves. Any meat that they eat that they did not kill themselves tastes rancid to them.</p>
+			<h4>HISTORY</h4>
+			<p>The Cheox were created by either a necromancer or hemomancer or possibly by an evil Fey. The Cheox were formed from a ritual involving the corpse of a faun and the blood of a wendigo. The ritual used to create the Cheox is unknown in origin but has been spread across the continents at a rapid pace. The Cheox have begun to become more common, though have yet to be a part of normal society. The Cheox are very aggressive creatures and are not one to easily make friends with. However, at the promise of a good hunt, one can have a Cheox as a follower for cheap.</p>
+			<h4>Cheox Names</h4>
+			<p>
+				<span class="emphasis">Male names:</span> Baztan, Zesia, Xomian, Grylbor, Rirvog<br />
+				<span class="emphasis">Female names:</span> Shyre, Omen, Nazeryth, Gothos, Zaki<br />
+			</p>
+			<h4>Cheox Traits</h4>
+			<p>The corrupted fauns of necrotic origin. A true abomination to the world, and one that is aggressive to all.</p>
+			<p>
+				 <span class="feature">Ability Score Increase.</span> Your Strength, Dexterity and Constitution score increase by 1.<br />
+				 <span class="feature">Age.</span> Cheox do not die of old age so long as they eat the flesh of others. Otherwise, they will die within a year.<br />
+				 <span class="feature">Alignment.</span> Most cheox are evil and tend to be chaotic. No matter what, they will be aggressive to others.<br />
+				 <span class="feature">Size.</span> Cheox vary widely in height and build, from barely 5 feet to well over 6 feet tall. Your size is Medium.<br />
+				 <span class="feature">Speed.</span> Your base walking speed is 30 feet.<br />
+				 <span class="feature">Echolocation</span> You can perceive your surroundings without relying on sight within a specific radius. You have a blindsight range of 90 feet but are blind beyond this radius. In addition, as you see through echolocation you can't use your blindsight while deafened, effectively making you blind.<br />
+				 <span class="feature">Relentless Endurance</span> When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can’t use this feature again until you finish a long rest.<br />
+				 <span class="feature">Malformed Presence</span> Your hideous appearance frightens the common folk. You are proficient in the Intimidation skill.<br />
+				 <span class="feature">Mask of the Wild</span> You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.<br />
+				 </p>
+				 <span class="feature">Languages.</span> You can speak Common and Abyssal. You cannot read or write at all. <br />
+		</description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <setters>
+			<set name="names" type="male">Baztan, Zesia, Xomian, Grylbor, Rirvog</set>
+			<set name="names" type="female">Shyre, Omen, Nazeryth, Gothos, Zaki</set>
+            <set name="names-format">{{name}}</set>
+            <set name="height" modifier="5d4">5'9"</set>
+            <set name="weight" modifier="4d4">195 lb.</set>
+        </setters>
+		<rules>
+            <stat name="constitution" value="1" />
+            <stat name="strength" value="1" />
+			<stat name="dexterity" value="1" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<select type="Language" name="Language, Cheox" supports="ID_LANGUAGE_ABYSSAL|ID_LANGUAGE_INFERNAL"/>
+
+            <grant type="Racial Trait" id="ID_MYTHIC_RACIAL_TRAIT_CHEOX_ECHOLOCATION" />
+            <grant type="Racial Trait" id="ID_MYTHIC_RACIAL_TRAIT_CHEOX_RELENTLESS_ENDURANCE" />
+            <grant type="Racial Trait" id="ID_MYTHIC_RACIAL_TRAIT_CHEOX_MALFORMED_PRESENCE" />
+            <grant type="Racial Trait" id="ID_MYTHIC_RACIAL_TRAIT_CHEOX_MASK_OF_THE_WILD" />
+        </rules>
+	</element>
+	<element name="Echolocation" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_CHEOX_ECHOLOCATION">
+        <description>
+            <p>You can perceive your surroundings without relying on sight within a specific radius. You have a blindsight range of 90 feet but are blind beyond this radius. In addition, as you see through echolocation you can't use your blindsight while deafened, effectively making you blind.</p>
+        </description>
+        <sheet>
+            <description>As you see through echolocation you can't use your blindsight while deafened, effectively making you blind.</description>
+        </sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+			<stat name="blindsight:range" value="90" bonus="base" />
+		</rules>
+    </element>
+
+    <element name="Relentless Endurance" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_CHEOX_RELENTLESS_ENDURANCE">
+        <description>
+            <p>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can’t use this feature again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead.</description>
+        </sheet>
+    </element>
+
+    <element name="Malformed Presence" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_CHEOX_MALFORMED_PRESENCE">
+        <description>
+            <p>Your hideous appearance frightens the common folk. You are proficient in the Intimidation skill.</p>
+        </description>
+	     <sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+        </rules>
+    </element>
+
+    <element name="Mask of the Wild" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_CHEOX_MASK_OF_THE_WILD">
+        <description>
+            <p>You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.</p>
+        </description>
+        <sheet>
+            <description>You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.</description>
+        </sheet>
+    </element>
+</elements>

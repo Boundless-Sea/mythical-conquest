@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Scorpikis</name>
+		<description></description>
+		<author url="https://www.dandwiki.com/wiki/Scorpikis_(5e_Race)">DnD Wiki</author>
+		<update version="0.0.1">
+            <file name="race-scorpikis.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/race-scorpikis.xml" />
+        </update>
+	</info>
+	
+	<element name="Scorpikis" type="Race" source="Mythical Conquest" id="ID_MYTHIC_RACE_SCORPIKIS">
+		<description>
+			<p>Scorpikiz are barbaric, half-scorpion raiders and scavengers that prowl the less-traveled parts of the desert, aggressively defending their colonies from unwelcome intruders. The typical scorpikis has strong loyalties to clan and brood, and will defend both to the death if need be.</p>
+			<h4>PHYSICAL DESCRIPTION</h4>
+			<p>Scorpikiz are monstrous-looking creatures with the torsos of rugged, dark-skinned humans, and the bodies of giant scorpions from the waist down, complete with claws and stinging tails. These lower bodies typically have colors ranging from pure black, to numerous different shades of desert brown. Scorpikiz tend to have differing lower body types based on individual physical prowess. For example, a tough scorpikis that excels on the frontline might have bigger and stronger claws, while having a more atrophied stinger. A more dexterous scorpikis might have a longer, thicker, and more powerful stinger, but with smaller and weaker front claws. And while spellcasters are slightly less common within the scorpikis subspecies, their front claws and stingers might both simply be of average size. Regardless of physical variations, all scorpikiz are capable of defending themselves with these natural weapons, should the need arise.</p>
+			<h4>HISTORY</h4>
+			<p>Scorpikiz hail from deep within the scorching southern deserts of the Shar, far from the more civilized settlements that exist there. They live as nomads when the winds of sands change, moving to find new burrows for their clan. In ancient history, they lived as equals among the people of the sidewinders and beetles. The scorpion is their great ancestor, and under that name, they fought against forces of the night that sought to turn their deserts cold. They remain a warlike people who trade and protect caravans who pay them handsomely for mercenary purposes. On the other end, they also attack merchants to steal goods the the desert, but they will not do so if another scorpikis is a hire of that merchant. Through their acquired land of arid territories, they also have come to be known as the oases barons, due to many of these watering holes being under their control.</p>
+			<h4>SOCIETY</h4>
+			<p>Scorpikiz usually gather in tribal colonies, similar to the barbaric societies of more common races, and lead by a tribal king and queen. Each colony can be placed under one of the three great tribes who descended directly from the great scorpion, and they are all brethren in arms, seeing their entire race as one brood of a family. They are a militaristic people who regularly circle around their territory like nomads. This way, they keep surveillance over resources in their oases regularly and an eye out for changes in the land. As primarily hunters, they subsist mainly on meat, but also can stomach the toxins of cacti flesh. While not avid traders, they do have interactions mainly through caravans of traveling merchants or other nomadic tribes, where they exchange goods. The carapace of a scorpikis is valuable to be made into armor, selling for a high price. The scorpikiz do not mind this, as they believe that in the face of scarcity like the desert, everything must be useful. Thus, they do not have a notion of desecration against the dead.</p>
+			<h4>Scorpikis Names</h4>
+			<p>
+				<span class="emphasis">Male names:</span> Tark, Garn, Krellin, Kerash<br />
+				<span class="emphasis">Female names:</span> Najka, Kivii, Toriel, Akali<br />
+			</p>
+			<h4>Scorpikis Traits</h4>
+			<p>The corrupted fauns of necrotic origin. A true abomination to the world, and one that is aggressive to all.</p>
+			<p>
+				 <span class="feature">Ability Score Increase.</span> Your Constitution score increases by 1.<br />
+				 <span class="feature">Age.</span> Scorpikis live longer than humans, though not by much compared to other long-lived races. They claim adulthood at about the same age, but can live for up to almost 200 years at most.<br />
+				 <span class="feature">Alignment.</span> Scorpikis are almost never lawful. Most of them gravitate toward chaotic neutral, but rare exceptions do exist.<br />
+				 <span class="feature">Size.</span>  Instead of humanoid legs, scorpikis have the bodies of giant scorpions from the waist down. Many scorpikis reach a total height of 7 to 8 feet, and nearly the same in width. Your size is Medium.<br />
+				 <span class="feature">Speed.</span> Your base walking speed is 30 feet.<br />
+				 <span class="feature">Low Light Vision</span> Your predatory senses provide superior vision in places with dim lighting. You can see in dim light within 60 feet as if it were bright light. You still cannot see objects, or creatures, that are in darkness.<br />
+				 <span class="feature">Scorpikis Physiology</span> You are half-scorpion. You are immune to any poison damage as well as being poisoned. You have advantage on saving throws against being knocked prone, thanks to your 8 scorpion legs. Checks to grapple you roll with disadvantage due to your different and rather large size.<br />
+				 <span class="feature">Natural Armor</span> When wearing light or no armor, your Armor Class is equal to 11 + your Dexterity modifier.<br />
+				 <span class="feature">Stinger</span> Your stinger is not so much a venomous one than a natural spear. As a bonus action, you can make a special attack with your stinger on a creature within 5 feet of you. On a hit, the creature takes piercing damage equal to 1d4 + your Dexterity modifier and is forced to make a saving throw. The DC for this saving throw is equal to 8 + your Constitution modifier + your proficiency bonus. A creature takes an additional 1d10 poison damage on a failed save, and half as much on a successful one. The extra poison damage increases to 2d10 at 6th level, 3d10 at 11th level, and 4d10 at 16th level. After you have used your stinger, you must finish a short or long rest before you can use it again.<br />
+				 <span class="feature">Monstrous Shape</span> You are a creature that most others cannot accommodate for due to your appearance and odd body type. You cannot wear armor unless it has been tailored specially to suit you. The cost for the alterations is equal to half the cost of the gear. You also cannot wear any magic items that would normally go on feet or legs.<br />
+				 <span class="feature">Multi-Limbed</span> Your claws act as a pair of rudimentary hands. They can wield only simple melee weapons as normal.<br />
+				 </p>
+				 <span class="feature">Languages.</span> You can speak, read and write Common. <br />
+		</description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <setters>
+			<set name="names" type="male">Baztan, Zesia, Xomian, Grylbor, Rirvog</set>
+			<set name="names" type="female">Shyre, Omen, Nazeryth, Gothos, Zaki</set>
+            <set name="names-format">{{name}}</set>
+            <set name="height" modifier="2d12">6'0"</set>
+            <set name="weight" modifier="4d20">300 lb.</set>
+        </setters>
+		<rules>
+            <stat name="constitution" value="1" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+
+            <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_SCORPIKIS_LOW_LIGHT_VISION" />
+            <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_SCORPIKIS_SCORPIKIS_PHYSIOLOGY" />
+            <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_SCORPIKIS_NATURAL_ARMOR" />
+            <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_SCORPIKIS_STINGER" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_SCORPIKIS_MONSTROUS_SHAPE"/>
+			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_SCORPIKIS_MULTI_LIMBED"/>
+        </rules>
+	</element>
+	<element name="Low Light Vision" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_SCORPIKIS_LOW_LIGHT_VISION">
+        <description>
+            <p>Your predatory senses provide superior vision in places with dim lighting. You can see in dim light within 60 feet as if it were bright light. You still cannot see objects, or creatures, that are in darkness.</p>
+        </description>
+        <sheet>
+            <description>You can see in dim light within 60ft. as if it were bright light. You still cannot see objects, or creatures, that are in darkness.</description>
+        </sheet>
+    </element>
+
+    <element name="Scorpikis Physiology" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_SCORPIKIS_SCORPIKIS_PHYSIOLOGY">
+        <description>
+            <p>You are half-scorpion. You are immune to any poison damage as well as being poisoned. You have advantage on saving throws against being knocked prone, thanks to your 8 scorpion legs. Checks to grapple you roll with disadvantage due to your different and rather large size.</p>
+        </description>
+        <sheet>
+            <description>You are half-scorpion. You are immune to any poison damage as well as being poisoned. You have advantage on saving throws against being knocked prone, thanks to your 8 scorpion legs. Checks to grapple you roll with disadvantage due to your different and rather large size.</description>
+        </sheet>
+    </element>
+
+    <element name="Natural Armor" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_SCORPIKIS_NATURAL_ARMOR">
+        <description>
+            <p>When wearing light or no armor, your Armor Class is equal to 11 + your Dexterity modifier.</p>
+        </description>
+        <sheet display="false">
+            <description>When wearing light or no armor, your Armor Class is equal to 11 + your Dexterity modifier.</description>
+        </sheet>
+		<rules>
+			<stat name="ac:natural armor:scorpikis" value="11" bonus="base" />
+			<stat name="ac:natural armor:scorpikis" value="dexterity:modifier" />
+			<stat name="ac:calculation" value="ac:natural armor:scorpikis" bonus="calculation" equipped="![armor:heavy||armor:medium]" alt="Natural Armor (Scorpikis)" />
+		</rules>
+    </element>
+
+    <element name="Stinger" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_SCORPIKIS_STINGER">
+        <description>
+            <p>Your stinger is not so much a venomous one than a natural spear. As a bonus action, you can make a special attack with your stinger on a creature within 5 feet of you. On a hit, the creature takes piercing damage equal to 1d4 + your Dexterity modifier and is forced to make a saving throw. The DC for this saving throw is equal to 8 + your Constitution modifier + your proficiency bonus. A creature takes an additional 1d10 poison damage on a failed save, and half as much on a successful one. The extra poison damage increases to 2d10 at 6th level, 3d10 at 11th level, and 4d10 at 16th level. After you have used your stinger, you must finish a short or long rest before you can use it again.</p>
+        </description>
+        <sheet action="Bonus Action" usage="1/Long Rest">
+            <description>Your stinger is not so much a venomous one than a natural spear. As a bonus action, you can make a special attack with your stinger on a creature within 5 feet of you. On a hit, the creature takes piercing damage equal to 1d4 + {{dexterity:modifier}} and is forced to make a DC saving throw. The DC {{scorpikis_stinger:dc}} DEX saving throw. A creature takes an additional 1d10 poison damage on a failed save, and half as much on a successful one.</description>
+			<description level="6">Your stinger is not so much a venomous one than a natural spear. As a bonus action, you can make a special attack with your stinger on a creature within 5 feet of you. On a hit, the creature takes piercing damage equal to 1d4 + {{dexterity:modifier}} and is forced to make a DC saving throw. The DC {{scorpikis_stinger:dc}} DEX saving throw. A creature takes an additional 2d10 poison damage on a failed save, and half as much on a successful one.</description>
+			<description level="11">Your stinger is not so much a venomous one than a natural spear. As a bonus action, you can make a special attack with your stinger on a creature within 5 feet of you. On a hit, the creature takes piercing damage equal to 1d4 + {{dexterity:modifier}} and is forced to make a DC saving throw. The DC {{scorpikis_stinger:dc}} DEX saving throw. A creature takes an additional 3d10 poison damage on a failed save, and half as much on a successful one.</description>
+			<description level="16">Your stinger is not so much a venomous one than a natural spear. As a bonus action, you can make a special attack with your stinger on a creature within 5 feet of you. On a hit, the creature takes piercing damage equal to 1d4 + {{dexterity:modifier}} and is forced to make a DC saving throw. The DC {{scorpikis_stinger:dc}} DEX saving throw. A creature takes an additional 4d10 poison damage on a failed save, and half as much on a successful one.</description>
+        </sheet>
+		<rules>
+			<stat name="scorpikis_stinger:dc" value="8" />
+			<stat name="scorpikis_stinger:dc" value="constitution:modifier" />
+			<stat name="scorpikis_stinger:dc" value="proficiency" />
+		</rules>
+    </element>
+	
+    <element name="Monstrous Shape" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_SCORPIKIS_MONSTROUS_SHAPE">
+        <description>
+            <p>You are a creature that most others cannot accommodate for due to your appearance and odd body type. You cannot wear armor unless it has been tailored specially to suit you. The cost for the alterations is equal to half the cost of the gear. You also cannot wear any magic items that would normally go on feet or legs.</p>
+        </description>
+        <sheet>
+            <description>You are a creature that most others cannot accommodate for due to your appearance and odd body type. You cannot wear armor unless it has been tailored specially to suit you. The cost for the alterations is equal to half the cost of the gear. You also cannot wear any magic items that would normally go on feet or legs.</description>
+        </sheet>
+    </element>
+
+    <element name="Multi-Limbed" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_SCORPIKIS_MULTI_LIMBED">
+        <description>
+            <p>Your claws act as a pair of rudimentary hands. They can wield only simple melee weapons as normal.</p>
+        </description>
+        <sheet>
+            <description>Your claws act as a pair of rudimentary hands. They can wield only simple melee weapons as normal.</description>
+        </sheet>
+    </element>	
+</elements>

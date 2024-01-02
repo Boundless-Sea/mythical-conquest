@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Oni</name>
+		<author url="https://dmdave.com/oni-playable-race/">DmDave</author>
+		<update version="0.0.1">
+            <file name="race-oni.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/race-oni.xml" />
+        </update>
+	</info>
+	
+	<element name="Oni" type="Race" source="Mythical Conquest" id="ID_MYTHIC_HB_RACE_ONI">
+		<description>
+			<p>In nursery rhymes, oni are fearsome bogeymen that haunt the nightmares of children and adults alike, yet they are very real and always hungry.</p>
+			<p>Depictions of oni vary widely but usually portray them as hideous, gigantic ogre-like creatures with a single horn or multiple horns emerging from their heads, with sharp claws and wild hair.</p>
+			<p>They are often depicted wearing tiger-skin loincloths and carrying iron clubs called kanabō (金棒). This image leads to the expression “oni with an iron club” (鬼に金棒 oni-ni-kanabō), that is, to be invincible or undefeatable.</p>
+			<p>Their skin may be any number of colors, but red, blue, and green are particularly common. They may sometimes also be depicted as black-skinned, or yellow-skinned.</p>
+			<p>They may occasionally be depicted with a third eye on their forehead, or extra fingers and toes.</p>
+			<p>In more recent times, oni have lost some of their original wickedness and sometimes take on a more protective function.</p>
+			<h4>Oni Traits</h4>
+			<p>While oni may have varied appearances, all oni share the following characteristics, including yours.</p>
+			<p>
+				 <span class="feature">Ability Score Increase.</span> Your Strength score increases by 2, and your Charisma score increases by 1.<br />
+				 <span class="feature">Age.</span> Oni aren’t born as much as they are created by magical forces. An oni at creation is considered an adult. An oni can potentially live forever, although most live or depart their material existence at around 500 years old.<br />
+				 <span class="feature">Alignment.</span> Oni are mischevious tricksters and almost always tend towards chaos. In addition, oni are usually malicious and evil. However, a few newer (younger, if you will) oni have developed good traits and an appreciation of life.<br />
+				 <span class="feature">Size.</span> Oni are large, hulking brutes, standing 7 to 8 feet tall and weighing as much as 250 to 300 pounds. Your size is Medium.<br />
+				 <span class="feature">Speed.</span> Your base walking speed is 30 feet.<br />
+				 <span class="feature">Darkvision</span> Oni are accustomed to the dark places of the multiverse and as such are able to see in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.<br />
+				 <span class="feature">Claws</span> Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.<br />
+				 <span class="feature">Oni Magic</span> When you reach 3rd level, you can cast disguise self. When you reach 5th level, you can cast the darkness or the invisibility spell. If you cast invisibility or darkness using this trait, you cannot cast either one again until after you finish a long rest. At 11th level, you may also cast fly in place of darkness or invisibility. You do not require material components to cast these spells. Charisma is your spellcasting ability for these spells.<br />
+				 <span class="feature">Spit Copper</span> You can use your action to spit a globule of molten copper at one target you can see within 10 feet of you. The target must succeed on a Dexterity saving throw with a DC equal to 8 + your Constitution modifier + your proficiency bonus. A creature takes 3d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 4d6 at 7th level, 5d6 at 12th level, and 7d6 at 17th level. After you use your spit copper attack, you can’t use it again until you complete a short or long rest.<br />
+				 </p>
+				 <span class="feature">Languages.</span>You can speak, read, and write Common and Giant.<br />
+		</description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <setters>
+            <set name="height" modifier="1d4">7'8"</set>
+            <set name="weight" modifier="1d4">225 lb.</set>
+        </setters>
+		<rules>
+            <stat name="charisma" value="1" />
+            <stat name="strength" value="2" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_GIANT" />  
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+            <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_ONI_CLAWS" />
+            <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_ONI_MAGIC" />
+            <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_ONI_SPIT_COPPER" />
+        </rules>
+	</element>
+	<element name="Claws" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_ONI_CLAWS">
+        <description>
+            <p>Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+        </description>
+        <sheet>
+            <description>Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + {{strength:modifier}}, instead of the bludgeoning damage normal for an unarmed strike.</description>
+        </sheet>
+    </element>
+
+    <element name="Oni Magic" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_ONI_MAGIC">
+        <description>
+            <p>When you reach 3rd level, you can cast disguise self. When you reach 5th level, you can cast the darkness or the invisibility spell. If you cast invisibility or darkness using this trait, you cannot cast either one again until after you finish a long rest. At 11th level, you may also cast fly in place of darkness or invisibility. You do not require material components to cast these spells. Charisma is your spellcasting ability for these spells.</p>
+        </description>
+        <sheet>
+            <description>If you cast invisibility or darkness using this trait, you cannot cast either one again until after you finish a long rest. You do not require material components to cast these spells. Charisma is your spellcasting ability for these spells.</description>
+			<description level="11">
+			If you cast invisibility or darkness using this trait, you cannot cast either one again until after you finish a long rest. At 11th level, you may also cast fly in place of darkness or invisibility. You do not require material components to cast these spells. Charisma is your spellcasting ability for these spells.
+			</description>
+        </sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" spellcasting="Bard" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" spellcasting="Bard" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" spellcasting="Bard" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLY" spellcasting="Bard" level="11" prepared="true" />
+		</rules>
+    </element>
+
+    <element name="Spit Copper" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_ONI_SPIT_COPPER">
+        <description>
+            <p>You can use your action to spit a globule of molten copper at one target you can see within 10 feet of you. The target must succeed on a Dexterity saving throw with a DC equal to 8 + your Constitution modifier + your proficiency bonus. A creature takes 3d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 4d6 at 7th level, 5d6 at 12th level, and 7d6 at 17th level. After you use your spit copper attack, you can’t use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Short Rest">
+            <description level="1">You can spit a globule of molten copper at one target you can see within 10ft. of you. The target must succeed on a DEX saving throw with a DC equal to 8 + {{constitution:modifier}} + {{proficiency}}. A creature takes 3d6 damage on a failed save, and half as much damage on a successful one.</description>
+			<description level="7">You can spit a globule of molten copper at one target you can see within 10ft. of you. The target must succeed on a DEX saving throw with a DC equal to 8 + {{constitution:modifier}} + {{proficiency}}. A creature takes 4d6 damage on a failed save, and half as much damage on a successful one.</description>
+			<description level="12">You can spit a globule of molten copper at one target you can see within 10ft. of you. The target must succeed on a DEX saving throw with a DC equal to 8 + {{constitution:modifier}} + {{proficiency}}. A creature takes 5d6 damage on a failed save, and half as much damage on a successful one.</description>
+       		<description level="17">You can spit a globule of molten copper at one target you can see within 10ft. of you. The target must succeed on a DEX saving throw with a DC equal to 8 + {{constitution:modifier}} + {{proficiency}}. A creature takes 7d6 damage on a failed save, and half as much damage on a successful one.</description>
+	   </sheet>
+    </element>
+</elements>

@@ -3,7 +3,7 @@
 	<info>
 		<name>Oni</name>
 		<author url="https://dmdave.com/oni-playable-race/">DmDave</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
             <file name="race-oni.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/race-oni.xml" />
         </update>
 	</info>
@@ -47,9 +47,9 @@
 			<grant type="Language" id="ID_LANGUAGE_GIANT" />  
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
 
-            <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_ONI_CLAWS" />
-            <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_ONI_MAGIC" />
-            <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_ONI_SPIT_COPPER" />
+            <grant type="Racial Trait" id="ID_MYTHIC_RACIAL_TRAIT_ONI_CLAWS" />
+            <grant type="Racial Trait" id="ID_MYTHIC_RACIAL_TRAIT_ONI_MAGIC" />
+            <grant type="Racial Trait" id="ID_MYTHIC_RACIAL_TRAIT_ONI_SPIT_COPPER" />
         </rules>
 	</element>
 	<element name="Claws" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_ONI_CLAWS">

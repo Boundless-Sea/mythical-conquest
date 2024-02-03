@@ -4,7 +4,7 @@
 		<name>Human-Gnome-Dragonborn</name>
 		<description></description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.2.7">
+		<update version="0.2.8">
 			<file name="race-human-gnome-dragonborn.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/race-human-gnome-dragonborn.xml" />
 		</update>
 	</info>
@@ -30,6 +30,7 @@
       <grant type="Racial Trait" id="ID_RACIAL_TRAIT_TINKER" />
 	  <grant type="Racial Trait" id="ID_HB_RACIAL_TRAIT_DRACONIC" />
 	  <grant type="Racial Trait" id="ID_HB_RACIAL_TRAIT_DRACONIC_WINGS" />
+	  <grant type="Racial Trait" id="ID_HB_RACIAL_TRAIT_DRACONIC_RESTORATION" />
     </rules>
   </element>
 
@@ -134,4 +135,14 @@
 		<description>You can enhance your body with the physical properties of a halfblood dragonborn and grow wings from your back, gaining the ability to fly. Gain a fly speed of 20ft. for 1 hour.</description>
 	</sheet>
   </element>
+  
+  <element name="Draconic Restoration" type="Racial Trait" source="Homebrewery" id="ID_HB_RACIAL_TRAIT_DRACONIC_RESTORATION">
+	<description>
+		<p>Due to your lineage with dragons, you've gained the ability to regenerate your body more effectively. You restore an extra 10 hit points after a short rest, and can regrow 1 dismembered limb a single time per month.</p>
+	</description>
+	<sheet>
+		<p>You restore an extra 10 hit points after a short rest, and can regrow 1 dismembered limb a single time per month.</p>
+	</sheet>
+  </element>
 </elements>
+

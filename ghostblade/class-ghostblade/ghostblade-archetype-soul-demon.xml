@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Soul Demon</name>
+        <update version="0.0.1">
+            <file name="ghostblade-archetype-soul-demon.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-ghostblade/ghostblade-archetype-soul-demon.xml" />
+        </update>
+    </info>
+    
+    <element name="Soul Demon" type="Archetype" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_SOUL_DEMON">
+		<supports>Ghost_Pact</supports>
+		<description>
+			<p>Swoul Demons are those who have recognized the potential of their own soul after frequenting themselves with the souls of the dead.</p>
+			<div element="ID_MYTHIC_ARCHETYPE_FEATURE_SOUL_FORGED_CONSTITUTION"/>
+			<div element="ID_MYTHIC_ARCHETYPE_FEATURE_SOUL_ABSORPTION"/>
+			<div element="ID_MYTHIC_ARCHETYPE_FEATURE_SHARPENED_SOUL"/>
+			<div element="ID_MYTHIC_ARCHETYPE_FEATURE_GRACEFUL_BOUNDARY"/>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_FEATURE_SOUL_FORGED_CONSTITUTION" level="3"/>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_FEATURE_SOUL_ABSORPTION" level="6"/>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_FEATURE_SHARPENED_SOUL" level="13"/>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_FEATURE_GRACEFUL_BOUNDARY" level="18"/>
+		</rules>
+	</element>	
+	<element name="Soul-Forged Constitution" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_FEATURE_SOUL_FORGED_CONSTITUTION">
+		<description>
+			<p>At 3rd level you have grasped the form of your soul due to your constant exposure to the dead, gaining proficiency in Shields, in addition, you can add half your Charisma modifier to Constitution Saving Throws.</p>
+		</description>
+		<sheet>
+			<p>When making a Constitution Saving Throw, add {{charisma:modifier:half}} to the roll.</p>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS"/>
+		</rules>
+	</element>	
+	<element name="Soul Absorption" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_FEATURE_SOUL_ABSORPTION">
+		<description>
+			<p>At 6th level, you’ve figured out how to assimilate the spirits of the dead with your own soul, allowing you to quickly recuperate from injuries. When rolling a death saving roll, you can consume a ghost to gain an additional 1d4 to your roll. If you are stabilized through this feature, you gain an additional 1d12 health and regain consciousness after 1 round. You can only use this feature a maximum times up to half your Charisma modifier per long rest.</p>
+		</description>
+		<sheet usage="{{charisma:modifier:half}}/Long Rest, 1 Ghost">
+			<p>When rolling a death saving roll, you can add 1d4 to the roll. If stabilized through this feature, you gain 1d12 health and regain consciousness after 1 round.</p>		
+		</sheet>
+	</element>		
+	<element name="Sharpened Soul" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_FEATURE_SHARPENED_SOUL">
+		<description>
+			<p>At 13th level, you’ve learned how to sharpen the effects of your soul when creating a boundary. While within a boundary of your own, gain true sight, allowing you to perceive all creatures and objects within the boundary. In addition, Sword Boundary now provides an additional bonus to Attack and Damage rolls equal to your Charisma Modifier, instead of half. </p>
+		</description>
+		<sheet>
+			<description>
+				<p>While within a boundary of your own, gain true sight, allowing you to perceive all creatures and objects within the boundary.</p>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="sword_boundary:additional" value="-charisma:modifier:half" />
+			<stat name="sword_boundary:additional" value="charisma:modifier" />
+		</rules>
+	</element>	
+	<element name="Graceful Boundary" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_FEATURE_GRACEFUL_BOUNDARY">
+		<description>
+			<p>At 18th level you’ve learned how to create a boundary that expresses the grace and elegance of your soul. As an Action, create a boundary with a 60ft. radius that lasts for 1 minute. All allies within the boundary heal 1d12 health at the start of their turn and deal an additional 1d10 Radiant Damage with weapon attacks. Fiends and Undead within this boundary also take double damage from Radiant Damage. You can use this feature twice per long rest.</p>
+		</description>
+		<sheet action="Action" usage="2/Long Rest">
+			<description>
+				<p>Create a boundary with a 60ft. radius that lasts for 1 minute. All allies within the boundary heal 1d12 health at the start of their turn and deal an additional 1d10 Radiant Damage with weapon attacks. Fiends and Undead within this boundary also take double damage from Radiant Damage.</p>
+			</description>
+		</sheet>
+	</element>
+</elements>

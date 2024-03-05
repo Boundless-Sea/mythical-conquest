@@ -3,7 +3,7 @@
 	<info>
 		<name>Ghostblade</name>
 		<author url="https://www.reddit.com/user/kodabeeer"></author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="ghostblade.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-ghostblade/ghostblade.xml" />
 		</update>
 	</info>
@@ -312,9 +312,12 @@
 		</description>
 		<sheet action="Action" usage="1/Short Rest">
 			<description>
-				<p>You cast a boundary around you in a 30ft radius. You and creatures of your choice gain a +{{charisma:modifier:half}} to Attack and Damage rolls. The boundary lasts for 1m.</p>
+				<p>You cast a boundary around you in a 30ft radius. You and creatures of your choice gain a +{{sword_boundary:additional}} to Attack and Damage rolls. The boundary lasts for 1m.</p>
 			</description>
 		</sheet>
+		<rules>
+			<stat name="sword_boundary:additional" value="charisma:modifier:half" />
+		</rules>
 	</element>
 	
 	<element name="Shadow Image" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_FEATURE_GHOSTBLADE_SHADOW_IMAGE">

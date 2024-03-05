@@ -4,7 +4,7 @@
 		<name>Scorpikis</name>
 		<description></description>
 		<author url="https://www.dandwiki.com/wiki/Scorpikis_(5e_Race)">DnD Wiki</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
             <file name="race-scorpikis.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races/race-scorpikis.xml" />
         </update>
 	</info>
@@ -56,12 +56,12 @@
             <grant type="Size" id="ID_SIZE_MEDIUM" />
             <grant type="Language" id="ID_LANGUAGE_COMMON" />
 
-            <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_SCORPIKIS_LOW_LIGHT_VISION" />
-            <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_SCORPIKIS_SCORPIKIS_PHYSIOLOGY" />
-            <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_SCORPIKIS_NATURAL_ARMOR" />
-            <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_SCORPIKIS_STINGER" />
-			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_SCORPIKIS_MONSTROUS_SHAPE"/>
-			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_SCORPIKIS_MULTI_LIMBED"/>
+            <grant type="Racial Trait" id="ID_MYTHIC_RACIAL_TRAIT_SCORPIKIS_LOW_LIGHT_VISION" />
+            <grant type="Racial Trait" id="ID_MYTHIC_RACIAL_TRAIT_SCORPIKIS_SCORPIKIS_PHYSIOLOGY" />
+            <grant type="Racial Trait" id="ID_MYTHIC_RACIAL_TRAIT_SCORPIKIS_NATURAL_ARMOR" />
+            <grant type="Racial Trait" id="ID_MYTHIC_RACIAL_TRAIT_SCORPIKIS_STINGER" />
+			<grant type="Racial Trait" id="ID_MYTHIC_RACIAL_TRAIT_SCORPIKIS_MONSTROUS_SHAPE"/>
+			<grant type="Racial Trait" id="ID_MYTHIC_RACIAL_TRAIT_SCORPIKIS_MULTI_LIMBED"/>
         </rules>
 	</element>
 	<element name="Low Light Vision" type="Racial Trait" source="Mythical Conquest" id="ID_MYTHIC_RACIAL_TRAIT_SCORPIKIS_LOW_LIGHT_VISION">

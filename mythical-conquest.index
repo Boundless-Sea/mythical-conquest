@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<update version="0.1.5">
+		<update version="0.1.6">
 			<file name="mythical-conquest.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/mythical-conquest.index" />
 		</update>
 	</info>
@@ -10,10 +10,12 @@
 		<file name="class-gunslinger.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-gunslinger.index" />
 		<file name="class-samurai.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-samurai.index" />
 		<file name="class-crusader.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-crusader.index" />
+		<file name="class-ghostblade.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-diabolist.index" />	
 		<file name="races.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/races.index" />
 		<file name="subclass.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/subclass.index" />
 		<file name="items.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/items.index" />
 		<file name="feats-styles.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/feats-styles.index" />
 		<file name="misc.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/misc.index" />
+		
 	</files>
 </index>

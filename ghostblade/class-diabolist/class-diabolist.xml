@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Diabolist Revised</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="class-diabolist.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-diabolist/class-diabolist.xml" />
 		</update>
 	</info>
@@ -50,26 +50,26 @@
 				<thead>
 					<tr><td class="col-5">Level</td><td class="left">Proficiency Bonus</td><td class="left">Features</td><td>Spells Known</td><td>Spell Slots</td><td>Slot Level</td></tr>
 				</thead>
-				<tr><td> 1st</td><td>+2</td><td class="left">Profane Magic</td><td>2</td><td>1</td><td>1</td></tr>
-				<tr><td> 2nd</td><td>+2</td><td class="left">Fighting Style, Corruption, Unholy Covenant</td><td>2</td><td>1</td><td>1</td></tr>
-				<tr><td> 3rd</td><td>+2</td><td class="left">Vile Fortitude</td><td>3</td><td>2</td><td>1</td></tr>
-				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td><td>3</td><td>2</td><td>1</td></tr>
-				<tr><td> 5th</td><td>+3</td><td class="left">Extra Attack, Corruption Improvement</td><td>4</td><td>2</td><td>2</td></tr>
-				<tr><td> 6th</td><td>+3</td><td class="left">Desecrated Strikes</td><td>4</td><td>2</td><td>2</td></tr>
-				<tr><td> 7th</td><td>+3</td><td class="left">Covenant Feature, Vile Fortitude Improvement</td><td>5</td><td>2</td><td>2</td></tr>
-				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td><td>5</td><td>2</td><td>2</td></tr>
-				<tr><td> 9th</td><td>+4</td><td class="left">Undaunted</td><td>6</td><td>2</td><td>2</td></tr>
-				<tr><td>10th</td><td>+4</td><td class="left">-</td><td>6</td><td>2</td><td>3</td></tr>
-				<tr><td>11th</td><td>+4</td><td class="left">Corruption Improvement</td><td>7</td><td>2</td><td>3</td></tr>
-				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td><td>7</td><td>2</td><td>3</td></tr>
-				<tr><td>13th</td><td>+5</td><td class="left">Dark Diablerie</td><td>8</td><td>2</td><td>3</td></tr>
-				<tr><td>14th</td><td>+5</td><td class="left">Unholy Presence</td><td>8</td><td>2</td><td>4</td></tr>
-				<tr><td>15th</td><td>+5</td><td class="left">Covenant Feature, Corruption Improvement</td><td>8</td><td>2</td><td>5</td></tr>
-				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td><td>8</td><td>2</td><td>5</td></tr>
-				<tr><td>17th</td><td>+6</td><td class="left">Dark Diablerie Improvement</td><td>10</td><td>2</td><td>5</td></tr>
-				<tr><td>18th</td><td>+6</td><td class="left">Vile Fortitude Improvement</td><td>10</td><td>2</td><td>5</td></tr>
-				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td><td>11</td><td>2</td><td>5</td></tr>
-				<tr><td>20th</td><td>+6</td><td class="left">Diabolic Sovereign</td><td>11</td><td>2</td><td>5</td></tr>
+				<tr><td> 1st</td><td>+2</td><td class="left">Profane Magic</td>									<td>2</td><td>1</td><td>1</td></tr>
+				<tr><td> 2nd</td><td>+2</td><td class="left">Fighting Style, Corruption, Unholy Covenant</td>	<td>2</td><td>1</td><td>1</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td class="left">Vile Fortitude</td>								<td>3</td><td>2</td><td>1</td></tr>
+				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td>						<td>3</td><td>2</td><td>1</td></tr>
+				<tr><td> 5th</td><td>+3</td><td class="left">Extra Attack, Corruption Improvement</td>			<td>4</td><td>2</td><td>2</td></tr>
+				<tr><td> 6th</td><td>+3</td><td class="left">Desecrated Strikes</td>							<td>4</td><td>2</td><td>2</td></tr>
+				<tr><td> 7th</td><td>+3</td><td class="left">Covenant Feature, Vile Fortitude Improvement</td>	<td>5</td><td>2</td><td>2</td></tr>
+				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td>						<td>5</td><td>2</td><td>2</td></tr>
+				<tr><td> 9th</td><td>+4</td><td class="left">Undaunted</td>										<td>6</td><td>2</td><td>2</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">-</td>												<td>6</td><td>2</td><td>3</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">Corruption Improvement</td>						<td>7</td><td>2</td><td>3</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td>						<td>7</td><td>2</td><td>3</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">Dark Diablerie</td>								<td>8</td><td>2</td><td>3</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Unholy Presence</td>								<td>8</td><td>2</td><td>4</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">Covenant Feature, Corruption Improvement</td>		<td>9</td><td>2</td><td>5</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td>						<td>9</td><td>2</td><td>5</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">Dark Diablerie Improvement</td>					<td>10</td><td>2</td><td>5</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">Vile Fortitude Improvement</td>					<td>10</td><td>2</td><td>5</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td>						<td>11</td><td>2</td><td>5</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Diabolic Sovereign</td>							<td>11</td><td>2</td><td>5</td></tr>
 			</table>
 			
 			<div element="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_PROFANE_MAGIC" /> 
@@ -156,21 +156,28 @@
 		</spellcasting>
 		<rules>
 			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
-			<stat name="diabolist:spellcasting:slots:1" value="1" level="1" />
-			<stat name="diabolist:spellcasting:slots:1" value="1" level="3" />
-			<stat name="diabolist:spellcasting:slots:2" value="2" level="5" />
-			<stat name="diabolist:spellcasting:slots:3" value="2" level="9" />
-			<stat name="diabolist:spellcasting:slots:4" value="1" level="13" />
-			<stat name="diabolist:spellcasting:slots:5" value="1" level="17" />
+			<stat name="diabolist:spellcasting:slots:count" value="1" level="1"/>
+			<stat name="diabolist:spellcasting:slots:count" value="1" level="3"/>
+			
+			<stat name="diabolist:spellcasting:slots:1" value="diabolist:spellcasting:slots:count" level="1" />
+			<stat name="diabolist:spellcasting:slots:1" value="-diabolist:spellcasting:slots:count" level="5" />
+			<stat name="diabolist:spellcasting:slots:2" value="diabolist:spellcasting:slots:count" level="5" />
+			<stat name="diabolist:spellcasting:slots:2" value="-diabolist:spellcasting:slots:count" level="9" />
+			<stat name="diabolist:spellcasting:slots:3" value="diabolist:spellcasting:slots:count" level="9" />
+			<stat name="diabolist:spellcasting:slots:3" value="-diabolist:spellcasting:slots:count" level="13" />
+			<stat name="diabolist:spellcasting:slots:4" value="diabolist:spellcasting:slots:count" level="13" />
+			<stat name="diabolist:spellcasting:slots:4" value="-diabolist:spellcasting:slots:count" level="17" />
+			<stat name="diabolist:spellcasting:slots:5" value="diabolist:spellcasting:slots:count" level="17" />
+			
 			<select type="Spell" name="Spellcasting (Diabolist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="1" number="2" spellcasting="Diabolist"/>
 			<select type="Spell" name="Spellcasting (Diabolist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" number ="1" spellcasting="Diabolist" />
 			<select type="Spell" name="Spellcasting (Diabolist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="5" number ="1" spellcasting="Diabolist" />
 			<select type="Spell" name="Spellcasting (Diabolist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" number ="1" spellcasting="Diabolist" />
 			<select type="Spell" name="Spellcasting (Diabolist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" number ="1" spellcasting="Diabolist" />
 			<select type="Spell" name="Spellcasting (Diabolist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" number ="1" spellcasting="Diabolist" />
-			<select type="Spell" name="Spellcasting (Diabolist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" number ="2" spellcasting="Diabolist" />
+			<select type="Spell" name="Spellcasting (Diabolist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" number ="1" spellcasting="Diabolist" />
 			<select type="Spell" name="Spellcasting (Diabolist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="15" number ="1" spellcasting="Diabolist" />
-			<select type="Spell" name="Spellcasting (Diabolist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="17" number ="2" spellcasting="Diabolist" />
+			<select type="Spell" name="Spellcasting (Diabolist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="17" number ="1" spellcasting="Diabolist" />
 			<select type="Spell" name="Spellcasting (Diabolist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" number ="1" spellcasting="Diabolist" />
 			<stat name="diabolist:dc" value="8" />
 			<stat name="diabolist:dc" value="proficiency" />
@@ -328,6 +335,264 @@
 		<supports>Diabolist</supports>
 	</append>
 	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING">
+		<supports>Diabolist</supports>
+	</append>
+	
+	<!--Spells-->
+	<append id="ID_XGTE_SPELL_ABSORB_ELEMENTS">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ARMOR_OF_AGATHYS">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ARMS_OF_HADAR">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BANE">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BURNING_HANDS">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_CAUSE_FEAR">
+		<supports>Diabolist</supports>
+	</append>	
+	<append id="ID_PHB_SPELL_CHARM_PERSON">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DISGUISE_SELF">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DISSONANT_WHISPERS">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FALSE_LIFE">
+		<supports>Diabolist</supports>
+	</append>
+	 <append id="ID_WOTC_IDROTF_SPELL_FROST_FINGERS">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HELLISH_REBUKE">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_INFLICT_WOUNDS">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_RAY_OF_SICKNESS">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_WOTC_TCOE_SPELL_TASHAS_CAUSTIC_BREW">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BLUR">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CROWN_OF_MADNESS">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DARKNESS">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FLAMING_SPHERE">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HOLD_PERSON">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_INVISIBILITY">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MAGIC_WEAPON">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MELFS_ACID_ARROW">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MISTY_STEP">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_WOTC_FTOD_SPELL_RIMES_BINDING_ICE">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SCORCHING_RAY">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_SHADOW_BLADE">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_SNILLOCS_SNOWBALL_SWARM">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SUGGESTION">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ANIMATE_DEAD">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_WOTC_SCOC_SPELL_WITHER_AND_BLOOM">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BESTOW_CURSE">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_WOTC_FTOD_SPELL_ASHARDALONS_STRIDE">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_COUNTERSPELL">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DISPEL_MAGIC">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_WOTC_ACQINC_SPELL_FAST_FRIENDS">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FEAR">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FIREBALL">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HASTE">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HUNGER_OF_HADAR">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SLOW">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SLOW">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_STINKING_CLOUD">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_WOTC_TCOE_SPELL_SUMMON_UNDEAD">
+		<supports>Diabolist</supports>
+	</append>	
+	<append id="ID_WOTC_TCOE_SPELL_SUMMON_SHADOWSPAWN">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_WOTC_TCOE_SPELL_SUMMON_BEAST">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_UA_TCOE_SPELL_SPIRIT_SHROUD">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_VAMPIRIC_TOUCH">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BLIGHT">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_CHARM_MONSTER">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DIMENSION_DOOR">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_ELEMENTAL_BANE">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FIRE_SHIELD">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GREATER_INVISIBILITY">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PHANTASMAL_KILLER">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_POLYMORPH">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_SHADOW_OF_MOIL">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_SICKENING_RADIANCE">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_WOTC_TCOE_SPELL_SUMMON_ELEMENTAL">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_VITRIOLIC_SPHERE">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_WALL_OF_FIRE">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ANTILIFE_SHELL">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CLOUDKILL">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CONE_OF_COLD">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CONTAGION">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_DANSE_MACABRE">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DESTRUCTIVE_WAVE">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DOMINATE_PERSON">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_ENERVATION">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_FAR_STEP">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HALLOW">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HOLD_MONSTER">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_IMMOLATION">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_NEGATIVE_ENERGY_FLOOD">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_SYNAPTIC_STATIC">
+		<supports>Diabolist</supports>
+	</append>
+	<!-- Additional Spells Not Normally Included as per Source-->
+	<append id="ID_WOTC_TCOE_SPELL_SPIRIT_SHROUD">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_WOTC_TCOE_SPELL_SUMMON_ABERRATION">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_WOTC_TCOE_SPELL_SWORD_BURST">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_WOTC_EGTW_SPELL_SAPPING_STING">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_GGTR_SPELL_CHAOS_BOLT">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_POTA_SPELL_MELFSMINUTEMETEORS">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_WOTC_SCOC_SPELL_WITHER_AND_BLOOM">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_SCAG_SPELL_BOOMING_BLADE">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_SCAG_SPELL_GREEN_FLAME_BLADE">
 		<supports>Diabolist</supports>
 	</append>
 </elements>

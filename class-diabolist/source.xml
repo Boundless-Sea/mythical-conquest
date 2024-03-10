@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="sources.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-diabolist/source.xml" />
+		</update>
+	</info>
+	<element name="Mythical Conquest" type="Source" source="Diabolist" id="ID_MYTHIC_SOURCE_DIABOLIST">
+		<description>
+			<p>"Power isn't free; it demands sacrifice." Wield the Dark Magic of 7 Unholy Covenants and Take on Corruption to Wipe Out Your Foes!</p>
+		</description>
+		<setters>
+			<set name="abbreviation">Mythic</set>
+            <set name="url"></set>
+           	<set name="image">https://mir-s3-cdn-cf.behance.net/project_modules/hd/6b089a55244639.597c5eaf338c8.jpg</set>
+			<set name="author" abbreviation="KT5" url="https://www.reddit.com/user/KaiTries5/">KaiTries5</set>
+           	<set name="official">false</set>
+            <set name="supplement">false</set>
+           	<set name="playtest">false</set>
+            <set name="third-party">true</set>
+            <set name="homebrew">true</set>
+           	<set name="league">false</set>
+            <set name="release">20240101</set>
+		</setters>
+	</element>
+</elements>

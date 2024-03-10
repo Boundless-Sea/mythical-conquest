@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Covenant of Frost</name>
+		<update version="0.0.1">
+			<file name="diabolist-covenant-frost.xml" url="https://www.gmbinder.com/share/-NURlrWVNuug8T2AKFLa" />
+		</update>
+	</info>
+
+	<element name="Covenant of Frost" type="Archetype" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_COVENANT_FROST">
+		<supports>Covenant</supports>
+		<description>
+			<p>Diabolists of the Covenant of Frost are masters of the cold. Ice is both a shield and a sword to them, gathering around them when they are struck and locking down their foes as they launch their assault. This covenant is inexorable in nature, stopping at nothing to bring down even the mightiest of opponents. If you ever draw one's ire, the chill in your bones won't even let you run away.</p>
+			<div element="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_FROST_INCARNATE"/>
+			<div element="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_UNENDING_BLIZZARD"/>
+			<div element="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_FROZEN_OVER"/>
+		</description>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_FROST_INCARNATE" level="2"/>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_UNENDING_BLIZZARD" level="7"/>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_FROZEN_OVER" level="15"/>
+		</rules>
+	</element>		
+	<element name="Frost Incarnate" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_FROST_INCARNATE">
+		<description>
+			<p>When you gain this covenant at 2nd level, an icy chill surrounds you always. You have resistance to cold damage. Additionally, your speed cannot be reduced unless it is reduced to 0, and you ignore nonmagical difficult terrain. The first time each round you make a Strength, Dexterity, or Constitution saving throw, you gain a bonus to the roll equal to half your Corruption stage (rounded up). </p>
+		</description>
+		<sheet>
+			<p>Your speed cannot be reduced unless it is reduced to 0, and you ignore nonmagical difficult terrain. The first time each round you make a Strength, Dexterity, or Constitution saving throw, you gain a bonus to the roll equal to half your Corruption stage (rounded up).</p>
+		</sheet>
+		<rules>
+			<stat inline="true" name="diabolist-covenant:damage_type" value="Cold" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+			
+		</rules>
+	</element>		
+	<element name="Unending Blizzard" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_UNENDING_BLIZZARD">
+		<description>
+			<p>At 7th level, you can summon icy winds to whip around you, chilling your enemies to the bone. As a bonus action, you can activate or dismiss these winds, which extend 5 feet from you in every direction. Any hostile creature that starts its turn within 5 feet of you has their speed halved until the start of their next turn. This feature lasts until the end of your next turn. You can use this feature 3 times before needing to short rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="3/Short Rest">
+			<description>
+				<p>Any hostile creature that starts its turn within 5ft. of you until the end of your next turn has their speed halved until the start of their next turn.</p>
+			</description>
+		</sheet>
+	</element>	
+	<element name="Pheonix's Vengeance" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_FROZEN_OVER">
+		<description>
+			<p>At 15th level, you can completely lock your foes in ice. As an action, you can choose a creature within 30 feet of you; that creature must make a Constitution saving throw against your diabolist spell save DC. On a failed save, they are paralyzed as supernatural ice locks them in place for 1 minute or until they are hit by an attack or fail a saving throw, which shatters the ice and frees them. Once you use this feature, you can't do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>
+				<p>Choose a creature within 30 feet of you; that creature must make a DC {{diabolist:dc}} Constitution saving throw. On a failed save, they are paralyzed as supernatural ice locks them in place for 1m or until they are hit by an attack or fail a saving throw, which shatters the ice and frees them.</p>
+			</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Covenant of Plague</name>
+		<update version="0.0.1">
+			<file name="diabolist-covenant-plague.xml" url="https://www.gmbinder.com/share/-NURlrWVNuug8T2AKFLa" />
+		</update>
+	</info>
+
+	<element name="Covenant of Plague" type="Archetype" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_COVENANT_PLAGUE">
+		<supports>Covenant</supports>
+		<description>
+			<p>Diabolists of the Covenant of Plague do not wreak havoc directly. Their power is that of disease; epidemics and illnesses that kill slowly, invisibly. These diabolists weaken their foes as they fight, infecting them with vile afflictions until their body gives out from the terrible symptoms. You may think all the sweat you're exuding is because of the fight and not the fever you've contracted until it's far too late for you.</p>
+			<div element="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_PLAGUE_INCARNATE"/>
+			<div element="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_FESTERING_STRIKE"/>
+			<div element="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_VIRULENT_OUTBREAK"/>
+		</description>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_PLAGUE_INCARNATE" level="2"/>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_FESTERING_STRIKE" level="7"/>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_VIRULENT_OUTBREAK" level="15"/>
+		</rules>
+	</element>		
+	<element name="Plauge Incarnate" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_PLAGUE_INCARNATE">
+		<description>
+			<p>When you gain this covenant at 2nd level, you know how best to utilize diseases. You gain resistance to poison damage. Additionally, magical poison damage you deal ignores resistance to poison damage, and you are immune to disease. The additional damage you deal is poison damage. When a hostile creature within 5 feet of you regains hit points, the number of hit points they regain is reduced by your Corruption stage.</p>
+		</description>
+		<sheet>
+			<p>When a hostile creature within 5ft. of you regains hit points, the number of hit points they regain is reduced by your Corruption stage. Additionally, magical poison damage you deal ignores resistance to poison damage, and you are immune to disease.</p>
+		</sheet>
+		<rules>
+			<stat inline="true" name="diabolist-covenant:damage_type" value="Poison" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+			
+		</rules>
+	</element>		
+	<element name="Festering Strike" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_FESTERING_STRIKE">
+		<description>
+			<p>At 7th level, you can take advantage of opponents riddled with disease. When you hit a creature with a weapon attack and that creature has the poisoned condition, you deal additional poison damage to the creature equal to your Consitution modifier (minimum of 1). Alternatively, you can end the poisoned condition on the target early to deal poison damage equal to your diabolist level. Once you do this, you can't do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>
+				<p>When you hit a creature with a weapon attack and that creature has the poisoned condition, you deal additional {{constitution:modifier}} poison damage. Alternatively, you can end the poisoned condition on the target early to deal {{diabolist:level}} poison damage.</p>
+			</description>
+		</sheet>
+	</element>	
+	<element name="Virulent Outbreak" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_VIRULENT_OUTBREAK">
+		<description>
+			<p>At 15th level, your diseases are more lethal than ever. Magical poison damage you deal now ignores immunity to poison damage, and creature's can't have advantage on saving throws against any diabolist spell or feature that would grant them the poisoned condition. Additionally, when the poisoned condition ends on a creature you gave it to, one creature of your choice within 10 feet of them must make a Constitution saving throw against your diabolist spell save DC or take poison damage equal to half your diabolist level (rounded down).</p>
+		</description>
+		<sheet>
+			<description>
+				<p>Magical poison damage you deal now ignores immunity to poison damage, and creatures can't have advantage on saving throws against any diabolist spell or feature that would grant them the poisoned condition. Additionally, when the poisoned condition ends on a creature you gave it to, one creature of your choice within 10ft of them must make a DC {{diabolist:dc}} Constitution saving throw or take {{diabolist:level:half}} poison damage.</p>
+			</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Covenant of Flame</name>
+		<update version="0.0.1">
+			<file name="diabolist-covenant-flame.xml" url="https://www.gmbinder.com/share/-NURlrWVNuug8T2AKFLa" />
+		</update>
+	</info>
+
+	<element name="Covenant of Flame" type="Archetype" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_COVENANT_FLAME">
+		<supports>Covenant</supports>
+		<description>
+			<p>Diabolists of the Covenant of Flame use fiery magic to burn away their foes. Of all the covenants, this is the most purely destructive, with unholy fire burning impossibly hot for impossibly long at the diabolist's whims. Ashes and cinders follow in their wake, and fires of destruction flicker and dance behind their eyes.</p>
+			<div element="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_FLAME_INCARNATE"/>
+			<div element="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_IMMOLATING_EMBERS"/>
+			<div element="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_PHEONIXS_VENGEANCE"/>
+		</description>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_FLAME_INCARNATE" level="2"/>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_IMMOLATING_EMBERS" level="7"/>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_PHEONIXS_VENGEANCE" level="15"/>
+		</rules>
+	</element>		
+	<element name="Flame Incarnate" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_FLAME_INCARNATE">
+		<description>
+			<p>At 2nd level, while you are corrupted, you gain the following benefits. You have resistance to fire damage. The additional damage you deal is fire damage. When you deal this damage to a creature, they take extra fire damage equal to the number of corruption dice spent. At the start of each of your turns, hostile creatures within 5 feet of you take fire damage equal to your Corruption stage + your Constitution modifier. This damage is dealt after you take on any additional stages of Corruption (if any).</p>
+		</description>
+		<sheet>
+			<p>At the start of each of your turns, hostile creatures within 5ft of you take fire damage equal to your Corruption stage + {{constitution:modifier}}. This damage is dealt after you take on any additional stages of Corruption (if any).</p>
+		</sheet>
+		<rules>
+			<stat inline="true" name="diabolist-covenant:damage_type" value="Fire" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<stat name="diabolist:tempestuous_movement" value="10" bonus="Tempestuous" />
+			
+		</rules>
+	</element>		
+	<element name="Immolating Embers" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_IMMOLATING_EMBERS">
+		<description>
+			<p>At 7th level, your fire magic persists and burns your enemies alive. Once per turn when you deal fire damage to a creature, you can choose to immolate that creature (no action required). If you do, they take fire damage at the start of their next turn equal to your Constitution modifier (minimum of 1).</p>
+		</description>
+		<sheet>
+			<description>
+				<p>Once per turn when you deal fire damage to a creature, you can choose to immolate that creature. If you do, they take {{constitutiton:modifier}} fire damage at the start of their next turn.</p>
+			</description>
+		</sheet>
+	</element>	
+	<element name="Pheonix's Vengeance" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_PHEONIXS_VENGEANCE">
+		<description>
+			<p>At 15th level, unholy fire ensures you live. When you are reduced to 0 hit points, you can use your reaction to instead drop to 1 hit point. When you do this, you unleash your fiery wrath on the creature who reduced you to 0 hit points. That creature immediately takes damage equal to twice your diabolist level; if this damage reduces them to 0 hit points, you then regain the same amount of hit points. Once you use this reaction twice, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="2/Short Rest">
+			<description>
+				<p>When you are reduced to 0 hit points, you can use your reaction to instead drop to 1 hit point. When you do this, you unleash your fiery wrath on the creature who reduced you to 0 hit points. That creature immediately takes damage equal to twice your diabolist level; if this damage reduces them to 0 hit points, you then regain the same amount of hit points.</p>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="diabolist:pheonix_vengeance" value="diabolist:level" />
+			<stat name="diabolist:pheonix_vengeance" value="diabolist:level" />
+		</rules>
+	</element>
+</elements>

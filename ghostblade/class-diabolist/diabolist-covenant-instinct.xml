@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Covenant of Instinct</name>
+		<update version="0.0.1">
+			<file name="diabolist-covenant-instinct.xml" url="https://www.gmbinder.com/share/-NURlrWVNuug8T2AKFLa" />
+		</update>
+	</info>
+
+	<element name="Covenant of Instinct" type="Archetype" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_COVENANT_INSTINCT">
+		<supports>Covenant</supports>
+		<description>
+			<p>Diabolists of the Covenant of Instinct embrace the primal power of wild animals. They are often partially transformed in some way, taking on an appearance not dissimilar to some lycanthropes. These diabolists wildly dart around the battlefield and hunt their prey like a feral animal.</p>
+			<div element="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_INSTINCT_INCARNATE"/>
+			<div element="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_CHASE_THE_SCENT"/>
+			<div element="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_APEX_PREDATOR"/>
+		</description>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_INSTINCT_INCARNATE" level="2"/>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_CHASE_THE_SCENT" level="7"/>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_APEX_PREDATOR" level="15"/>
+		</rules>
+	</element>		
+	<element name="Instinct Incarnate" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_INSTINCT_INCARNATE">
+		<description>
+			<p>When you gain this covenant at 1st level, you let out your inner animal. You gain resistance to acid damage. Additionally, your unarmed strikes deal 1d6 slashing damage instead of the normal damage and type for unarmed strikes. Your unarmed strikes also gain the light and finesse properties. The additional damage you deal is acid damage. At the start of each of your turns, you can immediately move a number of feet up to 5 + 5 x your Corruption stage without provoking opportunity attacks. </p>
+		</description>
+		<sheet>
+			<p>your unarmed strikes deal 1d6 slashing damage instead of the normal damage and type for unarmed strikes. Your unarmed strikes also gain the light and finesse properties At the start of each of your turns, you can immediately move a number of feet up to 5 + 5 x your Corruption stage without provoking opportunity attacks.</p>
+		</sheet>
+		<rules>
+			<stat inline="true" name="diabolist-covenant:damage_type" value="Acid" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+		</rules>
+	</element>		
+	<element name="Chase The Scent" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_CHASE_THE_SCENT">
+		<description>
+			<p>At 7th level, you have a supernatural sense for your prey. When you deal damage to a creature, you can decide to chase their scent for the next 10 minutes. While chasing a creature's scent, you can sense their approximate location. This sense allows you to ignore disadvantage on attacks rolls against that creature from being blinded, the creature being invisible, or the target being heavily obscured. You also have advantage on all checks to track or find the creature. There is no limit to how many creatures whose scent you can chase at once.</p>
+		</description>
+		<sheet>
+			<description>
+				<p>When you deal damage to a creature, you can decide to chase their scent for the next 10 minutes. While chasing a creature's scent, you can sense their approximate location. This sense allows you to ignore disadvantage on attacks rolls against that creature from being blinded, the creature being invisible, or the target being heavily obscured. You also have advantage on all checks to track or find the creature. There is no limit to how many creatures whose scent you can chase at once.</p>
+			</description>
+		</sheet>
+	</element>	
+	<element name="Apex Predator" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_APEX_PREDATOR">
+		<description>
+			<p>At 15th level, your strikes are as swift as a predator's. You can make 3 attacks, instead of 2, whenever you take the Attack action on your turn. Additionally, your unarmed strikes now deal 1d8 slashing damage.</p>
+		</description>
+		<sheet>
+			<description>
+				<p>Your unarmed strikes now deal an additional 1d8 slashing damage.</p>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="1" bonus="extra attack" />
+		</rules>
+	</element>
+</elements>

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Diabolist Revised</name>
+		<update version="0.0.1">
+			<file name="class-diabolist.xml" url="https://www.gmbinder.com/share/-NURlrWVNuug8T2AKFLa" />
+		</update>
+	</info>
+
+	<!-- Diabolist -->
+	<element name="Diabolist" type="Class" source="Mythical Conquest" id="ID_MYTHIC_CLASS_DIABOLIST">
+		<description>
+			<p>The dwarven woman, clad in bear furs, clenches her axe and crouches low. The snowbank obscures her from her prey: a gargantuan yeti. She lies in wait for several moments, waiting for it to get close enough. When it does, she leaps from her hiding position----and as she flies through the air, her skin begins to freeze while shards of ice crystallize around her.</p>
+			<p>A sick baron lies in his bed, his mind muddled from a burning fever. When an armored human enters his room, he is initially relieved----surely, this must be a paladin, come to cure his ailments! But his relief turns to fear as the human walks over to his bed side, puts a gauntleted hand on the nobleman's chest, and drains the sickly baron of what little remains of his life force.</p>
+			<p>Embers begin to pour from underneath the red scales of a male dragonborn, the sensation painful but familiar. As the embers surround him, he rushes towards the troll barreling towards him. The two clash, and the dragonborn plunges a red-hot shortsword into the troll's chest, felling the monstrous creature.</p>
+			<p>Diabolists are wielders of both weapons and dark magic. They let this magic consume them, trading their own vitality for greater and greater powers.</p>
+			<h4>MYSTERIOUS ORIGINS</h4>
+			<p>No two diabolists earn their powers in the same manner. It might be an inborn ability inherited from a planar ancestor, a curse from defiling sacred ground, or the boon of a patron entity. The only uniting element of these powers is their consumptive nature. In order to fully utilize the full potential of their magic, diabolists must sacrifice a part of themselves ----physically to be certain, but perhaps emotionally too. After all, must one become a monster to fight monsters? Many diabolists that find themselves fighting for a good cause justify their methodology in this way: the ends justify the means. Perhaps they do; that is for you to decide.</p>
+			<h4>NO POWER IS FREE</h4>
+			<p>As previously mentioned, the dark magic diabolists wield is consumptive, almost parasitic in nature. The source of a diabolist's power is their very vitality, be it the physical blood that runs in their veins or the sanctity of their own soul. This is what they sacrifice in order to achieve the great power they possess. Allowing this power to corrupt them, to take control, it runs quite a risk. In their darkest moments, they do not always have full control of it. A diabolist always has to think: is it worth it?</p>
+			<h3>CLASS FEATURES</h3>
+			<p>As a Diabolist, you get the following class features.</p>
+			<h5>HIT POINTS</h5>
+			<p>
+				<span class="emphasis">Hit Dice:</span> 1d10 per diabolist level<br />
+				<span class="emphasis">Hit Points at 1st Level:</span> 10 + your Constitution modifier<br />
+				<span class="emphasis">Hit Points at Higher Levels:</span> 1d10 (or 6) + your Constitution modifier per diabolist level after 1st
+			<br />
+			</p>
+			<h5>PROFICIENCIES</h5>
+			<p>
+				<span class="emphasis">Armor:</span> Light armor, medium armor, heavy armor, shields<br />
+				<span class="emphasis">Weapons:</span> Simple weapons, martial weapons<br />
+				<span class="emphasis">Tools:</span>None
+			</p>
+			<p>
+				<span class="emphasis">Saving Throws:</span>Constitution, Charisma<br />
+				<span class="emphasis">Skills:</span> Choose two from Arcana, Athletics, Acrobatics, Religion, Deception, and Intimidation
+			</p>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li> <i>(a)</i> scalemail, or <i>(b)</i> leather armor</li>
+				<li> <i>(a)</i> a martial melee weapon, or <i>(b)</i> two simple melee weapons </li>
+				<li> <i>(a)</i> a light crossbow and 20 bolts, or <i>(b)</i> two handaxes</li>
+				<li>Two daggers and a dungeoneer's pack</li>
+			</ul>
+			<h5 class="caption">THE DIABOLIST</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="left">Proficiency Bonus</td><td class="left">Features</td><td>Spells Known</td><td>Spell Slots</td><td>Slot Level</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>+2</td><td class="left">Profane Magic</td><td>2</td><td>1</td><td>1</td></tr>
+				<tr><td> 2nd</td><td>+2</td><td class="left">Fighting Style, Corruption, Unholy Covenant</td><td>2</td><td>1</td><td>1</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td class="left">Vile Fortitude</td><td>3</td><td>2</td><td>1</td></tr>
+				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td><td>3</td><td>2</td><td>1</td></tr>
+				<tr><td> 5th</td><td>+3</td><td class="left">Extra Attack, Corruption Improvement</td><td>4</td><td>2</td><td>2</td></tr>
+				<tr><td> 6th</td><td>+3</td><td class="left">Desecrated Strikes</td><td>4</td><td>2</td><td>2</td></tr>
+				<tr><td> 7th</td><td>+3</td><td class="left">Covenant Feature, Vile Fortitude Improvement</td><td>5</td><td>2</td><td>2</td></tr>
+				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td><td>5</td><td>2</td><td>2</td></tr>
+				<tr><td> 9th</td><td>+4</td><td class="left">Undaunted</td><td>6</td><td>2</td><td>2</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">-</td><td>6</td><td>2</td><td>3</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">Corruption Improvement</td><td>7</td><td>2</td><td>3</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td><td>7</td><td>2</td><td>3</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">Dark Diablerie</td><td>8</td><td>2</td><td>3</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Unholy Presence</td><td>8</td><td>2</td><td>4</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">Covenant Feature, Corruption Improvement</td><td>8</td><td>2</td><td>5</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td><td>8</td><td>2</td><td>5</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">Dark Diablerie Improvement</td><td>10</td><td>2</td><td>5</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">Vile Fortitude Improvement</td><td>10</td><td>2</td><td>5</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td><td>11</td><td>2</td><td>5</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Diabolic Sovereign</td><td>11</td><td>2</td><td>5</td></tr>
+			</table>
+			
+			<div element="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_PROFANE_MAGIC" /> 
+			<div element="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_UNHOLY_COVENANT" />
+			<div element="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_FIGHTING_STYLE" />
+			<div element="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_CORRUPTION" />
+			<div element="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_VILE_FORTITUDE" />
+			<div element="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_ABILITY_SCORE_IMPROVEMENT" />
+			<div element="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_EXTRA_ATTACK" />
+			<div element="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_DESECRATED_STRIKES" />
+			<div element="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_UNDAUNTED" />
+			<div element="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_DARK_DIABLERIE" />
+			<div element="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_UNHOLY_PRESENCE" /> 
+			<div element="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_DIABOLIC_SOVEREIGN" /> 
+			
+		</description>
+		<sheet display="false"/>
+		<setters>
+			<set name="short">An unholy amalgamation of self-sacrifice.</set>
+			<set name="hd">d10</set>
+		</setters>
+		<rules>
+
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MYTHIC_MULTICLASS_DIABOLIST" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_MYTHIC_MULTICLASS_DIABOLIST" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" requirements="!ID_MYTHIC_MULTICLASS_DIABOLIST" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_MYTHIC_MULTICLASS_DIABOLIST" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MYTHIC_MULTICLASS_DIABOLIST"  />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_MYTHIC_MULTICLASS_DIABOLIST"  />			
+			
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_MYTHIC_MULTICLASS_DIABOLIST"  />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA"  requirements="!ID_MYTHIC_MULTICLASS_DIABOLIST" />
+			
+			<select type="Proficiency" name="Skill Proficiency (Diabolist)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INTIMIDATION" number="2"  requirements="!ID_MYTHIC_MULTICLASS_DIABOLIST" />		
+			
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_PROFANE_MAGIC" level="1"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_UNHOLY_COVENANT" level="2"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_FIGHTING_STYLE" level="2"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_CORRUPTION" level="2"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_VILE_FORTITUDE" level="3"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_ABILITY_SCORE_IMPROVEMENT" level="4"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_EXTRA_ATTACK" level="5"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_DESECRATED_STRIKES" level="6"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_UNDAUNTED" level="9"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_DARK_DIABLERIE" level="13"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_UNHOLY_PRESENCE" level="14"/>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_DIABOLIC_SOVEREIGN" level="20"/>
+		</rules>
+		<multiclass id="ID_MYTHIC_MULTICLASS_DIABOLIST">
+			<prerequisite>Constitution 13 and Strength 13 or Dexterity 13</prerequisite>
+			<requirements>(([con:13]|[str:13])||[dex:13])</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, medium armor, shields, simple weapons, martial weapons.</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			</rules>
+		</multiclass>
+	</element>
+	
+	<element name="Profane Magic" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_PROFANE_MAGIC">
+		<description>
+			<p>Your dabbling with dark magic allows you to manifest spells. This power is sporadic and dangerous, making it less than safe to wield----but you are capable of it nonetheless.</p>
+			<h5>SPELLS KNOWN</h5>
+			<p>At 1st level, you know two 1st-level spells of your choice from the diabolist spell list. The Spells Known column of the Diabolist table shows when you learn more diabolist spells of your choice of 1st level or higher. A spell you choose must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach 5th level, for example, you learn a new diabolist spell, which can be 1st or 2nd level.</p>
+			<h5>SPELLCASTING ABILITIES</h5>
+			<p>Constitution is your spellcasting ability for your diabolist spells, as your magic is drawn from your very vitality. You use your Constitution whenever a diabolist spell refers to your spellcasting ability.</p>
+			<p class="indent">In addition, you use your Constitution modifier when setting the saving throw DC for a diabolist spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Constitution modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Constitution modifier</p>
+			</center>
+			<h5>SPELLCASTING FOCUS</h5>
+			<p>You can use your own body as a spellcasting focus for your diabolist spells, allowing you to ignore non-costly material components.</p>
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Diabolist" ability="Constitution" prepare="false" allowReplace="true">
+			<list known="true">Diabolist</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<stat name="diabolist:spellcasting:slots:1" value="1" level="1" />
+			<stat name="diabolist:spellcasting:slots:1" value="1" level="3" />
+			<stat name="diabolist:spellcasting:slots:2" value="2" level="5" />
+			<stat name="diabolist:spellcasting:slots:3" value="2" level="9" />
+			<stat name="diabolist:spellcasting:slots:4" value="1" level="13" />
+			<stat name="diabolist:spellcasting:slots:5" value="1" level="17" />
+			<select type="Spell" name="Spellcasting (Diabolist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="1" number="2" spellcasting="Diabolist"/>
+			<select type="Spell" name="Spellcasting (Diabolist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" number ="1" spellcasting="Diabolist" />
+			<select type="Spell" name="Spellcasting (Diabolist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="5" number ="1" spellcasting="Diabolist" />
+			<select type="Spell" name="Spellcasting (Diabolist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" number ="1" spellcasting="Diabolist" />
+			<select type="Spell" name="Spellcasting (Diabolist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" number ="1" spellcasting="Diabolist" />
+			<select type="Spell" name="Spellcasting (Diabolist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" number ="1" spellcasting="Diabolist" />
+			<select type="Spell" name="Spellcasting (Diabolist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" number ="2" spellcasting="Diabolist" />
+			<select type="Spell" name="Spellcasting (Diabolist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="15" number ="1" spellcasting="Diabolist" />
+			<select type="Spell" name="Spellcasting (Diabolist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="17" number ="2" spellcasting="Diabolist" />
+			<select type="Spell" name="Spellcasting (Diabolist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" number ="1" spellcasting="Diabolist" />
+			<stat name="diabolist:dc" value="8" />
+			<stat name="diabolist:dc" value="proficiency" />
+			<stat name="diabolist:dc" value="constitution:modifier" />
+		</rules>
+	</element>
+	
+	<element name="Unholy Covenant" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_UNHOLY_COVENANT">
+		<description>
+			<p>Choose the Covenant of Blood, the Covenant of Disaster, the Covenant of Flame, the Covenant of Frost, the Covenant of Instinct, the Covenant of Plague, or the Covenant of Shadow, each detailed at the end of the class description. Your choice grants you features at 2nd level and again at 7th, and 15th level.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Covenant" supports="Covenant" />
+		</rules>
+	</element>
+	
+	<element name="Fighting Styles" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_FIGHTING_STYLE">
+		<description>
+			<p>Starting at 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.</p>
+			<h5 class="caption">BLIND FIGHTING</h5>
+			<p>You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.</p>
+			<h5 class="caption">DEFENSE</h5>
+			<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
+			<h5 class="caption">DUELING</h5>
+			<p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+			<h5 class="caption">GREAT WEAPON FIGHTING</h5>
+			<p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
+			<h5 class="caption">ELDRITCH WARRIOR</h5>
+			<p>You learn two cantrips of your choice from the warlock spell list. They count as diabolist spells for you, and Constitution is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the warlock spell list.</p>
+			<h5 class="caption">TWO-WEAPON FIGHTING</h5>
+			<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>		
+		</description>
+		<rules>
+			<select type="Class Feature" name="Fighting Style" supports="Fighting Style, Diabolist" level="2"/>
+		</rules>
+	</element>
+	
+	<element name="Ability Score Improvement" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_ABILITY_SCORE_IMPROVEMENT">
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Diabolist 4)" supports="Improvement Option,Diabolist,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Diabolist 8)" supports="Improvement Option,Diabolist,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Diabolist 12)" supports="Improvement Option,Diabolist,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Diabolist 16)" supports="Improvement Option,Diabolist,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Diabolist 19)" supports="Improvement Option,Diabolist,19" level="19" />
+		</rules>
+	</element>
+	
+	<element name="Corruption" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_CORRUPTION">
+		<description>
+			<p>At 2nd level, you can take on the corruptive power of your covenant to bolster your own capabilities. As a Bonus Action, you enter a state of Corruption that lasts 1 minute or until the remove curse spell is cast. While Corrupted, your weapon attacks deal additional damage based on your Covenant equal to half of your Constitution Modifier for each consecutive turn you’ve been corrupted. Taking on this dark power has its drawbacks, however. While Corrupted, any hit points you regain are reduced by 1d4 for each consecutive turn you’ve been corrupted. You can use this feature twice per long rest, gaining more uses at 5th, 10th, and 16th level.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{diabolist_corruption:count}}/Long Rest">
+			<description>
+				<p>Enter a state of Corruption that lasts 1 minute or until the remove curse spell is cast. While Corrupted, your weapon attacks deal +{{constitution:modifier:half}} {{diabolist-covenant:damage_type}} damage for each consecutive turn you’ve been corrupted. While Corrupted, any hit points you regain are reduced by 1d4 for each consecutive turn you’ve been corrupted.</p>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="diabolist_corruption:count" value="2" level="2" />
+			<stat name="diabolist_corruption:count" value="1" level="5" />
+			<stat name="diabolist_corruption:count" value="1" level="11" />
+			<stat name="diabolist_corruption:count" value="1" level="16" />
+		</rules>
+	</element>
+	
+	<element name="Vile Fortitude" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_VILE_FORTITUDE">
+		<description>
+			<p>At 3rd level, unholy energy sustains your body. You no longer need to eat or drink.</p>
+			<p class="indent">Starting at 7th level, you regain 1 use of Corruption after a Short Rest.</p>
+			<p class="indent">Starting at 18th level, you regain 3 uses of Corruption after a Short Rest, for every 10 years that pass, your body only ages 1 year.</p>
+		</description>
+		<sheet>
+			<p level="3">You no longer need to eat or drink</p>
+			<p level="7">You no longer need to eat or drink, when you finish a short rest, you regain 1 use of Corruption.</p>
+			<p level="18">You no longer need to eat or drink, when you finish a short rest, you regain 3 uses of Corruption. Your body ages 10x slower.</p>
+		</sheet>
+	</element>
+	
+	<element name="Extra Attack" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_EXTRA_ATTACK">
+		<description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+	
+	<element name="Desecrated Strikes" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_DESECRATED_STRIKES">
+		<description>
+			<p>At 6th level, profane power suffuses your blows. Your weapon attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+		</description>
+		<sheet>
+			<p>Your weapon attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+		</sheet>
+	</element>	
+	
+	<element name="Undaunted" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_UNDAUNTED">
+		<description>
+			<p>At 9th level, your experience with unholy magic and dark secrets leave you with nothing to fear. You are immune to the frightened condition.</p>
+		</description>
+		<sheet>
+			<p>You are immune to the frightened condition.</p>
+		</sheet>
+		<rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FRIGHTENED" />
+        </rules>
+	</element>
+	
+	<element name="Dark Diablerie" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_DARK_DIABLERIE">
+		<description>
+			<p>At 13th level, you unlock an ancient incantation of dark power, called a diablerie. The diablerie allows you to upcast one Diabolist spell without expending a higher level spell slot. You must finish a long rest before you can do so again.</p>
+			<p class="indent">At 17th level, your diablere allows you to upcast another Diabolist spell without expending a higher level spell slot. You regain all expended uses of your Dark Diablerie when you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<p level="13">You can upcast 1 Diabolist Spell without expending a higher level spell slot.</p>
+			<p level="17">You can upcast 2 Diabolist Spells without expending a higher level spell slot.</p>
+		</sheet>
+	</element>
+	
+	<element name="Unholy Presence" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_UNHOLY_PRESENCE">
+		<description>
+			<p>At 14th level, your very presence is an affront to holiness. You and allied creatures within 10 feet of you have resistance to radiant damage. You can only grant this benefit while you are conscious.</p>
+		</description>
+		<sheet>
+			<description>
+				<p>Allied creatures within 10ft. of you are resistance to radiant damage. You only grant this benefit while conscious.</p>
+			</description>
+		</sheet>
+		<rules>
+		    <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+		</rules>
+	</element>
+	
+	<element name="Diabolic Sovereign" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_CLASS_DIABOLIST_FEATURE_DIABOLIC_SOVEREIGN">
+		<description>
+			<p>At 20th level, you are fully in control of your dark powers. You gain the following benefits.</p>
+			<p>When you roll initiative, you can use your reaction to use your Corruption feature.</p>
+			<p>While you are corrupted, whenever you deal critical damage, the additional damage provided by your Covenant deals triple damage, instead of double.</p>
+		</description>
+		<sheet>
+			<description>
+				<p>When rolling initiative, you can use your reaction to start Corruption. When critically striking while corrupted, the additional damage is 3x instead of 2x.</p>
+			</description>
+		</sheet>
+	</element>
+	
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DEFENSE">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING">
+		<supports>Diabolist</supports>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING">
+		<supports>Diabolist</supports>
+	</append>
+</elements>

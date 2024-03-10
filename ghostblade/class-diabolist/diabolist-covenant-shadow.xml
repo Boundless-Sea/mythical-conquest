@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Covenant of Shadow</name>
+		<update version="0.0.1">
+			<file name="diabolist-covenant-shadow.xml" url="https://www.gmbinder.com/share/-NURlrWVNuug8T2AKFLa" />
+		</update>
+	</info>
+
+	<element name="Covenant of Shadow" type="Archetype" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_COVENANT_SHADOW">
+		<supports>Covenant</supports>
+		<description>
+			<p>Diabolists of the Covenant of Shadows play with the eyes and minds of their enemies. More than just the dark itself is the fear of what the dark contains, and this covenant utilizes both to achieve victory. A diabolist of shadow is a truly terrifying enemy to face----if you even see them coming at all, as it is very likely you won't.</p>
+			<div element="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_SHADOW_INCARNATE"/>
+			<div element="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_OBFUSCATE"/>
+			<div element="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_CRIPPLING_FEAR"/>
+		</description>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_SHADOW_INCARNATE" level="2"/>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_OBFUSCATE" level="7"/>
+			<grant type="Archetype Feature" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_CRIPPLING_FEAR" level="15"/>
+		</rules>
+	</element>		
+	<element name="Shadow Incarnate" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_SHADOW_INCARNATE">
+		<description>
+			<p>When you gain this covenant at 2nd level, you can use shadows to your advantage. You gain resistance to psychic damage. Additionally, you can see normally in darkness, both magical and nonmagical, to a distance of 60 feet. The additional damage you deal is psychic damage. When you deal this damage to a creature, they must succeed on a Wisdom saving throw against your diabolist spell save DC or take a penalty to attack rolls made against you equal to half your Constitution Modifier until the end of their next turn.</p>
+		</description>
+		<sheet>
+			<p>When you deal psychic damage to a creature while corrupted, they must succeed on a DC {{diabolist:dc}} Wisdom saving throw or take a -{{constitution:modifier}} penalty to attack rolls made against you until the end of their next turn.</p>
+		</sheet>
+		<rules>
+			<stat inline="true" name="diabolist-covenant:damage_type" value="Psychic" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+			<grant type="Vision" id="ID_VISION_DARKVISION"/>
+			<stat name="darkvision:range" value="60"/>
+		</rules>
+	</element>		
+	<element name="Obfuscate" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_OBFUSCATE">
+		<description>
+			<p>At 7thth level, you can hide yourself or your allies in darkness. As an action, you can choose a willing creature within 30 feet of you, including possibly yourself. For the next minute, or until you lose concentration (as if you were concentrating on a spell), the chosen creature is considered heavily obscured, as magical shadows flit around them and make them hard to keep track of. Any creature that can see through magical darkness doesn't treat the target as heavily obscured.  Attacking a creature unaware of you throug this feature makes them frightened of you until the end of your next turn. Once you do this, you can't do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>
+				<p>Choose a willing creature within 30 feet of you, including possibly yourself. For the next minute, or until you lose concentration (as if you were concentrating on a spell), the chosen creature is considered heavily obscured, as magical shadows flit around them and make them hard to keep track of. Any creature that can see through magical darkness doesn't treat the target as heavily obscured. Attacking a creature unaware of you through this feature makes them frightened of you until the end of your next turn.</p>
+			</description>
+		</sheet>
+	</element>	
+	<element name="Crippling Fear" type="Archetype Feature" source="Mythical Conquest" id="ID_MYTHIC_ARCHETYPE_DIABOLIST_FEATURE_CRIPPLING_FEAR">
+		<description>
+			<p>At 15th level, you inspire true terror in your enemies. While you are within line of sight of any creature that is frightened of you, their speed is reduced to 0 and they have disadvantage on saving throws. Additionally, you are considered to be within line of sight of creatures that are frightened of you if you are within 30 feet of them, even if they cannot see you (such as you being heavily obscured, invisible, or behind cover, or the creature being blinded). When attacking a frightened creaure, they must succeed on a Wisdom saving throw against your diabolist spell save DC or be frightened of you until the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>
+				<p>While you are within line of sight of any creature that is frightened of you, their speed is reduced to 0 and they have disadvantage on saving throws. Additionally, you are considered to be within line of sight of creatures that are frightened of you if you are within 30ft of them, even if they cannot see you (such as you being heavily obscured, invisible, or behind cover, or the creature being blinded). When attacking a frightened creaure, they must succeed on a DC {{diabolist:dc}} Wisdom saving throw or be frightened of you until the end of your next turn.</p>
+			</description>
+		</sheet>
+	</element>
+</elements>

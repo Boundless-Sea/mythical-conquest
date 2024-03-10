@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Covenant of Blood</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="diabolist-covenant-blood.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-diabolist/diabolist-coveneant-blood.xml" />
 		</update>
 	</info>

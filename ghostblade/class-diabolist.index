@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Diabolist Class</name>
+		<description>The Diabolist Class made by u/KaiTries5.</description>
+		<author url="https://www.reddit.com/r/UnearthedArcana/comments/17bl6w7/kaitries_diabolist_v2_power_isnt_free_it_demands/">KaiTrie's</author>
+		<update version="0.0.1">
+			<file name="class-diabolist.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-diabolist.index" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-diabolist/source.xml" />
+		<file name="class-diabolist.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-diabolist/class-diabolist.xml" />
+		<file name="diabolist-covenant-blood.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-diabolist/diabolist-coveneant-blood.xml" />
+		<file name="diabolist-covenant-disaster.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-diabolist/diabolist-coveneant-disaster.xml" />
+		<file name="diabolist-covenant-flame.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-diabolist/diabolist-coveneant-flame.xml" />
+		<file name="diabolist-covenant-frost.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-diabolist/diabolist-coveneant-frost.xml" />
+		<file name="diabolist-covenant-instinct.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-diabolist/diabolist-coveneant-instinct.xml" />
+		<file name="diabolist-covenant-plague.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-diabolist/diabolist-coveneant-plague.xml" />
+		<file name="diabolist-covenant-shadow.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-diabolist/diabolist-coveneant-shadow.xml" />
+	</files>
+</index>

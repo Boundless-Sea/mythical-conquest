@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>Covenant of Disaster</name>
-		<update version="0.0.1">
-			<file name="diabolist-covenant-disaster.xml" url="https://www.gmbinder.com/share/-NURlrWVNuug8T2AKFLa" />
+		<update version="0.0.2">
+			<file name="diabolist-covenant-disaster.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-diabolist/diabolist-coveneant-disaster.xml" />
 		</update>
 	</info>
 

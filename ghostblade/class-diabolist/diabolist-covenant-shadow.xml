@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Covenant of Shadow</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="diabolist-covenant-shadow.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-diabolist/diabolist-coveneant-shadow.xml" />
 		</update>
 	</info>

@@ -4,7 +4,7 @@
 		<name>Diabolist Class</name>
 		<description>The Diabolist Class made by u/KaiTries5.</description>
 		<author url="https://www.reddit.com/r/UnearthedArcana/comments/17bl6w7/kaitries_diabolist_v2_power_isnt_free_it_demands/">KaiTrie's</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="class-diabolist.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-diabolist.index" />
 		</update>
 	</info>

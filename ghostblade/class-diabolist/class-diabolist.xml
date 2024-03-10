@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Diabolist Revised</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="class-diabolist.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-diabolist/class-diabolist.xml" />
 		</update>
 	</info>

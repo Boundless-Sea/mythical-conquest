@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Items</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="items.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/items.xml" />
 		</update>
 	</info>
@@ -146,7 +146,7 @@
 			<p><strong>Curse.</strong> This shield is cursed. Attuning to it curses you until you are targeted by the <em>remove curse</em> spell at 9th level or similar magic. Removing the shield fails to end the curse on you. Whenever a creature is killed by you within 5ft. you are bombarded with visions of Valik Millithor's regrets, and have disadvantage on all attack rolls until the end of your next turn.</p>
 		</description>
 		<setters>
-			<set name="keywords">shield</set>
+			<set name="keywords">light</set>
 			<set name="category">Magic Armor</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="type" addition="shield">Armor</set>
@@ -185,7 +185,29 @@
 			<stat name="ac:calculation" value="ac:night_sky_robe" bonus="calculation" equipped="[armor:none]" alt="Nights Embrace(Night Sky Robe)" />
 		</rules>
 	</element>
-	
+	<element name="Mortal Hold" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_MORTAL_HOLD">
+		<description>
+			<p>This ominous armor was obviously crafted by someone with an affinity for the undead. You gain a +3 bonus to AC while attuned to this magic armor. Additionally, you are immune to the poisoned condition and have immunity to poison damage. This armor can only be attuned by spellcasters.</p>
+			<p><strong>Legendary Resistance (1/day):</strong> While attuned to this armor, if you fail a saving throw you can choose to succeed instead.</p>
+			<p><strong>From Power, Death (1/day):</strong> When you roll damage for any spell you cast, you can add an amount of necrotic damage equal to half of your current hitpoints.</p>
+			<p><strong>From Life, Power:</strong> When you cast a spell, you can choose to expend hit points instead of a spell slot. When you do so, roll a number of d4s equal to the spell's level. Lower your total maximum hit points by an amount equal to the roll. Lost maximum hit points are recovered on completion of a long rest. If this effect would lower your maximum hitpoints to 0, the spell fails to cast.</p>
+			<p><strong>Curse.</strong> This armor is cursed and becoming attuned to it extends the curse to you. While cursed, you have disadvantage on death saving throws. If you die while attuned to this armor you cannot be resurrected by any means other than a wish spell. Additionally you arise as a zombie in 1d4 hours after death.</p>
+		</description>
+		<setters>
+			<set name="keywords">studded, leather, mortal</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="studded leather">Armor</set>
+			<set name="rarity">Legendary</set>
+			<set name="armor">Studded Leather</set>
+			<set name="enhancement">3</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISONED" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
 	<!-- Weaponry -->
 	<element name="Mithril" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_WEAPON_MYTHRIL">
 		<description>
@@ -396,5 +418,50 @@
 		</rules>
 	</element>
 	
+	<element name="Sinistorix - The Iron Corruptor" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_STAFF_SINISTORIX">
+		<description>
+			<p>Requires attunement by a Spellcaster.</p>
+			<p><strong>Magicae Nocte.</strong> When you are attuned to this staff you receive a +2 bonus to your spell attack bonus and your spell save DC.</p>
+			<p><strong>Dark Mists.</strong> This staff holds 4 charges, as a bonus action you may expend any number of charges to cast the spell Misty Step. For each charge you expend above one, the range of the spell increases by 30ft. The staff regains 1d4 charges at midnight.</p>
+			<p><strong>Wave of Discord.</strong> As an action you can unleash a wave of dark energy in a 20ft. cone. All creatures in the area have to make a Wisdom saving throw against your spell save DC. On a failed save they take 8d6 Necrotic damage and have disadvantage on all saving throws and attack rolls until the end of their next turn. On a successful save they only take half damage. You can use this feature once per long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">staff, sinistorix</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type">Wondrous Items</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="charges">4</set>
+			<set name="name-format">Sinistorix - The Iron Corruptor</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="2" />
+            <stat name="spellcasting:dc" value="2" />
+		</rules>
+	</element>
 	
+	<element name="Lorto's Ring of Shielding" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_RING_LORTOS_SHIELDING">
+		<description>
+			<p>A delicate ring adorned in curved grooves and topped by a jewel lapidated in the shape of a shield. It covers the wearer in a protective bearer.</p>
+			<p class="indent">While attuned to this ring, you have a +1 bonus to AC. Additionally, the ring has 4 charges which can be spent on the following ways:</p>
+			<p><strong>Attentive Ward (1 charge).</strong>If you're ever surprised at the beginning of combat, you may use your reaction to spend a charge and act normally.</p>
+			<p><strong>Reactive Ward (1 charge).</strong>At the beginning of combat, you can spend 1 charge to have advantage on the initiative roll.</p>
+			<p><strong>Underhand Ward (1 charge).</strong>If you make a Strength or Dexterity saving throw, you can use your reaction to spend 1 charge and add your Intelligence modifier to the roll. You can do so after rolling, but before the DM tells you if it's a success or a failure.</p>
+			<p>The ring recovers all charges at the end of a long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">ring</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type">Wondrous Items</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="charges">4</set>
+			<set name="name-format">Lorot's Ring of Shielding</set>
+		</setters>
+		<rules>
+			<stat name="ac:calculation" value="1" bonus="calculation" alt="Lorto's Ring of Shielding" />
+		</rules>
+	</element>
 </elements>

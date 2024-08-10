@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Items</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="items.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/items.xml" />
 		</update>
 	</info>
@@ -185,6 +185,7 @@
 			<stat name="ac:calculation" value="ac:night_sky_robe" bonus="calculation" equipped="[armor:none]" alt="Nights Embrace(Night Sky Robe)" />
 		</rules>
 	</element>
+	
 	<element name="Mortal Hold" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_MORTAL_HOLD">
 		<description>
 			<p>This ominous armor was obviously crafted by someone with an affinity for the undead. You gain a +3 bonus to AC while attuned to this magic armor. Additionally, you are immune to the poisoned condition and have immunity to poison damage. This armor can only be attuned by spellcasters.</p>
@@ -199,6 +200,7 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="slot">body</set>
 			<set name="type" addition="studded leather">Armor</set>
+			<set name="attunement">true</set>
 			<set name="rarity">Legendary</set>
 			<set name="armor">Studded Leather</set>
 			<set name="enhancement">3</set>
@@ -208,6 +210,8 @@
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
 		</rules>
 	</element>
+	
+	
 	<!-- Weaponry -->
 	<element name="Mithril" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_WEAPON_MYTHRIL">
 		<description>
@@ -408,7 +412,7 @@
 			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="type">Wondrous Items</set>
-			<set name="attunement">false</set>
+			<set name="attunement">true</set>
 			<set name="rarity">Legendary</set>
 			<set name="name-format">Ring of Nocturnal Shadows</set>
 		</setters>
@@ -462,6 +466,64 @@
 		</setters>
 		<rules>
 			<stat name="ac:calculation" value="1" bonus="calculation" alt="Lorto's Ring of Shielding" />
+		</rules>
+	</element>
+	
+	<element name="Burnt End" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_WEAPON_BURNT_END">
+		<description>
+			<p>A dark blade whose edge fades into softly billowing smoke and embers. You gain +2 bonus to attack and damage rolls you make with this magic weapon. This weapon has 3 charges and regains all charges after a long rest.</p>
+			<p><strong>Smoking Shank.</strong> While holding this weapon you can spend a charge to cast the Misty Step spell, vanishing into a puff of black smoke. If you teleport within 5ft. of another creature you can make an attack against it with this weapon as part of the spell.</p>
+			<p><strong>Where There's Fire.</strong> If you take 10 or more fire damage from a single source you can use your reaction to channel the fire into this blade and have this weapon regain a charge.</p>
+		</description>
+		<setters>
+			<set name="keywords">sword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any sword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="name-format">Burnt End</set>
+		</setters>
+	</element>
+	
+	<element name="Spear of Solixza" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_WEAPON_SPEAR_SOLIXZA">
+		<description>
+			<p>A spear burning with the radiance and heat of the sun. You gain a +5 bonus to attack and damage rolls you make with this magic weapon. This weapon has 5 charges and regains all charges after a long rest.</p>
+			<ul class="unstyled">
+				<li><strong>Angelic Language.</strong> You can speak, read, and write Celestial.</li>
+				<li><strong>Celestial Resistance.</strong> You have resistance to fire, necrotic and radiant damage.</li>
+				<li><strong>Divine Commandment.</strong> You Charisma score becomes 24, unless it is already 24 or higher.</li>
+				<li><strong>Feathered Wings.</strong> You sprout a beautiful pair of fiery wings that grant you a flying speed of 90 feet and the ability to hover.</li>
+				<li><strong>Truesight.</strong> Your eyes become scorching orbs of fire which mimic the sun. You can see in normal and magical darkness, see invisible creatures and objects, automatically detect visual illusions and succeed on saving throws against them, perceive the original form of a shapechanger or a creature that is transformed by magic, and see into the Ethereal Plane, all within a range of 120 feet.</li>
+			</ul>
+			<pclass="indent"><strong>Scorching Radiance.</strong> While holding this weapon, any creature that you consider an enemy that comes within 10ft. of the spear is set aflame, taking an additional 1d6 radiant damage at the start of its turn. This effect ends when the creature is no longer within 10ft. of the spear. Enemies that would regain hitpoints while under the effect of the spear must pass a DC 23 Constitution Saving Throw, healing for half of the original health points on a success, and none on a failure.</p>
+			<p class="indent"><strong>Sheltering Light.</strong> While attuned to this weapon, you learn the Sheltering Light spell, and can cast it by consuming 1 charge of this weapon.</p>
+			<p class="indent"><strong>Radiating Confidence.</strong> While in direct sunlight, you cannot be surprised.</p>
+			<p class="indent"><strong>Returning Weapon.</strong> While attuned to this weapon and using it for a ranged attack, you can call it back in a straight line as a free action to have it return to your hand, dealing 1d6 radiant damage to all creatures in its path of return.</p>
+		</description>
+		<setters>
+			<set name="keywords">spear</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any spear">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Mythic</set>
+			<set name="enhancement">5</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SPEARS</set>
+			<set name="name-format">Spear of Solixza</set>
+		</setters>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
+			<grant type="Spell" id="ID_JONOMAN3000_BDPC_SPELL_SHELTERING_LIGHT"/>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<stat name="charisma:score:set" value="24" bonus="base" />
+			<stat name="speed:fly" value="90" bonus="base" />
+			<grant type="Vision" id="ID_VISION_TRUESIGHT" />
+			<stat name="truesight:range" value="120" bonus="base" />
 		</rules>
 	</element>
 </elements>

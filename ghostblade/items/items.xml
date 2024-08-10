@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Items</name>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="items.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/items.xml" />
 		</update>
 	</info>
@@ -498,7 +498,7 @@
 				<li><strong>Feathered Wings.</strong> You sprout a beautiful pair of fiery wings that grant you a flying speed of 90 feet and the ability to hover.</li>
 				<li><strong>Truesight.</strong> Your eyes become scorching orbs of fire which mimic the sun. You can see in normal and magical darkness, see invisible creatures and objects, automatically detect visual illusions and succeed on saving throws against them, perceive the original form of a shapechanger or a creature that is transformed by magic, and see into the Ethereal Plane, all within a range of 120 feet.</li>
 			</ul>
-			<pclass="indent"><strong>Scorching Radiance.</strong> While holding this weapon, any creature that you consider an enemy that comes within 10ft. of the spear is set aflame, taking an additional 1d6 radiant damage at the start of its turn. This effect ends when the creature is no longer within 10ft. of the spear. Enemies that would regain hitpoints while under the effect of the spear must pass a DC 23 Constitution Saving Throw, healing for half of the original health points on a success, and none on a failure.</p>
+			<p class="indent"><strong>Scorching Radiance.</strong> While holding this weapon, any creature that you consider an enemy that comes within 10ft. of the spear is set aflame, taking an additional 1d6 radiant damage at the start of its turn. This effect ends when the creature is no longer within 10ft. of the spear. Enemies that would regain hitpoints while under the effect of the spear must pass a DC 23 Constitution Saving Throw, healing for half of the original health points on a success, and none on a failure.</p>
 			<p class="indent"><strong>Sheltering Light.</strong> While attuned to this weapon, you learn the Sheltering Light spell, and can cast it by consuming 1 charge of this weapon.</p>
 			<p class="indent"><strong>Radiating Confidence.</strong> While in direct sunlight, you cannot be surprised.</p>
 			<p class="indent"><strong>Returning Weapon.</strong> While attuned to this weapon and using it for a ranged attack, you can call it back in a straight line as a free action to have it return to your hand, dealing 1d6 radiant damage to all creatures in its path of return.</p>

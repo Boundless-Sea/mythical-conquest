@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Items</name>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="items.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/items.xml" />
 		</update>
 	</info>
@@ -494,7 +494,7 @@
 			<ul class="unstyled">
 				<li><strong>Angelic Language.</strong> You can speak, read, and write Celestial.</li>
 				<li><strong>Celestial Resistance.</strong> You have resistance to fire, necrotic and radiant damage.</li>
-				<li><strong>Divine Commandment.</strong> You Charisma score becomes 24, unless it is already 24 or higher.</li>
+				<li><strong>Divine Judgement.</strong> You Wisdom score becomes 24, unless it is already 24 or higher.</li>
 				<li><strong>Feathered Wings.</strong> You sprout a beautiful pair of fiery wings that grant you a flying speed of 90 feet and the ability to hover.</li>
 				<li><strong>Truesight.</strong> Your eyes become scorching orbs of fire which mimic the sun. You can see in normal and magical darkness, see invisible creatures and objects, automatically detect visual illusions and succeed on saving throws against them, perceive the original form of a shapechanger or a creature that is transformed by magic, and see into the Ethereal Plane, all within a range of 120 feet.</li>
 			</ul>
@@ -520,7 +520,7 @@
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
-			<stat name="charisma:score:set" value="24" bonus="base" />
+			<stat name="wisdom:score:set" value="24" bonus="base" />
 			<stat name="speed:fly" value="90" bonus="base" />
 			<grant type="Vision" id="ID_VISION_TRUESIGHT" />
 			<stat name="truesight:range" value="120" bonus="base" />

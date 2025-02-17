@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Items</name>
-		<update version="0.0.7">
+		<update version="0.0.8">
 			<file name="items.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/items.xml" />
 		</update>
 	</info>
@@ -422,7 +422,7 @@
 			<p><strong>Angelic Language.</strong> You can speak, read, and write Celestial.</p>
 			<p><strong>Celestial Resistance.</strong> You have resistance to fire and radiant damage.</p>
 			<p><strong>Divine Judgement.</strong> You Wisdom score becomes 22, unless it is already 22 or higher.</p>
-			<p><strong>Feathered Wings.</strong> You sprout a beautiful pair of fiery wings that grant you a flying speed of 45 feet and the ability to hover.</li>
+			<p><strong>Feathered Wings.</strong> You sprout a beautiful pair of fiery wings that grant you a flying speed of 45 feet and the ability to hover.</p>
 			<p class="indent"><strong>Scorching Radiance.</strong> While holding this weapon, any creature that you consider an enemy that comes within 10ft. of the spear is set aflame, taking an additional 1d6 radiant damage at the start of its turn. This effect ends when the creature is no longer within 10ft. of the spear. Enemies that would regain hitpoints while under the effect of the spear must pass a DC 23 Constitution Saving Throw, healing for half of the original health points on a success, and none on a failure.</p>
 			<p class="indent"><strong>Sheltering Light.</strong> While attuned to this weapon, you learn the Sheltering Light spell, and can cast it by consuming 1 charge of this weapon.</p>
 			<p class="indent"><strong>Radiating Confidence.</strong> While in direct sunlight, you cannot be surprised.</p>

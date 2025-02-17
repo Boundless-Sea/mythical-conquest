@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Items</name>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="items.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/items.xml" />
 		</update>
 	</info>
@@ -36,7 +36,7 @@
 	<!-- Armor/Shields -->
 	<element name="Mithril" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_SHIELD_MITHRIL">
 		<description>
-			<p>While equipped, you have a +2 Bonus to AC. While equipped with this sheild or armor, reduce incoming spell damage by 2.</p>
+			<p>While equipped, you have a +1 Bonus to AC. While equipped with this sheild or armor, reduce incoming spell damage by 2.</p>
 		</description>
 		<setters>
 			<set name="keywords">shield</set>
@@ -44,7 +44,7 @@
 			<set name="cost" currency="gp">1200</set>
 			<set name="type" addition="shield">Armor</set>
 			<set name="rarity">Rare</set>
-			<set name="enhancement">1</set>
+			<set name="enhancement">+1</set>
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD|ID_INTERNAL_ARMOR_GROUP_MEDIUM</set>
 			<set name="name-format">{{parent}} +{{enhancement}}</set>
 		</setters>
@@ -55,7 +55,7 @@
 	
 	<element name="Orichalcum" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_SHIELD_ORICHALCUM">
 		<description>
-			<p>While equipped, you have a +2 Bonus to AC. While equipped with this sheild or armor, when you are forced to make a Saving Throw regarding the effects of a spell, roll 1d6 and add it to your Saving Throw.</p>
+			<p>While equipped, you have a +1 Bonus to AC. While equipped with this sheild or armor, when you are forced to make a Saving Throw regarding the effects of a spell, roll 1d6 and add it to your Saving Throw.</p>
 		</description>
 		<setters>
 			<set name="keywords">shield</set>
@@ -63,54 +63,12 @@
 			<set name="cost" currency="gp">2000</set>
 			<set name="type" addition="shield">Armor</set>
 			<set name="rarity">Very Rare</set>
-			<set name="enhancement">1</set>
+			<set name="enhancement">+1</set>
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD|ID_INTERNAL_ARMOR_GROUP_MEDIUM</set>
 			<set name="name-format">{{parent}} +{{enhancement}}</set>
 		</setters>
 		<rules>
 			<stat name="ac:shield" value="2" bonus="enhancement" />
-		</rules>
-	</element>
-	
-	<element name="Buckler" type="Armor" source="Mythical Conquest" id="ID_MYTHIC_GEAR_BUCKLER">
-		<supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
-		<description>
-			<p>A buckler is made from wood or metal and is carried in one hand. Wielding a buckler increases your Armor Class by 1. You can benefit from only one buckler at a time.</p>
-		</description>
-		<setters>
-			<set name="category">Armor</set>
-			<set name="cost" currency="gp">10</set>
-			<set name="weight" lb="6">6 lb.</set>
-			<set name="slot">onehand,secondary</set>
-			<set name="type">Buckler</set>
-			<set name="armor">Buckler</set>
-			<set name="armorClass">+1</set>
-		</setters>
-		<rules>
-			<stat name="ac:shield" value="1" bonus="shield" />
-		</rules>
-	</element>
-	
-	<element name="Runic Shield" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_GEAR_RUNIC_SHIELD">
-		<supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
-		<description>
-			<p>A shield is made from rune carved metal, with runes carved in and is carried in one hand. Wielding a shield increases your Armor Class by 1. You can benefit from only one shield at a time.</p>
-		</description>
-		<setters>
-			<set name="keywords">shield</set>
-			<set name="category">Magic Armor</set>
-			<set name="cost" currency="gp">75</set>
-			<set name="weight" lb="6">6 lb.</set>
-			<set name="slot">onehand,secondary</set>
-			<set name="type">Shield</set>
-			<set name="armor">Shield</set>
-			<set name="armorClass">+1</set>
-			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD</set>
-		</setters>
-		<rules>
-			<stat name="ac:shield" value="1" bonus="shield" />
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
-		    <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
 		</rules>
 	</element>
 	
@@ -126,13 +84,13 @@
 			<set name="slot">body</set>
 			<set name="type" addition="plate">Armor</set>
 			<set name="attunement">true</set>
-			<set name="rarity">Legendary</set>
+			<set name="rarity">Artifact</set>
 			<set name="armor">Plate</set>
-			<set name="enhancement">+3</set>
+			<set name="enhancement">+2</set>
 			<set name="name-format">Vile Fortitude</set>
 		</setters>
 		<rules>
-			<stat name="ac:armored:enhancement" value="3" bonus="enhancement" />
+			<stat name="ac:armored:enhancement" value="2" bonus="enhancement" />
 			<grant type="Grants" id="ID_INTERNAL_GRANTS_IGNORE_STEALTH_DISADVANTAGE" />
 			<grant type="Grants" id="ID_INTERNAL_GRANT_ARMOR_IGNORE_STRENGTH_REQUIREMENT" />
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
@@ -151,13 +109,13 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="type" addition="shield">Armor</set>
 			<set name="attunement">true</set>
-			<set name="rarity">Legendary</set>
-			<set name="enhancement">2</set>
+			<set name="rarity">Artifact</set>
+			<set name="enhancement">1</set>
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
 			<set name="name-format">Vile Remembrance</set>
 		</setters>
 		<rules>
-			<stat name="ac:shield" value="2" bonus="enhancement" />
+			<stat name="ac:shield" value="1" bonus="enhancement" />
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
 		</rules>
 	</element>
@@ -215,14 +173,14 @@
 	<!-- Weaponry -->
 	<element name="Mithril" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_WEAPON_MYTHRIL">
 		<description>
-			<p>You have a +2 bonus to attack and damage rolls made with this magic weapon that utilize spells.</p>
+			<p>You have a +1 bonus to attack and damage rolls made with this magic weapon that utilize spells.</p>
 		</description>
 		<setters>
 			<set name="category">Magic Weapons</set>
 			<set name="cost" currency="gp">4500</set>
 			<set name="type" addition="any">Weapon</set>
 			<set name="rarity">Rare</set>
-			<set name="enhancement">2</set>
+			<set name="enhancement">1</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</set>
 			<set name="name-format">{{parent}} +{{enhancement}}</set>
 		</setters>
@@ -230,7 +188,7 @@
 	
 	<element name="Orichalcum" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_WEAPON_ORICHALCUM">
 		<description>
-			<p>You have a +3 bonus to attack and damage rolls made with this magic weapon that utilize spells.</p>
+			<p>You have a +2 bonus to attack and damage rolls made with this magic weapon that utilize spells.</p>
 		</description>
 		<setters>
 			<set name="category">Magic Weapons</set>
@@ -240,22 +198,6 @@
 			<set name="enhancement">2</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</set>
 			<set name="name-format">{{parent}} +{{enhancement}}</set>
-		</setters>
-	</element>
-	
-	<element name="Runic Handaxe" type="Weapon" source="Mythical Conquest" id="ID_MYTHIC_WEAPON_RUNIC_HANDAXE">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
-		<description>
-			<p></p>
-		</description>
-		<setters>
-			<set name="category">Weapons</set>
-			<set name="cost" currency="gp">?</set>
-			<set name="weight" lb="2">2 lb.</set>
-			<set name="slot">onehand</set>
-			<set name="range">20/60</set>
-			<set name="damage">1d8 slashing +2 radiant</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE</set>
 		</setters>
 	</element>
 	
@@ -311,20 +253,6 @@
 		</setters>
 	</element>
 	
-	<element name="Runic Staff" type="Weapon" source="Mythical Conquest" id="ID_MYTHIC_WEAPON_RUNIC_STAFF">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
-		<description>
-			<p>This runic staff powers itself off the worlds natural mana, allowing one to focus their powers through it. Usually used for helping those with weak magic unleash their expected potential.</p>
-		</description>
-		<setters>
-			<set name="category">Weapons</set>
-			<set name="cost" currency="gp">100</set>
-			<set name="weight" lb="4">4 lb.</set>
-			<set name="slot">onehand</set>
-			<set name="range">20/60</set>
-		</setters>
-	</element>
-	
 	<element name="Cloudstriker Spine" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_WEAPON_CLOUDSTRIKER_SPINE">
 		<description>
 			<p>Attacks made with this weapon deal an additional 1d4 Lightning Damage and stack a charge of Lightning.</p>
@@ -363,7 +291,7 @@
 			<set name="slot">two-handed</set>
 			<set name="weapon">Greataxe</set>
 			<set name="damage" type="slashing">1d12+4 Slashing</set>
-			<set name="enhancement">4</set>
+			<set name="enhancement">2</set>
 			<set name="name-format">Godsbane</set>
 		</setters>
 	</element>
@@ -371,7 +299,7 @@
 	<element name="Vile Sting" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_WEAPON_VILE_STING">
 		<description>
 			<p>You gain a +3 bonus to attack and damage rolls made with this magic weapon, and deal an additional 4d6 Necrotic damage upon striking a target. You also gain access to Bounding Necrosis, which can be used twice per long rest.</p>
-			<p class="indent">Upon landing a critical strike, you may use your reaction to take advantage of your opponents sudden affliction to make another attack roll against the target. When critically striking an opponent, heal for half of the damage dealt by the additional Necrotic damage.</p>
+			<p class="indent">Upon landing a critical strike, you may use your reaction to take advantage of your opponents sudden affliction to make another attack roll against the target. When critically striking an opponent, heal 3d8 hitpoints.</p>
 			<p><strong>Curse.</strong> This sword is cursed. Attuning to it curses you until you are targeted by the <em>remove curse</em> spell at 9th level or similar magic. Dropping the sword fails to end the curse on you. Whenever you kill a creature with this blade, you kill a part of your own self, after killing 1000 enemies with this blade, your allignment finally becomes chaotic evil and remains as such even if this curse is removed.</p>
 		</description>
 		<setters>
@@ -380,7 +308,7 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="type" addition="any sword">Weapon</set>
 			<set name="attunement">true</set>
-			<set name="rarity">Legendary</set>
+			<set name="rarity">Artifact</set>
 			<set name="enhancement">3</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
 			<set name="name-format">Vile Sting</set>
@@ -490,14 +418,11 @@
 	
 	<element name="Spear of Solixza" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_WEAPON_SPEAR_SOLIXZA">
 		<description>
-			<p>A spear burning with the radiance and heat of the sun. You gain a +5 bonus to attack and damage rolls you make with this magic weapon. This weapon has 5 charges and regains all charges after a long rest.</p>
-			<ul class="unstyled">
-				<li><strong>Angelic Language.</strong> You can speak, read, and write Celestial.</li>
-				<li><strong>Celestial Resistance.</strong> You have resistance to fire, necrotic and radiant damage.</li>
-				<li><strong>Divine Judgement.</strong> You Wisdom score becomes 24, unless it is already 24 or higher.</li>
-				<li><strong>Feathered Wings.</strong> You sprout a beautiful pair of fiery wings that grant you a flying speed of 90 feet and the ability to hover.</li>
-				<li><strong>Truesight.</strong> Your eyes become scorching orbs of fire which mimic the sun. You can see in normal and magical darkness, see invisible creatures and objects, automatically detect visual illusions and succeed on saving throws against them, perceive the original form of a shapechanger or a creature that is transformed by magic, and see into the Ethereal Plane, all within a range of 120 feet.</li>
-			</ul>
+			<p>A spear burning with the radiance and heat of the sun. You gain a +3 bonus to attack and damage rolls you make with this magic weapon. This weapon has 5 charges and regains all charges after a long rest.</p>
+			<p><strong>Angelic Language.</strong> You can speak, read, and write Celestial.</p>
+			<p><strong>Celestial Resistance.</strong> You have resistance to fire and radiant damage.</p>
+			<p><strong>Divine Judgement.</strong> You Wisdom score becomes 22, unless it is already 22 or higher.</p>
+			<p><strong>Feathered Wings.</strong> You sprout a beautiful pair of fiery wings that grant you a flying speed of 45 feet and the ability to hover.</li>
 			<p class="indent"><strong>Scorching Radiance.</strong> While holding this weapon, any creature that you consider an enemy that comes within 10ft. of the spear is set aflame, taking an additional 1d6 radiant damage at the start of its turn. This effect ends when the creature is no longer within 10ft. of the spear. Enemies that would regain hitpoints while under the effect of the spear must pass a DC 23 Constitution Saving Throw, healing for half of the original health points on a success, and none on a failure.</p>
 			<p class="indent"><strong>Sheltering Light.</strong> While attuned to this weapon, you learn the Sheltering Light spell, and can cast it by consuming 1 charge of this weapon.</p>
 			<p class="indent"><strong>Radiating Confidence.</strong> While in direct sunlight, you cannot be surprised.</p>
@@ -510,20 +435,17 @@
 			<set name="type" addition="any spear">Weapon</set>
 			<set name="attunement">true</set>
 			<set name="rarity">Mythic</set>
-			<set name="enhancement">5</set>
+			<set name="enhancement">3</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SPEARS</set>
 			<set name="name-format">Spear of Solixza</set>
 		</setters>
 		<rules>
 			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
 			<grant type="Spell" id="ID_JONOMAN3000_BDPC_SPELL_SHELTERING_LIGHT"/>
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
-			<stat name="wisdom:score:set" value="24" bonus="base" />
-			<stat name="speed:fly" value="90" bonus="base" />
-			<grant type="Vision" id="ID_VISION_TRUESIGHT" />
-			<stat name="truesight:range" value="120" bonus="base" />
+			<stat name="wisdom:score:set" value="22" bonus="base" />
+			<stat name="speed:fly" value="45" bonus="base" />
 		</rules>
 	</element>
 </elements>

@@ -4,7 +4,7 @@
 		<name>Ghostblade Class</name>
 		<description>The Ghostblade Class adds a new class inspired by The King's Avatar and Dungeon Fighter Online's Soul Bender Class.</description>
 		<author url="https://www.reddit.com/user/kodabeeer">Kodabeer</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="class-ghostblade.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-ghostblade.index" />
 		</update>
 	</info>

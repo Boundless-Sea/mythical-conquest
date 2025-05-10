@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Items</name>
-		<update version="0.0.8">
+		<update version="0.0.9">
 			<file name="items.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/items.xml" />
 		</update>
 	</info>
@@ -20,7 +20,7 @@
 		</setters>
 	</element>
 	
-		<element name="Incendiary Shells" type="Item" source="Mythical Conquest" id="ID_MYTHIC_INCENDIARY_SHELLS">
+	<element name="Incendiary Shells" type="Item" source="Mythical Conquest" id="ID_MYTHIC_INCENDIARY_SHELLS">
 		<description>
 			<p>Shells that light their targets on fire.</p>
 		</description>
@@ -74,7 +74,7 @@
 	
 	<element name="Vile Fortitude" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_VILE_ARMOR">
 		<description>
-			<p>Gain resistance to Necrotic Damage. When you succeed a saving throw induced by a spells effect, if you would still take damage, you take no damage instead and gain +2 to Spell Saving Throws until the end of your next turn. You are considered proficient with this armor even if you lack proficiency with heavy armor, and do not suffer a stealth disadvantage for wearing it.</p>
+			<p>Gain resistance to Necrotic Damage. When you succeed a saving throw induced by a spells effect, if you would still take damage, you resist it. You are considered proficient with this armor even if you lack proficiency with heavy armor, and do not suffer a stealth disadvantage for wearing it.</p>
 			<p><strong>Curse.</strong> This armor is cursed. Attuning to it curses you until you are targeted by the <em>remove curse</em> spell at 9th level or similar magic. Removing the armor fails to end the curse on you. Whenever you are downed by radiant damage, you become vulnerable to all damage sources until stabilized.</p>
 		</description>
 		<setters>
@@ -94,6 +94,31 @@
 			<grant type="Grants" id="ID_INTERNAL_GRANTS_IGNORE_STEALTH_DISADVANTAGE" />
 			<grant type="Grants" id="ID_INTERNAL_GRANT_ARMOR_IGNORE_STRENGTH_REQUIREMENT" />
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_PLATE" />		
+		</rules>
+	</element>
+	
+	<element name="Faiths Endurance" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_FAITH_ARMOR">
+		<description>
+			<p>Gain resistance to Radiant Damage. When you succeed a saving throw induced by a spells effect, if you would still take damage, you resist it. You are considered proficient with this armor even if you lack proficiency with heavy armor, and do not suffer a stealth disadvantage for wearing it.</p>
+		</description>
+		<setters>
+			<set name="keywords">heavy</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="plate">Armor</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Artifact</set>
+			<set name="armor">Plate</set>
+			<set name="enhancement">+2</set>
+			<set name="name-format">Faiths Endurance</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="2" bonus="enhancement" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_IGNORE_STEALTH_DISADVANTAGE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_ARMOR_IGNORE_STRENGTH_REQUIREMENT" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_PLATE" />		
 		</rules>
 	</element>
@@ -117,6 +142,27 @@
 		<rules>
 			<stat name="ac:shield" value="1" bonus="enhancement" />
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+		</rules>
+	</element>
+	
+	<element name="Faiths Respite" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_SHIELD_VILE_REMEMBRANCE">
+		<description>
+			<p>While holding this shield, you have a bonus to AC determined by the shield's rarity. This bonus is in addition to the shield's normal bonus to AC. You also gain resistance to piercing damage. While being flanked, enemies do not get advantage when attacking you.</p>
+		</description>
+		<setters>
+			<set name="keywords">light</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Artifact</set>
+			<set name="enhancement">1</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format">Faiths Respite</set>
+		</setters>
+		<rules>
+			<stat name="ac:shield" value="1" bonus="enhancement" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
 		</rules>
 	</element>
 	
@@ -168,6 +214,8 @@
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
 		</rules>
 	</element>
+	
+	
 	
 	
 	<!-- Weaponry -->
@@ -290,7 +338,6 @@
 			<set name="weight" lb="4">195 lb.</set>
 			<set name="slot">two-handed</set>
 			<set name="weapon">Greataxe</set>
-			<set name="damage" type="slashing">1d12+4 Slashing</set>
 			<set name="enhancement">2</set>
 			<set name="name-format">Godsbane</set>
 		</setters>
@@ -328,6 +375,62 @@
 				<description level="11">As an action, you can propel a blade of arcane energy from Vile Sting at a creature within 15ft. Make an attack roll against the target. On a hit, the target takes 3d8 necrotic damage. The blade then leaps to a different target of your choice within 15ft. of the original target. Make a new attack roll against the new target, and make a new damage roll. On a hit, the blade can continue leaping to a third target. A creature can only be targeted once by each use of this technique.</description>
 				<description level="17">As an action, you can propel a blade of arcane energy from Vile Sting at a creature within 15ft. Make an attack roll against the target. On a hit, the target takes 4d8 necrotic damage. The blade then leaps to a different target of your choice within 15ft. of the original target. Make a new attack roll against the new target, and make a new damage roll. On a hit, the blade can continue leaping to a third target. A creature can only be targeted once by each use of this technique.</description>
 			</sheet>
+	</element>
+	
+	<element name="Sword of Faith" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_WEAPON_SWORD_FAITH">
+		<description>
+			<p>You gain a +3 bonus to attack and damage rolls made with this magic weapon, and deal an additional 4d6 Radiant damage upon striking a target. You also gain access to Bounding Radiance, which can be used twice per long rest.</p>
+			<p class="indent">Upon landing a critical strike, you may use your reaction to take advantage of your opponents sudden affliction to make another attack roll against the target. When critically striking an opponent, heal 3d8 hitpoints.</p>
+		</description>
+		<setters>
+			<set name="keywords">sword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any sword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Artifact</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="name-format">Sword of Faith</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_MYTHIC_ITEM_FEATURE_SWORD_FAITH_BOUNDING_RADIANCE" />
+		</rules>
+	</element>
+	
+	<element name="Bounding Radiance" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_ITEM_FEATURE_SWORD_FAITH_BOUNDING_RADIANCE">
+			<description>
+				<p>As an action, you can propel a blade of arcane energy from Vile Sting at a creature within 15ft. Make an attack roll against the target. On a hit, the target takes 1d8 radiant damage. The blade then leaps to a different target of your choice within 15ft. of the original target. Make a new attack roll against the new target, and make a new damage roll. On a hit, the blade can continue leaping to a third target. A creature can only be targeted once by each use of this technique. This technique's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+			</description>
+			<sheet>
+				<description>As an action, you can propel a blade of arcane energy from Vile Sting at a creature within 15ft. Make an attack roll against the target. On a hit, the target takes 1d8 radiant damage. The blade then leaps to a different target of your choice within 15ft. of the original target. Make a new attack roll against the new target, and make a new damage roll. On a hit, the blade can continue leaping to a third target. A creature can only be targeted once by each use of this technique.</description>
+				<description level="5">As an action, you can propel a blade of arcane energy from Vile Sting at a creature within 15ft. Make an attack roll against the target. On a hit, the target takes 2d8 radiant damage. The blade then leaps to a different target of your choice within 15ft. of the original target. Make a new attack roll against the new target, and make a new damage roll. On a hit, the blade can continue leaping to a third target. A creature can only be targeted once by each use of this technique.</description>
+				<description level="11">As an action, you can propel a blade of arcane energy from Vile Sting at a creature within 15ft. Make an attack roll against the target. On a hit, the target takes 3d8 radiant damage. The blade then leaps to a different target of your choice within 15ft. of the original target. Make a new attack roll against the new target, and make a new damage roll. On a hit, the blade can continue leaping to a third target. A creature can only be targeted once by each use of this technique.</description>
+				<description level="17">As an action, you can propel a blade of arcane energy from Vile Sting at a creature within 15ft. Make an attack roll against the target. On a hit, the target takes 4d8 radiant damage. The blade then leaps to a different target of your choice within 15ft. of the original target. Make a new attack roll against the new target, and make a new damage roll. On a hit, the blade can continue leaping to a third target. A creature can only be targeted once by each use of this technique.</description>
+			</sheet>
+	</element>
+	
+	<element name="Tarnished Ring of Faith" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_RING_TARNISHED_FAITH">
+		<description>
+			<p>A ring once worn by the high elf known as Dianne, to symbolize her love for Valik.</p>
+			<p><strong>Empowered.</strong> While wearing this ring, gain +2 Strength (maximum 20).</p>
+			<p><strong>Numb.</strong> While wearing this ring, gain resistance to Cold damage and immunity to the Paralyzed condition.</p>
+			<p><strong>Cleansing Cold(1/Long Rest).</strong> You can use your reaction when you take damage to send a wave of freezing cold energy through your body. The damage is reduced by an amount equal to 2d6 + {{constitution:modifier}}.</p>  
+		</description>
+		<setters>
+			<set name="keywords">ring</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type">Wondrous Items</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="name-format">Ring of Nocturnal Shadows</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_STRENGTH_INCREASE_2"/>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PARALYZED"/>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD"/>
+		</rules>
 	</element>
 	
 	<element name="Ring of Nocturnal Shadows" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_RING_NOCTURNAL_SHADOWS">
@@ -446,6 +549,31 @@
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
 			<stat name="wisdom:score:set" value="22" bonus="base" />
 			<stat name="speed:fly" value="45" bonus="base" />
+		</rules>
+	</element>
+	
+	<element name="Bahamut's Unspoken Council" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_WEAPON_BAHAMUTS_UNSPOKEN_COUNCIL">
+		<description>
+			<p>A dark blade whose edge fades into softly billowing smoke and embers. This weapon has 6 charges and regains 1d6 charges at dawn, you must have a Strength score of 16+ to use this weapon. It has the additional properties:</p>
+			<p><strong>Detect Wealth.</strong> As an action, while holding the sword, you can point this weapon up into the air to detect huge monetary value. Until the next minute, the sword points toward the concentration of valuables within 300ft. that has the highest collective worth. This sword doesn't take into account magic items, and it can't point towards a concentration that is in an antimagic field or is protected from divination magic, as through nondetection.</p>
+			<p><strong>Draconic Fear.</strong> As an action, while holding the sword, you can expend one charge, producing an ancient dragon's roar. Each creature of choice within 30ft. that can hear it must make a DC {{bahamut:dc}} Wisdom Save. Failure: Creature becomes frightened until the end of your next turn. While frightened in this way, a creature must take the Dash action and move away from you by the safest available route on its turns.</p>
+			<p><strong>Dragons Warmth.</strong> The sword grows warm when you are 1200ft. or closer to a dragon.</p>
+		</description>
+		<setters>
+			<set name="keywords">Greatsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="Greatsword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Artifact</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Greatsword</set>
+			<set name="name-format">Bahamuts Unspoken Council</set>
+		</setters>
+		<rules>
+			<stat name="bahamut:dc" value="8" />
+			<stat name="bahamut:dc" value="charisma:modifier" />
+			<stat name="bahamut:dc" value="proficiency" />
 		</rules>
 	</element>
 </elements>

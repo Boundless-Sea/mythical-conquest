@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="ghost-haunts.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-ghostblade/ghost-haunts.xml" />
 		</update>
 	</info>
@@ -234,4 +234,34 @@
 			<description>Creatures within the haunt range ({{haunt:range}}ft.) must pass a DC ((haunt:dc)) DEX Save, on a fail they take 1d8 Lightning Damage and become connected by lightning, when one of the chained enemies takes damage, all other connected enemies take 1d6 Lightning Damage, on a success they take half as much damage.</description>
 		</sheet>
 	</element>
+	<element name="Retribution Haunt" type="Class Feature" source="Homebrewery" id="ID_MYTHIC_CLASS_FEATURE_GHOST_HAUNTS_RETRIBUTION">
+		<supports>Ghost Haunt</supports>
+		<prerequisite>14th level</prerequisite>
+		<requirements>[level:14]</requirements>
+		<description>
+			<p>While in the haunt, creatures are harassed by ghastly children, preventing them from seeing targets other than one creature specified by the haunter for one turn.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1 Ghost">
+			<description>While in the haunt range ({{haunt:range}}ft.), creatures must make a DC {{haunt:dc}} CHA Save or be unable to target any creature besides the one summoning this haunt, on a success, enemies have a 1d8 penalty to attack rolls to hit a different creature than specified.</description>
+		</sheet>
+	</element>
+	<element name="Ghostblade, LV14: Retribution Haunt" type="Item" source="Mythical Conquest" id="ID_MYTHIC_ITEM_OCF_GHOST_HAUNTS_RETRIBUTION">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_MYTHIC_CLASS_FEATURE_GHOST_HAUNTS_RETRIBUTION" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">fourteenth level, 14th level, Haunt</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_MYTHIC_CLASS_FEATURE_GHOST_HAUNTS_RETRIBUTION" requirements="[level:ghostblade:14]"/>
+		</rules>
+	</element>
+	
 </elements>

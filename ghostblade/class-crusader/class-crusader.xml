@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Crusader</name>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="class-crusader.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/class-crusader/class-crusader.xml" />
 		</update>
 	</info>
@@ -175,7 +175,8 @@
 			<p>Starting at 2nd Level, you may select a creature within melee range of you to touch and bestow your blessing as a knight of the divine order. The touched creature regains hit points equal to 3d6 + your Charisma modifier. If the creature affected would gain hit points above their maximum, instead they gain temporary hit points equal to the remaining value. These temporary hit points last until the end of their next turn. This healing skill increases to 4d6 at 5th Level, 5d6 at 10th level and 6d6 at 15th. You may use this feature a number of times equal to your Charisma modifier, regaining all use after you finish a long rest.</p>
 		</description>
 		<sheet usage="{{charisma:modifier}}/Long Rest">
-			<description level="2">You may select a creature within melee range of you to touch and bestow your blessing. The touched creature regains hit points equal to 3d6 + {{charisma:modifier}}. If the creature affected would gain hit points above their maximum, instead they gain temporary hit points equal to the remaining value. These temporary hit points last until the end of their next turn.</description>
+			
+			<description>You may select a creature within melee range of you to touch and bestow your blessing. The touched creature regains hit points equal to 3d6 + {{charisma:modifier}}. If the creature affected would gain hit points above their maximum, instead they gain temporary hit points equal to the remaining value. These temporary hit points last until the end of their next turn.</description>
 			<description level="5">You may select a creature within melee range of you to touch and bestow your blessing. The touched creature regains hit points equal to 4d6 + {{charisma:modifier}}. If the creature affected would gain hit points above their maximum, instead they gain temporary hit points equal to the remaining value. These temporary hit points last until the end of their next turn.</description>
 			<description level="10">You may select a creature within melee range of you to touch and bestow your blessing. The touched creature regains hit points equal to 5d6 + {{charisma:modifier}}. If the creature affected would gain hit points above their maximum, instead they gain temporary hit points equal to the remaining value. These temporary hit points last until the end of their next turn.</description>
 			<description level="15">You may select a creature within melee range of you to touch and bestow your blessing. The touched creature regains hit points equal to 6d6 + {{charisma:modifier}}. If the creature affected would gain hit points above their maximum, instead they gain temporary hit points equal to the remaining value. These temporary hit points last until the end of their next turn.</description>

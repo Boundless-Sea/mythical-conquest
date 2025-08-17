@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<update version="0.2.15">
+		<update version="0.2.16">
 			<file name="mythical-conquest.index" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/mythical-conquest.index" />
 		</update>
 	</info>

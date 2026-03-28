@@ -2,75 +2,52 @@
 <elements>
 	<info>
 		<name>Items</name>
-		<update version="0.0.9">
+		<update version="0.0.10">
 			<file name="items.xml" url="https://raw.githubusercontent.com/Boundless-Sea/mythical-conquest/master/ghostblade/items.xml" />
 		</update>
 	</info>
-	<!-- Ammunition -->
-	<element name="Mithril Bullet" type="Item" source="Mythical Conquest" id="ID_MYTHIC_MINICANNONBALL">
-		<description>
-			<p>Mithril Bullets, usable only by the finest of weapons an artificer can concoct. Strong enough to pierce a dragons scales. Can only be used with rifles of Very Rare and Legendary quality, adding an additional 2d8 magical piercing damage to damage rolls.</p>
-		</description>
-		<setters>
-			<set name="category">Ammunition</set>
-			<set name="cost" currency="gp">800</set>
-			<set name="weight" lb="2">20 lb.</set>
-			<set name="type">Ammunition</set>
-			<set name="stackable">true</set>
-		</setters>
+	<!-- Item Features -->
+	<!--
+	<element name="" type="Class Feature" source="Embers of the Deathless" id="ID_EOTD_ITEM_FEATURE_">
+	</element>
+	-->
+	<element name="Bounding Necrosis" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_ITEM_FEATURE_VILE_STING_BOUNDING_NECROSIS">
+			<description>
+				<p>As an action, you can propel a blade of arcane energy from Vile Sting at a creature within 15ft. Make an attack roll against the target. On a hit, the target takes 1d8 necrotic damage. The blade then leaps to a different target of your choice within 15ft. of the original target. Make a new attack roll against the new target, and make a new damage roll. On a hit, the blade can continue leaping to a third target. A creature can only be targeted once by each use of this technique. This technique's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+			</description>
+			<sheet>
+				<description>As an action, you can propel a blade of arcane energy from Vile Sting at a creature within 15ft. Make an attack roll against the target. On a hit, the target takes 1d8 necrotic damage. The blade then leaps to a different target of your choice within 15ft. of the original target. Make a new attack roll against the new target, and make a new damage roll. On a hit, the blade can continue leaping to a third target. A creature can only be targeted once by each use of this technique.</description>
+				<description level="5">As an action, you can propel a blade of arcane energy from Vile Sting at a creature within 15ft. Make an attack roll against the target. On a hit, the target takes 2d8 necrotic damage. The blade then leaps to a different target of your choice within 15ft. of the original target. Make a new attack roll against the new target, and make a new damage roll. On a hit, the blade can continue leaping to a third target. A creature can only be targeted once by each use of this technique.</description>
+				<description level="11">As an action, you can propel a blade of arcane energy from Vile Sting at a creature within 15ft. Make an attack roll against the target. On a hit, the target takes 3d8 necrotic damage. The blade then leaps to a different target of your choice within 15ft. of the original target. Make a new attack roll against the new target, and make a new damage roll. On a hit, the blade can continue leaping to a third target. A creature can only be targeted once by each use of this technique.</description>
+				<description level="17">As an action, you can propel a blade of arcane energy from Vile Sting at a creature within 15ft. Make an attack roll against the target. On a hit, the target takes 4d8 necrotic damage. The blade then leaps to a different target of your choice within 15ft. of the original target. Make a new attack roll against the new target, and make a new damage roll. On a hit, the blade can continue leaping to a third target. A creature can only be targeted once by each use of this technique.</description>
+			</sheet>
 	</element>
 	
-	<element name="Incendiary Shells" type="Item" source="Mythical Conquest" id="ID_MYTHIC_INCENDIARY_SHELLS">
+	<element name="Blitzing Strike" type="Class Feature" source="Embers of the Deathless" id="ID_EOTD_ITEM_FEATURE_BLITZING_STRIKE">
 		<description>
-			<p>Shells that light their targets on fire.</p>
+			<p>As an action, you can target one creature within 15ft. and teleport behind them making a weapon attack roll against the creature. Immediately afterwards, teleport behind a different creature within 15ft. and make a weapon attack roll against them.</p>
 		</description>
-		<setters>
-			<set name="category">Ammunition</set>
-			<set name="cost" currency="gp">1</set>
-			<set name="weight" lb="2">3 lb.</set>
-			<set name="type">Ammunition</set>
-			<set name="stackable">true</set>
-		</setters>
+		<sheet action="Action">
+			<description>Target one creature within 15ft. and teleport behind them making a weapon attack roll against the creature. Immediately afterwards, teleport behind a different creature within 15ft. and make a weapon attack roll against them.</description>
+		</sheet>
 	</element>
+	
+	<element name="Battering Ram" type="Class Feature" source="Embers of the Deathless" id="ID_EOTD_ITEM_FEATURE_BATTERING_RAM">
+		<description>
+			<p>As an action, you charge forwards in a 20ft. line that is 5ft. wide, using 10ft. of movement and causing all enemies to take 2d4 Bludgeoning damage and make a Strength Saving Throw or be knocked prone, the DC = 8 + Proficiency Bonus + Strength Modifier.</p>
+		</description>
+		<sheet action="Action">
+			<description>charge forwards in a 20ft. line that is 5ft. wide, using 10ft. of movement and causing all enemies to take 2d4 Bludgeoning damage and make a DC {{battering_ram:dc}} Strength Saving Throw or be knocked prone.</description>
+		</sheet>
+		<rules>
+			<stat name="battering_ram:dc" value="8" />
+			<stat name="battering_ram:dc" value="proficiency" />
+			<stat name="battering_ram:dc" value="strength:modifier" />
+		</rules>
+	</element>
+	
 	
 	<!-- Armor/Shields -->
-	<element name="Mithril" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_SHIELD_MITHRIL">
-		<description>
-			<p>While equipped, you have a +1 Bonus to AC. While equipped with this sheild or armor, reduce incoming spell damage by 2.</p>
-		</description>
-		<setters>
-			<set name="keywords">shield</set>
-			<set name="category">Magic Armor</set>
-			<set name="cost" currency="gp">1200</set>
-			<set name="type" addition="shield">Armor</set>
-			<set name="rarity">Rare</set>
-			<set name="enhancement">+1</set>
-			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD|ID_INTERNAL_ARMOR_GROUP_MEDIUM</set>
-			<set name="name-format">{{parent}} +{{enhancement}}</set>
-		</setters>
-		<rules>
-			<stat name="ac:shield" value="2" bonus="enhancement" />
-		</rules>
-	</element>
-	
-	<element name="Orichalcum" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_SHIELD_ORICHALCUM">
-		<description>
-			<p>While equipped, you have a +1 Bonus to AC. While equipped with this sheild or armor, when you are forced to make a Saving Throw regarding the effects of a spell, roll 1d6 and add it to your Saving Throw.</p>
-		</description>
-		<setters>
-			<set name="keywords">shield</set>
-			<set name="category">Magic Armor</set>
-			<set name="cost" currency="gp">2000</set>
-			<set name="type" addition="shield">Armor</set>
-			<set name="rarity">Very Rare</set>
-			<set name="enhancement">+1</set>
-			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD|ID_INTERNAL_ARMOR_GROUP_MEDIUM</set>
-			<set name="name-format">{{parent}} +{{enhancement}}</set>
-		</setters>
-		<rules>
-			<stat name="ac:shield" value="2" bonus="enhancement" />
-		</rules>
-	</element>
 	
 	<element name="Vile Fortitude" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_VILE_ARMOR">
 		<description>
@@ -132,7 +109,8 @@
 			<set name="keywords">light</set>
 			<set name="category">Magic Armor</set>
 			<set name="cost" currency="gp">0</set>
-			<set name="type" addition="shield">Armor</set>
+			<set name="slot">shield</set>
+			<set name="type" addition="shield">Shield</set>
 			<set name="attunement">true</set>
 			<set name="rarity">Artifact</set>
 			<set name="enhancement">1</set>
@@ -191,6 +169,7 @@
 	</element>
 	
 	<element name="Mortal Hold" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_MORTAL_HOLD">
+	
 		<description>
 			<p>This ominous armor was obviously crafted by someone with an affinity for the undead. You gain a +3 bonus to AC while attuned to this magic armor. Additionally, you are immune to the poisoned condition and have immunity to poison damage. This armor can only be attuned by spellcasters.</p>
 			<p><strong>Legendary Resistance (1/day):</strong> While attuned to this armor, if you fail a saving throw you can choose to succeed instead.</p>
@@ -215,39 +194,108 @@
 		</rules>
 	</element>
 	
+	<element name="Mail of the Riverlands" type="Magic Item" source="Embers of the Deathless" id="ID_EOTD_MAGIC_ITEM_MAIL_OF_THE_RIVERLANDS">
+		<description>
+			<p><strong>Scales of the Trout:</strong> This armor does not weigh you down in water and even makes you a more potent swimmer. Your movement speed when swimming is not halved. Additionally you make Strength (Athletics) checks for swimming with advantage.</p>
+		</description>
+		<setters>
+			<set name="keywords">Scale Mail</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="Scale Mail">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">Scale Mail</set>
+			<set name="name-format">Mail of the Riverlands</set>
+		</setters>
+	</element>
+	
+	<element name="Sun and Moon Shield" type="Magic Item" source="Embers of the Deathless" id="ID_EOTD_MAGIC_ITEM_SUN_AND_MOON_SHIELD">
+		<description>
+			<p>This shield is embossed with personified sun and moon designs. The sun's eyes magically open between dawn and dusk, and the moon's eyes open between dusk and dawn. While holding the shield, you can use an action to cause the sheild to shed bright light in a 20-foot radius, and dim light for an additional 20 feet. The light is warmly colored while the sun's eyes are open, but cool while the moon's are. The light remains for 1 hour or until you use an action to end it.</p>
+		</description>
+		<setters>
+			<set name="keywords">Shield</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">shield</set>
+			<set name="type" addition="Shield">Shield</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format">Mail of the Riverlands</set>
+		</setters>
+	</element>
+	
+	<element name="Bloodbound Bulwark +1" type="Magic Item" source="Embers of the Deathless" id="ID_EOTD_MAGIC_ITEM_BLOODBOUND_BULWARK_1">
+		<description>
+			<p>This armor holds a number of charges equal to twice its AC bonus and regain all expended charges each day at dusk. Once per turn when you hit a creature which has blood with piercing or slashing damage while wearing this armor, you can expend 1 charge and inflict an additional 2d6 of your weapon's damage as the armor absorbs athe blood of your target. You then gain temporary hit points equal to the piercing or slashing damage received, as the armor is empowered and grows temporary parts from the blood it absorbed.</p>
+		</description>
+		<setters>
+			<set name="keywords">heavy</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">10500</set>
+			<set name="slot">body</set>
+			<set name="type" addition="plate">Armor</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="armor">Plate</set>
+			<set name="enhancement">+1</set>
+			<set name="charges">1</set>
+			<set name="name-format">Bloodbound Bulwark +1</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />	
+		</rules>
+	</element>
+	
+	<element name="Bloodbound Bulwark +2" type="Magic Item" source="Embers of the Deathless" id="ID_EOTD_MAGIC_ITEM_BLOODBOUND_BULWARK_2">
+		<description>
+			<p>This armor holds a number of charges equal to twice its AC bonus and regain all expended charges each day at dusk. Once per turn when you hit a creature which has blood with piercing or slashing damage while wearing this armor, you can expend 1 charge and inflict an additional 2d6 of your weapon's damage as the armor absorbs athe blood of your target. You then gain temporary hit points equal to the piercing or slashing damage received, as the armor is empowered and grows temporary parts from the blood it absorbed.</p>
+		</description>
+		<setters>
+			<set name="keywords">heavy</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">15500</set>
+			<set name="slot">body</set>
+			<set name="type" addition="plate">Armor</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="armor">Plate</set>
+			<set name="enhancement">+2</set>
+			<set name="charges">2</set>
+			<set name="name-format">Bloodbound Bulwark +2</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="2" bonus="enhancement" />	
+		</rules>
+	</element>
+	
+	<element name="Bloodbound Bulwark +3" type="Magic Item" source="Embers of the Deathless" id="ID_EOTD_MAGIC_ITEM_BLOODBOUND_BULWARK_3">
+		<description>
+			<p>This armor holds a number of charges equal to twice its AC bonus and regain all expended charges each day at dusk. Once per turn when you hit a creature which has blood with piercing or slashing damage while wearing this armor, you can expend 1 charge and inflict an additional 2d6 of your weapon's damage as the armor absorbs athe blood of your target. You then gain temporary hit points equal to the piercing or slashing damage received, as the armor is empowered and grows temporary parts from the blood it absorbed.</p>
+		</description>
+		<setters>
+			<set name="keywords">heavy</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">20500</set>
+			<set name="slot">body</set>
+			<set name="type" addition="plate">Armor</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="armor">Plate</set>
+			<set name="enhancement">+3</set>
+			<set name="charges">3</set>
+			<set name="name-format">Bloodbound Bulwark +3</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="3" bonus="enhancement" />	
+		</rules>
+	</element>
+	
 	
 	
 	
 	<!-- Weaponry -->
-	<element name="Mithril" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_WEAPON_MYTHRIL">
-		<description>
-			<p>You have a +1 bonus to attack and damage rolls made with this magic weapon that utilize spells.</p>
-		</description>
-		<setters>
-			<set name="category">Magic Weapons</set>
-			<set name="cost" currency="gp">4500</set>
-			<set name="type" addition="any">Weapon</set>
-			<set name="rarity">Rare</set>
-			<set name="enhancement">1</set>
-			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</set>
-			<set name="name-format">{{parent}} +{{enhancement}}</set>
-		</setters>
-	</element>
-	
-	<element name="Orichalcum" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_WEAPON_ORICHALCUM">
-		<description>
-			<p>You have a +2 bonus to attack and damage rolls made with this magic weapon that utilize spells.</p>
-		</description>
-		<setters>
-			<set name="category">Magic Weapons</set>
-			<set name="cost" currency="gp">6000</set>
-			<set name="type" addition="any">Weapon</set>
-			<set name="rarity">Very Rare</set>
-			<set name="enhancement">2</set>
-			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</set>
-			<set name="name-format">{{parent}} +{{enhancement}}</set>
-		</setters>
-	</element>
 	
 	<element name="The Corrupted Axe of Nephel" type="Weapon" source="Mythical Conquest" id="ID_MYTHIC_WEAPON_NEPHEL_AXE">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
@@ -265,46 +313,10 @@
 		</setters>
 	</element>
 	
-	<element name="Triple Barrel Shotgun" type="Weapon" source="Mythical Conquest" id="ID_MYTHIC_WEAPON_TRIPLE_SHOTGUN">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_BLUDGEONING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_RDDT_AA_WEAPON_PROPERTY_SCATTER, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
-		</supports>
-		<description>
-			<p>Ammunition (range 5/25), Two-Handed, Reload 9</p>
-		</description>
-		<setters>
-			<set name="category">Weapons</set>
-			<set name="cost" currency="gp">75</set>
-			<set name="weight" lb="7">7 lb.</set>
-			<set name="slot">twohand</set>
-			<set name="range">5/25</set>
-			<set name="damage">3d12 bludgeoning</set>
-			<set name="reload">9</set>
-			<set name="misfire">1</set>
-			<set name="proficiency">ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_SHOTGUNS</set>
-		</setters>
-	</element>
-
-	<element name="Obsidian Piercer" type="Weapon" source="Mythical Conquest" id="ID_MYTHIC_WEAPON_OBSIDIAN_PIERCER">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
-		</supports>
-		<description>
-			<p>Ammunition (range 200/1000), Two-Handed, Loading, Heavy</p>
-		</description>
-		<setters>
-			<set name="category">Weapons</set>
-			<set name="cost" currency="gp">200</set>
-			<set name="weight" lb="18">25 lb.</set>
-			<set name="slot">twohand</set>
-			<set name="range">100/1000</set>
-			<set name="damage" type="piercing">5d12+10</set>
-			<set name="proficiency">ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_HEAVY_RIFLE</set>
-		</setters>
-	</element>
-	
 	<element name="Cloudstriker Spine" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_WEAPON_CLOUDSTRIKER_SPINE">
 		<description>
 			<p>Attacks made with this weapon deal an additional 1d4 Lightning Damage and stack a charge of Lightning.</p>
-			<p>When making an attack with this weapon when it has 3 charges of lightning, deal an additional 1d10 Lightning damage to the target and 3 creatures of choice within 15ft.</p>
+			<p>When making an attack with this weapon when it has 3 charges of lightning, deal an additional 1d10 Lightning damage to the target and 3 creatures of choice within 15ft. consuming the charges on use.</p>
 		</description>
 		<setters>
 			<set name="keywords">Greatsword</set>
@@ -363,18 +375,6 @@
 		<rules>
 			<grant type="Class Feature" id="ID_MYTHIC_ITEM_FEATURE_VILE_STING_BOUNDING_NECROSIS" />
 		</rules>
-	</element>
-	
-	<element name="Bounding Necrosis" type="Class Feature" source="Mythical Conquest" id="ID_MYTHIC_ITEM_FEATURE_VILE_STING_BOUNDING_NECROSIS">
-			<description>
-				<p>As an action, you can propel a blade of arcane energy from Vile Sting at a creature within 15ft. Make an attack roll against the target. On a hit, the target takes 1d8 necrotic damage. The blade then leaps to a different target of your choice within 15ft. of the original target. Make a new attack roll against the new target, and make a new damage roll. On a hit, the blade can continue leaping to a third target. A creature can only be targeted once by each use of this technique. This technique's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
-			</description>
-			<sheet>
-				<description>As an action, you can propel a blade of arcane energy from Vile Sting at a creature within 15ft. Make an attack roll against the target. On a hit, the target takes 1d8 necrotic damage. The blade then leaps to a different target of your choice within 15ft. of the original target. Make a new attack roll against the new target, and make a new damage roll. On a hit, the blade can continue leaping to a third target. A creature can only be targeted once by each use of this technique.</description>
-				<description level="5">As an action, you can propel a blade of arcane energy from Vile Sting at a creature within 15ft. Make an attack roll against the target. On a hit, the target takes 2d8 necrotic damage. The blade then leaps to a different target of your choice within 15ft. of the original target. Make a new attack roll against the new target, and make a new damage roll. On a hit, the blade can continue leaping to a third target. A creature can only be targeted once by each use of this technique.</description>
-				<description level="11">As an action, you can propel a blade of arcane energy from Vile Sting at a creature within 15ft. Make an attack roll against the target. On a hit, the target takes 3d8 necrotic damage. The blade then leaps to a different target of your choice within 15ft. of the original target. Make a new attack roll against the new target, and make a new damage roll. On a hit, the blade can continue leaping to a third target. A creature can only be targeted once by each use of this technique.</description>
-				<description level="17">As an action, you can propel a blade of arcane energy from Vile Sting at a creature within 15ft. Make an attack roll against the target. On a hit, the target takes 4d8 necrotic damage. The blade then leaps to a different target of your choice within 15ft. of the original target. Make a new attack roll against the new target, and make a new damage roll. On a hit, the blade can continue leaping to a third target. A creature can only be targeted once by each use of this technique.</description>
-			</sheet>
 	</element>
 	
 	<element name="Sword of Faith" type="Magic Item" source="Mythical Conquest" id="ID_MYTHIC_MAGIC_ITEM_WEAPON_SWORD_FAITH">
@@ -575,5 +575,204 @@
 			<stat name="bahamut:dc" value="charisma:modifier" />
 			<stat name="bahamut:dc" value="proficiency" />
 		</rules>
+	</element>
+	
+	<element name="Soldier's Trinket" type="Magic Item" source="Embers of the Deathless" id="ID_EOTD_MAGIC_ITEM_SOLDIERS_TRINKET">
+		<description>
+			<p>(2/Day) The wearer of this necklace can cast either "Blade Ward" or "True Strike" as a bonus action.</p>
+		</description>
+		<setters>
+			<set name="keywords">trinket</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Items</set>
+			<set name="rarity">Common</set>
+			<set name="name-format">Soldier's Trinket</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BLADE_WARD"/>
+			<grant type="Spell" id="ID_PHB_SPELL_TRUE_STRIKE"/>
+		</rules>
+	</element>
+
+	<element name="Morphic Blade" type="Magic Item" source="Embers of the Deathless" id="ID_EOTD_MAGIC_ITEM_MORPHIC_BLADE">
+		<description>
+			<p>A blade forged with the essence of the 9 realms, wielded by Feyra in spite of the Gods to maintain order above all. You gain a +3 bonus to attack and damage rolls made with this magic weapon. You may also cast Absorb Elements twice without a spell slot between long rests.</p>
+			<p><strong>Adaptive Weapon.</strong> This weapons damage type is always treated as a targets vulnerability if it has one.</p>
+		</description>
+		<setters>
+			<set name="keywords">morphic</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any sword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="name-format">Morphic Blade</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_ABSORB_ELEMENTS" />
+		</rules>
+	</element>
+	
+	<element name="Blossom Spear" type="Magic Item" source="Embers of the Deathless" id="ID_EOTD_MAGIC_ITEM_BLOSSOM_SPEAR">
+		<description>
+			<p>While holding this magic weapon, you gain a bonus to attack and damage rolls made with it, and you gain a bonus to spell attack rolls and the saving throw DCs of your druid and ranger spells. Whenever you take the attack action during your turn with this weapon, you can make its shaft grow like a branch, extending your reach by 5ft.</p>
+			<p>In addition, this weapon holds 4 charges. As a bonus action, you can expend a charge and cause cherry blossoms to whirl around you and follow your strikes until the start of your next turn. While in this state, attacks against you are made with disadvantage and you add this weapon's bonus to your AC and all your saving throws. After completing a long rest, this weapon restores 1d4 charges.</p>
+		</description>
+		<setters>
+			<set name="keywords">glaive</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="glaive">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Glaive</set>
+			<set name="charges">4</set>
+			<set name="name-format">Blossom Spear</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="2" />
+            <stat name="ranger:spellcasting:dc" value="2" />
+			<stat name="druid:spellcasting:dc" value="2" />
+		</rules>
+	</element>
+	
+	<element name="Demon-Ogre Cooker" type="Magic Item" source="Embers of the Deathless" id="ID_EOTD_MAGIC_ITEM_DEMON_OGRE_COOKER">
+		<description>
+			<p><strong>Gluttonous Fire.</strong> This weapon deals an additional 1d6 fire damage. In addition, this weapon has 6 charges, and regains 1d6 charges at dawn each day. You can expend charges to cast the spell Searing Smite (DC 16) at a level equal to the number of expended charges, for a maximum equal to your proficiency bonus.</p>
+			<p><strong>Cooking Utensils.</strong> You can use this weapon as a sauce pan, requiring no fire to cook, and when you use it you add 1d6 to your skill checks made to cook food.</p>
+			<p><strong>Cannibal Strike.</strong> If a creature dies while affected by this weapon's Searing Smite spell, it is instantly cooked, edible and delicious (this effect does not work on elementals, undead, construct, on tiny creatures and on creatures that are immune to fire). As an action, a creature can harvest and eat a ration of that dead creature, healing 1d6. These rations lose their healing magic after 1 hour, but remain edible. The amount of rations a creature can harvest from a cooked creature depends on its size: small (2), medium (3), huge (6), gargantuan (12).</p>
+		</description>
+		<setters>
+			<set name="keywords">mace</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="mace">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Mace</set>
+			<set name="charges">6</set>
+			<set name="name-format">Demon-Ogre Cooker</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SEARING_SMITE" />
+		</rules>
+	</element>
+	
+	<element name="Ghostblade" type="Magic Item" source="Embers of the Deathless" id="ID_EOTD_MAGIC_ITEM_GHOSTBLADE">
+		<description>
+			<p>You gain a bonus of 2 to your attack and damage rolls made with this weapon based on its rarity. This weapon inflicts force damage instead of slashing or piercing damage.</p>
+			<p><strong>Ghostly Image.</strong> As a bonus action while holding this blade, you can cast the spell Mirror Image. While you cast the spell using this feature, you gain a bonus to your armor class equal to the number of duplicates you have active. In addition, the AC of your duplicates increases by 2. Once you have used this feature, you can't do so again until the next dawn.</p>
+			<p><strong>Spirit Fighters.</strong> Whenever you take the attack action with this blade while you have at least 1 duplicate, you can cause the duplicate to make one attack. The duplicate uses your stats and attacks a creature within your reach, dealing force damage on a hit equal to this weapon's damage. When a duplicate hits a creature with an attack, it is destroyed.</p>
+			<p><strong>Echoes of Death.</strong> Whenever you roll a critical hit with this weapon, you summon 1 duplicate as per the Ghostly Image feature. Duplicates created this way last for 1 minute or until they are destroyed, and you can't have more than 3 duplicates at a time.</p>
+		</description>
+		<setters>
+			<set name="keywords">sword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="any sword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="cost" currency="gp">16000</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="name-format">Ghostblade</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MIRROR_IMAGE" />
+		</rules>
+	</element>
+	
+	
+	
+	
+	<!-- Potions -->
+	<element name="Dancer's Grace" type="Magic Item" source="Embers of the Deathless" id="ID_EOTD_POTION_DANCERS_GRACE">		
+		<description>
+			<p>A potion common to Bards and Minstrels. Dancer's Grace gives the drinker advantage on performance checks for 8 hours.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	<element name="Dragon Whiskey" type="Magic Item" source="Embers of the Deathless" id="ID_EOTD_POTION_DRAGON_WHISKEY">		
+		<description>
+			<p>After drinking, gain the following effects for 1 hour:</p>
+			<p><strong>Poisoned.</strong> You are poisoned.</p>
+			<p><strong>Puke Fire.</strong> As an action, you can puke burning bile in a 15ft. line. All creatures caught in this line must make a DC 13 Dexterity Saving Throw or suffer fire damage equal to your Constitution Score. </p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="cost" currency="gp">650</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Ghostly Spirits" type="Magic Item" source="Embers of the Deathless" id="ID_EOTD_POTION_GHOSTLY_SPIRITS">		
+		<description>
+			<p><strong>A Toast to the Dead.</strong> You may raise your glass and speak the name of someone who has died. Upon drinking, a silent ghostly illusion of the named individual appears before you. The detail and clarity of this illusion is determined by how well you knew this person in life. Strangers appear as a blurry wisp of spectral vapour.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="cost" currency="gp">1000</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	<element name="Giant's Mead" type="Magic Item" source="Embers of the Deathless" id="ID_EOTD_POTION_GIANTS_MEAD">		
+		<description>
+			<p>For three hours after drinking, you have +2 to all Strength based skill checks. At will, you can also let out a deafening belch that can be heard up to 1000 ft. away.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="cost" currency="gp">800</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	<element name="Glitter Shot" type="Magic Item" source="Embers of the Deathless" id="ID_EOTD_POTION_GLITTER_SHOT">		
+		<description>
+			<p>Your skin glitters and glows fabulously, for the next 8 hours, you may cast Faerie Fire once.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="cost" currency="gp">650</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	<element name="Orcish Beer" type="Magic Item" source="Embers of the Deathless" id="ID_EOTD_POTION_ORCISH_BEER">		
+		<description>
+			<p>For six hours after drinking, you reduce all physical damage received by 2.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
 	</element>
 </elements>

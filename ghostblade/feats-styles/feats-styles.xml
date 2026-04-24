@@ -142,4 +142,13 @@
 			<select type="Spell" name="Cantrip (Eldritch Warrior)" supports="Warlock, 0" level="2" number="2" spellcasting="Diabolist" />
 		</rules>
 	</element>
+
+	<element name="Sacrilege of the Pheonix" type="Feat" source="Embers of the Deathless" id="ID_EOTD_FEAT_SACRILEGE_PHEONIX">
+		<description>
+			<p>You've commited a grand atrocity in the consumption of a legendary Pheonix thought lost to time, absorbing a touch of its restorative properties. When using your Lay on Hands on a living creature, it regains an additional 1d4 hit points and is resistant to fire damage for the next minute.</p>
+		</description>
+		<sheet>
+			<description>When using your Lay on Hands on a living creature, it regains an additional 1d4 hit points and is resistant to fire damage for the next minute.</description>
+		</sheet>
+	</element>
 </elements>
